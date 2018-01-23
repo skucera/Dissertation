@@ -1,0 +1,198 @@
+\ProvidesFile{template.tex}
+    [2013/04/16 v3.2013^^J%
+     Template file for NDdiss2e class by Sameer Vijay and updated by Megan Patnott^^J]
+\documentclass[noinfo,final,sort&compress]{nddiss2e}
+% One of the options draft, review, final must be chosen.
+% One of the options textrefs or numrefs should be chosen
+% to specify if you want numerical or ``author-date''
+% style citations.
+% Other available options are:
+% 10pt/11pt/12pt (available with draft only)
+% twoadvisors
+% noinfo (should be used when you compile the final time
+%         for formal submission)
+% sort (sorts multiple citations in the order that they're
+%       listed in the bibliography)
+% compress (compresses numerical citations, e.g. [1,2,3]
+%           becomes [1-3]; has no effect when used with
+%           the textrefs option)
+% sort&compress (sorts and compresses numerical citations;
+%           is identical to sort when used with textrefs)
+
+% \usepackage{amsmath}
+% % \usepackage{amssymb}
+% \usepackage{graphicx}
+% \usepackage{multirow}
+% \usepackage{dcolumn}
+\usepackage{bm} 
+% \usepackage{amssymb}
+%\usepackage{tablefootnote}
+% \usepackage{times}
+% \usepackage{mathptm}
+%\usepackage{caption}
+% \usepackage{float}
+% \usepackage{geometry}
+% \usepackage{xkeyval}
+% \usepackage{tabularx}
+% \usepackage{longtable}
+% \usepackage{multicol}
+% \usepackage{square}{natbib}
+% \usepackage{achemso}
+% \usepackage{cleveref}
+%------------------------------
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{pdflscape}
+\usepackage[version=3]{mhchem}
+\usepackage{mathtools}
+\usepackage{abraces}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{dcolumn}
+\usepackage[export]{adjustbox}
+\usepackage{mathrsfs}
+
+% \setcitestyle{square}
+
+\newcommand*{\citen}[1]{%
+  \begingroup
+    \romannumeral-`\x % remove space at the beginning of \setcitestyle
+    \setcitestyle{numbers}%
+    \cite{#1}%
+  \endgroup   
+}
+
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+\begin{document}
+
+\frontmatter % All the items before the first chapter go in ``frontmatter''
+
+\title{EXPLORATION OF INTERFACIAL THERMAL CONDUCTANCE OF GOLD NANOPARTICLES USING MOLECULAR DYNAMICS}
+\author{Suzanne M. Neidhart}
+\work{Dissertation}
+\degaward{Doctor of Philosophy}
+\advisor{J. Daniel Gezelter}
+\department{Chemistry and Biochemstry}
+\maketitle
+
+\copyrightholder{Suzanne M. Neidhart} 
+\copyrightyear{2017}           
+\makecopyright
+
+\begin{abstract}
+\end{abstract}
+
+% \renewcommand{\dedicationname}{NEW DEDICATION NAME}
+% \begin{dedication}
+% \end{dedication}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%\begin{preface}
+%\vfill
+%\begin{flushright}
+%\textit{''Some say the world will end in fire,} \\
+%textit{Some say in ice.''}\\
+%--Robert Frost
+%\end{flushright}
+%\vfill
+%\end{preface}
+
+%\begin{acknowledge}
+%So many thanks, much wow.
+%\end{acknowledge}
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 1 -- INTRODUCTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/Introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 2 -- Ligand Dependence of the Thermal Conductivity
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/NPthiols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 3 -- Morphology Dependence of the Interfacial Thermal Conductance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/Morph}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 4 -- Staple Motifs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/StapleMotifs}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 5 -- Conclusion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{chapters/Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 6 -- Shear Viscosity of QLL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Chapters/qllViscosity}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 7 --Droplets
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Chapters/iceWater2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		CHAPTER 8 -- Conclusion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Chapters/conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		UNNUMBERED CHAPTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \unnumchapter{FEATURES OF FORMATTING IN THIS EXAMPLE FILE}
+% The \unnumchapter command allows you to include an unnumbered chapter as part of
+% the main text before Chapter 1. It will appear in your table of contents, and you
+% should have at most one such chapter (although nothing in the class file will
+% prevent you from creating more).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		APPENDIX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%\include{Chapters/appendix1}
+%\include{Chapters/structuralAppendix}
+%\include{Chapters/dynamicAppendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		BACK STUFF
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % comment out the following three lines
+% if using chapter-wise bibliography
+
+ \backmatter
+ 
+ % \bibliographystyle{nddiss2e}
+ % \bibliographystyle{nddiss2enoarticletitles}
+ \bibliographystyle{achemso}
+ % \bibliographystyle{abbrvnat} 
+ %\bibliography{Louden_Thesis} 
+ 
+ % The standard abbrvnat style should be acceptable. Also provided with both the advanced and standard distributions are nddiss2e and nddiss2enoarticletitles style options. If you prefer to manually enter your bibliography, that is fine. Comment out the previous two lines, and enter your bibliography as usual. Note that if you choose this route, formatting the bibliography is your responsibility. An example is below, including the optional arguments necessary for author-date style citations.
+ 
+%	\begin{thebibliography}{9}
+%		\bibitem[Galmira(1998)]{galmira98:_gnus_milit} G.\ Galmira. Gnus and the military -- a secret conspiracy? \emph{Growing Towards Gnu}, III(7):22--183, September 1998.
+%		
+%		\bibitem[Ganston and Greenfield(1998)]{gnus98:_gerry_ganst} G.\ Ganston and G.\ Greenfield. \emph{Gnus and You: The Art of Being New}. volume I. Grapping Books, NY, August, 1998.
+%		
+%		\bibitem[Gloonston(1998)]{gloonston98:_gnuly_discov_gnus} G.\ Gloonston. Newly discovered gnus: The LoG. \emph{Growing Towards Gnu}, II(12):23---57, March 1998.
+%		
+%		\bibitem[Greenfield(1996)]{greenfield96:_gettin_know_gnu} G.\ Greenfield. \emph{Getting to Know Gnu}. PhD thesis, Geoffrey Garfield School of Gnus, August 1996.
+%		
+%		\bibitem[van Gairley(2000)]{gairley2000} G.\ van Gairley. Gnu's review. Website, 2000. \url{http://www.gairley.gnu}.
+%	\end{thebibliography}
+
+\end{document}
+
+\endinput
