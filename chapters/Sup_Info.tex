@@ -1,0 +1,209 @@
+\documentclass[aps,jcp,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4-1}
+\usepackage{graphicx}  % needed for figures
+\usepackage{dcolumn}   % needed for some tables
+\usepackage{bm}        % for math
+\usepackage{amssymb}   % for math
+\usepackage{booktabs}
+\usepackage[english]{babel}
+\usepackage{multirow}
+\usepackage{times}
+\usepackage[version=3]{mhchem}
+\usepackage{lineno}
+\usepackage{gensymb}
+\usepackage{multirow}
+
+\begin{document}
+
+\title{Supporting Information for: Interfacial Thermal Conductance of Thiolate-Protected
+  Gold Nanospheres}
+\author{Kelsey M. Stocker}
+\author{Suzanne M. Neidhart}
+\author{J. Daniel Gezelter}
+\email{gezelter@nd.edu}
+\affiliation{Department of Chemistry and Biochemistry, University of
+  Notre Dame, Notre Dame, IN 46556}
+\date{\today}
+
+\begin{abstract}
+  This document supplies force field parameters for the united-atom
+  sites, bond, bend, and torsion parameters, as well as the cross
+  interactions between the united-atom sites and the gold atoms. These
+  parameters were used in the simulations presented in the main text.
+\end{abstract}
+
+
+\maketitle
+
+Gold -- gold interactions were described by the quantum Sutton-Chen
+(QSC) model.\cite{Qi:1999ph} The hexane solvent is described by the
+TraPPE united atom model,\cite{TraPPE-UA.alkanes} where sites are
+located at the carbon centers for alkyl groups. Bonding interactions
+were used for intra-molecular sites closer than 3 bonds. Effective
+Lennard-Jones potentials were used for non-bonded interactions.
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{}{,}
+\centering
+\caption{Non-bonded interaction parameters (including cross interactions with Au atoms). \label{tab:atypes}}
+\begin{tabular}{ c|cccccl }
+ \toprule
+Site & mass & $\sigma_{ii}$ & $\epsilon_{ii}$ & $\sigma_{\ce{Au}-i}$ & $\epsilon_{\ce{Au}-i}$  & source \\
+     & (amu)& (\AA)        & (kcal/mol)     & (\AA)             &  (kcal/mol)          &  \\
+ \colrule
+ \ce{CH3}    & 15.04    & 3.75  & 0.1947 & 3.54   & 0.2146 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
+ \ce{CH2}    & 14.03    & 3.95  & 0.09141& 3.54   & 0.1749 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
+ CHene       & 13.02    & 3.73  & 0.09340& 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
+ S           & 32.0655  & 4.45  & 0.2504 & 2.40   & 8.465  & Refs. \protect\cite{landman:1998} ($\sigma$) and \protect\cite{vlugt:cpc2007154} ($\epsilon$) \\
+ CHar        & 13.02    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
+ \ce{CH2ar}  & 14.03    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+The TraPPE-UA force field includes parameters for thiol
+molecules\cite{TraPPE-UA.thiols} which were used for the
+alkanethiolate molecules in our simulations.  To derive suitable
+parameters for butanethiolate adsorbed on Au(111) surfaces, we adopted
+the S parameters from Luedtke and Landman\cite{landman:1998} and
+modified the parameters for the CTS atom to maintain charge neutrality
+in the molecule.
+
+Bonds are typically rigid in TraPPE-UA, so although we used
+equilibrium bond distances from TraPPE-UA, for flexible bonds, we
+adapted bond stretching spring constants from the OPLS-AA force
+field.\cite{Jorgensen:1996sf}
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{}{,}
+\centering
+\caption{Bond parameters. \label{tab:bond}}
+\begin{tabular}{ cc|ccl }
+ \toprule
+ $i$&$j$ & $r_0$ & $k_\mathrm{bond}$ & source \\
+    &    & (\AA) & $(\mathrm{~kcal/mole/\AA}^2)$ & \\
+ \colrule
+\ce{CH3}   & \ce{CH3} &	1.540	& 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf}\\
+\ce{CH3}   & \ce{CH2} &	1.540	& 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
+\ce{CH2}   & \ce{CH2} &	1.540	& 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
+CHene      & CHene    & 1.330   & 1098 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+\ce{CH3}   & CHene    & 1.540   & 634  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+\ce{CH2}   & CHene    & 1.540   & 634  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+S          & \ce{CH2} & 1.820   & 444  & Refs. \protect\cite{TraPPE-UA.thiols} and \protect\cite{Jorgensen:1996sf} \\
+CHar       & CHar     & 1.40    & 938  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+CHar       & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar       & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+\ce{CH2ar} & CHar     & 1.40    & 938  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+S          & CHar     &	1.80384	& 527.951 & This Work \\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+To describe the interactions between metal (Au) and non-metal atoms,
+potential energy terms were adapted from an adsorption study of alkyl
+thiols on gold surfaces by Vlugt, \textit{et
+  al.}\cite{vlugt:cpc2007154} They fit an effective pair-wise
+Lennard-Jones form of potential parameters for the interaction between
+Au and pseudo-atoms CH$_x$ and S based on a well-established and
+widely-used effective potential of Hautman and Klein for the Au(111)
+surface.\cite{hautman:4994}
+
+Parameters not found in the TraPPE-UA force field for the
+intramolecular interactions of the conjugated and the penultimate
+alkenethiolate ligands were calculated using constrained geometry
+scans using the B3LYP functional~\cite{Becke:1993kq,Lee:1988qf} and
+the 6-31G(d,p) basis set. Structures were scanned starting at the
+minimum energy gas phase structure for small ($C_4$) ligands.  Only
+one degree of freedom was constrained for any given scan -- all other
+atoms were allowed to minimize subject to that constraint.  The
+resulting potential energy surfaces were fit to a harmonic potential
+for the bond stretching,
+\begin{equation}
+V_\mathrm{bond} = \frac{k_\mathrm{bond}}{2} \left( r - r_0 \right)^2,
+\end{equation}
+and angle bending potentials,
+\begin{equation}
+V_\mathrm{bend} = \frac{k_\mathrm{bend}}{2} \left(\theta - \theta_0\right)^2.
+\end{equation}
+Torsional potentials were fit to the TraPPE torsional function,
+\begin{equation}
+V_\mathrm{tor} = c_0 + c_1  \left(1 + \cos\phi \right) + c_2  \left(1 - \cos 2\phi \right) + c_3  \left(1 + \cos 3 \phi \right).
+\end{equation}
+
+For the penultimate thiolate ligands, the model molecule used was
+2-Butene-1-thiol, for which one bend angle (\ce{S-CH2-CHene}) was
+scanned to fit an equilibrium angle and force constant, as well as one
+torsion (\ce{S-CH2-CHene-CHene}).  The parameters for these two
+potentials also served as model for the longer conjugated thiolate
+ligands which require bend angle parameters for (\ce{S-CH2-CHar}) and
+torsion parameters for (\ce{S-CH2-CHar-CHar}).
+
+For the $C_4$ conjugated thiolate ligands, the model molecule for the
+quantum mechanical calculations was 1,3-Butadiene-1-thiol.  This
+ligand required fitting one bond (\ce{S-CHar}), and one bend angle
+(\ce{S-CHar-CHar}).
+
+The geometries of the model molecules were optimized prior to
+performing the constrained angle scans, and the fit values for the
+bond, bend, and torsional parameters were in relatively good agreement
+with similar parameters already present in TraPPE.
+
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{,}{,}
+\centering
+\caption{Bend angle parameters. The central atom in the bend is atom $j$.\label{tab:bend}}
+\begin{tabular}{ ccc|ccl }
+\toprule
+ $i$&$j$&$k$ & $\theta_0$ & $k_\mathrm{bend}$ & source\\
+    &   &    & ($\degree$) & (kcal/mol/rad\textsuperscript{2}) & \\
+ \colrule
+\ce{CH2} & \ce{CH2} & S         & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\ 
+\ce{CH3} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\ 
+\ce{CH2} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\ 
+CHene    & CHene    & \ce{CH3}  & 119.7   &   139.94& Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\ 
+CHene    & CHene    & \ce{CH2}  & 119.7   &   139.94& Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\ 
+\ce{CH2} & \ce{CH2} & CHene     & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\ 
+CHar     & CHar     & CHar      & 120.0   &   126.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\ 
+CHar     & CHar     & \ce{CH2}  & 120.0   &   140.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar     & CHar     & \ce{CH3}  & 120.0   &   140.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar     & CHar     & \ce{CH2ar}& 120.0   &   126.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+S        & \ce{CH2} & CHene     & 109.97  &  127.37 & This work  \\
+S        & \ce{CH2} & CHar      & 109.97  &  127.37 & This work  \\
+S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{,}{,}
+\centering
+\caption{Torsion parameters. The central atoms for each torsion are atoms $j$ and $k$,
+  and wildcard atom types are denoted by ``X''.  All $c_n$ parameters
+  have units of kcal/mol. The torsions around carbon-carbon double bonds
+  are harmonic and assume a trans (180$\degree$) geometry.  The force
+  constant for this torsion is given in $\mathrm{kcal~mol~}^{-1}\mathrm{degrees}^{-2}$.  \label{tab:torsion}}
+\begin{tabular}{ cccc|ccccl }
+\toprule
+ $i$&$j$&$k$&$l$& $c_0$&$c_1$& $c_2$ & $c_3$ & source\\
+ \colrule
+\ce{CH3} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2} & S        & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.thiols}\\ \colrule
+X        & CHene    & CHene    & X        & \multicolumn{4}{c}{\multirow{2}{*}{$V = \frac{0.008112}{2} (\phi - 180.0)^2$}} & \multirow{2}{*}{Ref. \protect\cite{TraPPE-UA.alkylbenzenes}} \\
+X        & CHar     & CHar     & X        &         & & & & \\ \colrule
+\ce{CH2} & \ce{CH2} & CHene    & CHene    & 1.368   & 0.1716   & -0.2181  &  -0.56081  & Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2} & CHene    & 0.0     & 0.7055   & -0.13551 &   1.5725   & Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+CHene    & CHene    & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
+CHar     & CHar     & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+\newpage
+\bibliographystyle{aip}
+\bibliography{NPthiols}
+\end{document}
