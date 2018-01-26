@@ -1,1 +1,120 @@
-stuff
+\section{Outline}
+%\singlespace
+\begin{enumerate}
+\item Heat Transport
+%The fundamental of heat flow through a system 
+	\begin{itemize}
+    \item How does heat move?
+    	\begin{itemize}
+    	\item What is a phonon (lattice wave)
+        \item process of heat transfer at an interface (image of wave material A/B)
+    	\end{itemize}
+	\item Diffuse Mismatch Model
+    	\begin{itemize}
+    	\item Assumptions
+        \item Calculating G
+%Under the diffuse mismatch model (DMM), the thermal conductance at an interface between $a$ and $b$ can be approximated,
+% \begin{equation}
+% G_{ab} = \frac{1}{4 \pi} \sum_p \int_\omega \int_\theta \int_\phi \hbar \omega \frac{\partial f}{\partial T}  v_a  \rho_a  \tau_{ab} \cos\theta \sin\theta d\theta d\phi d\omega
+% \end{equation}
+% where $f$ is the Bose-Einstein distribution function, $v_a(\omega, p)$
+% is the group velocity (on side $a$) for a phonon characterized by
+% frequency $\omega$, moving in direction ($\theta, \phi$) with
+% polarization $p$.  The relevant material properties are the density of
+% phonon states, $\rho_a(\omega, p)$ and the transmission probability,
+% $\tau_{ab}(\omega, p)$, at the
+% interface.\cite{Swartz:1989uq,Reddy:2005fk,Monachon2016}
+% %The DMM also assumes that phonons scatter into states with the same frequency on either side, and that the scattering phonons lose memory of their incident angles.  This requires a symmetry in the transmission probabilities,
+% % \begin{equation}
+% % \tau_{ab}(\omega) = 1 - \tau_{ba}(\omega)
+% % \end{equation}
+
+% The diffuse mismatch model has a number of significant issues,
+% particularly when the Debye model does a poor job representing the
+% density of states, or where there is a fictitious boundary between
+% identical materials (where the DMM predicts a non-zero
+% resistance).\cite{Monachon2016} There is also an assumption of
+% detailed balance built-in to the model,\cite{Chen2005} which requires
+% the two sides to be at equilibrium.  This assumption is violated under
+% non-equilibrium conditions, as in the RNEMD simulations used
+% here. Although the DMM is not quantitative, it does suggest a role for
+% frequency-dependent phonon transmission at the interface. It also
+% suggests that isolating the frequencies of the phonons that are moving
+% towards the interface could aid in understanding interfacial
+% conductance.
+% Using atomic velocities projected in a direction normal to the
+% interface,
+% \begin{equation}
+% v^{\perp}_i(t) = \mathbf{v}_i(t) \cdot \hat{\mathbf{n}},
+% \end{equation}
+% it is straightforward to compute vibrational power spectra,
+% \begin{equation}
+%   \rho^\perp (\omega) = \frac{1}{\tau} \int_{-\tau/2}^{\tau/2} \langle v^{\perp}(t) \cdot v^{\perp}(0) \rangle e^{-i\omega t} dt
+% \label{eq:DOS}
+% \end{equation}
+% which have been averaged over direction and polarization, where $\tau$
+% is the total observation time for the autocorrelation function.
+% We can use this to approximate the density of phonon states of the two
+% materials near the interface, which can provide a clearer picture of
+% vibrational communication between the two materials.
+% %We can also use information about the \textit{locations} of the vibrating atoms to arrive at a transmission model that gives a clearer picture of vibrational communication across the interface.
+% By further restricting the density of states calculation to specific
+% atoms at the metallic side of the interface, we hope to provide a
+% mechanism for heat flow from the solid and into the surrounding
+% liquid.        
+        
+    	\end{itemize}
+	\item Acoustic Mismatch Model
+    \begin{itemize}
+    \item Assumptions and transmission
+    \end{itemize}
+	\item Issues with models
+    \begin{itemize}
+    \item artificial boundaries
+    \end{itemize}
+	\item Current Methods?
+    \begin{itemize}
+    \item Need for a method that connects the interfaces
+    \end{itemize}
+	\end{itemize}
+\item Systems of interest
+	\begin{itemize}
+	\item Why Au particles
+	\end{itemize}
+\item Molecular Dynamics
+	\begin{itemize}
+    \item atomistic v. united atom v. coarse grain
+	\item Boundary Conditions
+    \item Eq Simulations
+    \item Non-Eq Simulations
+	\end{itemize}
+\item How to find thermal conductance
+	\begin{itemize}
+	\item Using Eq
+    \item Using Non-Eq
+    \item Using RNEMD
+	\end{itemize}
+\end{enumerate}
+% \section{Motivation and Background}
+% Thermal transport between nanoparticles and their surrounding environments depends on many factors, including particle size,\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016} composition,\cite{Wilson:2002uq, Ong:2013rt} surface modification,\cite{kuang:AuThl,Ong:2013rt,Ong:2014yq,Liu2015,Stocker2016,Hannah2015,Park2016} surface supports,\cite{Park2012} exposed surface facets,\cite{Hannah2015} and the chemical details of the environment.\cite{Ge2006,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Park2016} Nanoparticles have a significant fraction of their atoms at the particle / solvent interface so the chemical details of the interface (particle surface and protecting group) govern the thermal transport properties. Thus particle morphology may also play a role in heat transfer out of nanostructures.  
+% %This is the central question of this work -- all other things being equal, will different particle morphologies yield different heat transfer properties to the solvent?
+
+% Time-domain thermoreflectance (TDTR) measurements on planar self-assembled monolayer (SAM) junctions between quartz and gold films showed that surface chemistry, particularly the density of covalent bonds to the gold surface, can control energy transport between the two solids.\cite{Losego:2012fr} Experiments and simulations on three-dimensional nanocrystal arrays have similarly shown that surface-attached ligands mediate the thermal transport in these materials, placing particular importance on the overlap between the ligand and nanoparticle vibrational densities of states.\cite{Ong:2013rt,Ong:2014yq}
+
+% \subsubsection{Size- and temperature-dependent particle morphologies}
+% The nanoparticles simulated for this work range in size from 309 gold atoms to 14,993 gold atoms. 
+% Ercolessi \textit{et al.}\cite{Ercolessi1991} annealed at temperatures from 400K to 1400K and found the dominant structures for different sizes of gold particles ($N = 100 \text{-} 900$ gold atoms).  For $N = 100 \text{-} 200$, the structures were dominated by glassy clusters while for $N = 200 \text{-} 900$, the structures were predominantly cuboctahedral. Similarly, Myshlyavtsev and Stishenko found, when comparing gold nanostructures, a transition from primarily (100)-terminated cuboctahedral structures to a fully (111) icosahedral structures between 561 to 1,415 atoms, depending on the potential energy function.\cite{Myshlyavtsev2013}  Distinct vibrational densities of states have also been observed for the cuboctahedral clusters relative to icosahedra.\cite{Sauceda2015}
+
+% In a study of the thermal stability of gold icosahedra, Wang \textit{et al.}\cite{Wang2004} found that softening of the vertex and edge atoms occurs at $\approx$ 800K.  During this process they saw enhanced surface atom diffusion due to the mobility of the vertex and edge atoms. 
+
+% The size range ($N = 300 \text{-} 15,000$) and temperatures (250K) for the calculations described in simulations below exhibit stable icosahedra and spheres with relatively low surface atom mobility, except for the smallest ($r<15$~\AA) particles.
+
+% \subsubsection{Theory}
+% Under the diffuse mismatch model (DMM), the thermal conductance at an interface between $a$ and $b$ can be approximated,  
+% \begin{equation}
+% G_{ab} = \frac{1}{4 \pi} \sum_p \int_\omega \int_\theta \int_\phi \hbar \omega \frac{\partial f}{\partial T}  v_a  \rho_a  \tau_{ab} \cos\theta \sin\theta d\theta d\phi d\omega
+% \end{equation}
+% where $f$ is the Bose-Einstein distribution function, $v_a(\omega, p)$ is the group velocity (on side $a$) for a phonon characterized by frequency $\omega$, moving in direction ($\theta, \phi$) with polarization $p$.  The relevant material properties are the density of phonon states, $\rho_a(\omega, p)$ and the transmission probability, $\tau_{ab}(\omega, p)$, at the interface.\cite{Swartz:1989uq,Reddy:2005fk,Monachon2016}  The DMM also assumes that phonons scatter into states with the same frequency on either side, and that the scattering phonons lose memory of their incident angles.  This requires a symmetry in the transmission probabilities,
+% \begin{equation}
+% \tau_{ab}(\omega) = 1 - \tau_{ba}(\omega)
+% \end{equation}

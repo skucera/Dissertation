@@ -1,0 +1,26 @@
+\contentsline {chapter}{FIGURES}{iii}{chapter*.2}
+\contentsline {chapter}{TABLES}{vi}{chapter*.3}
+\contentsline {subsection}{\numberline {0.0.1}Interfacial Thermal Conductance of Metallic Nanoparticles}{3}{subsection.0.0.1}
+\contentsline {subsubsection}{\numberline {0.0.1.1}Structures of Self-Assembled Monolayers on Nanoparticles}{4}{subsubsection.0.0.1.1}
+\contentsline {subsection}{\numberline {0.0.2}Computational Details}{5}{subsection.0.0.2}
+\contentsline {subsubsection}{\numberline {0.0.2.1}Creating a thermal flux between particles and solvent}{5}{subsubsection.0.0.2.1}
+\contentsline {subsubsection}{\numberline {0.0.2.2}Interfacial Thermal Conductance}{7}{subsubsection.0.0.2.2}
+\contentsline {subsubsection}{\numberline {0.0.2.3}Force Fields}{8}{subsubsection.0.0.2.3}
+\contentsline {subsubsection}{\numberline {0.0.2.4}Simulation Protocol}{9}{subsubsection.0.0.2.4}
+\contentsline {subsection}{\numberline {0.0.3}Results}{13}{subsection.0.0.3}
+\contentsline {subsubsection}{\numberline {0.0.3.1}Corrugation of the Particle Surface}{15}{subsubsection.0.0.3.1}
+\contentsline {subsubsection}{\numberline {0.0.3.2}Orientation of Ligand Chains}{19}{subsubsection.0.0.3.2}
+\contentsline {subsubsection}{\numberline {0.0.3.3}Orientation of Interfacial Solvent}{22}{subsubsection.0.0.3.3}
+\contentsline {subsubsection}{\numberline {0.0.3.4}Solvent Penetration of Ligand Layer}{23}{subsubsection.0.0.3.4}
+\contentsline {subsubsection}{\numberline {0.0.3.5}Ligand-mediated Vibrational Overlap}{26}{subsubsection.0.0.3.5}
+\contentsline {subsection}{\numberline {0.0.4}Discussion}{29}{subsection.0.0.4}
+\contentsline {subsubsection}{\numberline {0.0.4.1}Size- and temperature-dependent particle morphologies}{34}{subsubsection.0.0.4.1}
+\contentsline {subsubsection}{\numberline {0.0.4.2}Theory}{35}{subsubsection.0.0.4.2}
+\contentsline {subsection}{\numberline {0.0.5}Computational Details}{37}{subsection.0.0.5}
+\contentsline {subsubsection}{\numberline {0.0.5.1}Force Fields}{38}{subsubsection.0.0.5.1}
+\contentsline {subsubsection}{\numberline {0.0.5.2}Simulation Protocol}{38}{subsubsection.0.0.5.2}
+\contentsline {subsection}{\numberline {0.0.6}Results and Discussion}{39}{subsection.0.0.6}
+\contentsline {subsubsection}{\numberline {0.0.6.1}Surface Atom Undercoordination}{42}{subsubsection.0.0.6.1}
+\contentsline {subsubsection}{\numberline {0.0.6.2}Phonon Spectra}{44}{subsubsection.0.0.6.2}
+\contentsline {subsubsection}{\numberline {0.0.6.3}A Simple Model for Bare Nanoparticle Conductance}{50}{subsubsection.0.0.6.3}
+\contentsline {subsection}{\numberline {0.0.7}Conclusions}{52}{subsection.0.0.7}

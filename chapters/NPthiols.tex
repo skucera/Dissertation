@@ -1,25 +1,3 @@
-%% ****** Start of file template.aps ****** %
-%%
-%%
-%%   This file is part of the APS files in the REVTeX 4 distribution.
-%%   Version 4.0 of REVTeX, August 2001
-%%
-%%
-%%   Copyright (c) 2001 The American Physical Society.
-%%
-%%   See the REVTeX 4 README file for restrictions and more information.
-%%
-%
-% This is a template for producing manuscripts for use with REVTEX 4.0
-% Copy this file to another name and then work on that file.
-% That way, you always have this original template file to use.
-%
-% Group addresses by affiliation; use superscriptaddress for long
-% author lists, or if there are many overlapping affiliations.
-% For Phys. Rev. appearance, change preprint to twocolumn.
-% Choose pra, prb, prc, prd, pre, prl, prstab, or rmp for journal
-%  Add 'draft' option to mark overfull boxes with black boxes
-%  Add 'showpacs' option to make PACS codes appear
 %\documentclass[aps,jcp,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for review and submission
 %\documentclass[aps,jcp,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4-1}  % for double-spaced preprint
 %\usepackage{graphicx}  % needed for figures
@@ -56,7 +34,7 @@
 %\keywords{}
 %\maketitle
 
-\section{Introduction}
+%\section{Introduction}
 
 Heat transport across various nanostructured interfaces has been the
 subject of intense experimental
@@ -135,7 +113,7 @@ and the effect of those gaps on the thermal conductance is unknown.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		INTERFACIAL THERMAL CONDUCTANCE OF METALLIC NANOPARTICLES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Interfacial Thermal Conductance of Metallic Nanoparticles}
+\subsection{Interfacial Thermal Conductance of Metallic Nanoparticles}
 
 For a solvated nanoparticle, it is possible to define a critical value
 for the interfacial thermal conductance,
@@ -163,7 +141,7 @@ solvent interface.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		STRUCTURE OF SELF-ASSEMBLED MONOLAYERS ON NANOPARTICLES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Structures of Self-Assembled Monolayers on Nanoparticles}
+\subsubsection{Structures of Self-Assembled Monolayers on Nanoparticles}
 
 Though the ligand packing on planar surfaces has been characterized
 for many different ligands and surface facets, it is not obvious
@@ -220,12 +198,12 @@ force field are given below and in the supporting information.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		COMPUTATIONAL DETAILS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Computational Details}
+\subsection{Computational Details}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		NON-PERIODIC VSS-RNEMD METHODOLOGY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Creating a thermal flux between particles and solvent}
+\subsubsection{Creating a thermal flux between particles and solvent}
 
 The non-periodic variant of the velocity shearing and scaling RNEMD
 algorithm (VSS-RNEMD)\cite{Stocker:2014qq} applies a series of
@@ -271,7 +249,7 @@ the primary quantity of interest.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		INTERFACIAL THERMAL CONDUCTANCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Interfacial Thermal Conductance}
+\subsubsection{Interfacial Thermal Conductance}
 
 As described in earlier work,\cite{Stocker:2014qq} the thermal
 conductance of each spherical shell may be defined as the inverse
@@ -296,7 +274,7 @@ interfacial thermal conductance of the ligand layer.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		FORCE FIELDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Force Fields}
+\subsubsection{Force Fields}
 
 Throughout this work, gold -- gold interactions are described by the
 quantum Sutton-Chen (QSC) model.\cite{Qi:1999ph} Previous
@@ -345,7 +323,7 @@ OpenMD.\cite{openmd,OOPSE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Simulation Protocol}
+\subsubsection{Simulation Protocol}
 
 Gold nanospheres with radii ranging from 10 - 25 \AA\ were created
 from a bulk fcc lattice and were thermally equilibrated prior to the
@@ -431,7 +409,7 @@ multiple surface-ligand configurations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		EFFECT OF PARTICLE SIZE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Results}
+\subsection{Results}
 
 We modeled four sizes of nanoparticles ($R =$ 10, 15, 20, and 25
 \AA). The smallest particle size produces the lowest interfacial
@@ -496,7 +474,7 @@ densities of states for the various ligands.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CORRUGATION OF PARTICLE SURFACE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Corrugation of the Particle Surface}
+\subsubsection{Corrugation of the Particle Surface}
 
 The bonding sites for thiols on gold surfaces have been studied
 extensively and include configurations beyond the traditional atop,
@@ -620,7 +598,7 @@ at the interface when ligands are added.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		MOBILITY OF INTERFACIAL SOLVENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{Mobility of Interfacial Solvent}
+% \subsubsection{Mobility of Interfacial Solvent}
 
 % Another possible mechanism for increasing interfacial conductance is
 % the mobility of the interfacial solvent.  We used a survival
@@ -655,7 +633,7 @@ at the interface when ligands are added.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		ORIENTATION OF LIGAND CHAINS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Orientation of Ligand Chains}
+\subsubsection{Orientation of Ligand Chains}
 
 Previous theoretical work on heat conduction through alkane chains has
 shown that short chains are dominated by harmonic interactions, where
@@ -711,7 +689,7 @@ ligand chain length -- and ligand flexibility -- increases.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		ORIENTATION OF INTERFACIAL SOLVENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Orientation of Interfacial Solvent}
+\subsubsection{Orientation of Interfacial Solvent}
 
 Similarly, we examined the distribution of \emph{hexane} molecule
 orientations relative to the particle surface using the same angular
@@ -766,7 +744,7 @@ that lacks well-formed channels for the solvent molecules to occupy.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SOLVENT PENETRATION OF LIGAND LAYER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Solvent Penetration of Ligand Layer}
+\subsubsection{Solvent Penetration of Ligand Layer}
 
 The extent of ligand -- solvent interaction is also determined by the
 degree to which these components occupy the same region of space
@@ -834,7 +812,7 @@ physical contact, there must also be good vibrational overlap between
 the phonon densities of states in the ligand and solvent to transmit
 vibrational energy between the two materials.
 
-\subsection{Ligand-mediated Vibrational Overlap}
+\subsubsection{Ligand-mediated Vibrational Overlap}
 
 In phonon scattering models for interfacial thermal
 conductance,\cite{Swartz:1989uq,Young:1989xy,Cahill:2003fk,Reddy:2005fk,Schmidt:2010nr}
@@ -913,7 +891,7 @@ longer chain lengths.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		DISCUSSION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Discussion}
+\subsection{Discussion}
 
 The chemical bond between the metal and the ligand introduces
 vibrational overlap that is not present between the bare metal surface
