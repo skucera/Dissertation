@@ -8,6 +8,7 @@
 %\usepackage{multirow}
 \section{Thermal Transport is Influenced by Nanoparticle Shape}
 %\begin{abstract}
+\subsection{Abstract}
   Molecular dynamics simulations were performed to model the
   interfacial thermal conductance ($G$) from bare gold nanoparticles
   (icosahedral, cuboctahedral, and spherical) to a hexane
@@ -34,7 +35,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		INTRODUCTION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Introduction}
+\subsection{Introduction}
 Thermal transport between nanoparticles and their surrounding
 environments depends on many factors, including particle
 size,\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016}
@@ -66,22 +67,22 @@ lower thermal conductance to the solvent. This makes intuitive sense
 -- one might expect the large particle limit to approach the behavior
 of flat interfaces.
 
-To test this hypothesis, we have computed heat transfer out of gold
-nanospheres that were in direct contact with a molecular solvent. The
+To test this hypothesis, heat transfer out of gold
+nanospheres that were in direct contact with a molecular solvent have been computed. The
 spheres were cut out of an infinite FCC lattice and spanned a range of
-sizes.  Because of the cuts in the underlying lattice, the spheres
+sizes.  The spheres
 expose many surface facets including patches of the (111), (100), and
-(110) facets.  We have compared the interfacial thermal conductance
-out of the spheres with similarly-sized icosahedral particles that
-exhibit only (111) facets and cuboctahedral particles that display
-only (111) and (100) facets. We have also compared the interfacial
-thermal conductance to flat interfaces that match the facets exposed
-on the surfaces of the spheres.
+(110) facets, due to the cuts in the underlying FCC lattice.
+The interfacial thermal conductance out of similarly-sized
+ icosahedral particles that exhibit only (111) facets and cuboctahedral particles that display
+only (111) and (100) facets have been compared to the spheres. 
+I have also compared the interfacial thermal conductance to flat interfaces 
+that match the facets exposed on the surfaces of the spheres.
 
 One possible explanation for an empirical relationship like
 Eq. (\ref{Tascini}) is that there is a significant contribution to
 interfacial thermal conductance that depends on the surface area to
-volume ratio, suggesting a large role for the surface atoms. In our
+volume ratio, suggesting a large role for the surface atoms. In 
 previous work, the thermal conductance out of chemically-modified gold
 surfaces was examined via reverse nonequilibrium molecular dynamics
 (RNEMD). \cite{kuang:AuThl,Stocker:2014qq,Stocker2016} %add citation
@@ -125,7 +126,7 @@ edge atoms.
 The size range ($N = 300 \text{-} 15,000$) and temperatures (250K) for
 the calculations described here exhibit stable icosahedra with
 relatively low surface atom mobility, except for the smallest
-($r<15$~\AA) particles, which may be metastable relative to
+($r = 18 -- 22$~\AA) particles, which may be metastable relative to
 cuboctahedra.
 
 \subsubsection{Theory}
@@ -146,7 +147,7 @@ interface.\cite{Swartz:1989uq,Reddy:2005fk,Monachon2016}
 % \end{equation}
 
 The diffuse mismatch model has a number of significant issues,
-particularly when the Debye model does a poor job representing the
+particularly when the Debye model is a poor representation of the
 density of states, or where there is a fictitious boundary between
 identical materials (where the DMM predicts a non-zero
 resistance).\cite{Monachon2016} There is also an assumption of
@@ -154,8 +155,8 @@ detailed balance built-in to the model,\cite{Chen2005} which requires
 the two sides to be at equilibrium.  This assumption is violated under
 non-equilibrium conditions, as in the RNEMD simulations used
 here. Although the DMM is not quantitative, it does suggest a role for
-frequency-dependent phonon transmission at the interface. It also
-suggests that isolating the frequencies of the phonons that are moving
+frequency-dependent phonon transmission at the interface and 
+that isolating the frequencies of the phonons moving
 towards the interface could aid in understanding interfacial
 conductance. 
 
@@ -171,18 +172,18 @@ it is straightforward to compute vibrational power spectra,
 \end{equation}
 which have been averaged over direction and polarization, where $\tau$
 is the total observation time for the autocorrelation function.  
-We can use this to approximate the density of phonon states of the two
+This can be used to approximate the density of phonon states of the two
 materials near the interface, which can provide a clearer picture of
 vibrational communication between the two materials. 
 %We can also use information about the \textit{locations} of the vibrating atoms to arrive at a transmission model that gives a clearer picture of vibrational communication across the interface.
 By further restricting the density of states calculation to specific
-atoms at the metallic side of the interface, we hope to provide a
+atoms at the metallic side of the interface, I hope to provide a
 mechanism for heat flow from the solid and into the surrounding
 liquid.
 
-To compute interfacial thermal conductance values directly, we rely on
+To compute interfacial thermal conductance values directly,
 reverse non-equilibrium molecular dynamics (RNEMD)
-simulations.\cite{Muller-Plathe:1997wq,Kuang:2012fe} RNEMD imposes an
+simulations are utilized.\cite{Muller-Plathe:1997wq,Kuang:2012fe} RNEMD imposes an
 unphysical kinetic energy exchange between the center of the particle
 and a spherical shell of solvent that is well-separated from the
 interface.  The system responds by creating a thermal gradient in the
@@ -225,8 +226,111 @@ Solvated gold nanoparticles ranging in diameter from 20-80 \AA\ were
 simulated using reverse non-equilibrium molecular dynamics (RNEMD) in
 a spherical shell of hexane. Similar planar systems, displaying (111),
 (110), and (100) facets with hexane solvent were also prepared.  The
-following sections describe the potentials used to calculate the
-interactions in the system as well as the simulation protocol.
+following sections describe the system composition, 
+the potentials used to calculate the
+interactions in the system, as well as the simulation protocol.
+
+\subsubsection{System Composition}
+\begin{table}
+\centering
+\caption{Composition of the solvated planar facet systems and the
+  physical extent of the gold slabs ($L_x$, $L_y$, and $L_z$). The
+  hexane molecules occupy the remainder of a 100 \AA\ box (length
+  measured along the $z$-axis).
+  \label{tab:facet}}
+\begin{tabular}{ c|cccc| c }
+\toprule
+Facet & Au atoms & $L_x$ (\AA) &$L_y$ (\AA) & $L_z$ (\AA) & Hexane Molecules\\
+\midrule
+(111) &  972 & 25.915   & 29.888 & 18.952 & 284      \\
+(110) & 1800 & 40.131   & 34.089 & 20.280 & 498      \\
+(100) & 1008 & 24.322   & 24.382 & 26.422 & 200      \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Composition of the solvated nanosphere simulations.
+  \label{tab:spheres}}
+\begin{tabular}{ c|cc }
+\toprule
+        & \multicolumn{2}{c}{Components}\\
+Particle Radius (\AA) & Au atoms & Hexane Molecules \\
+\midrule
+ 9.20 $\pm$ 0.28  & 249   &  2894      \\
+14.30 $\pm$ 0.31  & 887   &  6304      \\
+19.07 $\pm$ 0.28  & 1985  &  8555      \\
+24.09 $\pm$ 0.32  & 3925  & 11576      \\
+29.03 $\pm$ 0.29  & 6699  & 15376      \\
+34.01 $\pm$ 0.32  & 10641 &  9235      \\
+38.88 $\pm$ 0.31  & 15707 &  8056      \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Composition of the solvated icosahedral nanoparticle simulations.
+  \label{tab:icosahedra}}
+\begin{tabular}{ cc|cc }
+\toprule
+       &            & \multicolumn{2}{c}{Components}\\
+$n$ shells & radius (\AA) & Au atoms & Hexane Molecules \\
+\midrule
+4  &  9.45 $\pm$ 0.15  &   309 &  2894      \\
+5  & 11.75 $\pm$ 0.17  &   561 &  4320      \\
+6  & 14.07 $\pm$ 0.19  &   923 &  6304      \\
+7  & 16.39 $\pm$ 0.21  &  1415 &  7414      \\
+8  & 18.71 $\pm$ 0.25  &  2057 &  8555      \\
+9  & 21.04 $\pm$ 0.27  &  2869 &  8555      \\
+10 & 23.36 $\pm$ 0.30  &  3871 & 11576      \\
+11 & 25.69 $\pm$ 0.32  &  5083 & 11576      \\
+12 & 28.02 $\pm$ 0.35  &  6525 & 11576      \\
+13 & 30.35 $\pm$ 0.38  &  8217 &  7741      \\
+14 & 32.67 $\pm$ 0.41  & 10178 &  9235      \\
+15 & 35.00 $\pm$ 0.43  & 12430 & 10911      \\
+16 & 37.33 $\pm$ 0.66  & 14993 & 11576      \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Composition of the solvated cuboctahedral nanoparticle simulations.
+  \label{tab:cubos}}
+\begin{tabular}{ c|cc }
+\toprule
+        & \multicolumn{2}{c}{Components}\\
+ radius(\AA)      & Au atoms & Hexane Molecules \\
+\midrule
+ 7.41 $\pm$ 0.35  &   147 & 11360      \\
+10.16 $\pm$ 0.53  &   309 &  3387      \\
+12.15 $\pm$ 0.50  &   561 &  5888      \\
+14.98 $\pm$ 0.69  &   923 &  7414      \\
+16.93 $\pm$ 0.65  &  1415 &  9440      \\
+19.80 $\pm$ 0.85  &  2057 &  9380      \\
+21.73 $\pm$ 0.82  &  2869 & 10317      \\
+24.13 $\pm$ 0.90  &  3871 & 14185      \\
+26.53 $\pm$ 0.99  &  5083 & 19585      \\
+31.34 $\pm$ 1.15  &  8217 & 12626      \\
+36.15 $\pm$ 1.32  & 12431 & 17457     \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both the nanoparticle and planar systems contain only gold atoms and
+hexane molecules.  The composition of the planar systems can be found
+in Table \ref{tab:facet} and the nanoparticle system details can be
+found in Tables \ref{tab:spheres}, \ref{tab:icosahedra}, and \ref{tab:cubos}.
+
+Planar systems were constructed with the exposed $(hkl)$ facets
+directed normal to the positive and negative $z$-axis.  The simulation
+cell dimensions were set by the facet, and the simulation box was
+enlarged along the $z$ dimension to a fixed size of 100 \AA.  The
+remaining space was filled with hexane molecules to a density of
+0.6548 $\text{g cm}^{-3}$.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		FORCE FIELDS
@@ -243,23 +347,26 @@ bonds.\cite{Jorgensen98a} The interactions between Au atoms and atoms
 on the hexane molecules were fit to a pairwise Lennard-Jones
 potentials based on a study by Hautman and Klein for Au(111)
 surfaces.\cite{hautman:4994} Details of the interaction potentials are
-identical to previous work on heat transport for thiolate-protected
-gold nanospheres.\cite{Stocker2016}
+identical to previous work and previous chapter on heat 
+transport for thiolate-protected gold nanospheres.\cite{Stocker2016}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Simulation Protocol}
-The gold nanospheres were prepared in the same fashion as in Stocker
-\textit{et al}.\cite{Stocker2016} Icosahedral particles were
+The gold nanospheres were prepared by cutting a FCC lattice with radii ranging
+10 - 40 \AA\. 
+Icosahedral particles were
 constructed in nested shell structures, built around an ideal
 icosahedral core.  Cuboctahedral particles were built by cutting (111)
-and (100) facets from a FCC lattice.  Both icosahedral and
-cuboctahedral particles were thermally equilibrated before being
-solvated in the same manner as the spheres.  Once solvated, the
-systems were equilibrated for a minimum of 1 ns using the Langevin
-Hull integrator with an external bath characterized by 50 atm of
+and (100) facets from a FCC lattice.
+All particles were thermally equilibrated before being
+solvated with thermally equilibrated hexane using packmol\cite{packmol}.
+Once solvated, the systems were equilibrated for a minimum of 1 ns 
+using the Langevin Hull 
+integrator with an external bath characterized by 50 atm of
 pressure and a temperature bath at 250K.\cite{Vardeman2011}
+Random seeds were used in both the packing of the solvent and the equilibration process to ensure independent samples.
 
 Planar interfaces displaying the Au(111), Au(110), and Au(100) facets
 were prepared as slabs $\sim$ 20 \AA\ thick with the relevant facets
@@ -320,9 +427,9 @@ $\delta = -156.25~\text{MW \AA}~\text{m}^{-2}~\text{K}^{-1}$.
 Notably, our simulations project a value for the interfacial
 conductance of the infinite spheres that is significantly
 \textit{higher} than many of the flat facets.  To explain this
-observation, we discuss the surface density of undercoordinated atoms
+observation, the surface density of undercoordinated atoms
 and the vibrational densities of states of these undercoordinated
-atoms the following sections.
+atoms are discussed in the following sections.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/g-ico-spher-cub.pdf}
@@ -345,9 +452,33 @@ For icosahedral particles, there is no clear dependence of $G$ on the
 particle size, and the larger particles exhibit thermal conductance
 values slightly above the expected (111) conductance for particles
 with $r \approx 35$ \AA. There is some instability in the values of
-$G$ in the range of $r = 18-22$ \AA, which is near the 15 \AA\
+$G$ in the range of $r = 18-22$ \AA, which is near the 
 transition from stable icosahedra to
 cuboctahedra.\cite{Myshlyavtsev2013}
+
+\subsubsection{Hexane Density}
+The hexane density as function of distance from the gold at the
+interface of the planar facets is provided in Fig. \ref{fig:dens}. The
+solvent in the (111) and (100) systems display similar behavior, while
+the solvent near the (110) interface comes closer to the surface
+atoms.  In the (110) system, the first layer of hexane is spread out
+over a thicker slab in comparison to the other two systems and allows
+solvent to come closer to the interfacial atoms.  This is likely due
+to the ridges present on this interface.  Within 5 \AA\ of the
+interfacial gold layer, the three systems have the same amount of
+hexane.
+
+\begin{figure}
+        \includegraphics[width=\linewidth]{figures/stacked-hex-facets.pdf}
+        \caption{Hexane density as a function of distance from the
+          interfacial gold for the (111), (110), and (100) facets. The
+          solvent in the (111) and (100) systems display nearly
+          identical density profiles. Because the lowest-coordinated
+          gold atoms on the (110) facet have a relatively low surface
+          density, the hexane molecules are able to get closer to
+          these undercoordinated atoms.}
+        \label{fig:dens}
+\end{figure}
 
 \subsubsection{Surface Atom Undercoordination}
 For the three flat facets, the primary feature that differentiates the
@@ -360,10 +491,103 @@ Au(111) surface presents gold atoms with nine surrounding metallic
 atoms ($\text{CN} = 9$) to the solvent, while the Au(100) facet
 surface exposes atoms with $\text{CN}=8$.  Au(110) displays a
 corrugated surface where the two outer layers of atoms have
-$\text{CN}=7$ and $\text{CN}=11$, respectively (see Fig. S1 in the
-Supporting Information).  Both of these coordination environments
-approach the surface close enough to interact with the solvent atoms
-(see Fig. S6 in the SI).
+$\text{CN}=7$ and $\text{CN}=11$, respectively.
+Both of the (110) surface atoms coordination environments
+approach the surface close enough to interact with the solvent atoms.
+
+\begin{table}
+\centering
+\caption{Surface densities $(\text{\AA}^{-2})$ of undercoordinated
+  atoms in ideal geometries. $\ell~(\text{\AA})$ is the
+  lattice constant of the underlying FCC lattice.  The spheres and
+  cuboctahedra are calculated using a gold FCC lattice with $\ell = 4.08
+  \text{~\AA}$.  For cuboctahedral particles, the radius ($r$) is computed
+  using Eq. \eqref{r_ave}.
+  \label{tab:undercoord}}
+\begin{tabular}{ c|cccc }
+\toprule
+\multirow{2}{*}{surface} & \multicolumn{4}{c}{Coordination Number}\\
+        & 6 & 7 & 8 & 9 \\
+ \midrule
+(111)      & 0 & 0     & 0     & $\frac{4 \sqrt{3}}{3 \ell^2}$ \\
+(100)      & 0 & 0     & $\frac{2}{\ell^2}$ & 0     \\
+(110)      & 0 & $\frac{\sqrt{2}}{\ell^2}$ & 0     & 0     \\
+ \midrule
+Spheres (large $r$ limit)    & 0.021 & 0.025 & 0.021 & 0.032\\ \\
+Icosahedra ($n$ shells)  & $\frac{8\sqrt{3}}{5\ell^2n^2}$  &  0 &
+ $\frac{4\sqrt{3}(n-1)}{\ell^2n^2}$ &
+ $\frac{4(n - 1)}{\sqrt{3}\ell^2 n}$ \\ \\
+Cuboctahedra & 0 & $\frac{1}{r\ell} \left(\frac{3\sqrt{2} + 2\sqrt{6}}{3+\sqrt{3}}\right)$ & $\frac{6}{(3+\sqrt{3})\ell^2}$ & $\frac{4}{(3+\sqrt{3})\ell^2}$\\ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In Table \ref{tab:undercoord}, the surface density of
+undercoordinated atoms for a set of ideal geometries are provided.
+The population
+density for the sphere systems in the large radius limit are taken by
+averaging the surface densities for ideal gold nanospheres with radii
+of 95--100 \AA.  For other FCC-based nanoparticles, it is relatively
+simple to convert these surface densities using the lattice constant
+of gold, $\ell = 4.08 \text{~\AA}$.
+
+Planar facets have a fixed population density based on the number of
+exposed undercoordinated atoms and the physical dimensions of the
+exposed facet area in terms of the lattice constant.
+\begin{figure}[!htb]
+        \includegraphics[width=5in]{figures/facets-cn.pdf}
+        \caption{Locations of undercoordinated atoms on common gold
+          facets. The dark gold atoms indicate atoms of a particular
+          coordination number, cyan atoms denote the first nearest
+          neighbors of these atoms, and the partially transparent
+          lattice illustrates the location of the atoms in the larger
+          gold structure. (111) surfaces (lower left) display atoms
+          with CN=9, while (100) surfaces (upper left) display atoms
+          with CN=8, and (110) surfaces present surface atoms with
+          CN=7 and buried atoms with CN=11. }
+        \label{fig:facets-cn}
+\end{figure}
+
+In an ideal icosahedral nanoparticle with $n$ shells, the surface
+population density is computed using the number of vertex, edge, and
+face atoms,
+\begin{align}
+n_\text{vertex} & = 12, \\
+n_\text{edge} & = 30 (n -1), \\
+n_\text{face} & = 10 n^2 - 30 n + 20.
+\end{align}
+The number of shells, $n$, is also directly related to the particle
+edge length ($a$), radius ($r$), and surface area ($A$) of the
+icosahedral particle,
+\begin{align}
+a & = \ell~n \\
+r & = \frac{\ell~n~\sqrt{10+2\sqrt{5}}}{4} \\
+A & =  \ell^2~n^2~ 5 \sqrt{3}
+\end{align}
+where $\ell$ is the lattice constant.
+
+For ideal cuboctahedra, the edge length ($a$) can be used to determine
+surface areas for the eight triangular (111) faces and six square
+(100) faces,
+\begin{align}
+A_\mathrm{(111)} &= 2 \sqrt{3} a^2 \\
+A_\mathrm{(100)} &= 6 a^2
+\end{align}
+In addition, cuboctahedra have twenty-four edges (CN = 7, length =
+$a$), and twelve vertices (CN = 5).  An approximate radius of the
+cuboctahedral particles can be found by averaging the diameter between
+parallel square faces and parallel triangular faces,
+\begin{equation}
+r  = \frac{a}{2} \left(\frac{\sqrt{2}}{2} + \frac{\sqrt{6}}{3}\right)
+\label{r_ave}
+\end{equation}
+Tab. \ref{tab:undercoord}.  Surface densities of the CN=9 and CN=8
+sites are computed using the fraction of total surface area in each of
+the (111) and (100) facets, respectively.  For small particles, the
+edge atoms (CN=7) can dominate, but for larger particles, the ratio of
+CN=8 and CN=9 atoms is constant.
+
+
 
 % \begin{figure}
 % 	\includegraphics[width=\linewidth]{figures/stacked-hex-facets.pdf}
@@ -385,9 +609,23 @@ the undercoordination. In Table \ref{tab:au-den} we show the density
 of the solvent-accessible undercoordinated surface atoms for the three
 facets. Although the (110) facet displays 7- and 11-coordinated atoms
 to the solvent, the $\text{CN}=11$ have vibrational dynamics that are
-essentially equivalent to the bulk gold (Fig. S3 in the SI), and the
+essentially equivalent to the bulk gold (Fig. \ref{fig:cn-spect}), and the
 surface density of these atoms is significantly lower than the surface
 density displayed by the (111) and (100) facets.
+
+\begin{figure}[!htb]
+  \includegraphics[width=5in]{figures/surface-cn.pdf}
+  \caption{The normalized low frequency density of states (DOS) of the
+    surface atoms with the coordination number of 6, 7, 8, 9 and 11,
+    corresponding to the vertices of the icosahedra, Au(110), Au(100),
+    Au(111) and subsurface Au(110), respectively.  Note that CN=11
+    atoms near a surface are found adjacent to atoms with lower
+    coordination (e.g. CN=7), so the high frequency peak at 138
+    cm$^{-1}$ is present for both CN=11 and CN=7.  Low frequency
+    contributions at $\sim$ 70 cm$^{-1}$ are enhanced for surface
+    atoms with CN=7, 8, and 9.}
+  \label{fig:cn-spect}
+\end{figure}
 
 \begin{table}[h]
 \centering
@@ -492,18 +730,72 @@ states. In the spheres, the higher frequency contribution
 states for undercoordinated atoms with CN=8 or 7 (see Supporting
 Information).
 
+\subsubsubsection{A Brief Aside}
 The icosahedra still have perturbed spectra even four layers into the
 particles. Icosahedral particles grow around a core with
 $\mathrm{I}_h$ symmetry, and the local environment around the atoms
 deviates significantly from perfect FCC ordering.  The local bond
 orientational order can be described using the method of Steinhardt
-\textit{et al.}\cite{Steinhardt1983} Plots of the radial fraction of
-FCC ordering for all particles are shown in the Supporting
-Information, and they show substantial loss of FCC ordering in
-icosahedral particles.  The icosahedra therefore display phonon
-spectra that are enhanced in the higher frequency peaks
-($\sim 130 \text{~cm}^{-1}$) at the expense of the broad
-$\sim 60-80 \text{~cm}^{-1}$ feature.
+\textit{et al.}\cite{Steinhardt1983} 
+The local bonding environment,
+$\bar{q}_{\ell m}$, for each atom in the system is determined by
+averaging over the spherical harmonics between that atom and each of
+its neighbors,
+\begin{equation}
+\bar{q}_{\ell m} = \sum_i Y_\ell^m(\theta_i, \phi_i)
+\end{equation}
+where $\theta_i$ and $\phi_i$ are the relative angular coordinates of
+neighbor $i$ in the laboratory frame.  A global average orientational
+bond order parameter, $\bar{Q}_{\ell m}$, is the average over each
+$\bar{q}_{\ell m}$ for all atoms in the system. To remove the
+dependence on the laboratory coordinate frame, the third order
+rotationally invariant combination of $\bar{Q}_{\ell m}$,
+$\hat{w}_\ell$, is utilized here.\cite{Steinhardt1983,Vardeman:2008fk}
+
+For $\ell=4$, the ideal face-centered cubic (FCC) local structures
+exhibit $\hat{w}_4$ values near -0.159. Because $\hat{w}_4$ exhibits
+an extreme value for fcc structures, it is ideal for measuring local
+FCC ordering. The spatial distribution of $\hat{w}_4$ local bond
+orientational order parameters, $p(\hat{w}_4 , r)$, can provide
+information about the location of individual atoms that are central to
+local FCC ordering.
+
+The fraction of FCC-ordered gold atoms at a given radius in the
+nanoparticle,
+\begin{equation}
+        f_\mathrm{fcc}(r) = \int_{-\infty}^{w_c} p(\hat{w}_4, r) d \hat{w}_4
+\end{equation}
+is described by the distribution of the local bond orientational order
+parameters, $p(\hat{w}_4, r)$, and $w_c$, a cutoff for the peak
+$\hat{w}_4$ value displayed by fcc structures. As in our previous
+work,\cite{Stocker2016} $w_c$ value of -0.12 was chosen to isolate the
+fcc peak in $\hat{w}_4$.
+
+As shown in Fig. \ref{fig:struct-bowr}, the FCC ordering persists in
+the spheres even quite close to the surface, while the icosahedra have
+significant populations that deviate from FCC local ordering.  The
+cuboctahedra do not have uniform gold population between 30 and 40
+\AA, so the fraction of FCC ordering decays starting at 30 \AA.
+Although I cannot conclude that this is the cause of the differences
+in the VDOS for the icosahedral particles, it is likely that local
+ordering in the metal can alter the bulk densities of states.
+
+\begin{figure}[!htb]
+        \includegraphics[width=5in]{figures/struct-bowr.pdf}
+        \caption{The fraction of FCC-like local environments as a
+          function of radius from the center of 40 \AA\ nanoparticles.
+          The spheres and cuboctahedra are originally cut from a FCC
+          lattice, so the local ordering persists even close to the
+          surface.  Icosahedra are constructed as shells surrounding a
+          perfectly icosahedral central core of 13 atoms. Non-FCC
+          ordering persists throughout these simulations.}
+        \label{fig:struct-bowr}
+ \end{figure}
+
+%The icosahedra therefore display phonon
+%spectra that are enhanced in the higher frequency peaks
+%($\sim 130 \text{~cm}^{-1}$) at the expense of the broad
+%$\sim 60-80 \text{~cm}^{-1}$ feature.
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{figures/col-layer40.pdf}
@@ -551,7 +843,7 @@ model for the interfacial thermal conductance.
 
 Except in the case of the icosahedra, vibrational power spectra that
 include all gold atoms in the nanoparticles do not show significant
-dependence on particle radius (see Supporting Information).  This
+dependence on particle radius (see Figure \ref{fig:all-spect}.  This
 suggests that mismatch models (like AMM or DMM) that use only bulk
 properties will not be able to capture the surface behavior that is
 relevant to heat transfer at the nanoscale.
@@ -575,19 +867,42 @@ relevant to heat transfer at the nanoscale.
 
 Solvent vibrational densities of states are remarkably similar for the
 icosahedral and spherical particles, even for solvent that is within 5
-\AA\ of the interface (See Supporting Information). Therefore, we
-propose that any model for interfacial thermal transport in these
+\AA\ of the interface (Fig. \ref{fig:all-spect}). 
+While the solvent VDOS in the icosahedral
+and spherical systems shows only small changes as a function of
+particle size, the solvent in the cuboctahedral systems appears to
+shift to lower frequencies with increasing particle radius.  The gold
+VDOS in all systems displays a shift from the low frequency peak,
+$70 \mathrm{~cm}^{-1}$, to a peak at $125 \mathrm{~cm}^{-1}$ as the
+particle radii increases and there is a significant difference between
+the two FCC structures and the icosahedra spectra.  The FCC structures
+increase in intensity at $125 \mathrm{~cm}^{-1}$ with increasing
+particle radius, while the icosahedra VDOS shows a shift in population
+from low frequencies to the higher frequency peak.  Note that the gold
+shown in Fig. \ref{fig:all-spect} includes all layers of the
+particles.
+
+Due to the similarity in solvent VDOS, a model for interfacial 
+thermal transport in these
 systems would need to include the lattice structure of the particle
 and the quantity and solvent accessibility of specific kinds of
 undercoordinated metal atoms.
+
+\begin{figure}[!htb]
+        \includegraphics[width=5in]{figures/all-spect.pdf}
+        \caption{The normalized low frequency density of states (DOS)
+          of the interfacial solvent and the gold particle for the
+          icosahedral and spherical systems. }
+        \label{fig:all-spect}
+\end{figure}
 
 \subsubsection{A Simple Model for Bare Nanoparticle Conductance}
 The vibrational densities of states suggest the bare metallic
 nanoparticles exhibit different bulk phonon frequencies that depend on
 crystalline packing, and different surface spectra that depend on
 surface undercoordination.  Both of the bulk and surface frequencies
-can effect thermal transport, so we provide a simple model in terms of
-a linear combination of surface densities of undercoordinated atoms,
+can effect thermal transport, so a simple model in terms of a linear 
+combination of surface densities of undercoordinated atoms can be explored,
 \begin{equation}
 G \approx a~\mathrm{CN}_{6} + b~\mathrm{CN}_{7} + c~\left(1+c^{\prime}~\delta_\mathrm{ico}\right)~\mathrm{CN}_{8} + d~\left( 1 + d^{\prime}~\delta_\mathrm{ico} \right)~\mathrm{CN}_{9}
 \label{eq:lin-fit}
@@ -602,6 +917,19 @@ differences in the bulk density of states in the icosahedral
 particles.  Fitting the six parameters was done using a simple
 ordinary least squares model with data from all simulated particles.
 
+\begin{table}
+\centering
+\caption{Parameters of the Model in Eq. (\ref{eq:lin-fit}).
+  \label{tab:coeff to fit}}
+\begin{tabular}{ cccccc }
+\toprule
+ $a$ & $b$ & $c$ & $c^{\prime}$ & $d$ & $d^{\prime}$ \\
+\midrule
+ 858.9405 & 183.9062 & 291.7960 & -0.5943 & 369.6250 & -0.2498 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 With Eq. \eqref{eq:lin-fit} it should be possible to predict the
 interfacial thermal conductance for bare gold nanoparticles in hexane
 based only on a structural analysis of the surface for coordination
@@ -611,7 +939,24 @@ given in Fig. \ref{fig:models}.  With a coefficient of determination
 ($R^2$) value of 0.656, this fit does not predict $G$ with a high
 degree of certainty, but it does suggest the large role that
 undercoordinated surface atoms play in conductance. Coefficients used
-in Eq. \eqref{eq:lin-fit} are given in the supporting information.
+in Eq. \eqref{eq:lin-fit} are given in Table \ref{tab:coeff to fit}.
+
+The coefficients provide some information about the thermal transport
+capabilities of each type of undercoordinated surface atom. These fits
+suggest that severely undercoordinated atoms (CN=6) transfer the
+largest amount of heat per atom, although their population in all
+systems is low.
+
+It is also important to note that this fit considers the two different
+types of particles when finding the best fits for the most populous
+surface atoms (CN=8, CN=9).  If the system is FCC-like the weight of
+the CN = 8 and CN = 9 are 2.464 and 1.333 times larger than their
+contributions from icosahedral cores.
+
+Since the coefficients are related to the amount of energy transfered
+per atom type, these atoms on the FCC-like structures transfer a
+larger amount than in the icosahedral structure.  This is likely due
+to differences in the underlying ``bulk'' densities of states.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/models.pdf}
@@ -621,20 +966,9 @@ in Eq. \eqref{eq:lin-fit} are given in the supporting information.
 
 % The vibrational density of states (VDOS) of the materials at the interface calculates the occupied low frequency phonon modes of the materials.
 % As the radii of the particles increases, the VDOS of all gold atoms does not see a significant change below $100$ $cm^{-1}$ in either of the spherical systems, as seen in Supporting Information. 
-% From the individual components of the interface, the frequency dependent transmission probability ($\tau_{a \rightarrow b}$) can be calculated based on a transmission model proposed by Schmidt \cite{Schmidt:2010} \textit{et al},
 
-% where $v_a$ and $v_b$ are the speed of sound in gold and hexane respectively. 
-% The $\rho(\omega)$ in Eq. \ref{transmission} are the density of state for the interfacial region of the system; surface gold atoms and hexane within 5 $\AA$ of gold atoms.
 
-% \begin{figure}
-% 	\includegraphics[width=\linewidth]{figures/layer-comp.pdf}
-% 	\caption{The vibrational density of states of individual layers in spherical systems (Sphere: top panel; Icosahedra: bottom panel) with the particle radii of 20 $\AA$. The surface layer (green) contributes most of the low frequency population. In both systems the low frequency peak shifts to $\approx$ 80 $cm^{-1}$ and the bulk peak, $\approx$ 125 $cm^{-1}$, is highly populated by the third layer into the particle. }
-% 	\label{fig:layer}
-% \end{figure}
 
-% The density of states for the icosahedral and nanosphere systems, as seen in Fig. \ref{fig:ico-v-sphere-spect}, have a similar trend in the rise in intensity for the peak at $\approx$ 125 $cm^-1$ as the radii of the particle increases.
-% The first peak in the gold DOS, at $\approx$ 60 $cm^-1$, decreases in intensity as the icosahedra radii increases while that peak slightly broadens as the nanosphere radii increases.
-% In the interfacial solvent DOS the hexane low frequency vibrations are perturbed by the increase in particle radii in the nanosphere systems whereas the DOS for solvent in the icosahedral systems is essentially unperturbed by the particle radii.
 
 \subsection{Conclusions}
 The primary observation of this work is that particle morphology has a
@@ -644,7 +978,7 @@ cuboctahedra particles have a size-dependent interfacial thermal
 conductance, while icosahedral particles conduct heat to the
 surrounding solvent only slightly better than the flat (111) facets.
 
-We have explored one explanation for this difference in terms of the
+This work explored one explanation for this difference in terms of the
 density of undercoordinated sites on the surfaces of these three
 particle morphologies. Nanospheres, because they are carved out of an
 underlying FCC lattice, expose significantly undercoordinated atoms
