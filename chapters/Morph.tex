@@ -50,7 +50,7 @@ nanostructures.  This is the central question of this work -- all
 other things being equal, will different particle morphologies yield
 different heat transfer properties to the solvent?
 
-Tascini \textit{et al.}\cite{Tascini2016} recently studied the
+Tascini \textit{et al.}\cite{Tascini2016} studied the
 curvature dependence of the interfacial thermal conductance for
 partially solvated nanospheres. They found an empirical relationship,
 \begin{equation}
@@ -126,7 +126,7 @@ edge atoms.
 The size range ($N = 300 \text{-} 15,000$) and temperatures (250K) for
 the calculations described here exhibit stable icosahedra with
 relatively low surface atom mobility, except for the smallest
-($r = 18 -- 22$~\AA) particles, which may be metastable relative to
+($r = 18 \text{-} 22$~\AA) particles, which may be metastable relative to
 cuboctahedra.
 
 \subsubsection{Theory}
@@ -231,6 +231,11 @@ the potentials used to calculate the
 interactions in the system, as well as the simulation protocol.
 
 \subsubsection{System Composition}
+Both the nanoparticle and planar systems contain only gold atoms and
+hexane molecules.  The composition of the planar systems can be found
+in Table \ref{tab:facet} and the nanoparticle system details can be
+found in Tables \ref{tab:spheres}, \ref{tab:icosahedra}, and \ref{tab:cubos}.
+
 \begin{table}
 \centering
 \caption{Composition of the solvated planar facet systems and the
@@ -319,11 +324,6 @@ $n$ shells & radius (\AA) & Au atoms & Hexane Molecules \\
 \end{tabular}
 \end{table}
 
-Both the nanoparticle and planar systems contain only gold atoms and
-hexane molecules.  The composition of the planar systems can be found
-in Table \ref{tab:facet} and the nanoparticle system details can be
-found in Tables \ref{tab:spheres}, \ref{tab:icosahedra}, and \ref{tab:cubos}.
-
 Planar systems were constructed with the exposed $(hkl)$ facets
 directed normal to the positive and negative $z$-axis.  The simulation
 cell dimensions were set by the facet, and the simulation box was
@@ -355,13 +355,13 @@ transport for thiolate-protected gold nanospheres.\cite{Stocker2016}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Simulation Protocol}
 The gold nanospheres were prepared by cutting a FCC lattice with radii ranging
-10 - 40 \AA\. 
+10 - 40 \AA. 
 Icosahedral particles were
 constructed in nested shell structures, built around an ideal
 icosahedral core.  Cuboctahedral particles were built by cutting (111)
 and (100) facets from a FCC lattice.
 All particles were thermally equilibrated before being
-solvated with thermally equilibrated hexane using packmol\cite{packmol}.
+solvated with thermally equilibrated hexane using packmol.\cite{packmol}
 Once solvated, the systems were equilibrated for a minimum of 1 ns 
 using the Langevin Hull 
 integrator with an external bath characterized by 50 atm of
@@ -410,7 +410,8 @@ computed using RNEMD simulations, and was compared with the same
 quantity for a series of planar gold interfaces, including the
 Au(111), Au(100), and Au(110) interfaces.  These surfaces are all
 exhibited as microfacets on the surfaces of the nanospheres, and the
-Au(111) facet is the primary facet displayed by the icosahedra.
+Au(111) facet is the primary facet displayed by the icosahedra,
+where the cuboctahedra display Au(111) and Au(100).
 
 Computed interfacial thermal conductance values for the icosahedra,
 cuboctahedra, nanospheres, and flat facets are shown in
@@ -484,14 +485,14 @@ hexane.
 For the three flat facets, the primary feature that differentiates the
 facets is the coordination number (CN) of the atoms that are exposed
 to the solvent. In bulk Au, the coordination number of the atoms is
-12; six neighbors in plane, three below the atom, and three above the
-atom. Any atom with a coordination number below 12 would exhibit more
+twelve; six neighbors in plane, three below the atom, and three above the
+atom. Any atom with a coordination number below twelve would exhibit more
 vibrational freedom and is considered an undercoordinated site. The
 Au(111) surface presents gold atoms with nine surrounding metallic
 atoms ($\text{CN} = 9$) to the solvent, while the Au(100) facet
 surface exposes atoms with $\text{CN}=8$.  Au(110) displays a
 corrugated surface where the two outer layers of atoms have
-$\text{CN}=7$ and $\text{CN}=11$, respectively.
+$\text{CN}=7$ and $\text{CN}=11$, respectively (displayed in \ref{fig:facets-cn}).
 Both of the (110) surface atoms coordination environments
 approach the surface close enough to interact with the solvent atoms.
 
@@ -547,7 +548,6 @@ exposed facet area in terms of the lattice constant.
           CN=7 and buried atoms with CN=11. }
         \label{fig:facets-cn}
 \end{figure}
-
 In an ideal icosahedral nanoparticle with $n$ shells, the surface
 population density is computed using the number of vertex, edge, and
 face atoms,
@@ -581,7 +581,7 @@ parallel square faces and parallel triangular faces,
 r  = \frac{a}{2} \left(\frac{\sqrt{2}}{2} + \frac{\sqrt{6}}{3}\right)
 \label{r_ave}
 \end{equation}
-Tab. \ref{tab:undercoord}.  Surface densities of the CN=9 and CN=8
+Table \ref{tab:undercoord}.  Surface densities of the CN=9 and CN=8
 sites are computed using the fraction of total surface area in each of
 the (111) and (100) facets, respectively.  For small particles, the
 edge atoms (CN=7) can dominate, but for larger particles, the ratio of
@@ -605,9 +605,9 @@ displays an intermediate conductance even though the surface atoms
 have a lower coordination number than the (100) facet.  To answer this
 question, it is important to consider the surface density of the
 undercoordinated atoms as well as the vibrational freedom allowed by
-the undercoordination. In Table \ref{tab:au-den} we show the density
+the undercoordination. In Table \ref{tab:au-den} the density
 of the solvent-accessible undercoordinated surface atoms for the three
-facets. Although the (110) facet displays 7- and 11-coordinated atoms
+facets is shown. Although the (110) facet displays 7- and 11-coordinated atoms
 to the solvent, the $\text{CN}=11$ have vibrational dynamics that are
 essentially equivalent to the bulk gold (Fig. \ref{fig:cn-spect}), and the
 surface density of these atoms is significantly lower than the surface
@@ -700,13 +700,10 @@ the cuboctahedra are no longer dominated by edge atoms and flat facets
 form the majority of the surface. After this transition the surface
 densities quickly stabilize to nearly-ideal cuboctahedral structures.
 
-Calculations of the population densities of under-coordinated surface
-atoms for ideal geometries are given in the Supporting Information.
-
 \subsubsection{Phonon Spectra}
 By selecting specific groups of atoms while computing the vibrational
-power spectrum (Eq. \ref{eq:DOS}) we can explore the role of
-undercoordination on surface vibrational motion. For thermal
+power spectrum (Eq. \ref{eq:DOS}) the role of
+undercoordination on surface vibrational motion can be explored. For thermal
 transport, the regions of interest are the nanoparticle atoms in
 direct physical contact with the solvent, and those solvent molecules
 that form the first solvation shell, i.e. $< 5 \text{\AA}$ from the
@@ -727,8 +724,8 @@ states relatively close to the surface -- only the surface and second
 shell are significantly altered from the bulk gold density of
 states. In the spheres, the higher frequency contribution
 ($\sim 150 \text{~cm}^{-1}$) resembles the vibrational density of
-states for undercoordinated atoms with CN=8 or 7 (see Supporting
-Information).
+states for undercoordinated atoms with CN=8 or 7 (see 
+Fig. \ref{fig:cn-spect}).
 
 \subsubsubsection{A Brief Aside}
 The icosahedra still have perturbed spectra even four layers into the
@@ -843,7 +840,7 @@ model for the interfacial thermal conductance.
 
 Except in the case of the icosahedra, vibrational power spectra that
 include all gold atoms in the nanoparticles do not show significant
-dependence on particle radius (see Figure \ref{fig:all-spect}.  This
+dependence on particle radius (see Fig. \ref{fig:all-spect}.  This
 suggests that mismatch models (like AMM or DMM) that use only bulk
 properties will not be able to capture the surface behavior that is
 relevant to heat transfer at the nanoscale.
