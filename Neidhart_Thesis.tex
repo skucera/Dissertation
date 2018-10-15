@@ -48,19 +48,20 @@
 \usepackage{abraces}
 \usepackage{threeparttable}
 \usepackage{multirow}
+%\usepackage{multicolumn}
 \usepackage{dcolumn}
 \usepackage[export]{adjustbox}
 \usepackage{mathrsfs}
 
 % \setcitestyle{square}
 
-\newcommand*{\citen}[1]{%
-  \begingroup
-    \romannumeral-`\x % remove space at the beginning of \setcitestyle
-    \setcitestyle{numbers}%
-    \cite{#1}%
-  \endgroup   
-}
+%\newcommand*{\citen}[1]{%
+%  \begingroup
+%    \romannumeral-`\x % remove space at the beginning of \setcitestyle
+%    \setcitestyle{numbers}%
+%    \cite{#1}%
+%  \endgroup   
+%}
 
 \newcommand{\degree}{\ensuremath{^\circ}}
 
@@ -76,11 +77,21 @@
 \department{Chemistry and Biochemstry}
 \maketitle
 
-\copyrightholder{Suzanne M. Neidhart} 
-\copyrightyear{2017}           
-\makecopyright
+%\copyrightholder{Suzanne M. Neidhart} 
+%\copyrightyear{2018}           
+%\makecopyright
 
 \begin{abstract}
+In this dissertation I present work on elucidating factors important to heat transport in gold nanostructures, particularly nanoparticles, examining the effect of particle size, ligand layer rigidity, and surface gold vibrational freedom. The interfacial thermal conductance of various particles, as well as the thermal conductivity of nanoarrays that are of interest to see trends in heat transport.
+Direct simulations of interfacial thermal conductance of solvated gold nanoparticles using molecular dynamics were calculated. All particle simulations used the Langevin Hull method for non-periodic systems.
+
+Experimental nanoparticles contain a moiety, or ligand layer, at the surface of each particle that prevents aggregation and is a result of the method used in the formation of the particles. This moiety is essential in controlling movement of heat from a particle to the surrounding media. In particular, the following study looks closely at how the rigidity of this ligand layer and the length of the ligand change thermal transport at the interface of the particle. This allows for further insight into the important factors for ligand and solvent interactions to optimize heat flow. Proposed mechanisms for heat transfer rely on two effects: the vibrational overlap of the materials at the interface and the density overlap of the same materials.
+
+After finding no direct relationship for particle size with the ligand layer and the thermal transport, a simpler system was examined: bare nanoparticles in solvent.
+The particles consist of nanospheres, icosahedra, and cuboctahedra. The latter two display facets that are common in many nanostructures due to their stability.
+The interfacial thermal conductivity (G) of the particles was examined based on radius and particle type. The coordination of gold atoms at the particle surface, giving information about the vibrational freedom, displayed a slight correlation with G. This supports the proposed important factors for heat transport found in the ligand layer work.
+
+Finally, the ideas from both prior works are combined to study $Au_{144}PET_{60}$ particles in isolation and in an array. These small particles ($r \approx 10$ \AA) have highly undercoordinated gold atoms within the ligand layer.
 \end{abstract}
 
 % \renewcommand{\dedicationname}{NEW DEDICATION NAME}
@@ -110,7 +121,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CHAPTER 1 -- INTRODUCTION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{chapters/Introduction}
+\include{chapters/Introduction}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CHAPTER 2 -- Ligand Dependence of the Thermal Conductivity
@@ -120,34 +131,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CHAPTER 3 -- Morphology Dependence of the Interfacial Thermal Conductance
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{chapters/Morph}
+%\include{chapters/Morph}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CHAPTER 4 -- Staple Motifs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{chapters/StapleMotifs}
+%\include{chapters/StapleMotifs}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CHAPTER 5 -- Conclusion
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{chapters/Conclusion}
+%\include{chapters/Conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%		CHAPTER 6 -- Shear Viscosity of QLL
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{Chapters/qllViscosity}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%		CHAPTER 7 --Droplets
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{Chapters/iceWater2}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%		CHAPTER 8 -- Conclusion
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{Chapters/conclusion}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		UNNUMBERED CHAPTER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,9 +172,9 @@
  
  % \bibliographystyle{nddiss2e}
  % \bibliographystyle{nddiss2enoarticletitles}
- \bibliographystyle{achemso}
+\bibliographystyle{achemso}
  % \bibliographystyle{abbrvnat} 
- %\bibliography{Louden_Thesis} 
+\bibliography{Neidhart_Thesis} 
  
  % The standard abbrvnat style should be acceptable. Also provided with both the advanced and standard distributions are nddiss2e and nddiss2enoarticletitles style options. If you prefer to manually enter your bibliography, that is fine. Comment out the previous two lines, and enter your bibliography as usual. Note that if you choose this route, formatting the bibliography is your responsibility. An example is below, including the optional arguments necessary for author-date style citations.
  
