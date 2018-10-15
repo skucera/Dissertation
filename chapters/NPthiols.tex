@@ -152,7 +152,7 @@ bulk fcc lattice.  These particles were passivated with a 50\%
 coverage (compared with the coverage densities reported by Badia
 \textit{et al.}) of a selection of thiolates.  Three straight-chain
 thiolates of varying chain lengths and rigidities were utilized.
-These are summarized in Fig. \ref{fig:structures}.  The passivated
+These are summarized in Figure \ref{fig:structures}.  The passivated
 particles were then solvated in hexane.  Details on the united atom
 force field are given below.
 
@@ -276,14 +276,14 @@ potentials were used for non-bonded interactions.
  \toprule
 Site & mass & $\sigma_{ii}$ & $\epsilon_{ii}$ & $\sigma_{\ce{Au}-i}$ & $\epsilon_{\ce{Au}-i}$  & source \\
      & (amu)& (\AA)        & (kcal/mol)     & (\AA)             &  (kcal/mol)          &  \\
- \colrule
+ %\columnrule
  \ce{CH3}    & 15.04    & 3.75  & 0.1947 & 3.54   & 0.2146 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
  \ce{CH2}    & 14.03    & 3.95  & 0.09141& 3.54   & 0.1749 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
  CHene       & 13.02    & 3.73  & 0.09340& 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
  S           & 32.0655  & 4.45  & 0.2504 & 2.40   & 8.465  & Refs. \protect\cite{landman:1998} ($\sigma$) and \protect\cite{vlugt:cpc2007154} ($\epsilon$) \\
  CHar        & 13.02    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
  \ce{CH2ar}  & 14.03    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
- \botrule
+ \bottomrule
 \end{tabular}
 \bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
@@ -307,7 +307,7 @@ OPLS-AA force field.\cite{Jorgensen:1996sf}
  \toprule
  $i$&$j$ & $r_0$ & $k_\mathrm{bond}$ & source \\
     &    & (\AA) & $(\mathrm{~kcal/mole/\AA}^2)$ & \\
- \colrule
+ %\columnrule
 \ce{CH3}   & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf}\\
 \ce{CH3}   & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
 \ce{CH2}   & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
@@ -320,7 +320,7 @@ CHar       & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenz
 CHar       & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
 \ce{CH2ar} & CHar     & 1.40    & 938  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
 S          & CHar     & 1.80384 & 527.951 & This Work \\
- \botrule
+ \bottomrule
 \end{tabular}
 \bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
@@ -365,6 +365,22 @@ performing the constrained angle scans, and the fit values for the
 bond, bend, and torsional parameters were in relatively good agreement
 with similar parameters already present in TraPPE.
 
+To derive suitable parameters for the thiolates adsorbed on Au(111)
+surfaces, we adopted the S parameters from Luedtke and
+Landman\cite{landman:1998} and modified the parameters for the CTS
+atom to maintain charge neutrality in the molecule.
+
+Other interactions between metal (Au) and non-metal atoms were adapted
+from an adsorption study of alkyl thiols on gold surfaces by Vlugt,
+\textit{et al.}\cite{vlugt:cpc2007154} They fit an effective pair-wise
+Lennard-Jones form of potential parameters for the interaction between
+Au and pseudo-atoms CH$_x$ and S based on a well-established and
+widely-used effective potential of Hautman and Klein for the Au(111)
+surface.\cite{hautman:4994}
+All simulations were carried out with the open
+source molecular dynamics package,
+OpenMD.\cite{openmd,OOPSE}
+
 \begin{table}[h]
 \bibpunct{}{}{,}{n}{,}{,}
 \centering
@@ -373,7 +389,7 @@ with similar parameters already present in TraPPE.
 \toprule
  $i$&$j$&$k$ & $\theta_0$ & $k_\mathrm{bend}$ & source\\
     &   &    & ($\degree$) & (kcal/mol/rad\textsuperscript{2}) & \\
- \colrule
+ %\columnrule
 \ce{CH2} & \ce{CH2} & S         & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
 \ce{CH3} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
 \ce{CH2} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
@@ -387,7 +403,7 @@ CHar     & CHar     & \ce{CH2ar}& 120.0   &   126.0 & Refs. \protect\cite{TraPPE
 S        & \ce{CH2} & CHene     & 109.97  &  127.37 & This work  \\
 S        & \ce{CH2} & CHar      & 109.97  &  127.37 & This work  \\
 S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
- \botrule
+ \bottomrule
 \end{tabular}
 \bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
@@ -403,38 +419,20 @@ S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
 \begin{tabular}{ cccc|ccccl }
 \toprule
  $i$&$j$&$k$&$l$& $c_0$&$c_1$& $c_2$ & $c_3$ & source\\
- \colrule
+ %\columnrule
 \ce{CH3} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
 \ce{CH2} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
-\ce{CH2} & \ce{CH2} & \ce{CH2} & S        & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.thiols}\\ \colrule
+\ce{CH2} & \ce{CH2} & \ce{CH2} & S        & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.thiols}\\ %\columnrule
 X        & CHene    & CHene    & X        & \multicolumn{4}{c}{\multirow{2}{*}{$V = \frac{0.008112}{2} (\phi - 180.0)^2$}} & \multirow{2}{*}{Ref. \protect\cite{TraPPE-UA.alkylbenzenes}} \\
-X        & CHar     & CHar     & X        &         & & & & \\ \colrule
+X        & CHar     & CHar     & X        &         & & & & \\ %\columnrule
 \ce{CH2} & \ce{CH2} & CHene    & CHene    & 1.368   & 0.1716   & -0.2181  &  -0.56081  & Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
 \ce{CH2} & \ce{CH2} & \ce{CH2} & CHene    & 0.0     & 0.7055   & -0.13551 &   1.5725   & Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
 CHene    & CHene    & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
 CHar     & CHar     & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
- \botrule
+ \bottomrule
 \end{tabular}
 \bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
-
-To derive suitable parameters for the thiolates adsorbed on Au(111)
-surfaces, we adopted the S parameters from Luedtke and
-Landman\cite{landman:1998} and modified the parameters for the CTS
-atom to maintain charge neutrality in the molecule.
-
-Other interactions between metal (Au) and non-metal atoms were adapted
-from an adsorption study of alkyl thiols on gold surfaces by Vlugt,
-\textit{et al.}\cite{vlugt:cpc2007154} They fit an effective pair-wise
-Lennard-Jones form of potential parameters for the interaction between
-Au and pseudo-atoms CH$_x$ and S based on a well-established and
-widely-used effective potential of Hautman and Klein for the Au(111)
-surface.\cite{hautman:4994} 
-All simulations were carried out with the open 
-source molecular dynamics package,
-OpenMD.\cite{openmd,OOPSE}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -481,7 +479,7 @@ ligands.
 \end{figure}
 
 Once equilibrated, thermal fluxes were applied for 1 ns, until stable
-temperature gradients had developed (see figure
+temperature gradients had developed (see Figure
 \ref{fig:temp_profile}). Systems were run under moderate pressure (50
 atm) with an average temperature (250K) that maintained a compact
 solvent cluster and avoided formation of a vapor layer near the heated
@@ -529,7 +527,7 @@ multiple surface-ligand configurations.
 We modeled four sizes of nanoparticles ($R =$ 10, 15, 20, and 25
 \AA). The smallest particle size produces the lowest interfacial
 thermal conductance values for most of the of protecting groups
-(Fig. \ref{fig:NPthiols_G}).  Between the other three sizes of
+(Figure \ref{fig:NPthiols_G}).  Between the other three sizes of
 nanoparticles, there is no systematic dependence of the interfacial
 thermal conductance on the nanoparticle size. It is likely that the
 differences in local curvature of the nanoparticle sizes studied here
@@ -566,14 +564,13 @@ particles, providing more efficient scattering of phonons into the
 ligand / solvent layer. This effect would be particularly important at
 small particle sizes.
 
-\texit{In previous studies of mixed-length ligand layers with full coverage,
+In previous studies of mixed-length ligand layers with full coverage,
 we observed that ligand-solvent alignment was an important factor for
 heat transfer into the solvent.  With high surface curvature and lower
 effective coverages, ligand behavior also becomes more complex. Some
 chains may be lying down on the surface, and solvent may not be
 penetrating the ligand layer to the same degree as in the planar
-surfaces.
-}  
+surfaces.  
 
 Additionally, the ligand flexibility directly alters the vibrational
 density of states for the layer that mediates the transfer of phonons
@@ -918,7 +915,7 @@ components are excluded from that region.
   \label{fig:rho3}
 \end{figure}
 
-The density overlap parameters are shown in Fig. \ref{fig:rho3}.  The
+The density overlap parameters are shown in Figure \ref{fig:rho3}.  The
 calculated overlap parameters indicate that the conjugated ligand
 allows for the most solvent penetration close to the particle, and
 that shorter chains generally permit greater solvent penetration in
@@ -975,7 +972,7 @@ density of states,\cite{Shin:2010sf}
     \omega t} dt.
 \end{equation}
 Here $\tau$ is the total observation time for the autocorrelation
-function.  In Fig.~\ref{fig:vdos} shows the low-frequency region of
+function.  In Figure ~\ref{fig:vdos} shows the low-frequency region of
 the normalized vibrational densities of states for the three chemical
 components (gold nanoparticle, C$_{12}$ ligands, and interfacial
 solvent).  The double bond in the penultimate location is a small
