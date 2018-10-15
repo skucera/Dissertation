@@ -1,24 +1,7 @@
-%\documentclass[aps,jcp,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for review and submission
-%\documentclass[aps,jcp,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4-1}  % for double-spaced preprint
-%\usepackage{graphicx}  % needed for figures
-%\usepackage{bm}        % for math
-%\usepackage{amssymb}   % for math
-%\usepackage{times}
-%\usepackage[version=3]{mhchem}
-%\usepackage{lineno}
 
-%\begin{document}
+\chapter{INTERFACIAL THERMAL CONDUCTANCE OF THIOLATE-PROTECTED GOLD NANOSPHERES}
 
-\section{Interfacial Thermal Conductance of Thiolate-Protected Gold Nanospheres}
-%\author{Kelsey M. Stocker}
-%\author{Suzanne M. Neidhart}
-%\author{J. Daniel Gezelter}
-%\email{gezelter@nd.edu}
-%\affiliation{Department of Chemistry and Biochemistry, University of
-%  Notre Dame, Notre Dame, IN 46556}
-
-%\begin{abstract}
-\subsection{Introduction}
+\section{Introduction}
   Molecular dynamics simulations of thiolate-protected and solvated gold nanoparticles were carried out in the presence of a non-equilibrium heat flux between the solvent and the core of the particle. The interfacial thermal conductance ($G$) was computed for these interfaces, and the behavior of the thermal conductance was studied as a function of particle size, ligand flexibility, and ligand chain length. In all cases, thermal conductance of the ligand-protected particles was higher than the bare metal--solvent interface.  A number of mechanisms for the enhanced conductance were investigated, including thiolate-driven corrugation of the metal surface, solvent ordering at the interface, solvent-ligand interpenetration, and ligand ordering relative to the particle
   surface. Only the smallest particles exhibited significant
   corrugation.  All ligands permitted substantial solvent-ligand
@@ -30,8 +13,6 @@
   thermal conductance.
 %\end{abstract}
 
-
-%\section{Introduction}
 
 Heat transport across various nanostructured interfaces has been the
 subject of intense experimental
@@ -87,7 +68,7 @@ fractional coverage of the surface, as moderate coverages allow energy
 transfer to solvent molecules that come into close contact with the
 ligands.
 
-Similarly, simulations of {\it mixed-chain} alkylthiolate surfaces
+Similarly, simulations of mixed-chain alkylthiolate surfaces
 showed that solvent trapped close to the interface can be efficient at
 moving thermal energy away from the surface.\cite{Stocker:2013cl}
 Trapped solvent molecules that were orientationally aligned with
@@ -96,21 +77,21 @@ interface.  This indicates that the ligand-to-solvent vibrational
 energy transfer is a key feature for increasing particle-to-solvent
 thermal conductance.
 
-Recently, we extended RNEMD methods for use in non-periodic geometries
+RNEMD methods have been extended for use in non-periodic geometries
 by creating scaling/shearing moves between concentric regions of a
-simulation.\cite{Stocker:2014qq} In this work, we apply this
-non-periodic variant of RNEMD to investigate the role that {\it
-  curved} nanoparticle surfaces play in heat and mass transport.  On
-planar surfaces, we discovered that orientational ordering of surface
+simulation.\cite{Stocker:2014qq} In this section, a
+non-periodic variant of RNEMD has been applied to investigate the role that
+curved nanoparticle surfaces play in heat and mass transport.  On
+planar surfaces, it has been seen that orientational ordering of surface
 protecting ligands had a large effect on the heat conduction from the
-metal to the solvent.  Smaller nanoparticles have high surface
-curvature that creates gaps in well-ordered self-assembled monolayers,
+metal to the solvent.\cite{Stocker:2013cl}
+ Smaller nanoparticles have high surface curvature that creates gaps in well-ordered self-assembled monolayers,
 and the effect of those gaps on the thermal conductance is unknown.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		INTERFACIAL THERMAL CONDUCTANCE OF METALLIC NANOPARTICLES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Interfacial Thermal Conductance of Metallic Nanoparticles}
+\section{Interfacial Thermal Conductance of Metallic Nanoparticles}
 
 For a solvated nanoparticle, it is possible to define a critical value
 for the interfacial thermal conductance,
@@ -124,21 +105,21 @@ interfacial thermal conductance, $G \gg G_c$, cooling of the
 nanoparticle is limited by the solvent properties, $C_s$ and
 $\Lambda_s$.  In the opposite limit, $G \ll G_c$, the heat dissipation
 is controlled by the thermal conductance of the particle / fluid
-interface. It is this regime with which we are concerned, where
+interface. It is this regime with which this study is concerned, where
 properties of ligands and the particle surface may be tuned to
 manipulate the rate of cooling for solvated nanoparticles.  Based on
 estimates of $G$ from previous simulations as well as experimental
 results for solvated nanostructures, gold nanoparticles solvated in
 hexane are in the $G \ll G_c$ regime for radii smaller than 40 nm. The
 particles included in this study are more than an order of magnitude
-smaller than this critical radius, so the heat dissipation should be
+smaller than this critical radius, therefore the heat dissipation should be
 controlled entirely by the surface features of the particle / ligand /
 solvent interface.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		STRUCTURE OF SELF-ASSEMBLED MONOLAYERS ON NANOPARTICLES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Structures of Self-Assembled Monolayers on Nanoparticles}
+\subsection{Structures of Self-Assembled Monolayers on Nanoparticles}
 
 Though the ligand packing on planar surfaces has been characterized
 for many different ligands and surface facets, it is not obvious
@@ -173,7 +154,7 @@ coverage (compared with the coverage densities reported by Badia
 thiolates of varying chain lengths and rigidities were utilized.
 These are summarized in Fig. \ref{fig:structures}.  The passivated
 particles were then solvated in hexane.  Details on the united atom
-force field are given below and in the supporting information.
+force field are given below.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{figures/structures}
@@ -195,19 +176,19 @@ force field are given below and in the supporting information.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		COMPUTATIONAL DETAILS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Computational Details}
+\section{Computational Details}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		NON-PERIODIC VSS-RNEMD METHODOLOGY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Creating a thermal flux between particles and solvent}
+\subsection{Creating a thermal flux between particles and solvent}
 
 The non-periodic variant of the velocity shearing and scaling RNEMD
 algorithm (VSS-RNEMD)\cite{Stocker:2014qq} applies a series of
 velocity scaling and shearing moves at regular intervals to impose a
-flux between two concentric spherical regions. To impose a thermal
-flux between the shells (without an accompanying angular shear), we
-solve for scaling coefficients $a$ and $b$,
+flux between two concentric spherical regions. The scaling coefficients 
+$a$ and $b$ are solved for to impose a thermal
+flux between the shells (without an accompanying angular shear).
 \begin{eqnarray}
 	a = \sqrt{1 - \frac{q_r \Delta t}{K_a - K_a^\mathrm{rot}}}\\ \nonumber\\
 	b = \sqrt{1 + \frac{q_r \Delta t}{K_b - K_b^\mathrm{rot}}}
@@ -246,16 +227,16 @@ the primary quantity of interest.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		INTERFACIAL THERMAL CONDUCTANCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Interfacial Thermal Conductance}
+\subsection{Interfacial Thermal Conductance}
 
-As described in earlier work,\cite{Stocker:2014qq} the thermal
-conductance of each spherical shell may be defined as the inverse
-Kapitza resistance of the shell. To describe the thermal conductance
+The thermal conductance of each spherical shell may be defined as the inverse
+Kapitza resistance of the shell.\cite{Stocker:2014qq}
+To describe the thermal conductance
 of an interface of considerable thickness -- such as the ligand layers
-shown here -- we can sum the individual thermal resistances of each
+shown here -- sum the individual thermal resistances of each
 concentric spherical shell to arrive at the inverse of the total
-interfacial thermal conductance. In slab geometries, the intermediate
-temperatures cancel, but for concentric spherical shells, the
+interfacial thermal conductance. 
+In concentric spherical shells, the
 intermediate temperatures and surface areas remain in the final sum,
 requiring the use of a series of individual resistance terms:
 
@@ -265,13 +246,13 @@ requiring the use of a series of individual resistance terms:
 \end{equation}
 
 The longest ligand considered here is in excess of 15 \AA\ in length,
-and we use 10 concentric spherical shells to describe the total
+and 10 concentric spherical shells are used to describe the total
 interfacial thermal conductance of the ligand layer.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		FORCE FIELDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Force Fields}
+\subsection{Force Fields}
 
 Throughout this work, gold -- gold interactions are described by the
 quantum Sutton-Chen (QSC) model.\cite{Qi:1999ph} Previous
@@ -287,15 +268,155 @@ bulk thermal conductivity values. Bonding interactions were used for
 intra-molecular sites closer than 3 bonds. Effective Lennard-Jones
 potentials were used for non-bonded interactions.
 
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{}{,}
+\centering
+\caption{Non-bonded interaction parameters (including cross interactions with Au atoms). \label{tab:atypes}}
+\begin{tabular}{ c|cccccl }
+ \toprule
+Site & mass & $\sigma_{ii}$ & $\epsilon_{ii}$ & $\sigma_{\ce{Au}-i}$ & $\epsilon_{\ce{Au}-i}$  & source \\
+     & (amu)& (\AA)        & (kcal/mol)     & (\AA)             &  (kcal/mol)          &  \\
+ \colrule
+ \ce{CH3}    & 15.04    & 3.75  & 0.1947 & 3.54   & 0.2146 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
+ \ce{CH2}    & 14.03    & 3.95  & 0.09141& 3.54   & 0.1749 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
+ CHene       & 13.02    & 3.73  & 0.09340& 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
+ S           & 32.0655  & 4.45  & 0.2504 & 2.40   & 8.465  & Refs. \protect\cite{landman:1998} ($\sigma$) and \protect\cite{vlugt:cpc2007154} ($\epsilon$) \\
+ CHar        & 13.02    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
+ \ce{CH2ar}  & 14.03    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+
 The TraPPE-UA force field includes parameters for thiol
 molecules\cite{TraPPE-UA.thiols} as well as unsaturated and aromatic
 carbon sites.\cite{TraPPE-UA.alkylbenzenes} These were used for the
 thiolate molecules in our simulations, and missing parameters for the
-ligands were supplemented using fits described in the supporting
-information.  Bonds are rigid in TraPPE-UA, so although equilibrium
+ligands were supplemented using fits described below.
+Bonds are rigid in TraPPE-UA, so although equilibrium
 bond distances were taken from this force field, flexible bonds were
 implemented using bond stretching spring constants adapted from the
 OPLS-AA force field.\cite{Jorgensen:1996sf}
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{}{,}
+\centering
+\caption{Bond parameters. \label{tab:bond}}
+\begin{tabular}{ cc|ccl }
+ \toprule
+ $i$&$j$ & $r_0$ & $k_\mathrm{bond}$ & source \\
+    &    & (\AA) & $(\mathrm{~kcal/mole/\AA}^2)$ & \\
+ \colrule
+\ce{CH3}   & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf}\\
+\ce{CH3}   & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
+\ce{CH2}   & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
+CHene      & CHene    & 1.330   & 1098 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+\ce{CH3}   & CHene    & 1.540   & 634  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+\ce{CH2}   & CHene    & 1.540   & 634  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+S          & \ce{CH2} & 1.820   & 444  & Refs. \protect\cite{TraPPE-UA.thiols} and \protect\cite{Jorgensen:1996sf} \\
+CHar       & CHar     & 1.40    & 938  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+CHar       & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar       & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+\ce{CH2ar} & CHar     & 1.40    & 938  & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf} \\
+S          & CHar     & 1.80384 & 527.951 & This Work \\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+Parameters not found in the TraPPE-UA force field for the
+intramolecular interactions of the conjugated and the penultimate
+alkenethiolate ligands were calculated using constrained geometry
+scans using the B3LYP functional~\cite{Becke:1993kq,Lee:1988qf} and
+the 6-31G(d,p) basis set. Structures were scanned starting at the
+minimum energy gas phase structure for small ($C_4$) ligands.  Only
+one degree of freedom was constrained for any given scan -- all other
+atoms were allowed to minimize subject to that constraint.  The
+resulting potential energy surfaces were fit to a harmonic potential
+for the bond stretching,
+\begin{equation}
+V_\mathrm{bond} = \frac{k_\mathrm{bond}}{2} \left( r - r_0 \right)^2,
+\end{equation}
+and angle bending potentials,
+\begin{equation}
+V_\mathrm{bend} = \frac{k_\mathrm{bend}}{2} \left(\theta - \theta_0\right)^2.
+\end{equation}
+Torsional potentials were fit to the TraPPE torsional function,
+\begin{equation}
+V_\mathrm{tor} = c_0 + c_1  \left(1 + \cos\phi \right) + c_2  \left(1 - \cos 2\phi \right) + c_3  \left(1 + \cos 3 \phi \right).
+\end{equation}
+
+For the penultimate thiolate ligands, the model molecule used was
+2-Butene-1-thiol, for which one bend angle (\ce{S-CH2-CHene}) was
+scanned to fit an equilibrium angle and force constant, as well as one
+torsion (\ce{S-CH2-CHene-CHene}).  The parameters for these two
+potentials also served as model for the longer conjugated thiolate
+ligands which require bend angle parameters for (\ce{S-CH2-CHar}) and
+torsion parameters for (\ce{S-CH2-CHar-CHar}).
+
+For the $C_4$ conjugated thiolate ligands, the model molecule for the
+quantum mechanical calculations was 1,3-Butadiene-1-thiol.  This
+ligand required fitting one bond (\ce{S-CHar}), and one bend angle
+(\ce{S-CHar-CHar}).
+
+The geometries of the model molecules were optimized prior to
+performing the constrained angle scans, and the fit values for the
+bond, bend, and torsional parameters were in relatively good agreement
+with similar parameters already present in TraPPE.
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{,}{,}
+\centering
+\caption{Bend angle parameters. The central atom in the bend is atom $j$.\label{tab:bend}}
+\begin{tabular}{ ccc|ccl }
+\toprule
+ $i$&$j$&$k$ & $\theta_0$ & $k_\mathrm{bend}$ & source\\
+    &   &    & ($\degree$) & (kcal/mol/rad\textsuperscript{2}) & \\
+ \colrule
+\ce{CH2} & \ce{CH2} & S         & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
+\ce{CH3} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
+CHene    & CHene    & \ce{CH3}  & 119.7   &   139.94& Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+CHene    & CHene    & \ce{CH2}  & 119.7   &   139.94& Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+\ce{CH2} & \ce{CH2} & CHene     & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+CHar     & CHar     & CHar      & 120.0   &   126.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar     & CHar     & \ce{CH2}  & 120.0   &   140.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar     & CHar     & \ce{CH3}  & 120.0   &   140.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+CHar     & CHar     & \ce{CH2ar}& 120.0   &   126.0 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{Jorgensen:1996sf}\\
+S        & \ce{CH2} & CHene     & 109.97  &  127.37 & This work  \\
+S        & \ce{CH2} & CHar      & 109.97  &  127.37 & This work  \\
+S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
+
+\begin{table}[h]
+\bibpunct{}{}{,}{n}{,}{,}
+\centering
+\caption{Torsion parameters. The central atoms for each torsion are atoms $j$ and $k$,
+  and wildcard atom types are denoted by ``X''.  All $c_n$ parameters
+  have units of kcal/mol. The torsions around carbon-carbon double bonds
+  are harmonic and assume a trans (180$\degree$) geometry.  The force
+  constant for this torsion is given in $\mathrm{kcal~mol~}^{-1}\mathrm{degrees}^{-2}$.  \label{tab:torsion}}
+\begin{tabular}{ cccc|ccccl }
+\toprule
+ $i$&$j$&$k$&$l$& $c_0$&$c_1$& $c_2$ & $c_3$ & source\\
+ \colrule
+\ce{CH3} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2} & S        & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.thiols}\\ \colrule
+X        & CHene    & CHene    & X        & \multicolumn{4}{c}{\multirow{2}{*}{$V = \frac{0.008112}{2} (\phi - 180.0)^2$}} & \multirow{2}{*}{Ref. \protect\cite{TraPPE-UA.alkylbenzenes}} \\
+X        & CHar     & CHar     & X        &         & & & & \\ \colrule
+\ce{CH2} & \ce{CH2} & CHene    & CHene    & 1.368   & 0.1716   & -0.2181  &  -0.56081  & Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+\ce{CH2} & \ce{CH2} & \ce{CH2} & CHene    & 0.0     & 0.7055   & -0.13551 &   1.5725   & Ref. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+CHene    & CHene    & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
+CHar     & CHar     & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
+ \botrule
+\end{tabular}
+\bibpunct{[}{]}{,}{n}{,}{,}
+\end{table}
 
 To derive suitable parameters for the thiolates adsorbed on Au(111)
 surfaces, we adopted the S parameters from Luedtke and
@@ -308,30 +429,27 @@ from an adsorption study of alkyl thiols on gold surfaces by Vlugt,
 Lennard-Jones form of potential parameters for the interaction between
 Au and pseudo-atoms CH$_x$ and S based on a well-established and
 widely-used effective potential of Hautman and Klein for the Au(111)
-surface.\cite{hautman:4994}
-
-All additional terms to represent thiolated alkenes and conjugated
-ligand moieties were parameterized as part of this work and are
-available in the supporting information.  All simulations were carried
-out with the open source molecular dynamics package,
+surface.\cite{hautman:4994} 
+All simulations were carried out with the open 
+source molecular dynamics package,
 OpenMD.\cite{openmd,OOPSE}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Simulation Protocol}
+\subsection{Simulation Protocol}
 
 Gold nanospheres with radii ranging from 10 - 25 \AA\ were created
 from a bulk fcc lattice and were thermally equilibrated prior to the
 addition of ligands. A 50\% coverage of ligands (based on coverages
 reported by Badia, \textit{et al.}\cite{Badia1996:2}) was placed on
 the surface of the equilibrated nanoparticles using
-Packmol\cite{packmol}. We have chosen three lengths for the
+Packmol\cite{packmol}. Three lengths for the
 straight-chain ligands, $C_4$, $C_8$, and $C_{12}$, differentiated by
-the number of carbons in the chains.  Additionally, to explore the
-effects of ligand flexibility, we have used three levels of ligand
-``stiffness''.  The most flexible chain is a fully saturated
+the number of carbons in the chains are used in this study.  Additionally, to explore the
+effects of ligand flexibility, three levels of ligand
+``stiffness'' are examined.  The most flexible chain is a fully saturated
 alkanethiolate, while moderate rigidity is introduced using an alkene
 thiolate with one double bond in the penultimate (solvent-facing)
 carbon-carbon location.  The most rigid ligands are fully-conjugated
@@ -406,7 +524,7 @@ multiple surface-ligand configurations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		EFFECT OF PARTICLE SIZE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Results}
+\section{Results}
 
 We modeled four sizes of nanoparticles ($R =$ 10, 15, 20, and 25
 \AA). The smallest particle size produces the lowest interfacial
@@ -433,10 +551,10 @@ different ways.
 %		EFFECT OF LIGAND CHAIN LENGTH
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Unlike our previous study of varying thiolate ligand chain lengths on
+Unlike a previous study of varying thiolate ligand chain lengths on
 planar Au(111) surfaces, the interfacial thermal conductance of
 ligand-protected nanospheres exhibits a distinct dependence on the
-ligand identity. A half-monolayer coverage of ligands yields
+ligand identity.\cite{} A half-monolayer coverage of ligands yields
 interfacial conductance that is strongly dependent on both ligand
 length and flexibility.
 
@@ -448,13 +566,14 @@ particles, providing more efficient scattering of phonons into the
 ligand / solvent layer. This effect would be particularly important at
 small particle sizes.
 
-In previous studies of mixed-length ligand layers with full coverage,
+\texit{In previous studies of mixed-length ligand layers with full coverage,
 we observed that ligand-solvent alignment was an important factor for
 heat transfer into the solvent.  With high surface curvature and lower
 effective coverages, ligand behavior also becomes more complex. Some
 chains may be lying down on the surface, and solvent may not be
 penetrating the ligand layer to the same degree as in the planar
-surfaces.  
+surfaces.
+}  
 
 Additionally, the ligand flexibility directly alters the vibrational
 density of states for the layer that mediates the transfer of phonons
@@ -462,16 +581,16 @@ between the metal and the solvent. This could be a partial explanation
 for the observed differences between the fully conjugated and more
 flexible ligands.
 
-In the following sections we provide details on how we
+In the following sections details on how I
 measure surface corrugation, solvent-ligand interpenetration, and
 ordering of the solvent and ligand at the surfaces of the
-nanospheres.  We also investigate the overlap between vibrational
-densities of states for the various ligands.
+nanospheres are provided. Followed by an investigation of 
+the overlap between vibrational densities of states for the various ligands.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CORRUGATION OF PARTICLE SURFACE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Corrugation of the Particle Surface}
+\subsection{Corrugation of the Particle Surface}
 
 The bonding sites for thiols on gold surfaces have been studied
 extensively and include configurations beyond the traditional atop,
@@ -487,10 +606,10 @@ density as a function of radius to measure the degree of mixing
 between the thiol sulfurs and surface gold atoms at the edge of a
 nanoparticle. Although metal density is important, disruption of the
 local crystalline ordering would also have a large effect on the
-phonon spectrum in the particles. To measure this effect, we use the
+phonon spectrum in the particles. To measure this effect, the
 fraction of gold atoms exhibiting local fcc ordering as a function of
 radius to describe the ligand-induced disruption of the nanoparticle
-surface.
+surface is used.
 
 The local bond orientational order can be described using the method
 of Steinhardt \textit{et al.}\cite{Steinhardt1983} The local bonding
@@ -544,7 +663,7 @@ disruption of the lattice.
   \label{fig:Corrugation}
 \end{figure}
 
-We may describe the thickness of the disrupted nanoparticle surface by
+The thickness of the disrupted nanoparticle surface can be described by
 defining a corrugation factor, $c$, as the ratio of the radius at
 which the fraction of gold atoms with fcc ordering is 0.9 and the
 radius at which the fraction is 0.5.
@@ -578,7 +697,7 @@ covered with a half-monolayer of thiol ligands.
   \label{fig:NPthiols_corrugation}
 \end{figure}
 
-Because the thiolate ligands do not significantly alter the larger
+Since the thiolate ligands do not significantly alter the larger
 particle crystallinity, the surface corrugation does not seem to be a
 likely candidate to explain the large increase in thermal conductance
 at the interface when ligands are added.
@@ -595,7 +714,7 @@ at the interface when ligands are added.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		MOBILITY OF INTERFACIAL SOLVENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsubsection{Mobility of Interfacial Solvent}
+% \subsection{Mobility of Interfacial Solvent}
 
 % Another possible mechanism for increasing interfacial conductance is
 % the mobility of the interfacial solvent.  We used a survival
@@ -630,7 +749,7 @@ at the interface when ligands are added.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		ORIENTATION OF LIGAND CHAINS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Orientation of Ligand Chains}
+\subsection{Orientation of Ligand Chains}
 
 Previous theoretical work on heat conduction through alkane chains has
 shown that short chains are dominated by harmonic interactions, where
@@ -642,9 +761,9 @@ chain orientations on the surface of the nanoparticle, and can
 localize the ligand vibrational density of states close to the
 particle, lowering the effectiveness of the heat
 conduction.\cite{Segal:2003qy} To determine the distribution of ligand
-orientations relative to the particle surface we examine the
+orientations relative to the particle surface the 
 probability of finding a ligand with a particular orientation relative
-to the surface normal of the nanoparticle,
+to the surface normal of the nanoparticle is examined,
 \begin{equation} 
 \cos{(\theta)}=\frac{\vec{r}_i\cdot\hat{u}_i}{|\vec{r}_i||\hat{u}_i|}
 \end{equation}
@@ -686,16 +805,17 @@ ligand chain length -- and ligand flexibility -- increases.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		ORIENTATION OF INTERFACIAL SOLVENT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Orientation of Interfacial Solvent}
+\subsection{Orientation of Interfacial Solvent}
 
-Similarly, we examined the distribution of \emph{hexane} molecule
+Similarly, I examined the distribution of \emph{hexane} molecule
 orientations relative to the particle surface using the same angular
 analysis utilized for the ligand chain orientations. In this case,
 $\vec{r}_i$ is the vector between the particle center of mass and one
 of the \ce{CH2} pseudo-atoms in the middle of hexane molecule $i$ and
 $\hat{u}_i$ is the vector between the two \ce{CH3} pseudo-atoms on
-molecule $i$. Since we are only interested in the orientation of
-solvent molecules near the ligand layer, we select only the hexane
+molecule $i$. Since only the orientation of
+solvent molecules near the ligand layer is of interest, 
+I select only the hexane
 molecules within a specific $r$-range, between the edge of the
 particle and the end of the ligand chains. A large population of
 hexane molecules with $\cos{(\theta)} \sim \pm 1$ would indicate
@@ -730,8 +850,8 @@ lengths.
   \label{fig:NPthiols_P2}
 \end{figure}
 
-These results are particularly interesting in light of our previous
-results\cite{Stocker:2013cl}, where solvent molecules readily filled
+These results are particularly interesting in light of previous
+work by Stocker \textit{et. al}\cite{Stocker:2013cl}, where solvent molecules readily filled
 the vertical gaps between neighboring ligand chains and there was a
 strong correlation between ligand and solvent molecular
 orientations. It appears that the introduction of surface curvature
@@ -741,7 +861,7 @@ that lacks well-formed channels for the solvent molecules to occupy.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SOLVENT PENETRATION OF LIGAND LAYER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Solvent Penetration of Ligand Layer}
+\subsection{Solvent Penetration of Ligand Layer}
 
 The extent of ligand -- solvent interaction is also determined by the
 degree to which these components occupy the same region of space
@@ -775,7 +895,7 @@ the ligand layer as the chain length increases.
 
 The conjugated ligands create a distinct solvent shell within the
 ligand layer and also allow significantly more solvent to penetrate
-close to the particle.  We define a density overlap parameter,
+close to the particle. A density overlap parameter can be defined,
 \begin{equation}
 O_{l-s} = \frac{1}{V} \int_0^{r_\mathrm{max}} 4 \pi r^2 \frac{4 \rho_l(r) \rho_s(r)}{\left(\rho_l(r) +
     \rho_s(r)\right)^2} dr
@@ -809,7 +929,7 @@ physical contact, there must also be good vibrational overlap between
 the phonon densities of states in the ligand and solvent to transmit
 vibrational energy between the two materials.
 
-\subsubsection{Ligand-mediated Vibrational Overlap}
+\subsection{Ligand-mediated Vibrational Overlap}
 
 In phonon scattering models for interfacial thermal
 conductance,\cite{Swartz:1989uq,Young:1989xy,Cahill:2003fk,Reddy:2005fk,Schmidt:2010nr}
@@ -825,13 +945,13 @@ an incoming phonon of frequency $\omega$ on the $a$ side, the phonon
 density of states on the $b$ side must have a phonon of the same
 frequency. The overlap of the phonon densities of states, particularly
 at low frequencies, therefore contributes to the transfer of heat.
-Phonon scattering must also be done in a direction perpendicular to
+Phonon scattering must be done in a direction perpendicular to
 the interface.  In the geometries described here, there are two
 interfaces (particle $\rightarrow$ ligand, and ligand $\rightarrow$
 solvent), and the vibrational overlap between the ligand and the other
-two components is going to be relevant to heat transfer.
+two components is relevant to heat transfer.
  
-To estimate the relevant densities of states, we have projected the
+To estimate the relevant densities of states, I have projected the
 velocity of each atom $i$ in the region of the interface onto a
 direction normal to the interface. For the nanosphere geometries
 studied here, the normal direction depends on the instantaneous
@@ -855,16 +975,16 @@ density of states,\cite{Shin:2010sf}
     \omega t} dt.
 \end{equation}
 Here $\tau$ is the total observation time for the autocorrelation
-function.  In Fig.~\ref{fig:vdos} we show the low-frequency region of
+function.  In Fig.~\ref{fig:vdos} shows the low-frequency region of
 the normalized vibrational densities of states for the three chemical
 components (gold nanoparticle, C$_{12}$ ligands, and interfacial
 solvent).  The double bond in the penultimate location is a small
 perturbation on ligands of this size, and that is reflected in
 relatively similar spectra in the lower panels.  The fully conjugated
-ligand, however, pushes the peak in the lowest frequency band from
+ligand, however, shifts the peak in the lowest frequency band from
 $\sim 29 \mathrm{cm}^{-1}$ to $\sim 55 \mathrm{cm}^{-1}$, yielding
 significant overlap with the density of states in the nanoparticle.
-This ligand also increases the overlap with the solvent density of
+This ligand increases the overlap with the solvent density of
 states in a band between 280 and 380 $\mathrm{cm}^{-1}$.  This
 provides some physical basis for the high interfacial conductance
 observed for the fully conjugated $C_8$ and $C_{12}$ ligands.
@@ -881,14 +1001,14 @@ observed for the fully conjugated $C_8$ and $C_{12}$ ligands.
 \end{figure}
 
 The similarity between the density of states for the alkanethiolate
-and penultimate ligands also helps explain why the interfacial
+and penultimate ligands explains why the interfacial
 conductance is nearly the same for these two ligands, particularly at
 longer chain lengths.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		DISCUSSION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Discussion}
+\section{Discussion}
 
 The chemical bond between the metal and the ligand introduces
 vibrational overlap that is not present between the bare metal surface
