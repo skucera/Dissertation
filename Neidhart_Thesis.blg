@@ -286,8 +286,10 @@ Repeated entry---line 18538 of file Neidhart_Thesis.bib
  : @article{Helfand:1960os
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Leitner2017"
-Warning--I didn't find a database entry for "Neidhart"
+I was expecting a `,' or a `}'---line 18900 of file Neidhart_Thesis.bib
+ : issue = {2}
+ :            '
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
 Too many commas in name 1 of "Stevens, Robert J. Smith, Andrew N. Norris, Pamela M." for entry Stevens2005
 while executing---line 1683 of file achemso.bst
@@ -296,45 +298,45 @@ Too many commas in name 1 of "Stevens, Robert J. Smith, Andrew N. Norris, Pamela
 while executing---line 1689 of file achemso.bst
 Too many commas in name 1 of "Stevens, Robert J. Smith, Andrew N. Norris, Pamela M." for entry Stevens2005
 while executing---line 1689 of file achemso.bst
-You've used 100 entries,
+You've used 102 entries,
             2514 wiz_defined-function locations,
-            1521 strings with 29554 characters,
-and the built_in function-call counts, 34027 in all, are:
-= -- 2700
-> -- 1904
-< -- 42
-+ -- 740
-- -- 644
-* -- 3829
-:= -- 4572
-add.period$ -- 100
-call.type$ -- 100
+            1530 strings with 29864 characters,
+and the built_in function-call counts, 34525 in all, are:
+= -- 2738
+> -- 1930
+< -- 44
++ -- 750
+- -- 652
+* -- 3887
+:= -- 4639
+add.period$ -- 102
+call.type$ -- 102
 change.case$ -- 2
 chr.to.int$ -- 4
-cite$ -- 100
-duplicate$ -- 1833
-empty$ -- 2371
-format.name$ -- 782
-if$ -- 6521
+cite$ -- 102
+duplicate$ -- 1862
+empty$ -- 2405
+format.name$ -- 796
+if$ -- 6617
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 622
-num.names$ -- 300
-pop$ -- 189
+newline$ -- 634
+num.names$ -- 306
+pop$ -- 191
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 100
+skip$ -- 102
 stack$ -- 0
-substring$ -- 2249
-swap$ -- 1851
-text.length$ -- 200
+substring$ -- 2267
+swap$ -- 1876
+text.length$ -- 204
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 682
+type$ -- 696
 warning$ -- 0
-while$ -- 371
+while$ -- 376
 width$ -- 0
-write$ -- 1216
-(There were 73 error messages)
+write$ -- 1238
+(There were 74 error messages)

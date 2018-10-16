@@ -2,7 +2,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{100}
+\begin{mcitethebibliography}{102}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -511,6 +511,13 @@ Park,~J.; Cahill,~D.~G. \emph{Journal of Physical Chemistry C} \textbf{2016},
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Pandey and Leitner(2017)Pandey, and Leitner]{Leitner2017}
+Pandey,~H.~D.; Leitner,~D.~M. \emph{The Journal of Chemical Physics}
+  \textbf{2017}, \emph{147}, 084701\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Park \latin{et~al.}(2012)Park, Huang, Wang, Murphy, and
   Cahill]{Park2012}
 Park,~J.; Huang,~J.; Wang,~W.; Murphy,~C.~J.; Cahill,~D.~G. \emph{J. Phys.
@@ -522,6 +529,12 @@ Park,~J.; Huang,~J.; Wang,~W.; Murphy,~C.~J.; Cahill,~D.~G. \emph{J. Phys.
 \bibitem[Ge \latin{et~al.}(2006)Ge, Cahill, and Braun]{Ge2006}
 Ge,~Z.; Cahill,~D.~G.; Braun,~P. \emph{Physical Review Letters} \textbf{2006},
   \emph{96}, 186101\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Neidhart and Gezelter()Neidhart, and Gezelter]{Neidhart}
+Neidhart,~S.~M.; Gezelter,~J.~D. \emph{J. Phys. Chem. C} \emph{122}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

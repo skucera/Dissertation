@@ -1,6 +1,6 @@
-\section{THERMAL TRANSPORT IS INFLUENCE By NANOPARTICLE SHAPE}
+\chapter{THERMAL TRANSPORT IS INFLUENCE By NANOPARTICLE SHAPE}\label{chap:morph}
 %\begin{abstract}
-\subsection{Abstract}
+\section{Abstract}
   Molecular dynamics simulations were performed to model the
   interfacial thermal conductance ($G$) from bare gold nanoparticles
   (icosahedral, cuboctahedral, and spherical) to a hexane
@@ -27,7 +27,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		INTRODUCTION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Introduction}
+\section{Introduction}
 Thermal transport between nanoparticles and their surrounding
 environments depends on many factors, including particle
 size,\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016}
@@ -93,7 +93,7 @@ nanocrystal arrays. However, if surface modifications dominate
 conductance, the presence of a moderate density of ligands will
 obscure the effects of particle curvature.
 
-\subsubsection{Size- and temperature-dependent particle morphologies}
+\subsection{Size- and temperature-dependent particle morphologies}
 The nanoparticles simulated for this work ranged in size from 309
 atoms to 14,993 atoms.  Ercolessi \textit{et al.}\cite{Ercolessi1991}
 annealed at temperatures from 400K to 1400K and found the dominant
@@ -121,7 +121,7 @@ relatively low surface atom mobility, except for the smallest
 ($r = 18 \text{-} 22$~\AA) particles, which may be metastable relative to
 cuboctahedra.
 
-\subsubsection{Theory}
+\subsection{Theory}
 Under the diffuse mismatch model (DMM), the thermal conductance at an interface between $a$ and $b$ can be approximated,  
 \begin{equation}
 G_{ab} = \frac{1}{4 \pi} \sum_p \int_\omega \int_\theta \int_\phi \hbar \omega \frac{\partial f}{\partial T}  v_a  \rho_a  \tau_{ab} \cos\theta \sin\theta d\theta d\phi d\omega
@@ -212,7 +212,7 @@ $\Delta T$, across the interface.\cite{Kuang:2012fe}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Computational Details}
+\section{Computational Details}
 
 Solvated gold nanoparticles ranging in diameter from 20-80 \AA\ were
 simulated using reverse non-equilibrium molecular dynamics (RNEMD) in
@@ -222,7 +222,7 @@ following sections describe the system composition,
 the potentials used to calculate the
 interactions in the system, as well as the simulation protocol.
 
-\subsubsection{System Composition}
+\subsection{System Composition}
 Both the nanoparticle and planar systems contain only gold atoms and
 hexane molecules.  The composition of the planar systems can be found
 in Table \ref{tab:facet} and the nanoparticle system details can be
@@ -327,7 +327,7 @@ remaining space was filled with hexane molecules to a density of
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		FORCE FIELDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Force Fields}
+\subsection{Force Fields}
 
 For this work, gold -- gold interactions are calculated using the
 quantum Sutton-Chen (QSC) model.\cite{Qi:1999ph} The hexane solvent is
@@ -345,7 +345,7 @@ transport for thiolate-protected gold nanospheres.\cite{Stocker2016}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Simulation Protocol}
+\subsection{Simulation Protocol}
 The gold nanospheres were prepared by cutting a FCC lattice with radii ranging
 10 - 40 \AA. 
 Icosahedral particles were
@@ -395,7 +395,7 @@ conductance was calculated using the same methods found in Stocker
 \textit{et al.}\cite{Stocker2016} for the non-periodic systems and for
 the planar systems.\cite{Stocker:2013cl}
 
-\subsection{Results and Discussion}
+\section{Results and Discussion}
 The interfacial thermal conductance ($G$) for hexane-solvated
 spherical, icosahedral, and cuboctahedral Au nanoparticles was
 computed using RNEMD simulations, and was compared with the same
@@ -449,7 +449,7 @@ $G$ in the range of $r = 18-22$ \AA, which is near the
 transition from stable icosahedra to
 cuboctahedra.\cite{Myshlyavtsev2013}
 
-\subsubsection{Hexane Density}
+\subsection{Hexane Density}
 The hexane density as function of distance from the gold at the
 interface of the planar facets is provided in Fig. \ref{fig:dens}. The
 solvent in the (111) and (100) systems display similar behavior, while
@@ -473,7 +473,7 @@ hexane.
         \label{fig:dens}
 \end{figure}
 
-\subsubsection{Surface Atom Undercoordination}
+\subsection{Surface Atom Undercoordination}
 For the three flat facets, the primary feature that differentiates the
 facets is the coordination number (CN) of the atoms that are exposed
 to the solvent. In bulk Au, the coordination number of the atoms is
@@ -692,7 +692,7 @@ the cuboctahedra are no longer dominated by edge atoms and flat facets
 form the majority of the surface. After this transition the surface
 densities quickly stabilize to nearly-ideal cuboctahedral structures.
 
-\subsubsection{Phonon Spectra}
+\subsection{Phonon Spectra}
 By selecting specific groups of atoms while computing the vibrational
 power spectrum (Eq. \ref{eq:DOS}) the role of
 undercoordination on surface vibrational motion can be explored. For thermal
@@ -719,7 +719,7 @@ states. In the spheres, the higher frequency contribution
 states for undercoordinated atoms with CN=8 or 7 (see 
 Fig. \ref{fig:cn-spect}).
 
-\subsubsubsection{A Brief Aside}
+\subsection{A Brief Aside}
 The icosahedra still have perturbed spectra even four layers into the
 particles. Icosahedral particles grow around a core with
 $\mathrm{I}_h$ symmetry, and the local environment around the atoms
@@ -885,7 +885,7 @@ undercoordinated metal atoms.
         \label{fig:all-spect}
 \end{figure}
 
-\subsubsection{A Simple Model for Bare Nanoparticle Conductance}
+\subsection{A Simple Model for Bare Nanoparticle Conductance}
 The vibrational densities of states suggest the bare metallic
 nanoparticles exhibit different bulk phonon frequencies that depend on
 crystalline packing, and different surface spectra that depend on
@@ -959,7 +959,7 @@ to differences in the underlying ``bulk'' densities of states.
 
 
 
-\subsection{Conclusions}
+\section{Conclusions}
 The primary observation of this work is that particle morphology has a
 significant effect on interfacial thermal conductance from bare
 particles to the surrounding solvent.  In particular, spherical and
