@@ -13,7 +13,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Composition of the solvated planar facet systems and the physical extent of the gold slabs ($L_x$, $L_y$, and $L_z$). The hexane molecules occupy the remainder of a 100 \r A\ box (length measured along the $z$-axis). }}{60}{table.3.1}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Composition of the solvated nanosphere simulations. }}{60}{table.3.2}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Composition of the solvated nanosphere simulations. }}{61}{table.3.2}
  {\vskip 0.4em} 
 \contentsline {table}{\numberline {3.3}{\ignorespaces Composition of the solvated icosahedral nanoparticle simulations. }}{62}{table.3.3}
  {\vskip 0.4em} 
@@ -21,7 +21,7 @@
  {\vskip 0.4em} 
 \contentsline {table}{\numberline {3.5}{\ignorespaces Surface densities $(\text {\r A}^{-2})$ of undercoordinated atoms in ideal geometries. $\ell \nobreakspace {}(\text {\r A})$ is the lattice constant of the underlying FCC lattice. The spheres and cuboctahedra are calculated using a gold FCC lattice with $\ell = 4.08 \text {\nobreakspace {}\r A}$. For cuboctahedral particles, the radius ($r$) is computed using Eq. \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {r_ave}\unskip \@@italiccorr )}}. }}{69}{table.3.5}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {3.6}{\ignorespaces The density of undercoordinated gold atoms at the surface of a facet. }}{74}{table.3.6}
+\contentsline {table}{\numberline {3.6}{\ignorespaces The density of undercoordinated gold atoms at the surface of a facet. }}{75}{table.3.6}
  {\vskip 0.4em} 
 \contentsline {table}{\numberline {3.7}{\ignorespaces Parameters of the Model in Eq. (\ref {eq:lin-fit}). }}{83}{table.3.7}
  {\vskip 0.4em} 

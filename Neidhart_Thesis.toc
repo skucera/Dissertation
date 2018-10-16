@@ -36,13 +36,13 @@
 \contentsline {subsection}{\numberline {3.2.2}Theory}{57}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Computational Details}{59}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}System Composition}{59}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Force Fields}{61}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Force Fields}{60}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Simulation Protocol}{61}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Results and Discussion}{65}{section.3.4}
+\contentsline {section}{\numberline {3.4}Results and Discussion}{64}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Hexane Density}{67}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Surface Atom Undercoordination}{67}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Phonon Spectra}{74}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Phonon Spectra}{75}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}A Brief Aside}{76}{subsection.3.4.4}
 \contentsline {subsection}{\numberline {3.4.5}A Simple Model for Bare Nanoparticle Conductance}{81}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Conclusions}{85}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusions}{83}{section.3.5}
 \contentsline {chapter}{BIBLIOGRAPHY}{86}{chapter*.4}
