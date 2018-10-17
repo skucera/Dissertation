@@ -24,7 +24,7 @@ At a metal/non-metal interface the thermal conductance through the non-metal is 
 %(All prior material is from Gang Chen Book)
 
 \subsection{Heat Transfer at Interfaces}
-Further examination of phonons as the only heat carriers can be done at the interface of two materials. If the phonon is traveling through material A and approaches material B with frequency $\nu$, with angles $\phi$ and $\theta$ normal to the interface; there is a transmission probability, $\tau_{a\rightarrow b}(\omega)$, that the wave will continue into material B (see Figure \ref{fig:interface-graphic}).\cite{Monachon2016} 
+Further examination of phonons as the only heat carriers can be done at the interface of two materials. If the phonon is traveling through material A and approaches material B with frequency $\omega$, with angles $\phi$ and $\theta$ normal to the interface; there is a transmission probability, $\tau_{a\rightarrow b}(\omega)$, that the wave will continue into material B (see Figure \ref{fig:interface-graphic}).\cite{Monachon2016} 
 The transmission probability must satisfy detailed balance.
 %, meaning $\tau_{a\rightarrow b} = 1 - \tau_{b\rightarrow a}$
 There are two major models that have predictions for behavior of heat transfer at the interface: acoustic mismatch model (AMM) and diffuse mismatch model (DMM).\cite{Monachon2016}
@@ -69,7 +69,7 @@ The DMM is more appropriate for modeling thermal transport at noncryogenic tempe
 
 While attempts to account for interfacial bonding have been made in the AMM, the DMM interfacial methods have not been developed.
 The interaction of the materials at the interface has been found to be of significant importance to thermal conductivity\cite{Beechem2007, Hopkins-surf-rough, Hopkins-inelastic}, but a factor to include this interaction has yet to be incorporated in the theory.
-Despite the DMM's pitfalls, it has been the most commly used model for the past 30 years. \cite{Cahill2006, Stoner1993, Stevens2005, Cahill2011}
+Despite the DMM's pitfalls, it has been the most commonly used model for the past 30 years. \cite{Cahill2006, Stoner1993, Stevens2005, Cahill2011}
 
 \section{Molecular Dynamics}
 Molecular dynamics are computer simulations used to study structure and dynamics of atoms and molecules using classical mechanics. 
@@ -246,11 +246,11 @@ In contrast to the Einstein relation where the mass, velocity, and potential are
 
 Both the Einstein and Green-Kubo relations for thermal conductiviy rely on correlation functions, where the long-time tails are able to significantly contribute to the integrate area and need long simulation times to achieve convergence.
 The noise and poor convergence in the long-time tails give a poor estimation for the thermal conductivity and thus EMD simulations are not the best method for calculating this transport coefficient.
-Moreover, these calculations would have further complications when the systems would contain an interface or a non-homogeneous.
+Moreover, these calculations would have further complications when the systems would contain an interface or are non-homogeneous.
 
 \subsection{Non-Equilibruim Molecular Dynamics}
 Since EMD has limitations due to the noise in the correlation function, methods in non-equilibrium molecular dynamics, NEMD, were developed that introduces a gradient into the simulations.\cite{Backer:2005sf,Hess:2002nr,Picalek:2009rz, Vasquez:2004ty}
-Typically these methods are used to impose a temperature of velocity gradient on a system to measure the corresponding transport coefficient. \cite{Evans:1982oq, Erpenbeck:1984qe, Evans:1986nx, Vogelsang:1988qv, Maginn:1993kl, Hess:2002nr, Schelling:2002dp, Berthier:2002ai, Evans:2002tg, Vasquez:2004ty, Backer:2005sf, Jiang:2008hc, Picalek:2009rz}
+Typically these methods are used to impose a temperature or velocity gradient on a system to measure the corresponding transport coefficient. \cite{Evans:1982oq, Erpenbeck:1984qe, Evans:1986nx, Vogelsang:1988qv, Maginn:1993kl, Hess:2002nr, Schelling:2002dp, Berthier:2002ai, Evans:2002tg, Vasquez:2004ty, Backer:2005sf, Jiang:2008hc, Picalek:2009rz}
 With linear response of a flux due to the applied gradient, the transport coefficient can be calculated using the constitutive equation: $J_z = -\lambda \frac{\partial T}{\partial z}$, where $\frac{\partial T}{\partial z}$ is the imposed piece and $J_z$ is the measured flux.
 In NEMD, the temperature gradient is imposed by choosing sections of the simulation box to have particular temperatures. For example, a center portion of the system will be set to high temperature and the edges set to a lower temperature to impose the gradient. 
 The imposed thermal gradient must be relatively small to maintain a linear relationship between the flux and the gradient. 
