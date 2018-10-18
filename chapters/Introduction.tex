@@ -1,11 +1,11 @@
 \chapter{INTRODUCTION}\label{chap:intro}
 This introductory chapter explores the basics of heat transfer and molecular dynamics. The challenges existing in the current thermal transport methods and methods of finding transport quantities using molecular dynamics are included. Finally, systems of interest are presented for the application of thermal transport using molecular dynamics. The remaining chapters go on to use the methods described here to examine systems of interest in a chronological order.
 
-The first system, gold nanospheres of varying size and ligand, is presented in Chapter 2.  The system looks at three different variables to characterize the systems: particle size, ligand length, and ligand rigidity. Through looking at the vibrational density of states and the density profiles for the systems, two important factors for heat transport can be determined: the vibrational overlap of the material at the interface and the physical proximity/overlap of the material at the interface. This information gives relevant particle design for the ligand aspect of the system, while no clear trend for particle radius could be established. 
+The first system, gold nanospheres of varying size and ligand, is presented in Chapter 2.  There are three different variables to characterize the systems: particle size, ligand length, and ligand rigidity. Through looking at the vibrational density of states and the density profiles for the systems, two important factors for heat transport can be determined: the vibrational overlap of the material at the interface and the physical proximity/overlap of the material at the interface. This information gives relevant particle design for the ligand aspect of the system, while no clear trend for particle radius could be established. 
 
 Chapter 3 takes a closer look at the particle surface and size dependence. In this work the particles are left bare and range in size over three different geometries: sphere, icosahedron, and cuboctahedron. This was done in an attempt to detangle the size dependence and the ligand dependence of the previous study. The three different morphologies give  distinct vibrational freedoms at the particle surface, allowing for different thermal conductivity. In addition to the particle systems, planar systems displaying the prominent facets of the particles were studied. This work strengthens the need for a proximity factor of thermal transport suggested in the previous studies through the result that not only the vibrational freedom of the material at the interface matters, but the amount of the material that is transferring heat is essential to consider. This is most clearly seen through the coordination population of the surface atoms in the planar systems.
 
-Chapter 4 presents a combination of the concepts in the previous chapters through the study of small nanoparticles both in isolation and in an array. The $Au_{144}PET_{60}$ are approximately 5 \AA\ in radius and have a crystal structure found at very low temperatures which is an appropriate starting structure for our simulations. A unique aspect of these particles, and similar small structures, is that the ligand layer has gold atoms pulled out of the surface. This leads to low coordination of the outer most gold atoms, that now exhibit a different vibrational spectrum and thermal conductivity. These particles were simulated in two different solvents to look at solvent effects of the thermal conductivity of these particles.
+Chapter 4 presents a combination of the concepts in the previous chapters through the study of small nanoparticles both in isolation and in an array. The $Au_{144}PET_{60}$ are approximately 5 \AA\ in radius and have a crystal structure found at very low temperatures which is an appropriate starting structure for our simulations. A unique aspect of these particles, and similar small structures, is that the ligand layer has gold atoms pulled out of the surface. This leads to low coordination of the outer most gold atoms, which now exhibit a different vibrational spectrum and thermal conductivity. These particles were simulated in two different solvents to look at solvent effects of the thermal conductivity of these particles.
 
 Finally, Chapter 5 looks forward to potential applications of a new fluctuating charge embedded method to be applied to metal surfaces and particles in polarizable solvents. This new method would allow for the examination of charge effects on thermal transport and arrangement of solvent at the surface of the metal.
 
@@ -17,7 +17,7 @@ When the kinetic energy is distributed evenly among all independent parts of the
 On the microscopic level, heat moves through different paths depending on the composition of the system.\cite{Chen2005}
 In a gas, heat is transferred primarily through collisions, while in semi-conductors thermal energy moves through the propagation of vibrations in the solid, a phonon. 
 A phonon is a quantized lattice wave that traverses the material with a longitudinal or transverse polarization.\cite{Kittel} 
-In systems, like metals, where the material has a solid lattice and a sea of electrons, both phonons and electron heat transfer should be considered.\cite{Kittel} 
+In systems, like metals, where the material has a solid lattice and a sea of electrons, both phonon and electron heat transfer contributions should be considered.\cite{Kittel} 
 Electrons in a metal system are typically treated as an electron gas.
 Electrons travel at velocities that are approximately three orders of magnitude larger than phonons, therefore the electron contribution dominates heat transfer in metals and is important when considering bulk thermal conductance of metals.
 At a metal/non-metal interface the thermal conductance through the non-metal is dominated by phonons, rather than electronic contributions.\cite{Chen2005, Cahill2011, Stoner1993}
@@ -38,7 +38,7 @@ There are two major models that have predictions for behavior of heat transfer a
 \subsection{Acoustic Mismatch Model}
 In the acoustic mismatch model the transmission probability- the total fraction of energy transmitted across the interface- is dependent on the acoustic impedance of the material, $Z_i$. The AMM evaluates the transmission coefficient through a continuum approach.\cite{Little1959} This model uses the acoustic transmission and reflection between the two materials and ignores the granularity of the materials. Therefore the AMM would be most appropriate for low temperatures where the thermal spectrum is dominated by long wavelength phonons.\cite{Graff1975} 
 
-Each phonon can be transmitted in three ways; one longitudinal and two transverse. Likewise the phonon can be reflected in the same fashion, giving six different paths for a sound wave to interact with the interface. This problem is usually simplified by using the acoustic analog of Snell’s law:
+Each phonon can be transmitted in three ways: one longitudinal and two transverse. Likewise, the phonon can be reflected in the same fashion, giving six different paths for a sound wave to interact with the interface. This problem is usually simplified by using the acoustic analog of Snell’s law:
 \begin{equation}
 \tau_{ab}(\theta, p) = \frac{4\frac{p_2 \nu_{p, 2}}{p_1 \nu_{p,1}} \frac{\cos{\theta_{p,2}}}{\cos{\theta_{p,1}}}}{\big( \frac{p_2 \nu_{p, 2}}{p_1 \nu_{p,1}}+ \frac{\cos{\theta_{p,2}}}{\cos{\theta_{p,1}}}\big)^2}
 \end{equation}
@@ -53,7 +53,7 @@ where $Z$ is the acoustic impedance of each material, $Z_a = \rho_a v_a$. Within
 More complex treatments of the sound waves\cite{Prasher2000} and treatments accounting for the interfacial bonding\cite{Prasher2009} through the AMM have been studied. These modifications result in values that are lower than traditional AMM, therefore much below the experimental measurements of the systems.\cite{Cahill2006, Stoner1993}
 
 \subsection{Diffuse Mismatch Model}
-The diffuse mismatch model assumes that the phonon has two options when the wave meets the interface: the phonon can transfer into material B or is reflected back into material A (see Figure \ref{fig:interface-graphic}). It operates under the assumption that all phonons at the interface are scattered randomly; meaning that all memory of the direction and polarization are lost. The phonon only keeps the frequency constant during the interaction of the two materials. Hence all probability of the phonon to propagate into a material is dependent of the material's density of states. 
+The diffuse mismatch model assumes that the phonon has two options when the wave meets the interface: the phonon can transfer into material B or is reflected back into material A (see Figure \ref{fig:interface-graphic}). It operates under the assumption that all phonons at the interface are scattered randomly, meaning that all memory of the direction and polarization are lost. The phonon only keeps the frequency constant during the interaction of the two materials, hence all probability of the phonon to propagate into a material is dependent of the material's density of states. 
 
 Under the DMM, the thermal conductance at an interface between $a$ and $b$ can be approximated,  
 \begin{equation}
@@ -122,7 +122,7 @@ Van der Waals interactions in this work are described via the Lennard Jones pote
 \begin{equation}
     V_{vdW} = 4\epsilon\bigg[\bigg(\frac{\sigma}{\mid r_{ij}\mid}\bigg)^{12} + \bigg(\frac{\sigma}{\mid r_{ij}\mid}\bigg)^6\big]
 \end{equation}
-where $\epsilon$ is the well depth when the distance between the two bodies is the at minimum and $\sigma$ is the distance the well starts from zero. 
+where $\epsilon$ is the well depth when the distance between the two bodies is at the minimum and $\sigma$ is the distance the well starts from zero. 
 The $\frac{1}{r^6}$ term is similar to dispersion and the $\frac{1}{r^{12}}$ term is empirically added to have a repulsion term.
 
 The last two terms in the full potential equation, $V_{constraints}$ and $V_{hb}$, hydrogen bonding, are not relevant and thus will not be discussed in this work.
@@ -130,7 +130,7 @@ The last two terms in the full potential equation, $V_{constraints}$ and $V_{hb}
 \subsection{Representations of Atoms}
 Within molecular dyanamics, which is a lower accuracy method than first principals methods, there are different levels of simplification of the treatment of molecules.\cite{Leach2001} 
 Chiefly, there are three ways of treating the molecules in a given system that will be discussed here. 
-The first, all-atom, is representing each atom within the system as a bead. Within a molecule these beads share bonds with atoms it is covalently bonded with and experiences bends and torsions within the larger molecule.
+The first, all-atom, is representing each atom within the system as a bead. Within a molecule these beads share bonds with atoms they are covalently bonded with and experiences bends and torsions within the larger molecule.
 
 The next is a simplified version of the all-atom representation, united-atom, which compresses the hydrogen atoms onto the larger atom to which they were bonded. The mass and atomic radius of this bead is increased according to the amount of hydrogens added.
 
@@ -139,7 +139,7 @@ United-atom calculations are faster due to the decrease in N, the number of atom
 The last treatment discussed here is coarse-grain systems. These systems are further simplifications of the system. In coarse-grain systems, beads from the united atom model would be grouped into a single bead that represents a small molecule. The granularity of the beads can be adjusted from system to system and depends on the property desired and the timescale of the simulation. In general, coarse-graining is used more widely for biologically relevant systems (i.e. proteins, lipids, etc.).
     
 \subsection{Boundary Conditions}
-In many simulations the desired quantity is a bulk property. To simulate a full bulk system would require too many atoms and too much time than tangibly possible within the lifetime of a person. Not to mention that the large box would have effects from the edges of the box. So how can the surface effects be avoided and simulate a bulk-like simulation?
+In many simulations the desired quantity is a bulk property. To simulate a full bulk system would require too many atoms and too much time than tangibly possible within the lifetime of a person. Further, the large box would have effects from the edges of the box. So how can the surface effects be avoided and simulate a bulk-like simulation?
 
 \begin{figure}
     \includegraphics[scale=0.5]{figures/pbc-center.pdf}
@@ -147,12 +147,12 @@ In many simulations the desired quantity is a bulk property. To simulate a full 
     \label{fig:pbc}
 \end{figure}
 
-In periodic boundary conditions the above issues can be addressed. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to orthorobic simulation boxes, though any space filling geometry works. An 'image' copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an orthorobic box.
+The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to orthorobic simulation boxes, though any space filling geometry works. An 'image' copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an orthorobic box.
     
 Within the simulation, only the particles in the central box are necessary to track. The particles' images in neighboring cells are increments of the box dimension along each principal axis. 
 So if the particle exits the right boundary of the cell, it will return in the box on the left boundary (from the neighboring simulation cell), which preserves the number density of the cell. 
 In addition to periodic boundaries, the minimum image convention is used to make the simulation computationally possible. The minimum image convention is that a given particle only interacts with the closest periodic image of the particle in the system. 
-Along with this idea is a spherical cutoff, where a particle's non-bonded interactions with other particles end at a finite distance, $r$, from the particle which is less than half the length of periodic box. This ensures that the particle sees one image of each particle and is not interacting with an image of itself. 
+Along with this idea is a spherical cutoff, where a particle's non-bonded interactions with other particles end at a finite distance, $r$, from the particle which is less than half the length of the periodic box. This ensures that the particle sees one image of each particle and is not interacting with an image of itself. 
 
 Though periodic boundaries allows for bulk properties to be found, it creates artificial periodicity in the system and might require an unreasonable system size due to the box structure. Later in this work, simulations of isolated particles are utilized to get single particle properties. 
 These isolated systems implement the Langevin Hull method. While there are several non-periodic methods that allow for a constant pressure, Langevin Hull can handle heterogeneous mixtures of materials with different compressibilites.\cite{Vardeman2011} This method is a modified version of Kohanoff, Caro, and Finnis' method for constant pressure and temperature non-periodic simulations based on Langevin dynamics.\cite{Kohanoff:2005qm, Baltazar:2006ru} 
@@ -160,11 +160,11 @@ These isolated systems implement the Langevin Hull method. While there are sever
 \begin{figure}
     \centering
     \includegraphics[scale=1]{figures/hull.pdf}
-    \caption{This is a visualization of a gold particle solvated in water within the Langevin Hull taken from Vardeman \textit{et. al.}.\cite{Vardeman2011}. The temperature and pressure bath interact with only the outer most atoms on the hull, the grey translucent surface. At each time step the hull is computed to ensure the atoms are interacting in the as edge atoms or as interior atoms.}
+    \caption{Visualization of a gold particle solvated in water within the Langevin Hull taken from Vardeman \textit{et. al.}.\cite{Vardeman2011}. The temperature and pressure bath interact with only the outer most atoms on the hull, the grey translucent surface. At each time step the hull is computed to ensure the atoms are interacting in the correct classifications, as edge atoms or as interior atoms.}
     \label{fig:hull}
 \end{figure}
 
-In the Langevin Hull method the boundary of the system is a completely convex hull made from facets from points triangulated with the outer most atoms of the system. This hull interacts with a system bath that applies constant pressure and provides a thermal bath for the system through the facets of the hull. When looking at thermal properties of a system, the thermal coupling can be turned off to prevent artificial behavior due to the bath.
+In the Langevin Hull method, the boundary of the system is a completely convex hull made of facets from points triangulated with the outermost atoms of the system. This hull interacts with a system bath that applies constant pressure and provides a thermal bath for the system through the facets of the hull. When looking at thermal properties of a system, the thermal coupling can be turned off to prevent artificial behavior due to the bath.
 
 \section{Transport Coefficients}
 Transport phenomena are controlled by the constitutive equations that describe how a material responds to various stimuli via transport.
@@ -201,7 +201,7 @@ The local heat flux density, $q$, is equal to the conductivity of the material, 
 \item Viscosity (Newton’s Law of Viscosity): 
 $\sigma_{x,z} = -\eta \cdot \vec{\nabla_{z}}(\rho v_x)$
 
-The shear stress in the fluid, $\sigma$, is equal to the shear viscosity, $\eta$. and the velocity gradient, $\vec{\nabla_{z}}(\rho v_x)$.
+The shear stress in the fluid, $\sigma$, is equal to the shear viscosity, $\eta$, and the velocity gradient, $\vec{\nabla_{z}}(\rho v_x)$.
 
 %\item Electrical Conductivity (Ohm's Law):
 %$J = \sigma E$
@@ -211,10 +211,10 @@ The shear stress in the fluid, $\sigma$, is equal to the shear viscosity, $\eta$
 
 All the transport coefficients ($D$, $\lambda$, $\eta$) describe how an instantaneous flux in a system relates to a corresponding gradient. Table \ref{tab:coeff} lists how the transport coefficients are involved in constitutive equations, where $\rho$ is the density and $C$ is the heat capacity of a material.
 
-Transport phenomena are utilized in many fields, such as chemistry, physics, chemical engineering, electrical engineering, mechanical engineering, to obtain the transport coefficients to optimize a system. Atomistic simulations can provide insight for tuning experimental design. The three main ways to calculate transport coefficients, with a focus on thermal conductivity, will be discussed in detail in the following sections.
+Transport phenomena are utilized in many fields, such as chemistry, physics, chemical engineering, electrical engineering, and mechanical engineering; to obtain the transport coefficients to optimize a system. Atomistic simulations can provide insight for tuning experimental design. The three main ways to calculate transport coefficients, with a focus on thermal conductivity, will be discussed in detail in the following sections.
 
 \subsection{Equilibruim Molecular Dynamics}
-Transport properties from classical molecular dynamics simulations can be found through many methods. Equilibrium Molecular Dynamics (EMD) simulations use the most straight forward method. Using a relevant time correlation function to the transport coefficient of interest, under linear response theory, the transport coefficient can often be found.\cite{Heyes:1988ee,MASSOBRIO:1984bl,Helfand:1960os,Viscardy:2007rp,che:6888,kinaci:014106} In most cases either the Einstein relation or the Green-Kubo formulation are utilized in EMD.
+Transport properties from classical molecular dynamics simulations can be found through many methods. Equilibrium Molecular Dynamics (EMD) simulations use the most straight forward method. Under linear response theory, the transport coefficient can often be found using a relevant time correlation function to the transport coefficient of interest.\cite{Heyes:1988ee,MASSOBRIO:1984bl,Helfand:1960os,Viscardy:2007rp,che:6888,kinaci:014106} In most cases either the Einstein relation or the Green-Kubo formulation are utilized in EMD.
 
 The Einstein relation for thermal conductivity uses the Helfand moment, $G^\lambda (t)$, which is a centroid of the energies:
 \begin{equation}
@@ -234,7 +234,7 @@ where $k_B$ is the Boltzmann constant, $T$ is the temperature, $V$ is the volume
 
 The equivalent Green-Kubo relation for thermal conductance is
 \begin{equation}
-    \lambda = \frac{1}{3Vk_BT^2}\int^\infty_0 dt <q(t) \cdot q(o)>
+    \lambda = \frac{1}{3Vk_BT^2}\int^\infty_0 dt <q(t) \cdot q(0)>
 \end{equation}
 where $q$ is the heat current.
 The heat current can be found through
@@ -249,7 +249,7 @@ The noise and poor convergence in the long-time tails give a poor estimation for
 Moreover, these calculations would have further complications when the systems would contain an interface or are non-homogeneous.
 
 \subsection{Non-Equilibruim Molecular Dynamics}
-Since EMD has limitations due to the noise in the correlation function, methods in non-equilibrium molecular dynamics, NEMD, were developed that introduces a gradient into the simulations.\cite{Backer:2005sf,Hess:2002nr,Picalek:2009rz, Vasquez:2004ty}
+Since EMD has limitations due to the noise in the correlation function, methods in non-equilibrium molecular dynamics, NEMD, were developed that introduce a gradient into the simulations.\cite{Backer:2005sf,Hess:2002nr,Picalek:2009rz, Vasquez:2004ty}
 Typically these methods are used to impose a temperature or velocity gradient on a system to measure the corresponding transport coefficient. \cite{Evans:1982oq, Erpenbeck:1984qe, Evans:1986nx, Vogelsang:1988qv, Maginn:1993kl, Hess:2002nr, Schelling:2002dp, Berthier:2002ai, Evans:2002tg, Vasquez:2004ty, Backer:2005sf, Jiang:2008hc, Picalek:2009rz}
 With linear response of a flux due to the applied gradient, the transport coefficient can be calculated using the constitutive equation: $J_z = -\lambda \frac{\partial T}{\partial z}$, where $\frac{\partial T}{\partial z}$ is the imposed piece and $J_z$ is the measured flux.
 In NEMD, the temperature gradient is imposed by choosing sections of the simulation box to have particular temperatures. For example, a center portion of the system will be set to high temperature and the edges set to a lower temperature to impose the gradient. 
@@ -281,7 +281,7 @@ The systems that are explored in this work contain a gold substrate or particle 
 Thermal properties of gold particles have been of great experimental interest, particularly detangling the important factors for transport: particle size,\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016} composition,\cite{Wilson:2002uq, Ong:2013rt} surface modification,\cite{kuang:AuThl,Ong:2013rt,Ong:2014yq,Liu2015,Stocker2016,Hannah2015,Park2016,Leitner2017} surface supports,\cite{Park2012} exposed surface facets,\cite{Hannah2015} and the chemical details of the environment.\cite{Ge2006,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Park2016} 
 
 Three distinct studies examining interfacial thermal conductivity and heat transport will be explored with three different systems in this work.
-The first system has nanospheres with a range of particle radii and a ligands with different length and rigidity.\cite{Stocker2016}
+The first system has nanospheres with a range of particle radii and ligands with different length and rigidity.\cite{Stocker2016}
 The second system strips away the ligand layer and looks at bare particles with the intention of finding the difference in particle morphology.\cite{Neidhart}
 How exactly does the surface of the particle matter in heat transport?
 The third system looks at a more complex problem: how does the particle size and the system solvent change thermal conductivity of a nanoarray?
