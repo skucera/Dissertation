@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  16 OCT 2018 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  2 NOV 2018 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -915,36 +915,84 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup9
 )
+(/opt/local/share/texmf-texlive/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/opt/local/share/texmf-texlive/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip83
+\RaggedLeftLeftskip=\skip84
+\RaggedRightLeftskip=\skip85
+\CenteringRightskip=\skip86
+\RaggedLeftRightskip=\skip87
+\RaggedRightRightskip=\skip88
+\CenteringParfillskip=\skip89
+\RaggedLeftParfillskip=\skip90
+\RaggedRightParfillskip=\skip91
+\JustifyingParfillskip=\skip92
+\CenteringParindent=\skip93
+\RaggedLeftParindent=\skip94
+\RaggedRightParindent=\skip95
+\JustifyingParindent=\skip96
+)
+(/opt/local/share/texmf-texlive/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/02/11 v5.2c context-sensitive quotations (JAW)
+
+(/opt/local/share/texmf-texlive/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
+\csq@reset=\count295
+\csq@gtype=\count296
+\csq@glevel=\count297
+\csq@qlevel=\count298
+\csq@maxlvl=\count299
+\csq@tshold=\count300
+\csq@ltx@everypar=\toks38
+
+(/opt/local/share/texmf-texlive/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/02/11 v5.2c csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/opt/local/share/texmf-texlive/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
 (./Neidhart_Thesis.aux (./chapters/Introduction.aux) (./chapters/NPthiols.aux)
 (./chapters/Morph.aux))
 \openout1 = `Neidhart_Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 (/opt/local/share/texmf-texlive/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
+\scratchcounter=\count301
 \scratchdimen=\dimen287
 \scratchbox=\box84
-\nofMPsegments=\count295
-\nofMParguments=\count296
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count297
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count304
 \MPscratchDim=\dimen288
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks40
 ) (/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1009,10 +1057,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/opt/local/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count300
-\float@exts=\toks40
+\c@float@type=\count307
+\float@exts=\toks41
 \float@box=\box85
-\@float@everytoks=\toks41
+\@float@everytoks=\toks42
 \@floatcapt=\box86
 )
 (/opt/local/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
@@ -1027,21 +1075,21 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen296
 \cmidrulekern=\dimen297
 \defaultaddspace=\dimen298
-\@cmidla=\count301
-\@cmidlb=\count302
+\@cmidla=\count308
+\@cmidlb=\count309
 \@aboverulesep=\dimen299
 \@belowrulesep=\dimen300
-\@thisruleclass=\count303
-\@lastruleclass=\count304
+\@thisruleclass=\count310
+\@lastruleclass=\count311
 \@thisrulewidth=\dimen301
 )
 (/opt/local/share/texmf-texlive/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count305
-\rotFPtop=\skip83
-\rotFPbot=\skip84
+\c@r@tfl@t=\count312
+\rotFPtop=\skip97
+\rotFPbot=\skip98
 \rot@float@box=\box87
-\rot@mess@toks=\toks42
+\rot@mess@toks=\toks43
 )
 (/opt/local/share/texmf-texlive/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1082,7 +1130,6 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 \AtBeginShipoutBox=\box88
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
@@ -1092,15 +1139,15 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen302
-\Hy@linkcounter=\count306
-\Hy@pagecounter=\count307
+\Hy@linkcounter=\count313
+\Hy@pagecounter=\count314
 
 (/opt/local/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count308
+\Hy@SavedSpaceFactor=\count315
 
 (/opt/local/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1121,13 +1168,13 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count309
+\c@Hy@tempcnt=\count316
 LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen303
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
 e 5495.
-\Fld@menulength=\count310
+\Fld@menulength=\count317
 \Field@Width=\dimen304
 \Fld@charsize=\dimen305
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -1139,25 +1186,25 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count311
-\c@Item=\count312
-\c@Hfootnote=\count313
+\Hy@abspage=\count318
+\c@Item=\count319
+\c@Hfootnote=\count320
 )
 Package hyperref Info: Driver: hpdftex.
 
 (/opt/local/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count314
-\c@bookmark@seq@number=\count315
+\Fld@listcount=\count321
+\c@bookmark@seq@number=\count322
 
 (/opt/local/share/texmf-texlive/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip85
+\Hy@SectionHShift=\skip99
 )
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 40.
 
 (/opt/local/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1165,11 +1212,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/opt/local/share/texmf-texlive/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count316
+\c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./Neidhart_Thesis.out) (./Neidhart_Thesis.out)
 \@outlinefile=\write4
@@ -1181,28 +1228,30 @@ ABD: EveryShipout initializing macros
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 68.
+. Activating mapping `default' on line 40.
 .................................................
-LaTeX Font Info:    Try loading font information for U+lasy on input line 79.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 40.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 51.
 
 (/opt/local/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 79.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 79.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 79.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 51.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 51.
 
 (/opt/local/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1217,7 +1266,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.93 
+l.65 
       [1
 
 ] [2] (./Neidhart_Thesis.toc
@@ -1275,25 +1324,25 @@ File: figures/interface-graphic.png Graphic file (type png)
 Package pdftex.def Info: figures/interface-graphic.png  used on input line 33.
 (pdftex.def)             Requested size: 191.33435pt x 409.7699pt.
  [3] [4 <./figures/interface-graphic.png>] [5] [6]
-<figures/MDschematic.pdf, id=479, 800.7516pt x 549.97469pt>
+<figures/MDschematic.pdf, id=480, 800.7516pt x 549.97469pt>
 File: figures/MDschematic.pdf Graphic file (type pdf)
 <use figures/MDschematic.pdf>
 Package pdftex.def Info: figures/MDschematic.pdf  used on input line 79.
 (pdftex.def)             Requested size: 360.33488pt x 247.48631pt.
  [7] [8 <./figures/MDschematic.pdf>] [9]
-Overfull \hbox (6.27045pt too wide) in paragraph at lines 131--134
+Overfull \hbox (15.40924pt too wide) in paragraph at lines 131--134
 \OT1/cmr/m/n/12 pals meth-ods, there are dif-fer-ent lev-els of sim-pli-fi-ca-t
-ion of the treat-ment of molecules.[]
+ion of the treat-ment of molecules. [[]]
  []
 
 [10]
-<figures/pbc-center.pdf, id=519, 822.43259pt x 681.50612pt>
+<figures/pbc-center.pdf, id=521, 822.43259pt x 681.50612pt>
 File: figures/pbc-center.pdf Graphic file (type pdf)
 <use figures/pbc-center.pdf>
 Package pdftex.def Info: figures/pbc-center.pdf  used on input line 145.
 (pdftex.def)             Requested size: 411.21529pt x 340.75223pt.
  [11] [12 <./figures/pbc-center.pdf>]
-<figures/hull.pdf, id=539, 313.29124pt x 310.00175pt>
+<figures/hull.pdf, id=541, 313.29124pt x 310.00175pt>
 File: figures/hull.pdf Graphic file (type pdf)
 <use figures/hull.pdf>
 Package pdftex.def Info: figures/hull.pdf  used on input line 162.
@@ -1318,17 +1367,21 @@ CHAPTER 2.
 
 
 ] [22] [23] [24]
-<figures/structures.pdf, id=728, 642.51646pt x 705.16048pt>
+<figures/structures.pdf, id=773, 642.51646pt x 705.16048pt>
 File: figures/structures.pdf Graphic file (type pdf)
 <use figures/structures.pdf>
-Package pdftex.def Info: figures/structures.pdf  used on input line 159.
+Package pdftex.def Info: figures/structures.pdf  used on input line 160.
 (pdftex.def)             Requested size: 432.0pt x 474.12285pt.
  [25] [26 <./figures/structures.pdf>] [27]
+Overfull \hbox (11.74977pt too wide) in paragraph at lines 275--289
+ [][] 
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 308.
+LaTeX Warning: Command \r invalid in math mode on input line 309.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1338,7 +1391,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (44.61147pt too wide) in paragraph at lines 418--434
+Overfull \hbox (44.61147pt too wide) in paragraph at lines 419--435
  [][] 
  []
 
@@ -1346,68 +1399,68 @@ Overfull \hbox (44.61147pt too wide) in paragraph at lines 418--434
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31] [32]
-<figures/NP25_C12h1.pdf, id=1272, 1762.585pt x 1632.0975pt>
+<figures/NP25_C12h1.pdf, id=1317, 1762.585pt x 1632.0975pt>
 File: figures/NP25_C12h1.pdf Graphic file (type pdf)
 <use figures/NP25_C12h1.pdf>
-Package pdftex.def Info: figures/NP25_C12h1.pdf  used on input line 471.
+Package pdftex.def Info: figures/NP25_C12h1.pdf  used on input line 472.
 (pdftex.def)             Requested size: 432.0pt x 400.00436pt.
  [33] [34 <./figures/NP25_C12h1.pdf>]
-<figures/temp_profile.pdf, id=1294, 789.44962pt x 571.52364pt>
+<figures/temp_profile.pdf, id=1340, 789.44962pt x 571.52364pt>
 File: figures/temp_profile.pdf Graphic file (type pdf)
 <use figures/temp_profile.pdf>
-Package pdftex.def Info: figures/temp_profile.pdf  used on input line 491.
+Package pdftex.def Info: figures/temp_profile.pdf  used on input line 492.
 (pdftex.def)             Requested size: 432.0pt x 312.74307pt.
  [35 <./figures/temp_profile.pdf>]
-<figures/G3.pdf, id=1324, 794.97pt x 614.295pt>
+<figures/G3.pdf, id=1369, 794.97pt x 614.295pt>
 File: figures/G3.pdf Graphic file (type pdf)
 <use figures/G3.pdf>
-Package pdftex.def Info: figures/G3.pdf  used on input line 537.
+Package pdftex.def Info: figures/G3.pdf  used on input line 538.
 (pdftex.def)             Requested size: 432.0pt x 333.82336pt.
  [36] [37 <./figures/G3.pdf>] [38] [39]
-<figures/fcc.pdf, id=1371, 667.40143pt x 477.82115pt>
+<figures/fcc.pdf, id=1416, 667.40143pt x 477.82115pt>
 File: figures/fcc.pdf Graphic file (type pdf)
 <use figures/fcc.pdf>
-Package pdftex.def Info: figures/fcc.pdf  used on input line 653.
+Package pdftex.def Info: figures/fcc.pdf  used on input line 654.
 (pdftex.def)             Requested size: 432.0pt x 309.29686pt.
  [40 <./figures/fcc.pdf>]
-<figures/C3.pdf, id=1404, 662.76607pt x 507.04933pt>
+<figures/C3.pdf, id=1449, 662.76607pt x 507.04933pt>
 File: figures/C3.pdf Graphic file (type pdf)
 <use figures/C3.pdf>
-Package pdftex.def Info: figures/C3.pdf  used on input line 686.
+Package pdftex.def Info: figures/C3.pdf  used on input line 687.
 (pdftex.def)             Requested size: 432.0pt x 330.50658pt.
  [41] [42 <./figures/C3.pdf>]
-<figures/NP_pAngle.pdf, id=1437, 361.15588pt x 470.97244pt>
+<figures/NP_pAngle.pdf, id=1483, 361.15588pt x 470.97244pt>
 File: figures/NP_pAngle.pdf Graphic file (type pdf)
 <use figures/NP_pAngle.pdf>
-Package pdftex.def Info: figures/NP_pAngle.pdf  used on input line 779.
+Package pdftex.def Info: figures/NP_pAngle.pdf  used on input line 780.
 (pdftex.def)             Requested size: 432.0pt x 563.40341pt.
 
 
-LaTeX Warning: Float too large for page by 4.23672pt on input line 785.
+LaTeX Warning: Float too large for page by 4.23672pt on input line 786.
 
 [43] [44 <./figures/NP_pAngle.pdf>]
-<figures/P2_3.pdf, id=1507, 726.59958pt x 568.49088pt>
+<figures/P2_3.pdf, id=1552, 726.59958pt x 568.49088pt>
 File: figures/P2_3.pdf Graphic file (type pdf)
 <use figures/P2_3.pdf>
-Package pdftex.def Info: figures/P2_3.pdf  used on input line 838.
+Package pdftex.def Info: figures/P2_3.pdf  used on input line 839.
 (pdftex.def)             Requested size: 432.0pt x 337.9917pt.
  [45] [46 <./figures/P2_3.pdf>]
-<figures/density.pdf, id=1538, 698.79568pt x 528.82971pt>
+<figures/density.pdf, id=1583, 698.79568pt x 528.82971pt>
 File: figures/density.pdf Graphic file (type pdf)
 <use figures/density.pdf>
-Package pdftex.def Info: figures/density.pdf  used on input line 871.
+Package pdftex.def Info: figures/density.pdf  used on input line 872.
 (pdftex.def)             Requested size: 432.0pt x 326.92693pt.
-<figures/rho3.pdf, id=1539, 679.46144pt x 507.05736pt>
+<figures/rho3.pdf, id=1584, 679.46144pt x 507.05736pt>
 File: figures/rho3.pdf Graphic file (type pdf)
 <use figures/rho3.pdf>
-Package pdftex.def Info: figures/rho3.pdf  used on input line 907.
+Package pdftex.def Info: figures/rho3.pdf  used on input line 908.
 (pdftex.def)             Requested size: 432.0pt x 322.39563pt.
  [47]
 [48 <./figures/density.pdf>] [49 <./figures/rho3.pdf>] [50]
-<figures/rho_omega_12.pdf, id=1634, 679.52974pt x 480.64769pt>
+<figures/rho_omega_12.pdf, id=1679, 679.52974pt x 480.64769pt>
 File: figures/rho_omega_12.pdf Graphic file (type pdf)
 <use figures/rho_omega_12.pdf>
-Package pdftex.def Info: figures/rho_omega_12.pdf  used on input line 989.
+Package pdftex.def Info: figures/rho_omega_12.pdf  used on input line 990.
 (pdftex.def)             Requested size: 432.0pt x 305.5746pt.
 ) [51] [52 <./figures/rho_omega_12.pdf>] [53]
 \openout2 = `chapters/Morph.aux'.
@@ -1425,13 +1478,13 @@ rectly, re-verse non-equilibrium
  []
 
 [58] [59] [60] [61] [62] [63] [64]
-<figures/g-ico-spher-cub.pdf, id=1823, 873.3438pt x 544.84253pt>
+<figures/g-ico-spher-cub.pdf, id=1875, 873.3438pt x 544.84253pt>
 File: figures/g-ico-spher-cub.pdf Graphic file (type pdf)
 <use figures/g-ico-spher-cub.pdf>
 Package pdftex.def Info: figures/g-ico-spher-cub.pdf  used on input line 428.
 (pdftex.def)             Requested size: 432.0pt x 269.51082pt.
  [65] [66 <./figures/g-ico-spher-cub.pdf>]
-<figures/stacked-hex-facets.pdf, id=1872, 749.4148pt x 532.64597pt>
+<figures/stacked-hex-facets.pdf, id=1923, 749.4148pt x 532.64597pt>
 File: figures/stacked-hex-facets.pdf Graphic file (type pdf)
 <use figures/stacked-hex-facets.pdf>
 Package pdftex.def Info: figures/stacked-hex-facets.pdf  used on input line 465
@@ -1439,13 +1492,13 @@ Package pdftex.def Info: figures/stacked-hex-facets.pdf  used on input line 465
 (pdftex.def)             Requested size: 432.0pt x 307.04115pt.
 
 [67] [68 <./figures/stacked-hex-facets.pdf>] [69]
-<figures/facets-cn.pdf, id=1983, 565.11125pt x 606.265pt>
+<figures/facets-cn.pdf, id=2034, 565.11125pt x 606.265pt>
 File: figures/facets-cn.pdf Graphic file (type pdf)
 <use figures/facets-cn.pdf>
 Package pdftex.def Info: figures/facets-cn.pdf  used on input line 531.
 (pdftex.def)             Requested size: 361.34999pt x 387.67525pt.
  [70] [71 <./figures/facets-cn.pdf>]
-<figures/surface-cn.pdf, id=2028, 713.66624pt x 521.95pt>
+<figures/surface-cn.pdf, id=2079, 713.66624pt x 521.95pt>
 File: figures/surface-cn.pdf Graphic file (type pdf)
 <use figures/surface-cn.pdf>
 Package pdftex.def Info: figures/surface-cn.pdf  used on input line 609.
@@ -1455,38 +1508,38 @@ Package pdftex.def Info: figures/surface-cn.pdf  used on input line 609.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [72]
-<figures/new-cn.pdf, id=2035, 722.7pt x 516.93124pt>
+<figures/new-cn.pdf, id=2087, 722.7pt x 516.93124pt>
 File: figures/new-cn.pdf Graphic file (type pdf)
 <use figures/new-cn.pdf>
 Package pdftex.def Info: figures/new-cn.pdf  used on input line 666.
 (pdftex.def)             Requested size: 432.0pt x 309.00163pt.
  [73 <./figures/surface-cn.pdf>] [74 <./figures/new-cn.pdf>] [75] [76]
-<figures/struct-bowr.pdf, id=2140, 794.97pt x 614.295pt>
+<figures/struct-bowr.pdf, id=2191, 794.97pt x 614.295pt>
 File: figures/struct-bowr.pdf Graphic file (type pdf)
 <use figures/struct-bowr.pdf>
 Package pdftex.def Info: figures/struct-bowr.pdf  used on input line 773.
 (pdftex.def)             Requested size: 361.34999pt x 279.23282pt.
-<figures/col-layer40.pdf, id=2141, 720.6925pt x 548.0475pt>
+<figures/col-layer40.pdf, id=2192, 720.6925pt x 548.0475pt>
 File: figures/col-layer40.pdf Graphic file (type pdf)
 <use figures/col-layer40.pdf>
 Package pdftex.def Info: figures/col-layer40.pdf  used on input line 790.
 (pdftex.def)             Requested size: 432.0pt x 328.51326pt.
 
 [77]
-<figures/all-v-surface.pdf, id=2149, 712.6625pt x 488.82625pt>
+<figures/all-v-surface.pdf, id=2200, 712.6625pt x 488.82625pt>
 File: figures/all-v-surface.pdf Graphic file (type pdf)
 <use figures/all-v-surface.pdf>
 Package pdftex.def Info: figures/all-v-surface.pdf  used on input line 820.
 (pdftex.def)             Requested size: 432.0pt x 296.31139pt.
  [78 <./figures/struct-bowr.pdf, page is rotated 90 degrees>] [79 <./figures/co
 l-layer40.pdf>] [80 <./figures/all-v-surface.pdf>]
-<figures/all-spect.pdf, id=2191, 718.685pt x 515.9275pt>
+<figures/all-spect.pdf, id=2243, 718.685pt x 515.9275pt>
 File: figures/all-spect.pdf Graphic file (type pdf)
 <use figures/all-spect.pdf>
 Package pdftex.def Info: figures/all-spect.pdf  used on input line 881.
 (pdftex.def)             Requested size: 361.34999pt x 259.41164pt.
  [81] [82 <./figures/all-spect.pdf>]
-<figures/models.pdf, id=2216, 685.56125pt x 496.85625pt>
+<figures/models.pdf, id=2267, 685.56125pt x 496.85625pt>
 File: figures/models.pdf Graphic file (type pdf)
 <use figures/models.pdf>
 Package pdftex.def Info: figures/models.pdf  used on input line 951.
@@ -1497,51 +1550,44 @@ Overfull \hbox (2.82835pt too wide) in paragraph at lines 970--988
 -cle mor-pholo-gies. Nanospheres,
  []
 
-) [85] (./Neidhart_Thesis.bbl
-Underfull \hbox (badness 1210) in paragraph at lines 67--75
-[]\OT1/cmr/m/n/12 Luedtke, W. D.; Land-man, U. Struc-ture and Ther-mo-dy-nam-ic
-s of Self-
- []
-
-[86
+) [85] (./Neidhart_Thesis.bbl [86
 
 
 
 ] [87] [88]
-Underfull \hbox (badness 1931) in paragraph at lines 385--392
-[]\OT1/cmr/m/n/12 Berthier, L.; Bar-rat, J. L. Nonequi-lib-rium Dy-nam-ics and 
-Fluctuation-
+Underfull \hbox (badness 2020) in paragraph at lines 245--252
+[]\OT1/cmr/m/n/12 H. Harikr-ishna, W. A. Ducker, and S. T. Huxtable.  The in-fl
+u-ence
  []
 
 [89] [90] [91] [92] [93]
-Underfull \hbox (badness 4913) in paragraph at lines 997--1004
-[]\OT1/cmr/m/n/12 Jorgensen, W. L. In \OT1/cmr/m/it/12 The En-cy-clo-pe-dia of 
-Com-pu-ta-tional Chem-istry\OT1/cmr/m/n/12 ;
+Underfull \hbox (badness 1484) in paragraph at lines 703--711
+[]\OT1/cmr/m/n/12 A. J. Schmidt, K. C. Collins, A. J. Min-nich, and G. Chen.  T
+her-
  []
 
-) [94]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+[94] [95] [96]) [97]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./Neidhart_Thesis.aux (./chapters/Introduction.aux)
 (./chapters/NPthiols.aux) (./chapters/Morph.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `Neidhart_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: FF983ADFDABD5152736A28413857D21F;3926.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 193.
  ) 
 Here is how much of TeX's memory you used:
- 30858 strings out of 494590
- 614447 string characters out of 6177729
- 720114 words of memory out of 5000000
- 33573 multiletter control sequences out of 15000+600000
+ 31770 strings out of 494590
+ 628053 string characters out of 6177729
+ 745322 words of memory out of 5000000
+ 34464 multiletter control sequences out of 15000+600000
  539120 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,21n,67p,10375b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,21n,67p,10375b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
 </opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/lo
 cal/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/local/s
@@ -1558,10 +1604,10 @@ cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Neidhart_Thesis.pdf (104 pages, 10709669 bytes).
+Output written on Neidhart_Thesis.pdf (107 pages, 10726553 bytes).
 PDF statistics:
- 2438 PDF objects out of 2487 (max. 8388607)
- 1872 compressed objects within 19 object streams
- 356 named destinations out of 1000 (max. 500000)
+ 2598 PDF objects out of 2984 (max. 8388607)
+ 2027 compressed objects within 21 object streams
+ 359 named destinations out of 1000 (max. 500000)
  538 words of extra memory for PDF output out of 10000 (max. 10000000)
 

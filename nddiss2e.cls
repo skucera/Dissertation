@@ -408,7 +408,8 @@
 }%
 \providecommand{\abstractname}{Abstract}
 \providecommand{\dedicationname}{\mbox{}}
-\providecommand{\prefacename}{PREFACE}
+%\providecommand{\prefacename}{PREFACE}
+\providecommand{\prefacename}{}
 \providecommand{\acknowledgename}{ACKNOWLEDGMENTS}
 \providecommand{\symbolsname}{SYMBOLS}
 \renewcommand{\tablename}{TABLE}
@@ -477,7 +478,7 @@
 \newenvironment{preface}{%
   \typeout{Preface page}
   \chapter*{\prefacename}
-  \addcontentsline{toc}{chapter}{\prefacename}%
+  %\addcontentsline{toc}{chapter}{\prefacename}%
 }%
 {\par\null\clearpage}%
 \newenvironment{acknowledge}{%

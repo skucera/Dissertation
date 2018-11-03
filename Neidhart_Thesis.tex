@@ -19,27 +19,7 @@
 % sort&compress (sorts and compresses numerical citations;
 %           is identical to sort when used with textrefs)
 
-% \usepackage{amsmath}
-% % \usepackage{amssymb}
-% \usepackage{graphicx}
-% \usepackage{multirow}
-% \usepackage{dcolumn}
 \usepackage{bm} 
-% \usepackage{amssymb}
-%\usepackage{tablefootnote}
-% \usepackage{times}
-% \usepackage{mathptm}
-%\usepackage{caption}
-% \usepackage{float}
-% \usepackage{geometry}
-% \usepackage{xkeyval}
-% \usepackage{tabularx}
-% \usepackage{longtable}
-% \usepackage{multicol}
-% \usepackage{square}{natbib}
-% \usepackage{achemso}
-% \usepackage{cleveref}
-%------------------------------
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
 \usepackage{pdflscape}
@@ -48,20 +28,12 @@
 \usepackage{abraces}
 \usepackage{threeparttable}
 \usepackage{multirow}
-%\usepackage{multicolumn}
 \usepackage{dcolumn}
 \usepackage[export]{adjustbox}
 \usepackage{mathrsfs}
+\usepackage{ragged2e}
+\usepackage{csquotes}
 
-% \setcitestyle{square}
-
-%\newcommand*{\citen}[1]{%
-%  \begingroup
-%    \romannumeral-`\x % remove space at the beginning of \setcitestyle
-%    \setcitestyle{numbers}%
-%    \cite{#1}%
-%  \endgroup   
-%}
 
 \newcommand{\degree}{\ensuremath{^\circ}}
 
@@ -118,6 +90,7 @@ Finally, the ideas from both prior works are combined to study $Au_{144}PET_{60}
 
 \mainmatter
 
+\bibpunct{[}{]}{,}{n}{,}{,}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		CHAPTER 1 -- INTRODUCTION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,10 +143,10 @@ Finally, the ideas from both prior works are combined to study $Au_{144}PET_{60}
 
  \backmatter
  
- % \bibliographystyle{nddiss2e}
+% \bibliographystyle{nddiss2e}
  % \bibliographystyle{nddiss2enoarticletitles}
-\bibliographystyle{achemso}
- % \bibliographystyle{abbrvnat} 
+% \bibliographystyle{achemso}
+\bibliographystyle{abbrvnat} 
 \bibliography{Neidhart_Thesis} 
  
  % The standard abbrvnat style should be acceptable. Also provided with both the advanced and standard distributions are nddiss2e and nddiss2enoarticletitles style options. If you prefer to manually enter your bibliography, that is fine. Comment out the previous two lines, and enter your bibliography as usual. Note that if you choose this route, formatting the bibliography is your responsibility. An example is below, including the optional arguments necessary for author-date style citations.

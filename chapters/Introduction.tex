@@ -10,24 +10,24 @@ Chapter 4 presents a combination of the concepts in the previous chapters throug
 Finally, Chapter 5 looks forward to potential applications of a new fluctuating charge embedded method to be applied to metal surfaces and particles in polarizable solvents. This new method would allow for the examination of charge effects on thermal transport and arrangement of solvent at the surface of the metal.
 
 \section{Heat Transport}
-The classical definition of temperature is a quantity that describes a thermal equilibration phenomena. At the macroscopic level, heat can be transferred in three ways: conduction, convection, and radiation.\cite{Chen2005} 
-In equipartition theorem, where the average kinetic energy of a particle is \(\frac{3k_{B}T}{2}\), the temperature is a portion of the kinetic energy of the system. \cite{Goldstein2001}
+The classical definition of temperature is a quantity that describes a thermal equilibration phenomena. At the macroscopic level, heat can be transferred in three ways: conduction, convection, and radiation.~~\cite{Chen2005} 
+In equipartition theorem, where the average kinetic energy of a particle is \(\frac{3k_{B}T}{2}\), the temperature is a portion of the kinetic energy of the system.~\cite{Goldstein2001}
 When the kinetic energy is distributed evenly among all independent parts of the system, the heavy atoms in a system would have an average velocity slower than the lighter atoms in the system at the same temperature.
 
-On the microscopic level, heat moves through different paths depending on the composition of the system.\cite{Chen2005}
+On the microscopic level, heat moves through different paths depending on the composition of the system.~\cite{Chen2005}
 In a gas, heat is transferred primarily through collisions, while in semi-conductors thermal energy moves through the propagation of vibrations in the solid, a phonon. 
-A phonon is a quantized lattice wave that traverses the material with a longitudinal or transverse polarization.\cite{Kittel} 
-In systems, like metals, where the material has a solid lattice and a sea of electrons, both phonon and electron heat transfer contributions should be considered.\cite{Kittel} 
+A phonon is a quantized lattice wave that traverses the material with a longitudinal or transverse polarization.~\cite{Kittel} 
+In systems, like metals, where the material has a solid lattice and a sea of electrons, both phonon and electron heat transfer contributions should be considered.~\cite{Kittel} 
 Electrons in a metal system are typically treated as an electron gas.
 Electrons travel at velocities that are approximately three orders of magnitude larger than phonons, therefore the electron contribution dominates heat transfer in metals and is important when considering bulk thermal conductance of metals.
-At a metal/non-metal interface the thermal conductance through the non-metal is dominated by phonons, rather than electronic contributions.\cite{Chen2005, Cahill2011, Stoner1993}
+At a metal/non-metal interface the thermal conductance through the non-metal is dominated by phonons, rather than electronic contributions.~\cite{Chen2005, Cahill2011, Stoner1993}
 %(All prior material is from Gang Chen Book)
 
 \subsection{Heat Transfer at Interfaces}
-Further examination of phonons as the only heat carriers can be done at the interface of two materials. If the phonon is traveling through material A and approaches material B with frequency $\omega$, with angles $\phi$ and $\theta$ normal to the interface; there is a transmission probability, $\tau_{a\rightarrow b}(\omega)$, that the wave will continue into material B (see Figure \ref{fig:interface-graphic}).\cite{Monachon2016} 
+Further examination of phonons as the only heat carriers can be done at the interface of two materials. If the phonon is traveling through material A and approaches material B with frequency $\omega$, with angles $\phi$ and $\theta$ normal to the interface; there is a transmission probability, $\tau_{a\rightarrow b}(\omega)$, that the wave will continue into material B (see Figure \ref{fig:interface-graphic}).~\cite{Monachon2016} 
 The transmission probability must satisfy detailed balance.
 %, meaning $\tau_{a\rightarrow b} = 1 - \tau_{b\rightarrow a}$
-There are two major models that have predictions for behavior of heat transfer at the interface: acoustic mismatch model (AMM) and diffuse mismatch model (DMM).\cite{Monachon2016}
+There are two major models that have predictions for behavior of heat transfer at the interface: acoustic mismatch model (AMM) and diffuse mismatch model (DMM).~\cite{Monachon2016}
 \begin{figure}
     \centering
     \includegraphics[scale=0.75]{figures/interface-graphic.png}
@@ -36,7 +36,7 @@ There are two major models that have predictions for behavior of heat transfer a
 \end{figure}
 
 \subsection{Acoustic Mismatch Model}
-In the acoustic mismatch model the transmission probability- the total fraction of energy transmitted across the interface- is dependent on the acoustic impedance of the material, $Z_i$. The AMM evaluates the transmission coefficient through a continuum approach.\cite{Little1959} This model uses the acoustic transmission and reflection between the two materials and ignores the granularity of the materials. Therefore the AMM would be most appropriate for low temperatures where the thermal spectrum is dominated by long wavelength phonons.\cite{Graff1975} 
+In the acoustic mismatch model the transmission probability- the total fraction of energy transmitted across the interface- is dependent on the acoustic impedance of the material, $Z_i$. The AMM evaluates the transmission coefficient through a continuum approach.~\cite{Little1959} This model uses the acoustic transmission and reflection between the two materials and ignores the granularity of the materials. Therefore the AMM would be most appropriate for low temperatures where the thermal spectrum is dominated by long wavelength phonons.~\cite{Graff1975} 
 
 Each phonon can be transmitted in three ways: one longitudinal and two transverse. Likewise, the phonon can be reflected in the same fashion, giving six different paths for a sound wave to interact with the interface. This problem is usually simplified by using the acoustic analog of Snell’s law:
 \begin{equation}
@@ -50,7 +50,7 @@ Transmission can be simplified through using acoustic impendances:
 \end{equation}
 where $Z$ is the acoustic impedance of each material, $Z_a = \rho_a v_a$. Within the acoustic impedance, $\rho$ is density of states and $v$ is the speed of sound in the material. 
 
-More complex treatments of the sound waves\cite{Prasher2000} and treatments accounting for the interfacial bonding\cite{Prasher2009} through the AMM have been studied. These modifications result in values that are lower than traditional AMM, therefore much below the experimental measurements of the systems.\cite{Cahill2006, Stoner1993}
+More complex treatments of the sound waves~\cite{Prasher2000} and treatments accounting for the interfacial bonding~\cite{Prasher2009} through the AMM have been studied. These modifications result in values that are lower than traditional AMM, therefore much below the experimental measurements of the systems.~\cite{Cahill2006, Stoner1993}
 
 \subsection{Diffuse Mismatch Model}
 The diffuse mismatch model assumes that the phonon has two options when the wave meets the interface: the phonon can transfer into material B or is reflected back into material A (see Figure \ref{fig:interface-graphic}). It operates under the assumption that all phonons at the interface are scattered randomly, meaning that all memory of the direction and polarization are lost. The phonon only keeps the frequency constant during the interaction of the two materials, hence all probability of the phonon to propagate into a material is dependent of the material's density of states. 
@@ -59,17 +59,17 @@ Under the DMM, the thermal conductance at an interface between $a$ and $b$ can b
 \begin{equation}
 G_{ab} = \frac{1}{4 \pi} \sum_p \int_\omega \int_\theta \int_\phi \hbar \omega \frac{\partial f}{\partial T}  v_a  \rho_a  \tau_{ab} \cos\theta \sin\theta d\theta d\phi d\omega
 \end{equation}
-where $f$ is the Bose-Einstein distribution function, $v_a(\omega, p)$ is the group velocity (on side $a$) for a phonon characterized by frequency $\omega$, moving in direction ($\theta, \phi$) with polarization $p$.  The relevant material properties are the density of phonon states, $\rho_a(\omega, p)$, and the transmission probability, $\tau_{ab}(\omega, p)$, at the interface.\cite{Swartz:1989uq,Reddy:2005fk,Monachon2016}  The DMM also assumes that phonons scatter into states with the same frequency on either side, and that the scattering phonons lose memory of their incident angles.  This requires a symmetry in the transmission probabilities,
+where $f$ is the Bose-Einstein distribution function, $v_a(\omega, p)$ is the group velocity (on side $a$) for a phonon characterized by frequency $\omega$, moving in direction ($\theta, \phi$) with polarization $p$.  The relevant material properties are the density of phonon states, $\rho_a(\omega, p)$, and the transmission probability, $\tau_{ab}(\omega, p)$, at the interface.~\cite{Swartz:1989uq,Reddy:2005fk,Monachon2016}  The DMM also assumes that phonons scatter into states with the same frequency on either side, and that the scattering phonons lose memory of their incident angles.  This requires a symmetry in the transmission probabilities,
 \begin{equation}
 \tau_{ab}(\omega) = 1 - \tau_{ba}(\omega)
 \end{equation}
 
-The DMM has a number of significant issues, particularly when the Debye model does a poor job representing the density of states, or where there is a fictitious boundary between identical materials (where the DMM predicts a non-zero resistance).\cite{Monachon2016}  There is also an assumption of detailed balance built-in to the model,\cite{Chen2005} which requires the two sides to be at equilibrium.
+The DMM has a number of significant issues, particularly when the Debye model does a poor job representing the density of states, or where there is a fictitious boundary between identical materials (where the DMM predicts a non-zero resistance).~\cite{Monachon2016}  There is also an assumption of detailed balance built-in to the model,~\cite{Chen2005} which requires the two sides to be at equilibrium.
 The DMM is more appropriate for modeling thermal transport at noncryogenic temperatures and at rough interfaces because the majority of acoustic phonons at $\geq$300 K have short wavelengths. The wavelengths at these temperatures are comparable to the interatomic spacing in the system.
 
 While attempts to account for interfacial bonding have been made in the AMM, the DMM interfacial methods have not been developed.
-The interaction of the materials at the interface has been found to be of significant importance to thermal conductivity\cite{Beechem2007, Hopkins-surf-rough, Hopkins-inelastic}, but a factor to include this interaction has yet to be incorporated in the theory.
-Despite the DMM's pitfalls, it has been the most commonly used model for the past 30 years. \cite{Cahill2006, Stoner1993, Stevens2005, Cahill2011}
+The interaction of the materials at the interface has been found to be of significant importance to thermal conductivity~\cite{Beechem2007, Hopkins-surf-rough, Hopkins-inelastic}, but a factor to include this interaction has yet to be incorporated in the theory.
+Despite the DMM's pitfalls, it has been the most commonly used model for the past 30 years. ~\cite{Cahill2006, Stoner1993, Stevens2005, Cahill2011}
 
 \section{Molecular Dynamics}
 Molecular dynamics are computer simulations used to study structure and dynamics of atoms and molecules using classical mechanics. 
@@ -85,7 +85,7 @@ Forces between each pair of atomic sites are computed by an interaction potentia
 \begin{equation}
 \vec{F}(\vec{R},t) = -\vec{\nabla} \cdot V(\vec{R})
 \end{equation}
-These potentials are approximated using intra and inter molecular forces in the system to make an approximate potential energy surface with respect to the nuclear coordinates of the system.\cite{Leach2001} 
+These potentials are approximated using intra and inter molecular forces in the system to make an approximate potential energy surface with respect to the nuclear coordinates of the system.~\cite{Leach2001} 
 \begin{equation}
    V(\vec{R}) = V_{bonded} + V_{electrostatic} + V_{vdW} + V_{constraints} + V_{hb}     
 \end{equation}
@@ -128,7 +128,7 @@ The $\frac{1}{r^6}$ term is similar to dispersion and the $\frac{1}{r^{12}}$ ter
 The last two terms in the full potential equation, $V_{constraints}$ and $V_{hb}$, hydrogen bonding, are not relevant and thus will not be discussed in this work.
 
 \subsection{Representations of Atoms}
-Within molecular dyanamics, which is a lower accuracy method than first principals methods, there are different levels of simplification of the treatment of molecules.\cite{Leach2001} 
+Within molecular dyanamics, which is a lower accuracy method than first principals methods, there are different levels of simplification of the treatment of molecules.~\cite{Leach2001} 
 Chiefly, there are three ways of treating the molecules in a given system that will be discussed here. 
 The first, all-atom, is representing each atom within the system as a bead. Within a molecule these beads share bonds with atoms they are covalently bonded with and experiences bends and torsions within the larger molecule.
 
@@ -155,12 +155,12 @@ In addition to periodic boundaries, the minimum image convention is used to make
 Along with this idea is a spherical cutoff, where a particle's non-bonded interactions with other particles end at a finite distance, $r$, from the particle which is less than half the length of the periodic box. This ensures that the particle sees one image of each particle and is not interacting with an image of itself. 
 
 Though periodic boundaries allows for bulk properties to be found, it creates artificial periodicity in the system and might require an unreasonable system size due to the box structure. Later in this work, simulations of isolated particles are utilized to get single particle properties. 
-These isolated systems implement the Langevin Hull method. While there are several non-periodic methods that allow for a constant pressure, Langevin Hull can handle heterogeneous mixtures of materials with different compressibilites.\cite{Vardeman2011} This method is a modified version of Kohanoff, Caro, and Finnis' method for constant pressure and temperature non-periodic simulations based on Langevin dynamics.\cite{Kohanoff:2005qm, Baltazar:2006ru} 
+These isolated systems implement the Langevin Hull method. While there are several non-periodic methods that allow for a constant pressure, Langevin Hull can handle heterogeneous mixtures of materials with different compressibilites.~\cite{Vardeman2011} This method is a modified version of Kohanoff, Caro, and Finnis' method for constant pressure and temperature non-periodic simulations based on Langevin dynamics.~\cite{Kohanoff:2005qm, Baltazar:2006ru} 
 
 \begin{figure}
     \centering
     \includegraphics[scale=1]{figures/hull.pdf}
-    \caption{Visualization of a gold particle solvated in water within the Langevin Hull taken from Vardeman \textit{et. al.}.\cite{Vardeman2011}. The temperature and pressure bath interact with only the outer most atoms on the hull, the grey translucent surface. At each time step the hull is computed to ensure the atoms are interacting in the correct classifications, as edge atoms or as interior atoms.}
+    \caption{Visualization of a gold particle solvated in water within the Langevin Hull taken from Vardeman \textit{et. al.}.~\cite{Vardeman2011}. The temperature and pressure bath interact with only the outer most atoms on the hull, the grey translucent surface. At each time step the hull is computed to ensure the atoms are interacting in the correct classifications, as edge atoms or as interior atoms.}
     \label{fig:hull}
 \end{figure}
 
@@ -214,7 +214,7 @@ All the transport coefficients ($D$, $\lambda$, $\eta$) describe how an instanta
 Transport phenomena are utilized in many fields, such as chemistry, physics, chemical engineering, electrical engineering, and mechanical engineering; to obtain the transport coefficients to optimize a system. Atomistic simulations can provide insight for tuning experimental design. The three main ways to calculate transport coefficients, with a focus on thermal conductivity, will be discussed in detail in the following sections.
 
 \subsection{Equilibruim Molecular Dynamics}
-Transport properties from classical molecular dynamics simulations can be found through many methods. Equilibrium Molecular Dynamics (EMD) simulations use the most straight forward method. Under linear response theory, the transport coefficient can often be found using a relevant time correlation function to the transport coefficient of interest.\cite{Heyes:1988ee,MASSOBRIO:1984bl,Helfand:1960os,Viscardy:2007rp,che:6888,kinaci:014106} In most cases either the Einstein relation or the Green-Kubo formulation are utilized in EMD.
+Transport properties from classical molecular dynamics simulations can be found through many methods. Equilibrium Molecular Dynamics (EMD) simulations use the most straight forward method. Under linear response theory, the transport coefficient can often be found using a relevant time correlation function to the transport coefficient of interest.~\cite{Heyes:1988ee,MASSOBRIO:1984bl,Helfand:1960os,Viscardy:2007rp,che:6888,kinaci:014106} In most cases either the Einstein relation or the Green-Kubo formulation are utilized in EMD.
 
 The Einstein relation for thermal conductivity uses the Helfand moment, $G^\lambda (t)$, which is a centroid of the energies:
 \begin{equation}
@@ -249,8 +249,8 @@ The noise and poor convergence in the long-time tails give a poor estimation for
 Moreover, these calculations would have further complications when the systems would contain an interface or are non-homogeneous.
 
 \subsection{Non-Equilibruim Molecular Dynamics}
-Since EMD has limitations due to the noise in the correlation function, methods in non-equilibrium molecular dynamics, NEMD, were developed that introduce a gradient into the simulations.\cite{Backer:2005sf,Hess:2002nr,Picalek:2009rz, Vasquez:2004ty}
-Typically these methods are used to impose a temperature or velocity gradient on a system to measure the corresponding transport coefficient. \cite{Evans:1982oq, Erpenbeck:1984qe, Evans:1986nx, Vogelsang:1988qv, Maginn:1993kl, Hess:2002nr, Schelling:2002dp, Berthier:2002ai, Evans:2002tg, Vasquez:2004ty, Backer:2005sf, Jiang:2008hc, Picalek:2009rz}
+Since EMD has limitations due to the noise in the correlation function, methods in non-equilibrium molecular dynamics, NEMD, were developed that introduce a gradient into the simulations.~\cite{Backer:2005sf,Hess:2002nr,Picalek:2009rz, Vasquez:2004ty}
+Typically these methods are used to impose a temperature or velocity gradient on a system to measure the corresponding transport coefficient. ~\cite{Evans:1982oq, Erpenbeck:1984qe, Evans:1986nx, Vogelsang:1988qv, Maginn:1993kl, Hess:2002nr, Schelling:2002dp, Berthier:2002ai, Evans:2002tg, Vasquez:2004ty, Backer:2005sf, Jiang:2008hc, Picalek:2009rz}
 With linear response of a flux due to the applied gradient, the transport coefficient can be calculated using the constitutive equation: $J_z = -\lambda \frac{\partial T}{\partial z}$, where $\frac{\partial T}{\partial z}$ is the imposed piece and $J_z$ is the measured flux.
 In NEMD, the temperature gradient is imposed by choosing sections of the simulation box to have particular temperatures. For example, a center portion of the system will be set to high temperature and the edges set to a lower temperature to impose the gradient. 
 The imposed thermal gradient must be relatively small to maintain a linear relationship between the flux and the gradient. 
@@ -261,29 +261,29 @@ This method requires thermostats to maintain the thermal gradient which means th
 Additionally, in heterogeneous systems, particularly with interfaces, it can be difficult to know what the shape of the imposed gradient should be at the boundary of materials.
 
 \subsection{Reverse Non-Equilibruim Molecular Dynamics}
-Reverse non-equilibrium molecular dynamics (RNEMD) methods impose an unphysical flux and measure the gradient that develops.\cite{Muller-Plathe:1997wq,Muller-Plathe:1999ao,Kuang:2012fe}
+Reverse non-equilibrium molecular dynamics (RNEMD) methods impose an unphysical flux and measure the gradient that develops.~\cite{Muller-Plathe:1997wq,Muller-Plathe:1999ao,Kuang:2012fe}
 Imposed flux methods are preferable because the simulation imposes the difficult to measure quantity, the flux, causing the system to develop a gradient, which is easier to measure, between the regions where the flux is imposed. 
 Since the measurement of a gradient is less complex, the imposed flux methods will typically take less time to obtain converged results, therefore the simulations are less time intensive and less costly.
 
-The original RNEMD formulation imposes an artificial momentum flux between parallel slabs of material separated in the simulation cell. The flux was created by periodically swapping the momentum between molecules in each of the slabs in a homogeneous system.\cite{Muller-Plathe:1997wq} 
-This method was modified to obtain other transport coefficients \cite{Muller-Plathe:1999ao} and to handle heterogeneous systems.\cite{Muller-plathe:2005} 
+The original RNEMD formulation imposes an artificial momentum flux between parallel slabs of material separated in the simulation cell. The flux was created by periodically swapping the momentum between molecules in each of the slabs in a homogeneous system.~\cite{Muller-Plathe:1997wq} 
+This method was modified to obtain other transport coefficients ~\cite{Muller-Plathe:1999ao} and to handle heterogeneous systems.~\cite{Muller-plathe:2005} 
 An attractive feature of RNEMD is that the algorithm conserves total linear momentum and total energy.
-However, issues with large fluxes can result in non-linear gradients, where linear response can not be used to find the transport coefficient.\cite{Tenney:2010rp}
+However, issues with large fluxes can result in non-linear gradients, where linear response can not be used to find the transport coefficient.~\cite{Tenney:2010rp}
 
-This method has become widely used for thermal and mechanical properties of homogeneous and heterogeneous systems of solids and liquids\cite{Muller-Plathe:1997wq,Muller-Plathe:1999ao, Tenney:2010rp}, as well as, interfaces.\cite{Patel:2005zm, Shenogina:2009ix,Kuang:2011ef, Stocker:2013cl}
+This method has become widely used for thermal and mechanical properties of homogeneous and heterogeneous systems of solids and liquids~\cite{Muller-Plathe:1997wq,Muller-Plathe:1999ao, Tenney:2010rp}, as well as, interfaces.~\cite{Patel:2005zm, Shenogina:2009ix,Kuang:2011ef, Stocker:2013cl}
 Gradients near interfaces exhibit distinct behavior at the boundaries of dissimilar materials.
 
-Recent advances in RNEMD methodology have involved scaling particle velocities instead of swapping. The scaling method uses constraint equations that require the simulation to conserve total energy and total linear momentum.\cite{Kuang:2011ef, Kuang:2012fe}
-In addition, this RNEMD method has been extended to handle non-periodic heterogeneous systems.\cite{Stocker:2014qq}
+Recent advances in RNEMD methodology have involved scaling particle velocities instead of swapping. The scaling method uses constraint equations that require the simulation to conserve total energy and total linear momentum.~\cite{Kuang:2011ef, Kuang:2012fe}
+In addition, this RNEMD method has been extended to handle non-periodic heterogeneous systems.~\cite{Stocker:2014qq}
 
 \section{Systems of Interest}
 The systems that are explored in this work contain a gold substrate or particle in solvent with heat transport from the gold to the solvent. 
-Thermal properties of gold particles have been of great experimental interest, particularly detangling the important factors for transport: particle size,\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016} composition,\cite{Wilson:2002uq, Ong:2013rt} surface modification,\cite{kuang:AuThl,Ong:2013rt,Ong:2014yq,Liu2015,Stocker2016,Hannah2015,Park2016,Leitner2017} surface supports,\cite{Park2012} exposed surface facets,\cite{Hannah2015} and the chemical details of the environment.\cite{Ge2006,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Park2016} 
+Thermal properties of gold particles have been of great experimental interest, particularly detangling the important factors for transport: particle size,~\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016} composition,~\cite{Wilson:2002uq, Ong:2013rt} surface modification,~\cite{kuang:AuThl,Ong:2013rt,Ong:2014yq,Liu2015,Stocker2016,Hannah2015,Park2016,Leitner2017} surface supports,~\cite{Park2012} exposed surface facets,~\cite{Hannah2015} and the chemical details of the environment.~\cite{Ge2006,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Park2016} 
 
 Three distinct studies examining interfacial thermal conductivity and heat transport will be explored with three different systems in this work.
-The first system contains nanospheres with a range of particle radii and ligands with different length and rigidity.\cite{Stocker2016}
-The second system strips away the ligand layer and looks at bare particles with the intention of finding the difference in particle morphology.\cite{Neidhart}
+The first system contains nanospheres with a range of particle radii and ligands with different length and rigidity.~\cite{Stocker2016}
+The second system strips away the ligand layer and looks at bare particles with the intention of finding the difference in particle morphology.~\cite{Neidhart}
 How exactly does the surface of the particle affect heat transport?
 The third system looks at a more complex problem: how does the particle size and the system solvent change thermal conductivity of a nanoarray?
 To simplify the atomistic models, we use a united-atom model for the ligand layer and solvent.
-All the particle systems use Langevin Hull\cite{Vardeman2011} and RNEMD methods for non-periodic systems.\cite{Stocker:2014qq}
+All the particle systems use Langevin Hull~\cite{Vardeman2011} and RNEMD methods for non-periodic systems.~\cite{Stocker:2014qq}

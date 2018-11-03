@@ -1,1004 +1,944 @@
-\providecommand{\latin}[1]{#1}
-\makeatletter
-\providecommand{\doi}
-  {\begingroup\let\do\@makeother\dospecials
-  \catcode`\{=1 \catcode`\}=2 \doi@aux}
-\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
-\makeatother
-\providecommand*\mcitethebibliography{\thebibliography}
-\csname @ifundefined\endcsname{endmcitethebibliography}
-  {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{114}
-\providecommand*\natexlab[1]{#1}
-\providecommand*\mciteSetBstSublistMode[1]{}
-\providecommand*\mciteSetBstMaxWidthForm[2]{}
-\providecommand*\mciteBstWouldAddEndPuncttrue
-  {\def\EndOfBibitem{\unskip.}}
-\providecommand*\mciteBstWouldAddEndPunctfalse
-  {\let\EndOfBibitem\relax}
-\providecommand*\mciteSetBstMidEndSepPunct[3]{}
-\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
-\providecommand*\EndOfBibitem{}
-\mciteSetBstSublistMode{f}
-\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
-\mciteSetBstSublistLabelBeginEnd
-  {\mcitemaxwidthsubitemform\space}
-  {\relax}
-  {\relax}
+\begin{thebibliography}{114}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Vardeman \latin{et~al.}(2011)Vardeman, Stocker, and
-  Gezelter]{Vardeman2011}
-Vardeman,~C.~F.; Stocker,~K.~M.; Gezelter,~J.~D. The Langevin Hull: Constant
-  Pressure and Temperature Dynamics for Nonperiodic Systems. \emph{J. Chem.
-  Theory Comput.} \textbf{2011}, \emph{7}, 834--842\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Martin and Siepmann(1998)Martin, and Siepmann]{TraPPE-UA.alkanes}
-Martin,~M.~G.; Siepmann,~J.~I. Transferable Potentials for Phase Equilibria. 1.
-  United-Atom Description of n-Alkanes. \emph{J. Phys. Chem. B} \textbf{1998},
-  \emph{102}, 2569--2577\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Wick \latin{et~al.}(2000)Wick, Martin, and
-  Siepmann]{TraPPE-UA.alkylbenzenes}
-Wick,~C.~D.; Martin,~M.~G.; Siepmann,~J.~I. Transferable Potentials for Phase
-  Equilibria. 4. United-Atom Description of Linear and Branched Alkenes and
-  Alkylbenzenes. \emph{J. Phys. Chem. B} \textbf{2000}, \emph{104},
-  8008--8016\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Lubna \latin{et~al.}(2005)Lubna, Kamath, Potoff, Rai, and
-  Siepmann]{TraPPE-UA.thiols}
-Lubna,~N.; Kamath,~G.; Potoff,~J.~J.; Rai,~N.; Siepmann,~J.~I. Transferable
-  Potentials for Phase Equilibria. 8. United-Atom Description for Thiols,
-  Sulfides, Disulfides, and Thiophene. \emph{J. Phys. Chem. B} \textbf{2005},
-  \emph{109}, 24100--24107\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Luedtke and Landman(1998)Luedtke, and Landman]{landman:1998}
-Luedtke,~W.~D.; Landman,~U. Structure and Thermodynamics of Self-Assembled
-  Monolayers on Gold Nanocrystallites. \emph{J. Phys. Chem. B} \textbf{1998},
-  \emph{102}, 6566--6572\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Schapotschnikow \latin{et~al.}(2007)Schapotschnikow, Pool, and
-  Vlugt]{vlugt:cpc2007154}
-Schapotschnikow,~P.; Pool,~R.; Vlugt,~T.~J. Selective Adsorption of Alkyl
-  Thiols on Gold in Different Geometries. \emph{Comput. Phys. Commun.}
-  \textbf{2007}, \emph{177}, 154 -- 157\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Hautman and Klein(1989)Hautman, and Klein]{hautman:4994}
-Hautman,~J.; Klein,~M.~L. Simulation of a Monolayer of Alkyl Thiol Chains.
-  \emph{J. Chem. Phys.} \textbf{1989}, \emph{91}, 4994--5001\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Chen(2005)]{Chen2005}
-Chen,~G. \emph{Nanoscale Energy Transport and Conversion}; Oxford University
-  Press: New York, 2005\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Goldstein \latin{et~al.}(2001)Goldstein, Poole, and
-  Safko]{Goldstein2001}
-Goldstein,~H.; Poole,~C.; Safko,~J. \emph{Classical Mechanics}, 3rd ed.;
-  Addison Wesley: San Francisco, 2001\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kittel(2005)]{Kittel}
-Kittel,~C. \emph{Introduction to Solid State Physics}; JohnWiley and Sons: New
-  York, 2005\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Hsieh \latin{et~al.}(2011)Hsieh, Lyons, Pop, Keblinski, and
-  Cahill]{Cahill2011}
-Hsieh,~W.-P.; Lyons,~A.~S.; Pop,~E.; Keblinski,~P.; Cahill,~D.~G. Pressure
-  tuning of the thermal conductance of weak interfaces. \emph{Phys. Rev. B}
-  \textbf{2011}, \emph{84}, 184107\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Stoner and Maris(1993)Stoner, and Maris]{Stoner1993}
-Stoner,~R.~J.; Maris,~H.~J. Kapitza conductance and heat flow between solids at
-  temperatures from 50 to 300 K. \emph{Phys. Rev. B} \textbf{1993}, \emph{48},
-  16373--16387\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Monachon \latin{et~al.}(2016)Monachon, Weber, and Dames]{Monachon2016}
-Monachon,~C.; Weber,~L.; Dames,~C. {Thermal Boundary Conductance :A Materials
-  Science Perspective}. \emph{Annu. Rev. Mater. Res.} \textbf{2016}, \emph{8},
-  1--31\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Little(1959)]{Little1959}
-Little,~W.~A. {The transport of heat between dissimilar solids at low
-  temperatures}. \emph{Can. J. Phys} \textbf{1959}, \emph{37}, 334--349\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Graff(1975)]{Graff1975}
-Graff,~K.~F. \emph{Wave Motion in Elastic Solids}; Dover: New York, 1975\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Prasher(2000)]{Prasher2000}
-Prasher,~P.~E.,~Ravi S.~Phelan {Prediction of thermal boundary resistance}.
-  \emph{J. Heat Transfer} \textbf{2000}, \emph{123}, 105--112\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Prasher(2009)]{Prasher2009}
-Prasher,~R. Acoustic mismatch model for thermal contact resistance of van der
-  Waals contacts. \emph{Applied Physics Letters} \textbf{2009}, \emph{94},
-  041905\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Lyeo and Cahill(2006)Lyeo, and Cahill]{Cahill2006}
-Lyeo,~H.-K.; Cahill,~D.~G. Thermal conductance of interfaces between highly
-  dissimilar materials. \emph{Phys. Rev. B} \textbf{2006}, \emph{73},
-  144301\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Swartz and Pohl(1989)Swartz, and Pohl]{Swartz:1989uq}
-Swartz,~E.~T.; Pohl,~R.~O. Thermal boundary resistance. \emph{Rev. Mod. Phys.}
-  \textbf{1989}, \emph{61}, 605--668\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Reddy \latin{et~al.}(2005)Reddy, Castelino, and
-  Majumdar]{Reddy:2005fk}
-Reddy,~P.; Castelino,~K.; Majumdar,~A. Diffuse mismatch model of thermal
-  boundary conductance using exact phonon dispersion. \emph{Appl. Phys. Lett.}
-  \textbf{2005}, \emph{87}, --\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Beechem \latin{et~al.}(2007)Beechem, Graham, Hopkins, and
-  Norris]{Beechem2007}
-Beechem,~T.; Graham,~S.; Hopkins,~P.; Norris,~P. Role of interface disorder on
-  thermal boundary conductance using a virtual crystal approach. \emph{Appl.
-  Phys. Lett.} \textbf{2007}, \emph{90}, 054104\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Hopkins \latin{et~al.}(2011)Hopkins, Duda, Petz, and
-  Floro]{Hopkins-surf-rough}
-Hopkins,~P.~E.; Duda,~J.~C.; Petz,~C.~W.; Floro,~J.~A. Controlling thermal
-  conductance through quantum dot roughening at interfaces. \emph{Phys. Rev. B}
-  \textbf{2011}, \emph{84}, 035438\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Hopkins \latin{et~al.}(2011)Hopkins, Duda, and
-  Norris]{Hopkins-inelastic}
-Hopkins,~P.~E.; Duda,~J.~C.; Norris,~P.~M. Anharmonic Phonon Interactions at
-  Interfaces and Contributions to Thermal Boundary Conductance. \emph{J. Heat
-  Transfer} \textbf{2011}, \emph{133}, 062401\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Stevens \latin{et~al.}(2005)Stevens, Smith, and Norris]{Stevens2005}
-Stevens,~R.~J.; Smith,~A.~N.; Norris,~P.~M. Measurement of thermal boundary
-  conductance of a series of metal-dielectric interfaces by the transient
-  thermoreflectance technique resistance of van der Waals contacts. \emph{J.
-  Heat Transfer} \textbf{2005}, \emph{127}, 315--322\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Leach(2001)]{Leach2001}
-Leach,~A. \emph{Molecular Modeling: Principles and Applications}, 2nd ed.;
-  Pearson Educated Limited: Harlow, England, 2001\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kohanoff \latin{et~al.}(2005)Kohanoff, Caro, and
-  Finnis]{Kohanoff:2005qm}
-Kohanoff,~J.; Caro,~A.; Finnis,~M. An isothermal-isobaric Langevin thermostat
-  for simulating nanoparticles under pressure: Application to Au clusters.
-  \emph{ChemPhysChem} \textbf{2005}, \emph{6}, 1848--1852\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Baltazar \latin{et~al.}(2006)Baltazar, Romero, Rodriguez-Lopez,
-  Terrones, and Martonak]{Baltazar:2006ru}
-Baltazar,~S.~E.; Romero,~A.~H.; Rodriguez-Lopez,~J.~L.; Terrones,~H.;
-  Martonak,~R. Assessment of isobaric-isothermal (NPT) simulations for finite
-  systems. \emph{Comp. Mat. Sci.} \textbf{2006}, \emph{37}, 526--536\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Heyes(1988)]{Heyes:1988ee}
-Heyes,~D.~M. Transport Coefficients of Lennard-Jones Fluids: A
-  Molecular-Dynamics and Effective-Hard-Sphere Treatment. \emph{Phys. Rev. B}
-  \textbf{1988}, \emph{37}, 5677--5696\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Massobrio and Ciccotti(1984)Massobrio, and Ciccotti]{MASSOBRIO:1984bl}
-Massobrio,~C.; Ciccotti,~G. Lennard-Jones Triple-Point Conductivity via Weak
-  External Fields. \emph{Phys. Rev. A} \textbf{1984}, \emph{30},
-  3191--3197\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Helfand(1960)]{Helfand:1960os}
-Helfand,~E. Transport Coefficients from Dissipation in a Canonical Ensemble.
-  \emph{Phys. Rev.} \textbf{1960}, \emph{119}, 1--9\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Viscardy \latin{et~al.}(2007)Viscardy, Servantie, and
-  Gaspard]{Viscardy:2007rp}
-Viscardy,~S.; Servantie,~J.; Gaspard,~P. Transport and Helfand Moments in the
-  Lennard-Jones Fluid. II. Thermal Conductivity. \emph{J. Chem. Phys.}
-  \textbf{2007}, \emph{126}, 184513\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Che \latin{et~al.}(2000)Che, Cagin, Deng, and III]{che:6888}
-Che,~J.; Cagin,~T.; Deng,~W.; III,~W. A.~G. Thermal Conductivity of Diamond and
-  Related Materials from Molecular Dynamics Simulations. \emph{J. Chem. Phys.}
-  \textbf{2000}, \emph{113}, 6888--6900\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kinaci \latin{et~al.}(2012)Kinaci, Haskins, and
-  \c{C}a\u{g}in]{kinaci:014106}
-Kinaci,~A.; Haskins,~J.~B.; \c{C}a\u{g}in,~T. On Calculation of Thermal
-  Conductivity from Einstein Relation in Equilibrium Molecular Dynamics.
-  \emph{J. Chem. Phys.} \textbf{2012}, \emph{137}, 014106\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Backer \latin{et~al.}(2005)Backer, Lowe, Hoefsloot, and
-  Iedema]{Backer:2005sf}
-Backer,~J.~A.; Lowe,~C.~P.; Hoefsloot,~H. C.~J.; Iedema,~P.~D. Poiseuille Flow
-  to Measure the Viscosity of Particle Model Fluids. \emph{J. Chem. Phys.}
-  \textbf{2005}, \emph{122}, 154503\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Hess(2002)]{Hess:2002nr}
-Hess,~B. Determining the Shear Viscosity of Model Liquids from Molecular
-  Dynamics Simulations. \emph{J. Chem. Phys.} \textbf{2002}, \emph{116},
-  209--217\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Picalek and Kolafa(2009)Picalek, and Kolafa]{Picalek:2009rz}
-Picalek,~J.; Kolafa,~J. Shear Viscosity of Ionic Liquids from Non-Equilibrium
-  Molecular Dynamics Simulation. \emph{Mol. Simul.} \textbf{2009}, \emph{35},
-  685--690\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Vasquez \latin{et~al.}(2004)Vasquez, Macedo, and
-  Zabaloy]{Vasquez:2004ty}
-Vasquez,~V.~R.; Macedo,~E.~A.; Zabaloy,~M.~S. Lennard-Jones Viscosities in Wide
-  Ranges of Temperature and Density: Fast Calculations Using a Steady--State
-  Periodic Perturbation Method. \emph{Int. J. Thermophys.} \textbf{2004},
-  \emph{25}, 1799--1818\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Evans(1982)]{Evans:1982oq}
-Evans,~D.~J. Homogeneous NEMD Algorithm for Thermal Conductivity -- Application
-  of Non-Canonical Linear Response Theory. \emph{Phys. Lett. A} \textbf{1982},
-  \emph{91}, 457--460\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Erpenbeck(1984)]{Erpenbeck:1984qe}
-Erpenbeck,~J.~J. {Shear Viscosity of the Hard-Sphere Fluid via Nonequilibrium
-  Molecular Dynamics}. \emph{Phys. Rev. Lett.} \textbf{1984}, \emph{52},
-  1333--1335\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Evans(1986)]{Evans:1986nx}
-Evans,~D.~J. Thermal Conductivity of the Lennard-Jones Fluid. \emph{Phys. Rev.
-  A} \textbf{1986}, \emph{34}, 1449--1453\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Vogelsang \latin{et~al.}(1988)Vogelsang, Hoheisel, and
-  Luckas]{Vogelsang:1988qv}
-Vogelsang,~R.; Hoheisel,~G.; Luckas,~M. Shear Viscosity and Thermal
-  Conductivity of the Lennard-Jones Liquid Computed Using Molecular Dynamics
-  and Predicted by a Memory Function Model for a Large Number of States.
-  \emph{Mol. Phys.} \textbf{1988}, \emph{64}, 1203--1213\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Maginn \latin{et~al.}(1993)Maginn, Bell, and Theodorou]{Maginn:1993kl}
-Maginn,~E.~J.; Bell,~A.~T.; Theodorou,~D.~N. Transport Diffusivity of Methane
-  in Silicalite from Equilibrium and Nonequilibrium Simulations. \emph{J. Phys.
-  Chem.} \textbf{1993}, \emph{97}, 4173--4181\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Schelling \latin{et~al.}(2002)Schelling, Phillpot, and
-  Keblinski]{Schelling:2002dp}
-Schelling,~P.~K.; Phillpot,~S.~R.; Keblinski,~P. Comparison of Atomic-Level
-  Simulation Methods for Computing Thermal Conductivity. \emph{Phys. Rev. B}
-  \textbf{2002}, \emph{65}, 144306\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Berthier and Barrat(2002)Berthier, and Barrat]{Berthier:2002ai}
-Berthier,~L.; Barrat,~J.~L. Nonequilibrium Dynamics and Fluctuation-Dissipation
-  Relation in a Sheared Fluid. \emph{J. Chem. Phys.} \textbf{2002}, \emph{116},
-  6228--6242\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Evans and Searles(2002)Evans, and Searles]{Evans:2002tg}
-Evans,~D.~J.; Searles,~D.~J. The Fluctuation Theorem. \emph{Adv. Phys.}
-  \textbf{2002}, \emph{51}, 1529--1585\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Jiang \latin{et~al.}(2008)Jiang, Myshakin, Jordan, and
-  Warzinski]{Jiang:2008hc}
-Jiang,~H.; Myshakin,~E.~M.; Jordan,~K.~D.; Warzinski,~R.~P. Molecular Dynamics
-  Simulations of the Thermal Conductivity of Methane Hydrate. \emph{J. Phys.
-  Chem. B} \textbf{2008}, \emph{112}, 10207--10216\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[M\"{u}ller-Plathe(1997)]{Muller-Plathe:1997wq}
-M\"{u}ller-Plathe,~F. A Simple Nonequilibrium Molecular Dynamics Method for
-  Calculating the Thermal Conductivity. \emph{J. Chem. Phys.} \textbf{1997},
-  \emph{106}, 6082--6085\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[M\"{u}ller-Plathe(1999)]{Muller-Plathe:1999ao}
-M\"{u}ller-Plathe,~F. Reversing the Perturbation in Nonequilibrium Molecular
-  Dynamics: An Easy Way to Calculate the Shear Viscosity of Fluids. \emph{Phys.
-  Rev. E} \textbf{1999}, \emph{59}, 4894--4898\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kuang and Gezelter(2012)Kuang, and Gezelter]{Kuang:2012fe}
-Kuang,~S.; Gezelter,~J.~D. Velocity Shearing and Scaling RNEMD: A Minimally
-  Perturbing Method for Simulating Temperature and Momentum Gradients.
-  \emph{Mol. Phys.} \textbf{2012}, \emph{110}, 691--701\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Zhang \latin{et~al.}(2005)Zhang, Lussetti, de~Souza, and
-  Müller-Plathe]{Muller-plathe:2005}
-Zhang,~M.; Lussetti,~E.; de~Souza,~L. E.~S.; Müller-Plathe,~F. Thermal
-  Conductivities of Molecular Liquids by Reverse Nonequilibrium Molecular
-  Dynamics. \emph{J. Phys. Chem. B} \textbf{2005}, \emph{109},
-  15060--15067\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Tenney and Maginn(2010)Tenney, and Maginn]{Tenney:2010rp}
-Tenney,~C.~M.; Maginn,~E.~J. Limitations and Recommendations for the
-  Calculation of Shear Viscosity using Reverse Nonequilibrium Molecular
-  Dynamics. \emph{J. Chem. Phys.} \textbf{2010}, \emph{132}, 014103\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Patel \latin{et~al.}(2005)Patel, Garde, and Keblinski]{Patel:2005zm}
-Patel,~H.~A.; Garde,~S.; Keblinski,~P. Thermal Resistance of Nanoscopic
-  Liquid-Liquid Interfaces: Dependence on Chemistry and Molecular Architecture.
-  \emph{Nano Lett.} \textbf{2005}, \emph{5}, 2225--2231\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Shenogina \latin{et~al.}(2009)Shenogina, Godawat, Keblinski, and
-  Garde]{Shenogina:2009ix}
-Shenogina,~N.; Godawat,~R.; Keblinski,~P.; Garde,~S. How Wetting and Adhesion
-  Affect Thermal Conductance of a Range of Hydrophobic to Hydrophilic Aqueous
-  Interfaces. \emph{Phys. Rev. Lett.} \textbf{2009}, \emph{102}, 156101\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kuang and Gezelter(2011)Kuang, and Gezelter]{Kuang:2011ef}
-Kuang,~S.; Gezelter,~J.~D. Simulating Interfacial Thermal Conductance at
-  Metal-Solvent Interfaces: The Role of Chemical Capping Agents. \emph{J. Phys.
-  Chem. C} \textbf{2011}, \emph{115}, 22475--22483\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Stocker and Gezelter(2013)Stocker, and Gezelter]{Stocker:2013cl}
-Stocker,~K.~M.; Gezelter,~J.~D. Simulations of Heat Conduction at
-  Thiolate-Capped Gold Surfaces: The Role of Chain Length and Solvent
-  Penetration. \emph{J. Phys. Chem. C} \textbf{2013}, \emph{117},
-  7605--7612\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Stocker and Gezelter(2014)Stocker, and Gezelter]{Stocker:2014qq}
-Stocker,~K.~M.; Gezelter,~J.~D. A Method for Creating Thermal and Angular
-  Momentum Fluxes in Nonperiodic Simulations. \emph{J. Chem. Theory Comput.}
-  \textbf{2014}, \emph{10}, 1878--1886\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Zanjani and Lukes(2014)Zanjani, and Lukes]{Zanjani2014}
-Zanjani,~M.~B.; Lukes,~J.~R. {Phonon dispersion and thermal conductivity of
-  nanocrystal superlattices using three-dimensional atomistic models}.
-  \emph{Journal of Applied Physics} \textbf{2014}, \emph{115}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Liu \latin{et~al.}(2015)Liu, Ma, and Wang]{Liu2015}
-Liu,~M.; Ma,~Y.; Wang,~R.~Y. {Modifying Thermal Transport in Colloidal
-  Nanocrystal Solids with Surface Chemistry}. \emph{ACS Nano} \textbf{2015},
-  \emph{9}, 12079--12087\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Wilhelmsen \latin{et~al.}(2015)Wilhelmsen, Trinh, Kjelstrup, Erp, and
-  Bedeaux]{Wilhelmsen2015}
-Wilhelmsen,~{\O}.; Trinh,~T.~T.; Kjelstrup,~S.; Erp,~T. S.~V.; Bedeaux,~D.
-  {Heat and Mass Transfer across Interfaces in Complex Nanogeometries}.
-  \emph{Phys. Rev. Lett.} \textbf{2015}, \emph{114}, 065901\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Stocker \latin{et~al.}(2016)Stocker, Neidhart, and
-  Gezelter]{Stocker2016}
-Stocker,~K.~M.; Neidhart,~S.~M.; Gezelter,~J.~D. {Interfacial thermal
-  conductance of thiolate-protected gold nanospheres}. \emph{J. Appl. Phys.}
-  \textbf{2016}, \emph{119}, 025106\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Tascini \latin{et~al.}(2017)Tascini, Armstrong, Chiavazzo, Fasano,
-  Asinari, and Bresme]{Tascini2016}
-Tascini,~A.~S.; Armstrong,~J.; Chiavazzo,~E.; Fasano,~M.; Asinari,~P.;
-  Bresme,~F. {Thermal transport across nanoparticle-fluid interfaces: the
-  interplay of interfacial curvature and nanoparticle-fluid interactions}.
-  \emph{Phys. Chem. Chem. Phys.} \textbf{2017}, \emph{19}, 3244--3253\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Wilson \latin{et~al.}(2002)Wilson, Hu, Cahill, and
-  Braun]{Wilson:2002uq}
-Wilson,~O.; Hu,~X.; Cahill,~D.; Braun,~P. Colloidal Metal Particles as Probes
-  of Nanoscale Thermal Transport in Fluids. \emph{Phys. Rev. B} \textbf{2002},
-  \emph{66}, 224301\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ong \latin{et~al.}(2013)Ong, Rupich, Talapin, McGaughey, and
-  Malen]{Ong:2013rt}
-Ong,~W.-L.; Rupich,~S.~M.; Talapin,~D.~V.; McGaughey,~A. J.~H.; Malen,~J.~A.
-  {Surface chemistry mediates thermal transport in three-dimensional
-  nanocrystal arrays}. \emph{Nat Mater} \textbf{2013}, \emph{12},
-  410--415\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kuang and Gezelter(2011)Kuang, and Gezelter]{kuang:AuThl}
-Kuang,~S.; Gezelter,~J.~D. {Simulating interfacial thermal conductance at
-  metal-solvent interfaces: The role of chemical capping agents}. \emph{J.
-  Phys. Chem. C} \textbf{2011}, \emph{115}, 22475--22483\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ong \latin{et~al.}(2014)Ong, Majumdar, Malen, and
-  McGaughey]{Ong:2014yq}
-Ong,~W.-L.; Majumdar,~S.; Malen,~J.~A.; McGaughey,~A. J.~H. {Coupling of
-  Organic and Inorganic Vibrational States and Their Thermal Transport in
-  Nanocrystal Arrays}. \emph{J. Phys. Chem. C} \textbf{2014}, \emph{118},
-  7288--7295\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Hannah \latin{et~al.}(2015)Hannah, Gezelter, Schaller, and
-  Schatz]{Hannah2015}
-Hannah,~D.~C.; Gezelter,~J.~D.; Schaller,~R.~D.; Schatz,~G.~C. {Reverse
-  Non-Equilibrium Molecular Dynamics Demonstrate That Surface Passivation
-  Controls Thermal Transport at Semiconductor-Solvent Interfaces.} \emph{ACS
-  Nano} \textbf{2015}, \emph{9}, 6278--6287\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Park and Cahill(2016)Park, and Cahill]{Park2016}
-Park,~J.; Cahill,~D.~G. {Plasmonic Sensing of Heat Transport at Solid-Liquid
-  Interfaces}. \emph{J. Phys. Chem. C} \textbf{2016}, \emph{120},
-  2814--2821\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Pandey and Leitner(2017)Pandey, and Leitner]{Leitner2017}
-Pandey,~H.~D.; Leitner,~D.~M. Influence of thermalization on thermal conduction
-  through molecular junctions: Computational study of PEG oligomers. \emph{J.
-  Chem. Phys.} \textbf{2017}, \emph{147}, 084701\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Park \latin{et~al.}(2012)Park, Huang, Wang, Murphy, and
-  Cahill]{Park2012}
-Park,~J.; Huang,~J.; Wang,~W.; Murphy,~C.~J.; Cahill,~D.~G. Heat Transport
-  between Au Nanorods, Surrounding Liquids, and Solid Supports. \emph{J. Phys.
-  Chem. C} \textbf{2012}, \emph{116}, 26335--26341\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ge \latin{et~al.}(2006)Ge, Cahill, and Braun]{Ge2006}
-Ge,~Z.; Cahill,~D.~G.; Braun,~P. {Thermal Conductance of Hydrophilic and
-  Hydrophobic Interfaces}. \emph{Phys. Rev. Lett.} \textbf{2006}, \emph{96},
-  186101\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Neidhart and Gezelter(2017)Neidhart, and Gezelter]{Neidhart}
-Neidhart,~S.~M.; Gezelter,~J.~D. {Thermal Transport is Influenced by
-  Nanoparticle Morphology: A Molecular Dynamics Study}. \emph{J. Phys. Chem. C}
-  \textbf{2017}, \emph{122}, 1430--1436\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ge \latin{et~al.}(2004)Ge, Cahill, and Braun]{Ge:2004yg}
-Ge,~Z.; Cahill,~D.~G.; Braun,~P.~V. {AuPd} Metal Nanoparticles as Probes of
-  Nanoscale Thermal Transport in Aqueous Solution. \emph{J. Phys. Chem. B}
-  \textbf{2004}, \emph{108}, 18870--18875\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Wang \latin{et~al.}(2007)Wang, Carter, Lagutchev, Koh, Seong, Cahill,
-  and Dlott]{Wang10082007}
-Wang,~Z.; Carter,~J.~A.; Lagutchev,~A.; Koh,~Y.~K.; Seong,~N.-H.;
-  Cahill,~D.~G.; Dlott,~D.~D. Ultrafast Flash Thermal Conductance of Molecular
-  Chains. \emph{Science} \textbf{2007}, \emph{317}, 787--790\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Schmidt \latin{et~al.}(2008)Schmidt, Alper, Chiesa, Chen, Das, and
-  Hamad-Schifferli]{Schmidt:2008ad}
-Schmidt,~A.~J.; Alper,~J.~D.; Chiesa,~M.; Chen,~G.; Das,~S.~K.;
-  Hamad-Schifferli,~K. Probing the Gold Nanorod-Ligand-Solvent Interface by
-  Plasmonic Absorption and Thermal Decay. \emph{J. Phys. Chem. C}
-  \textbf{2008}, \emph{112}, 13320--13323\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Juv\'e \latin{et~al.}(2009)Juv\'e, Scardamaglia, Maioli, Crut,
-  Merabia, Joly, Del~Fatti, and Vall\'ee]{Juve:2009pt}
-Juv\'e,~V.; Scardamaglia,~M.; Maioli,~P.; Crut,~A.; Merabia,~S.; Joly,~L.;
-  Del~Fatti,~N.; Vall\'ee,~F. Cooling Dynamics and Thermal Interface Resistance
-  of Glass-Embedded Metal Nanoparticles. \emph{Phys. Rev. B} \textbf{2009},
-  \emph{80}, 195406\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Alper and Hamad-Schifferli(2010)Alper, and
-  Hamad-Schifferli]{Alper:2010pd}
-Alper,~J.; Hamad-Schifferli,~K. Effect of Ligands on Thermal Dissipation from
-  Gold Nanorods. \emph{Langmuir} \textbf{2010}, \emph{26}, 3786--3789\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Harikrishna \latin{et~al.}(2013)Harikrishna, Ducker, and
-  Huxtable]{Harikrishna:2013ys}
-Harikrishna,~H.; Ducker,~W.~A.; Huxtable,~S.~T. The influence of interface
-  bonding on thermal transport through solid--liquid interfaces. \emph{Appl.
-  Phys. Lett.} \textbf{2013}, \emph{102}, --\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Cahill \latin{et~al.}(2003)Cahill, Ford, Goodson, Mahan, Majumdar,
-  Maris, Merlin, and Phillpot]{Cahill:2003fk}
-Cahill,~D.~G.; Ford,~W.~K.; Goodson,~K.~E.; Mahan,~G.~D.; Majumdar,~A.;
-  Maris,~H.~J.; Merlin,~R.; Phillpot,~S.~R. Nanoscale thermal transport.
-  \emph{J. Appl. Phys.} \textbf{2003}, \emph{93}, 793--818\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Losego \latin{et~al.}(2012)Losego, Grady, Sottos, Cahill, and
-  Braun]{Losego:2012fr}
-Losego,~M.~D.; Grady,~M.~E.; Sottos,~N.~R.; Cahill,~D.~G.; Braun,~P.~V.
-  {Effects of chemical bonding on heat transport across interfaces}. \emph{Nat
-  Mater} \textbf{2012}, \emph{11}, 502--506\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Soussi \latin{et~al.}(2015)Soussi, Volz, Palpant, and
-  Chalopin]{Soussi:2015fj}
-Soussi,~J.; Volz,~S.; Palpant,~B.; Chalopin,~Y. {A detailed microscopic study
-  of the heat transfer at a water gold interface coated with a polymer}.
-  \emph{Appl. Phys. Lett.} \textbf{2015}, \emph{106}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ge \latin{et~al.}(2006)Ge, Cahill, and Braun]{Ge:2006kx}
-Ge,~Z.; Cahill,~D.~G.; Braun,~P.~V. Thermal Conductance of Hydrophilic and
-  Hydrophobic Interfaces. \emph{Phys. Rev. Lett.} \textbf{2006}, \emph{96},
-  186101\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Kikugawa \latin{et~al.}(2009)Kikugawa, Ohara, Kawaguchi, Torigoe,
-  Hagiwara, and Matsumoto]{Kikugawa:2009vn}
-Kikugawa,~G.; Ohara,~T.; Kawaguchi,~T.; Torigoe,~E.; Hagiwara,~Y.;
-  Matsumoto,~Y. A molecular dynamics study on heat transfer characteristics at
-  the interfaces of alkanethiolate self-assembled monolayer and organic
-  solvent. \emph{J. Chem. Phys.} \textbf{2009}, \emph{130}, --\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Tian \latin{et~al.}(2015)Tian, Marconnet, and Chen]{Tian:2015uq}
-Tian,~Z.; Marconnet,~A.; Chen,~G. Enhancing solid-liquid interface thermal
-  transport using self-assembled monolayers. \emph{Appl. Phys. Lett.}
-  \textbf{2015}, \emph{106}, --\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Henz \latin{et~al.}(2008)Henz, Hawa, and Zachariah]{Henz:2008qf}
-Henz,~B.~J.; Hawa,~T.; Zachariah,~M.~R. Mechano-Chemical Stability of Gold
-  Nanoparticles Coated with Alkanethiolate SAMs. \emph{Langmuir} \textbf{2008},
-  \emph{24}, 773--783\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Badia \latin{et~al.}(1996)Badia, Singh, Demers, Cuccia, Brown, and
-  Lennox]{Badia1996:2}
-Badia,~A.; Singh,~S.; Demers,~L.; Cuccia,~L.; Brown,~G.~R.; Lennox,~R.~B.
-  Self-Assembled Monolayers on Gold Nanoparticles. \emph{Chem. Eur. J.}
-  \textbf{1996}, \emph{2}, 359--363\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Badia \latin{et~al.}(1996)Badia, Gao, Singh, Demers, Cuccia, and
+\bibitem[Alper and Hamad-Schifferli(2010)]{Alper:2010pd}
+J.~Alper and K.~Hamad-Schifferli.
+\newblock Effect of ligands on thermal dissipation from gold nanorods.
+\newblock \emph{Langmuir}, 26\penalty0 (6):\penalty0 3786--3789, 2010.
+\newblock \doi{10.1021/la904855s}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/la904855s}.
+
+\bibitem[Backer et~al.(2005)Backer, Lowe, Hoefsloot, and Iedema]{Backer:2005sf}
+J.~A. Backer, C.~P. Lowe, H.~C.~J. Hoefsloot, and P.~D. Iedema.
+\newblock Poiseuille flow to measure the viscosity of particle model fluids.
+\newblock \emph{J. Chem. Phys.}, 122\penalty0 (15):\penalty0 154503, 2005.
+\newblock \doi{10.1063/1.1883163}.
+\newblock URL \url{http://link.aip.org/link/?JCP/122/154503/1}.
+
+\bibitem[Badia et~al.(1996{\natexlab{a}})Badia, Gao, Singh, Demers, Cuccia, and
   Reven]{Badia1996}
-Badia,~A.; Gao,~W.; Singh,~S.; Demers,~L.; Cuccia,~L.; Reven,~L. Structure and
-  Chain Dynamics of Alkanethiol-Capped Gold Colloids. \emph{Langmuir}
-  \textbf{1996}, \emph{12}, 1262--1269\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Badia \latin{et~al.}(1997)Badia, Demers, Dickinson, Morin, Lennox, and
-  Reven]{Badia1997:2}
-Badia,~A.; Demers,~L.; Dickinson,~L.; Morin,~F.~G.; Lennox,~R.~B.; Reven,~L.
-  Gold-Sulfur Interactions in Alkylthiol Self-Assembled Monolayers Formed on
-  Gold Nanoparticles Studied by Solid-State NMR. \emph{J. Am. Chem. Soc.}
-  \textbf{1997}, \emph{119}, 11104--11105\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Badia \latin{et~al.}(1997)Badia, Cuccia, Demers, Morin, and
+A.~Badia, W.~Gao, S.~Singh, L.~Demers, L.~Cuccia, and L.~Reven.
+\newblock Structure and chain dynamics of alkanethiol-capped gold colloids.
+\newblock \emph{Langmuir}, 12:\penalty0 1262--1269, 1996{\natexlab{a}}.
+
+\bibitem[Badia et~al.(1996{\natexlab{b}})Badia, Singh, Demers, Cuccia, Brown,
+  and Lennox]{Badia1996:2}
+A.~Badia, S.~Singh, L.~Demers, L.~Cuccia, G.~R. Brown, and R.~B. Lennox.
+\newblock Self-assembled monolayers on gold nanoparticles.
+\newblock \emph{Chem. Eur. J.}, 2\penalty0 (3):\penalty0 359--363,
+  1996{\natexlab{b}}.
+
+\bibitem[Badia et~al.(1997{\natexlab{a}})Badia, Cuccia, Demers, Morin, and
   Lennox]{Badia1997}
-Badia,~A.; Cuccia,~L.; Demers,~L.; Morin,~F.; Lennox,~R.~B. Structure and
-  Dynamics in Alkanethiolate Monolayers Self-Assembled on Gold Nanoparticles: A
-  DSC, FT-IR, and Deuterium NMR Study. \emph{J. Am. Chem. Soc.} \textbf{1997},
-  \emph{119}, 2682--2692\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Badia \latin{et~al.}(2000)Badia, Lennox, and Reven]{Badia2000}
-Badia,~A.; Lennox,~R.~B.; Reven,~L. A Dynamic View of Self-Assembled
-  Monolayers. \emph{Acc. Chem. Res.} \textbf{2000}, \emph{33}, 475--481\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Qi \latin{et~al.}(1999)Qi, \c{C}a\v{g}in, Kimura, and {Goddard
-  III}]{Qi:1999ph}
-Qi,~Y.; \c{C}a\v{g}in,~T.; Kimura,~Y.; {Goddard III},~W.~A. Molecular-Dynamics
-  Simulations of Glass Formation and Crystallization in Binary Liquid Metals:
-  {C}u-{A}g and {C}u-{N}i. \emph{Phys. Rev. B} \textbf{1999}, \emph{59},
-  3527--3533\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Jorgensen \latin{et~al.}(1996)Jorgensen, Maxwell, , and
-  Tirado-Rives]{Jorgensen:1996sf}
-Jorgensen,~W.~L.; Maxwell,~D.~S.; ; Tirado-Rives,~J. Development and Testing of
-  the OPLS All-Atom Force Field on Conformational Energetics and Properties of
-  Organic Liquids. \emph{J. Am. Chem. Soc.} \textbf{1996}, \emph{118},
-  11225--11236\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
+A.~Badia, L.~Cuccia, L.~Demers, F.~Morin, and R.~B. Lennox.
+\newblock Structure and dynamics in alkanethiolate monolayers self-assembled on
+  gold nanoparticles: A dsc, ft-ir, and deuterium nmr study.
+\newblock \emph{J. Am. Chem. Soc.}, 119\penalty0 (11):\penalty0 2682--2692,
+  1997{\natexlab{a}}.
+\newblock \doi{10.1021/ja963571t}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/ja963571t}.
+
+\bibitem[Badia et~al.(1997{\natexlab{b}})Badia, Demers, Dickinson, Morin,
+  Lennox, and Reven]{Badia1997:2}
+A.~Badia, L.~Demers, L.~Dickinson, F.~G. Morin, R.~B. Lennox, and L.~Reven.
+\newblock Gold-sulfur interactions in alkylthiol self-assembled monolayers
+  formed on gold nanoparticles studied by solid-state nmr.
+\newblock \emph{J. Am. Chem. Soc.}, 119\penalty0 (45):\penalty0 11104--11105,
+  1997{\natexlab{b}}.
+\newblock \doi{10.1021/ja9726163}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/ja9726163}.
+
+\bibitem[Badia et~al.(2000)Badia, Lennox, and Reven]{Badia2000}
+A.~Badia, R.~B. Lennox, and L.~Reven.
+\newblock A dynamic view of self-assembled monolayers.
+\newblock \emph{Acc. Chem. Res.}, 33:\penalty0 475--481, 2000.
+
+\bibitem[Baltazar et~al.(2006)Baltazar, Romero, Rodriguez-Lopez, Terrones, and
+  Martonak]{Baltazar:2006ru}
+S.~E. Baltazar, A.~H. Romero, J.~L. Rodriguez-Lopez, H.~Terrones, and
+  R.~Martonak.
+\newblock Assessment of isobaric-isothermal (npt) simulations for finite
+  systems.
+\newblock \emph{Comp. Mat. Sci.}, 37:\penalty0 526--536, 2006.
+\newblock \doi{DOI 10.1016/j.commatsci.2005.12.028}.
+
 \bibitem[Becke(1993)]{Becke:1993kq}
-Becke,~A.~D. Density-functional thermochemistry. III. The role of exact
-  exchange. \emph{J. Chem. Phys.} \textbf{1993}, \emph{98}, 5648--5652\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Lee \latin{et~al.}(1988)Lee, Yang, and Parr]{Lee:1988qf}
-Lee,~C.; Yang,~W.; Parr,~R.~G. Development of the Colle-Salvetti
-  correlation-energy formula into a functional of the electron density.
-  \emph{Phys. Rev. B} \textbf{1988}, \emph{37}, 785--789\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Gezelter \latin{et~al.}()Gezelter, Louden, Bhattarai, Neidhart,
-  Latham, Lamichhane, Parsons, Michalka, Kuang, Marr, Stocker, Li, Vardeman,
-  Lin, Fennell, Sun, Daily, Zheng, and Meineke]{openmd}
-Gezelter,~J.~D. \latin{et~al.}  OpenMD, an Open Source Engine for Molecular
-  Dynamics. Available at: \texttt{http://openmd.org} (Version 2.5, accessed
-  August 20, 2017)\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Meineke \latin{et~al.}(2005)Meineke, Vardeman, Lin, Fennell, and
-  Gezelter]{OOPSE}
-Meineke,~M.~A.; Vardeman,~C.~F.; Lin,~T.; Fennell,~C.~J.; Gezelter,~J.~D.
-  OOPSE: An object-oriented parallel simulation engine for molecular dynamics.
-  \emph{J. Comp. Chem.} \textbf{2005}, \emph{26}, 252--271\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Mart\'{\i}nez \latin{et~al.}(2009)Mart\'{\i}nez, Andrade, Birgin, and
-  Mart\'{\i}nez]{packmol}
-Mart\'{\i}nez,~L.; Andrade,~R.; Birgin,~E.~G.; Mart\'{\i}nez,~J.~M. PACKMOL: A
-  Package for Building Initial Configurations for Molecular Dynamics
-  Simulations. \emph{J. Comput. Chem.} \textbf{2009}, \emph{30},
-  2157--2164\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Steinhardt \latin{et~al.}(1983)Steinhardt, Nelson, and
-  Ronchetti]{Steinhardt1983}
-Steinhardt,~P.~J.; Nelson,~D.~R.; Ronchetti,~M. Bond-Orientational Order in
-  Liquids and Glasses. \emph{Phys. Rev. B} \textbf{1983}, \emph{28},
-  784--804\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Vardeman and Gezelter(2008)Vardeman, and Gezelter]{Vardeman:2008fk}
-Vardeman,~C.~F.; Gezelter,~J.~D. Simulations of Laser-Induced Glass Formation
-  in Ag-Cu Nanoparticles. \emph{J. Phys. Chem. C} \textbf{2008}, \emph{112},
-  3283--3293\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Segal \latin{et~al.}(2003)Segal, Nitzan, and
-  H{\"{a}}nggi]{Segal:2003qy}
-Segal,~D.; Nitzan,~A.; H{\"{a}}nggi,~P. {Thermal conductance through molecular
-  wires}. \emph{J. Chem. Phys.} \textbf{2003}, \emph{119}, 6840--6855\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Young and Maris(1989)Young, and Maris]{Young:1989xy}
-Young,~D.~A.; Maris,~H.~J. Lattice-dynamical calculation of the Kapitza
-  resistance between fcc lattices. \emph{Phys. Rev. B} \textbf{1989},
-  \emph{40}, 3685--3693\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Schmidt \latin{et~al.}(2010)Schmidt, Collins, Minnich, and
-  Chen]{Schmidt:2010nr}
-Schmidt,~A.~J.; Collins,~K.~C.; Minnich,~A.~J.; Chen,~G. Thermal conductance
-  and phonon transmissivity of metal--graphite interfaces. \emph{J. Appl.
-  Phys.} \textbf{2010}, \emph{107}, --\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Shin \latin{et~al.}(2010)Shin, Kaviany, Desai, and
-  Bonner]{Shin:2010sf}
-Shin,~S.; Kaviany,~M.; Desai,~T.; Bonner,~R. Roles of atomic restructuring in
-  interfacial phonon transport. \emph{Phys. Rev. B} \textbf{2010}, \emph{82},
-  081302\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Meng \latin{et~al.}(2017)Meng, Elsahati, Liu, and Richards]{Meng:2017}
-Meng,~F.; Elsahati,~M.; Liu,~J.; Richards,~R.~F. {Thermal Resistance between
-  Amorphous Silica Nanoparticles}. \emph{J. Appl. Phys.} \textbf{2017},
-  \emph{121}, 194302\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Schmidt \latin{et~al.}(2010)Schmidt, Collins, Minnich, and
-  Chen]{Schmidt:2010}
-Schmidt,~A.~J.; Collins,~K.~C.; Minnich,~A.~J.; Chen,~G. {Thermal conductance
-  and phonon transmissivity of metal-graphite interfaces}. \emph{Journal of
-  Applied Physics} \textbf{2010}, \emph{107}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Norris \latin{et~al.}(2013)Norris, Le, and Baker]{Norris:2013}
-Norris,~P.~M.; Le,~N.~Q.; Baker,~C.~H. {Tuning Phonon Transport : From
-  Interfaces to Nanostructures}. \emph{J. Heat Transfer} \textbf{2013},
-  \emph{135}, 1--13\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Han \latin{et~al.}(2017)Han, Schlawitschek, Katyal, Stephan,
+A.~D. Becke.
+\newblock Density-functional thermochemistry. iii. the role of exact exchange.
+\newblock \emph{J. Chem. Phys.}, 98\penalty0 (7):\penalty0 5648--5652, 1993.
+\newblock \doi{http://dx.doi.org/10.1063/1.464913}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/98/7/10.1063/1.464913}.
+
+\bibitem[Beechem et~al.(2007)Beechem, Graham, Hopkins, and Norris]{Beechem2007}
+T.~Beechem, S.~Graham, P.~Hopkins, and P.~Norris.
+\newblock Role of interface disorder on thermal boundary conductance using a
+  virtual crystal approach.
+\newblock \emph{Appl. Phys. Lett.}, 90\penalty0 (5):\penalty0 054104, 2007.
+\newblock \doi{10.1063/1.2437685}.
+\newblock URL \url{https://doi.org/10.1063/1.2437685}.
+
+\bibitem[Berthier and Barrat(2002)]{Berthier:2002ai}
+L.~Berthier and J.~L. Barrat.
+\newblock Nonequilibrium dynamics and fluctuation-dissipation relation in a
+  sheared fluid.
+\newblock \emph{J. Chem. Phys.}, 116\penalty0 (14):\penalty0 6228--6242, Apr
+  2002.
+\newblock ISSN 0021-9606.
+\newblock \doi{10.1063/1.1460862}.
+
+\bibitem[Bhanushali et~al.(2017)Bhanushali, Jason, Ghosh, Ganesh, Simon, and
+  Cheng]{Bhanushali:2017}
+S.~Bhanushali, N.~N. Jason, P.~Ghosh, A.~Ganesh, G.~P. Simon, and W.~Cheng.
+\newblock {Enhanced Thermal Conductivity of Copper Nanofluids: The Effect of
+  Filler Geometry}.
+\newblock \emph{ACS Applied Materials {\&} Interfaces}, 9\penalty0
+  (22):\penalty0 18925--18935, 2017.
+\newblock ISSN 1944-8244.
+\newblock \doi{10.1021/acsami.7b03339}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/acsami.7b03339}.
+
+\bibitem[Cahill et~al.(2003)Cahill, Ford, Goodson, Mahan, Majumdar, Maris,
+  Merlin, and Phillpot]{Cahill:2003fk}
+D.~G. Cahill, W.~K. Ford, K.~E. Goodson, G.~D. Mahan, A.~Majumdar, H.~J. Maris,
+  R.~Merlin, and S.~R. Phillpot.
+\newblock Nanoscale thermal transport.
+\newblock \emph{J. Appl. Phys.}, 93\penalty0 (2):\penalty0 793--818, 2003.
+\newblock \doi{http://dx.doi.org/10.1063/1.1524305}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jap/93/2/10.1063/1.1524305}.
+
+\bibitem[Che et~al.(2000)Che, Cagin, Deng, and III]{che:6888}
+J.~Che, T.~Cagin, W.~Deng, and W.~A.~G. III.
+\newblock Thermal conductivity of diamond and related materials from molecular
+  dynamics simulations.
+\newblock \emph{J. Chem. Phys.}, 113\penalty0 (16):\penalty0 6888--6900, 2000.
+\newblock \doi{10.1063/1.1310223}.
+\newblock URL \url{http://link.aip.org/link/?JCP/113/6888/1}.
+
+\bibitem[Chen(2005)]{Chen2005}
+G.~Chen.
+\newblock \emph{Nanoscale Energy Transport and Conversion}.
+\newblock Oxford University Press, New York, 2005.
+
+\bibitem[Ercolessi et~al.(1991)Ercolessi, Andreoni, and Tosatti]{Ercolessi1991}
+F.~Ercolessi, W.~Andreoni, and E.~Tosatti.
+\newblock {Melting of small gold particles: Mechanism and size effects}.
+\newblock \emph{Phys. Rev. Lett.}, 66\penalty0 (7):\penalty0 911--914, 1991.
+\newblock ISSN 00319007.
+\newblock \doi{10.1103/PhysRevLett.66.911}.
+
+\bibitem[Erpenbeck(1984)]{Erpenbeck:1984qe}
+J.~J. Erpenbeck.
+\newblock {Shear Viscosity of the Hard-Sphere Fluid via Nonequilibrium
+  Molecular Dynamics}.
+\newblock \emph{Phys. Rev. Lett.}, 52\penalty0 (15):\penalty0 1333--1335, 1984.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.52.1333}.
+
+\bibitem[Evans(1982)]{Evans:1982oq}
+D.~J. Evans.
+\newblock Homogeneous nemd algorithm for thermal conductivity -- application of
+  non-canonical linear response theory.
+\newblock \emph{Phys. Lett. A}, 91\penalty0 (9):\penalty0 457--460, 1982.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/B6TVM-46SXM58-S0/1/b270d693318250f3ed0dbce1a535ea50}.
+
+\bibitem[Evans(1986)]{Evans:1986nx}
+D.~J. Evans.
+\newblock Thermal conductivity of the lennard-jones fluid.
+\newblock \emph{Phys. Rev. A}, 34\penalty0 (2):\penalty0 1449--1453, Aug 1986.
+\newblock \doi{10.1103/PhysRevA.34.1449}.
+
+\bibitem[Evans and Searles(2002)]{Evans:2002tg}
+D.~J. Evans and D.~J. Searles.
+\newblock The fluctuation theorem.
+\newblock \emph{Adv. Phys.}, 51\penalty0 (7):\penalty0 1529--1585, Nov 2002.
+\newblock ISSN 0001-8732.
+\newblock \doi{10.1080/00018730210155133}.
+
+\bibitem[Ge et~al.(2004)Ge, Cahill, and Braun]{Ge:2004yg}
+Z.~Ge, D.~G. Cahill, and P.~V. Braun.
+\newblock {AuPd} metal nanoparticles as probes of nanoscale thermal transport
+  in aqueous solution.
+\newblock \emph{J. Phys. Chem. B}, 108\penalty0 (49):\penalty0 18870--18875,
+  2004.
+\newblock \doi{10.1021/jp048375k}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp048375k}.
+
+\bibitem[Ge et~al.(2006{\natexlab{a}})Ge, Cahill, and Braun]{Ge2006}
+Z.~Ge, D.~G. Cahill, and P.~Braun.
+\newblock {Thermal Conductance of Hydrophilic and Hydrophobic Interfaces}.
+\newblock \emph{Phys. Rev. Lett.}, 96\penalty0 (18):\penalty0 186101, may
+  2006{\natexlab{a}}.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.96.186101}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.96.186101}.
+
+\bibitem[Ge et~al.(2006{\natexlab{b}})Ge, Cahill, and Braun]{Ge:2006kx}
+Z.~Ge, D.~G. Cahill, and P.~V. Braun.
+\newblock Thermal conductance of hydrophilic and hydrophobic interfaces.
+\newblock \emph{Phys. Rev. Lett.}, 96:\penalty0 186101, May 2006{\natexlab{b}}.
+\newblock \doi{10.1103/PhysRevLett.96.186101}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.96.186101}.
+
+\bibitem[Gezelter et~al.()Gezelter, Louden, Bhattarai, Neidhart, Latham,
+  Lamichhane, Parsons, Michalka, Kuang, Marr, Stocker, Li, Vardeman, Lin,
+  Fennell, Sun, Daily, Zheng, and Meineke]{openmd}
+J.~D. Gezelter, P.~Louden, H.~Bhattarai, S.~Neidhart, A.~Latham, M.~Lamichhane,
+  T.~Parsons, J.~Michalka, S.~Kuang, J.~Marr, K.~Stocker, C.~Li, C.~F.
+  Vardeman, T.~Lin, C.~J. Fennell, X.~Sun, K.~Daily, Y.~Zheng, and M.~A.
+  Meineke.
+\newblock Openmd, an open source engine for molecular dynamics.
+\newblock Available at: \texttt{http://openmd.org} (Version 2.5, accessed
+  August 20, 2017).
+
+\bibitem[Giri et~al.(2016)Giri, Braun, and Hopkins]{Giri:2016}
+A.~Giri, J.~L. Braun, and P.~E. Hopkins.
+\newblock {Implications of Interfacial Bond Strength on the Spectral
+  Contributions to Thermal Boundary Conductance across Solid, Liquid, and Gas
+  Interfaces: A Molecular Dynamics Study}.
+\newblock \emph{J. Phys. Chem. C}, 120\penalty0 (43):\penalty0 24847--24856,
+  2016.
+\newblock ISSN 1932-7447.
+\newblock \doi{10.1021/acs.jpcc.6b08124}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/acs.jpcc.6b08124}.
+
+\bibitem[Goldstein et~al.(2001)Goldstein, Poole, and Safko]{Goldstein2001}
+H.~Goldstein, C.~Poole, and J.~Safko.
+\newblock \emph{Classical Mechanics}.
+\newblock Addison Wesley, San Francisco, 3rd edition, 2001.
+
+\bibitem[Graff(1975)]{Graff1975}
+K.~F. Graff.
+\newblock \emph{Wave Motion in Elastic Solids}.
+\newblock Dover, New York, 1975.
+
+\bibitem[Han et~al.(2017)Han, Schlawitschek, Katyal, Stephan,
   Gambaryan-Roisman, Leroy, and M{\"{u}}ller-Plathe]{Han:2017}
-Han,~H.; Schlawitschek,~C.; Katyal,~N.; Stephan,~P.; Gambaryan-Roisman,~T.;
-  Leroy,~F.; M{\"{u}}ller-Plathe,~F. {Solid--Liquid Interface Thermal
-  Resistance Affects the Evaporation Rate of Droplets from a Surface: A Study
-  of Perfluorohexane on Chromium Using Molecular Dynamics and Continuum
-  Theory}. \emph{Langmuir} \textbf{2017}, \emph{33}, 5336--5343\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Giri \latin{et~al.}(2016)Giri, Braun, and Hopkins]{Giri:2016}
-Giri,~A.; Braun,~J.~L.; Hopkins,~P.~E. {Implications of Interfacial Bond
-  Strength on the Spectral Contributions to Thermal Boundary Conductance across
-  Solid, Liquid, and Gas Interfaces: A Molecular Dynamics Study}. \emph{J.
-  Phys. Chem. C} \textbf{2016}, \emph{120}, 24847--24856\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Bhanushali \latin{et~al.}(2017)Bhanushali, Jason, Ghosh, Ganesh,
-  Simon, and Cheng]{Bhanushali:2017}
-Bhanushali,~S.; Jason,~N.~N.; Ghosh,~P.; Ganesh,~A.; Simon,~G.~P.; Cheng,~W.
-  {Enhanced Thermal Conductivity of Copper Nanofluids: The Effect of Filler
-  Geometry}. \emph{ACS Applied Materials {\&} Interfaces} \textbf{2017},
-  \emph{9}, 18925--18935\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Yadav and Chakravarty(2017)Yadav, and Chakravarty]{Yadav:2017}
-Yadav,~H. O.~S.; Chakravarty,~C. {Thiolated Gold Nanoparticle Solvation in
-  Near-Critical Fluids: The Role of Density, Temperature, and Topology}.
-  \emph{J. Chem. Phys.} \textbf{2017}, \emph{146}, 174902\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Ercolessi \latin{et~al.}(1991)Ercolessi, Andreoni, and
-  Tosatti]{Ercolessi1991}
-Ercolessi,~F.; Andreoni,~W.; Tosatti,~E. {Melting of small gold particles:
-  Mechanism and size effects}. \emph{Phys. Rev. Lett.} \textbf{1991},
-  \emph{66}, 911--914\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Myshlyavtsev and Stishenko(2013)Myshlyavtsev, and
-  Stishenko]{Myshlyavtsev2013}
-Myshlyavtsev,~A.~V.; Stishenko,~P.~V. {Relative stability of icosahedral and
-  cuboctahedral metallic nanoparticles}. \emph{Adsorption} \textbf{2013},
-  \emph{19}, 795--801\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Sauceda and Garz{\'{o}}n(2015)Sauceda, and Garz{\'{o}}n]{Sauceda2015}
-Sauceda,~H.~E.; Garz{\'{o}}n,~I.~L. {Structural Determination of Metal
-  Nanoparticles from their Vibrational (Phonon) Density of States}. \emph{J.
-  Phys. Chem. C} \textbf{2015}, \emph{119}, 10876--10880\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Wang \latin{et~al.}(2004)Wang, Teitel, and Dellago]{Wang2004}
-Wang,~Y.; Teitel,~S.; Dellago,~C. {Melting and equilibrium shape of icosahedral
-  gold nanoparticles}. \emph{Chem. Phys. Lett} \textbf{2004}, \emph{394},
-  257--261\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
+H.~Han, C.~Schlawitschek, N.~Katyal, P.~Stephan, T.~Gambaryan-Roisman,
+  F.~Leroy, and F.~M{\"{u}}ller-Plathe.
+\newblock {Solid--Liquid Interface Thermal Resistance Affects the Evaporation
+  Rate of Droplets from a Surface: A Study of Perfluorohexane on Chromium Using
+  Molecular Dynamics and Continuum Theory}.
+\newblock \emph{Langmuir}, 33\penalty0 (21):\penalty0 5336--5343, 2017.
+\newblock ISSN 0743-7463.
+\newblock \doi{10.1021/acs.langmuir.7b01410}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/acs.langmuir.7b01410}.
+
+\bibitem[Hannah et~al.(2015)Hannah, Gezelter, Schaller, and Schatz]{Hannah2015}
+D.~C. Hannah, J.~D. Gezelter, R.~D. Schaller, and G.~C. Schatz.
+\newblock {Reverse Non-Equilibrium Molecular Dynamics Demonstrate That Surface
+  Passivation Controls Thermal Transport at Semiconductor-Solvent Interfaces.}
+\newblock \emph{ACS Nano}, 9\penalty0 (6):\penalty0 6278--6287, May 2015.
+\newblock ISSN 1936-0851.
+\newblock \doi{10.1021/acsnano.5b01724}.
+\newblock URL
+  \url{http://pubs.acs.org.libproxy.mit.edu/doi/abs/10.1021/acsnano.5b01724{\%}5Cnhttp://pubs.acs.org/doi/abs/10.1021/acsnano.5b01724}.
+
+\bibitem[Harikrishna et~al.(2013)Harikrishna, Ducker, and
+  Huxtable]{Harikrishna:2013ys}
+H.~Harikrishna, W.~A. Ducker, and S.~T. Huxtable.
+\newblock The influence of interface bonding on thermal transport through
+  solid--liquid interfaces.
+\newblock \emph{Appl. Phys. Lett.}, 102\penalty0 (25):\penalty0 251606, 2013.
+\newblock \doi{http://dx.doi.org/10.1063/1.4812749}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/apl/102/25/10.1063/1.4812749}.
+
+\bibitem[Hautman and Klein(1989)]{hautman:4994}
+J.~Hautman and M.~L. Klein.
+\newblock Simulation of a monolayer of alkyl thiol chains.
+\newblock \emph{J. Chem. Phys.}, 91\penalty0 (8):\penalty0 4994--5001, 1989.
+\newblock \doi{10.1063/1.457621}.
+\newblock URL \url{http://link.aip.org/link/?JCP/91/4994/1}.
+
+\bibitem[Helfand(1960)]{Helfand:1960os}
+E.~Helfand.
+\newblock Transport coefficients from dissipation in a canonical ensemble.
+\newblock \emph{Phys. Rev.}, 119\penalty0 (1):\penalty0 1--9, Jul 1960.
+\newblock \doi{10.1103/PhysRev.119.1}.
+
+\bibitem[Henz et~al.(2008)Henz, Hawa, and Zachariah]{Henz:2008qf}
+B.~J. Henz, T.~Hawa, and M.~R. Zachariah.
+\newblock Mechano-chemical stability of gold nanoparticles coated with
+  alkanethiolate sams.
+\newblock \emph{Langmuir}, 24\penalty0 (3):\penalty0 773--783, 2008.
+\newblock \doi{10.1021/la7024473}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/la7024473}.
+
+\bibitem[Hess(2002)]{Hess:2002nr}
+B.~Hess.
+\newblock Determining the shear viscosity of model liquids from molecular
+  dynamics simulations.
+\newblock \emph{J. Chem. Phys.}, 116\penalty0 (1):\penalty0 209--217, 2002.
+\newblock \doi{10.1063/1.1421362}.
+\newblock URL \url{http://link.aip.org/link/?JCP/116/209/1}.
+
+\bibitem[Heyes(1988)]{Heyes:1988ee}
+D.~M. Heyes.
+\newblock Transport coefficients of lennard-jones fluids: A molecular-dynamics
+  and effective-hard-sphere treatment.
+\newblock \emph{Phys. Rev. B}, 37\penalty0 (10):\penalty0 5677--5696, Apr 1988.
+\newblock \doi{10.1103/PhysRevB.37.5677}.
+
+\bibitem[Hopkins et~al.(2011{\natexlab{a}})Hopkins, Duda, and
+  Norris]{Hopkins-inelastic}
+P.~E. Hopkins, J.~C. Duda, and P.~M. Norris.
+\newblock Anharmonic phonon interactions at interfaces and contributions to
+  thermal boundary conductance.
+\newblock \emph{J. Heat Transfer}, 133:\penalty0 062401, March
+  2011{\natexlab{a}}.
+\newblock \doi{10.1115/1.4003549}.
+
+\bibitem[Hopkins et~al.(2011{\natexlab{b}})Hopkins, Duda, Petz, and
+  Floro]{Hopkins-surf-rough}
+P.~E. Hopkins, J.~C. Duda, C.~W. Petz, and J.~A. Floro.
+\newblock Controlling thermal conductance through quantum dot roughening at
+  interfaces.
+\newblock \emph{Phys. Rev. B}, 84:\penalty0 035438, Jul 2011{\natexlab{b}}.
+\newblock \doi{10.1103/PhysRevB.84.035438}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.84.035438}.
+
+\bibitem[Hsieh et~al.(2011)Hsieh, Lyons, Pop, Keblinski, and
+  Cahill]{Cahill2011}
+W.-P. Hsieh, A.~S. Lyons, E.~Pop, P.~Keblinski, and D.~G. Cahill.
+\newblock Pressure tuning of the thermal conductance of weak interfaces.
+\newblock \emph{Phys. Rev. B}, 84:\penalty0 184107, Nov 2011.
+\newblock \doi{10.1103/PhysRevB.84.184107}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.84.184107}.
+
+\bibitem[Jiang et~al.(2008)Jiang, Myshakin, Jordan, and
+  Warzinski]{Jiang:2008hc}
+H.~Jiang, E.~M. Myshakin, K.~D. Jordan, and R.~P. Warzinski.
+\newblock Molecular dynamics simulations of the thermal conductivity of methane
+  hydrate.
+\newblock \emph{J. Phys. Chem. B}, 112:\penalty0 10207--10216, 2008.
+\newblock ISSN 1520-6106.
+\newblock \doi{10.1021/jp802942v}.
+
 \bibitem[Jorgensen(1998)]{Jorgensen98a}
-Jorgensen,~W.~L. In \emph{The Encyclopedia of Computational Chemistry};
-  v.~R.~{Schleyer, {\it et al.}},~P., Ed.; John Wiley \& Sons: New York, 1998;
-  Vol.~3; pp 1986--1989\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\end{mcitethebibliography}
+W.~L. Jorgensen.
+\newblock Opls force fields.
+\newblock In P.~v.~R.~{Schleyer, {\it et al.}}, editor, \emph{The Encyclopedia
+  of Computational Chemistry}, volume~3, pages 1986--1989. John Wiley \& Sons,
+  New York, 1998.
+
+\bibitem[Jorgensen et~al.(1996)Jorgensen, Maxwell, , and
+  Tirado-Rives]{Jorgensen:1996sf}
+W.~L. Jorgensen, D.~S. Maxwell, , and J.~Tirado-Rives.
+\newblock Development and testing of the opls all-atom force field on
+  conformational energetics and properties of organic liquids.
+\newblock \emph{J. Am. Chem. Soc.}, 118\penalty0 (45):\penalty0 11225--11236,
+  1996.
+\newblock \doi{10.1021/ja9621760}.
+\newblock URL \url{http://dx.doi.org/10.1021/ja9621760}.
+
+\bibitem[Juv\'e et~al.(2009)Juv\'e, Scardamaglia, Maioli, Crut, Merabia, Joly,
+  Del~Fatti, and Vall\'ee]{Juve:2009pt}
+V.~Juv\'e, M.~Scardamaglia, P.~Maioli, A.~Crut, S.~Merabia, L.~Joly,
+  N.~Del~Fatti, and F.~Vall\'ee.
+\newblock Cooling dynamics and thermal interface resistance of glass-embedded
+  metal nanoparticles.
+\newblock \emph{Phys. Rev. B}, 80\penalty0 (19):\penalty0 195406, Nov 2009.
+\newblock \doi{10.1103/PhysRevB.80.195406}.
+
+\bibitem[Kikugawa et~al.(2009)Kikugawa, Ohara, Kawaguchi, Torigoe, Hagiwara,
+  and Matsumoto]{Kikugawa:2009vn}
+G.~Kikugawa, T.~Ohara, T.~Kawaguchi, E.~Torigoe, Y.~Hagiwara, and Y.~Matsumoto.
+\newblock A molecular dynamics study on heat transfer characteristics at the
+  interfaces of alkanethiolate self-assembled monolayer and organic solvent.
+\newblock \emph{J. Chem. Phys.}, 130\penalty0 (7):\penalty0 074706, 2009.
+\newblock \doi{http://dx.doi.org/10.1063/1.3077315}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/130/7/10.1063/1.3077315}.
+
+\bibitem[Kinaci et~al.(2012)Kinaci, Haskins, and \c{C}a\u{g}in]{kinaci:014106}
+A.~Kinaci, J.~B. Haskins, and T.~\c{C}a\u{g}in.
+\newblock On calculation of thermal conductivity from einstein relation in
+  equilibrium molecular dynamics.
+\newblock \emph{J. Chem. Phys.}, 137\penalty0 (1):\penalty0 014106, 2012.
+\newblock \doi{10.1063/1.4731450}.
+\newblock URL \url{http://link.aip.org/link/?J. Chem. Phys./137/014106/1}.
+
+\bibitem[Kittel(2005)]{Kittel}
+C.~Kittel.
+\newblock \emph{Introduction to Solid State Physics}.
+\newblock JohnWiley and Sons, New York, 2005.
+
+\bibitem[Kohanoff et~al.(2005)Kohanoff, Caro, and Finnis]{Kohanoff:2005qm}
+J.~Kohanoff, A.~Caro, and M.~Finnis.
+\newblock An isothermal-isobaric langevin thermostat for simulating
+  nanoparticles under pressure: Application to au clusters.
+\newblock \emph{ChemPhysChem}, 6:\penalty0 1848--1852, 2005.
+\newblock \doi{DOI 10.1002/cphc.200400607}.
+
+\bibitem[Kuang and Gezelter(2011{\natexlab{a}})]{Kuang:2011ef}
+S.~Kuang and J.~D. Gezelter.
+\newblock Simulating interfacial thermal conductance at metal-solvent
+  interfaces: The role of chemical capping agents.
+\newblock \emph{J. Phys. Chem. C}, 115\penalty0 (45):\penalty0 22475--22483,
+  2011{\natexlab{a}}.
+\newblock \doi{10.1021/jp2073478}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp2073478}.
+
+\bibitem[Kuang and Gezelter(2011{\natexlab{b}})]{kuang:AuThl}
+S.~Kuang and J.~D. Gezelter.
+\newblock {Simulating interfacial thermal conductance at metal-solvent
+  interfaces: The role of chemical capping agents}.
+\newblock \emph{J. Phys. Chem. C}, 115\penalty0 (45):\penalty0 22475--22483,
+  2011{\natexlab{b}}.
+\newblock ISSN 19327447.
+\newblock \doi{10.1021/jp2073478}.
+
+\bibitem[Kuang and Gezelter(2012)]{Kuang:2012fe}
+S.~Kuang and J.~D. Gezelter.
+\newblock Velocity shearing and scaling rnemd: A minimally perturbing method
+  for simulating temperature and momentum gradients.
+\newblock \emph{Mol. Phys.}, 110\penalty0 (9-10):\penalty0 691--701, May 2012.
+
+\bibitem[Leach(2001)]{Leach2001}
+A.~Leach.
+\newblock \emph{Molecular Modeling: Principles and Applications}.
+\newblock Pearson Educated Limited, Harlow, England, 2nd edition, 2001.
+
+\bibitem[Lee et~al.(1988)Lee, Yang, and Parr]{Lee:1988qf}
+C.~Lee, W.~Yang, and R.~G. Parr.
+\newblock Development of the colle-salvetti correlation-energy formula into a
+  functional of the electron density.
+\newblock \emph{Phys. Rev. B}, 37:\penalty0 785--789, Jan 1988.
+\newblock \doi{10.1103/PhysRevB.37.785}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevB.37.785}.
+
+\bibitem[Little(1959)]{Little1959}
+W.~A. Little.
+\newblock {The transport of heat between dissimilar solids at low
+  temperatures}.
+\newblock \emph{Can. J. Phys}, 37:\penalty0 334--349, 1959.
+\newblock \doi{10.1139/p59-037}.
+\newblock URL \url{https://doi.org/10.1139/p59-037}.
+
+\bibitem[Liu et~al.(2015)Liu, Ma, and Wang]{Liu2015}
+M.~Liu, Y.~Ma, and R.~Y. Wang.
+\newblock {Modifying Thermal Transport in Colloidal Nanocrystal Solids with
+  Surface Chemistry}.
+\newblock \emph{ACS Nano}, 9\penalty0 (12):\penalty0 12079--12087, 2015.
+\newblock ISSN 1936086X.
+\newblock \doi{10.1021/acsnano.5b05085}.
+
+\bibitem[Losego et~al.(2012)Losego, Grady, Sottos, Cahill, and
+  Braun]{Losego:2012fr}
+M.~D. Losego, M.~E. Grady, N.~R. Sottos, D.~G. Cahill, and P.~V. Braun.
+\newblock {Effects of chemical bonding on heat transport across interfaces}.
+\newblock \emph{Nat Mater}, 11\penalty0 (6):\penalty0 502--506, 2012.
+\newblock URL \url{http://dx.doi.org/10.1038/nmat3303}.
+
+\bibitem[Lubna et~al.(2005)Lubna, Kamath, Potoff, Rai, and
+  Siepmann]{TraPPE-UA.thiols}
+N.~Lubna, G.~Kamath, J.~J. Potoff, N.~Rai, and J.~I. Siepmann.
+\newblock Transferable potentials for phase equilibria. 8. united-atom
+  description for thiols, sulfides, disulfides, and thiophene.
+\newblock \emph{J. Phys. Chem. B}, 109\penalty0 (50):\penalty0 24100--24107,
+  2005.
+\newblock \doi{10.1021/jp0549125}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp0549125}.
+
+\bibitem[Luedtke and Landman(1998)]{landman:1998}
+W.~D. Luedtke and U.~Landman.
+\newblock Structure and thermodynamics of self-assembled monolayers on gold
+  nanocrystallites.
+\newblock \emph{J. Phys. Chem. B}, 102\penalty0 (34):\penalty0 6566--6572,
+  1998.
+\newblock \doi{10.1021/jp981745i}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp981745i}.
+
+\bibitem[Lyeo and Cahill(2006)]{Cahill2006}
+H.-K. Lyeo and D.~G. Cahill.
+\newblock Thermal conductance of interfaces between highly dissimilar
+  materials.
+\newblock \emph{Phys. Rev. B}, 73:\penalty0 144301, Apr 2006.
+\newblock \doi{10.1103/PhysRevB.73.144301}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.73.144301}.
+
+\bibitem[Maginn et~al.(1993)Maginn, Bell, and Theodorou]{Maginn:1993kl}
+E.~J. Maginn, A.~T. Bell, and D.~N. Theodorou.
+\newblock Transport diffusivity of methane in silicalite from equilibrium and
+  nonequilibrium simulations.
+\newblock \emph{J. Phys. Chem.}, 97\penalty0 (16):\penalty0 4173--4181, Apr
+  1993.
+\newblock ISSN 0022-3654.
+\newblock \doi{10.1021/j100118a038}.
+
+\bibitem[Martin and Siepmann(1998)]{TraPPE-UA.alkanes}
+M.~G. Martin and J.~I. Siepmann.
+\newblock Transferable potentials for phase equilibria. 1. united-atom
+  description of n-alkanes.
+\newblock \emph{J. Phys. Chem. B}, 102\penalty0 (14):\penalty0 2569--2577,
+  1998.
+\newblock \doi{10.1021/jp972543+}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp972543%2B}.
+
+\bibitem[Mart\'{\i}nez et~al.(2009)Mart\'{\i}nez, Andrade, Birgin, and
+  Mart\'{\i}nez]{packmol}
+L.~Mart\'{\i}nez, R.~Andrade, E.~G. Birgin, and J.~M. Mart\'{\i}nez.
+\newblock Packmol: A package for building initial configurations for molecular
+  dynamics simulations.
+\newblock \emph{J. Comput. Chem.}, 30\penalty0 (13):\penalty0 2157--2164, 2009.
+
+\bibitem[Massobrio and Ciccotti(1984)]{MASSOBRIO:1984bl}
+C.~Massobrio and G.~Ciccotti.
+\newblock Lennard-jones triple-point conductivity via weak external fields.
+\newblock \emph{Phys. Rev. A}, 30:\penalty0 3191--3197, 1984.
+
+\bibitem[Meineke et~al.(2005)Meineke, Vardeman, Lin, Fennell, and
+  Gezelter]{OOPSE}
+M.~A. Meineke, C.~F. Vardeman, T.~Lin, C.~J. Fennell, and J.~D. Gezelter.
+\newblock Oopse: An object-oriented parallel simulation engine for molecular
+  dynamics.
+\newblock \emph{J. Comp. Chem.}, 26\penalty0 (3):\penalty0 252--271, 2005.
+\newblock ISSN 1096-987X.
+\newblock \doi{10.1002/jcc.20161}.
+\newblock URL \url{http://dx.doi.org/10.1002/jcc.20161}.
+
+\bibitem[Meng et~al.(2017)Meng, Elsahati, Liu, and Richards]{Meng:2017}
+F.~Meng, M.~Elsahati, J.~Liu, and R.~F. Richards.
+\newblock {Thermal Resistance between Amorphous Silica Nanoparticles}.
+\newblock \emph{J. Appl. Phys.}, 121\penalty0 (19):\penalty0 194302, 2017.
+\newblock ISSN 0021-8979.
+\newblock \doi{10.1063/1.4983753}.
+\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.4983753}.
+
+\bibitem[Monachon et~al.(2016)Monachon, Weber, and Dames]{Monachon2016}
+C.~Monachon, L.~Weber, and C.~Dames.
+\newblock {Thermal Boundary Conductance :A Materials Science Perspective}.
+\newblock \emph{Annu. Rev. Mater. Res.}, 8\penalty0 (March):\penalty0 1--31,
+  2016.
+\newblock ISSN 1531-7331.
+\newblock \doi{10.1146/annurev-matsci-070115-031719}.
+
+\bibitem[M\"{u}ller-Plathe(1997)]{Muller-Plathe:1997wq}
+F.~M\"{u}ller-Plathe.
+\newblock A simple nonequilibrium molecular dynamics method for calculating the
+  thermal conductivity.
+\newblock \emph{J. Chem. Phys.}, 106\penalty0 (14):\penalty0 6082--6085, Apr
+  1997.
+\newblock ISSN 0021-9606.
+
+\bibitem[M\"{u}ller-Plathe(1999)]{Muller-Plathe:1999ao}
+F.~M\"{u}ller-Plathe.
+\newblock Reversing the perturbation in nonequilibrium molecular dynamics: An
+  easy way to calculate the shear viscosity of fluids.
+\newblock \emph{Phys. Rev. E}, 59\penalty0 (5, Part A):\penalty0 4894--4898,
+  MAY 1999.
+\newblock ISSN 1063-651X.
+
+\bibitem[Myshlyavtsev and Stishenko(2013)]{Myshlyavtsev2013}
+A.~V. Myshlyavtsev and P.~V. Stishenko.
+\newblock {Relative stability of icosahedral and cuboctahedral metallic
+  nanoparticles}.
+\newblock \emph{Adsorption}, 19\penalty0 (2-4):\penalty0 795--801, 2013.
+\newblock ISSN 09295607.
+\newblock \doi{10.1007/s10450-013-9519-2}.
+
+\bibitem[Neidhart and Gezelter(2017)]{Neidhart}
+S.~M. Neidhart and J.~D. Gezelter.
+\newblock {Thermal Transport is Influenced by Nanoparticle Morphology: A
+  Molecular Dynamics Study}.
+\newblock \emph{J. Phys. Chem. C}, 122:\penalty0 1430--1436, 2017.
+\newblock ISSN 1932-7447.
+\newblock \doi{10.1021/acs.jpcc.7b12362}.
+\newblock URL \url{http://pubs.acs.org/doi/10.1021/acs.jpcc.7b12362}.
+
+\bibitem[Norris et~al.(2013)Norris, Le, and Baker]{Norris:2013}
+P.~M. Norris, N.~Q. Le, and C.~H. Baker.
+\newblock {Tuning Phonon Transport : From Interfaces to Nanostructures}.
+\newblock \emph{J. Heat Transfer}, 135\penalty0 (June):\penalty0 1--13, 2013.
+\newblock ISSN 135.
+\newblock \doi{10.1115/1.4023584}.
+
+\bibitem[Ong et~al.(2013)Ong, Rupich, Talapin, McGaughey, and
+  Malen]{Ong:2013rt}
+W.-L. Ong, S.~M. Rupich, D.~V. Talapin, A.~J.~H. McGaughey, and J.~A. Malen.
+\newblock {Surface chemistry mediates thermal transport in three-dimensional
+  nanocrystal arrays}.
+\newblock \emph{Nat Mater}, 12\penalty0 (5):\penalty0 410--415, 2013.
+\newblock URL \url{http://dx.doi.org/10.1038/nmat3596}.
+
+\bibitem[Ong et~al.(2014)Ong, Majumdar, Malen, and McGaughey]{Ong:2014yq}
+W.-L. Ong, S.~Majumdar, J.~A. Malen, and A.~J.~H. McGaughey.
+\newblock {Coupling of Organic and Inorganic Vibrational States and Their
+  Thermal Transport in Nanocrystal Arrays}.
+\newblock \emph{J. Phys. Chem. C}, 118\penalty0 (14):\penalty0 7288--7295,
+  2014.
+\newblock \doi{10.1021/jp4120157}.
+\newblock URL \url{http://dx.doi.org/10.1021/jp4120157}.
+
+\bibitem[Pandey and Leitner(2017)]{Leitner2017}
+H.~D. Pandey and D.~M. Leitner.
+\newblock Influence of thermalization on thermal conduction through molecular
+  junctions: Computational study of peg oligomers.
+\newblock \emph{J. Chem. Phys.}, 147\penalty0 (8):\penalty0 084701, 2017.
+\newblock \doi{10.1063/1.4999411}.
+\newblock URL \url{https://doi.org/10.1063/1.4999411}.
+
+\bibitem[Park and Cahill(2016)]{Park2016}
+J.~Park and D.~G. Cahill.
+\newblock {Plasmonic Sensing of Heat Transport at Solid-Liquid Interfaces}.
+\newblock \emph{J. Phys. Chem. C}, 120\penalty0 (5):\penalty0 2814--2821, 2016.
+\newblock ISSN 19327455.
+\newblock \doi{10.1021/acs.jpcc.5b11706}.
+
+\bibitem[Park et~al.(2012)Park, Huang, Wang, Murphy, and Cahill]{Park2012}
+J.~Park, J.~Huang, W.~Wang, C.~J. Murphy, and D.~G. Cahill.
+\newblock Heat transport between au nanorods, surrounding liquids, and solid
+  supports.
+\newblock \emph{J. Phys. Chem. C}, 116:\penalty0 26335--26341, 2012.
+
+\bibitem[Patel et~al.(2005)Patel, Garde, and Keblinski]{Patel:2005zm}
+H.~A. Patel, S.~Garde, and P.~Keblinski.
+\newblock Thermal resistance of nanoscopic liquid-liquid interfaces: Dependence
+  on chemistry and molecular architecture.
+\newblock \emph{Nano Lett.}, 5\penalty0 (11):\penalty0 2225--2231, 2005.
+\newblock \doi{10.1021/nl051526q}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/nl051526q}.
+
+\bibitem[Picalek and Kolafa(2009)]{Picalek:2009rz}
+J.~Picalek and J.~Kolafa.
+\newblock Shear viscosity of ionic liquids from non-equilibrium molecular
+  dynamics simulation.
+\newblock \emph{Mol. Simul.}, 35\penalty0 (8):\penalty0 685--690, 2009.
+\newblock ISSN 0892-7022.
+\newblock \doi{10.1080/08927020802680703}.
+
+\bibitem[Prasher(2000)]{Prasher2000}
+P.~E. Prasher, Ravi S.~Phelan.
+\newblock {Prediction of thermal boundary resistance}.
+\newblock \emph{J. Heat Transfer}, 123\penalty0 (1):\penalty0 105--112, 2000.
+\newblock \doi{10.1115/1.338138}.
+\newblock URL \url{https://doi.org/10.1139/p59-037}.
+
+\bibitem[Prasher(2009)]{Prasher2009}
+R.~Prasher.
+\newblock Acoustic mismatch model for thermal contact resistance of van der
+  waals contacts.
+\newblock \emph{Applied Physics Letters}, 94\penalty0 (4):\penalty0 041905,
+  2009.
+\newblock \doi{10.1063/1.3075065}.
+\newblock URL \url{https://doi.org/10.1063/1.3075065}.
+
+\bibitem[Qi et~al.(1999)Qi, \c{C}a\v{g}in, Kimura, and {Goddard
+  III}]{Qi:1999ph}
+Y.~Qi, T.~\c{C}a\v{g}in, Y.~Kimura, and W.~A. {Goddard III}.
+\newblock Molecular-dynamics simulations of glass formation and crystallization
+  in binary liquid metals: {C}u-{A}g and {C}u-{N}i.
+\newblock \emph{Phys. Rev. B}, 59\penalty0 (5):\penalty0 3527--3533, Feb 1999.
+\newblock \doi{10.1103/PhysRevB.59.3527}.
+
+\bibitem[Reddy et~al.(2005)Reddy, Castelino, and Majumdar]{Reddy:2005fk}
+P.~Reddy, K.~Castelino, and A.~Majumdar.
+\newblock Diffuse mismatch model of thermal boundary conductance using exact
+  phonon dispersion.
+\newblock \emph{Appl. Phys. Lett.}, 87\penalty0 (21):\penalty0 211908, 2005.
+\newblock \doi{http://dx.doi.org/10.1063/1.2133890}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/apl/87/21/10.1063/1.2133890}.
+
+\bibitem[Sauceda and Garz{\'{o}}n(2015)]{Sauceda2015}
+H.~E. Sauceda and I.~L. Garz{\'{o}}n.
+\newblock {Structural Determination of Metal Nanoparticles from their
+  Vibrational (Phonon) Density of States}.
+\newblock \emph{J. Phys. Chem. C}, 119\penalty0 (20):\penalty0 10876--10880,
+  2015.
+\newblock ISSN 1932-7447.
+\newblock \doi{10.1021/jp510666v}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp510666v}.
+
+\bibitem[Schapotschnikow et~al.(2007)Schapotschnikow, Pool, and
+  Vlugt]{vlugt:cpc2007154}
+P.~Schapotschnikow, R.~Pool, and T.~J. Vlugt.
+\newblock Selective adsorption of alkyl thiols on gold in different geometries.
+\newblock \emph{Comput. Phys. Commun.}, 177\penalty0 (1-2):\penalty0 154 --
+  157, 2007.
+\newblock ISSN 0010-4655.
+\newblock \doi{DOI: 10.1016/j.cpc.2007.02.028}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/B6TJ5-4N3WYP0-1/2/66dbe8892f456c230b9b8fcd9c23f456}.
+
+\bibitem[Schelling et~al.(2002)Schelling, Phillpot, and
+  Keblinski]{Schelling:2002dp}
+P.~K. Schelling, S.~R. Phillpot, and P.~Keblinski.
+\newblock Comparison of atomic-level simulation methods for computing thermal
+  conductivity.
+\newblock \emph{Phys. Rev. B}, 65\penalty0 (14):\penalty0 144306, Apr 2002.
+\newblock ISSN 1098-0121.
+\newblock \doi{10.1103/PhysRevB.65.144306}.
+
+\bibitem[Schmidt et~al.(2008)Schmidt, Alper, Chiesa, Chen, Das, and
+  Hamad-Schifferli]{Schmidt:2008ad}
+A.~J. Schmidt, J.~D. Alper, M.~Chiesa, G.~Chen, S.~K. Das, and
+  K.~Hamad-Schifferli.
+\newblock Probing the gold nanorod-ligand-solvent interface by plasmonic
+  absorption and thermal decay.
+\newblock \emph{J. Phys. Chem. C}, 112\penalty0 (35):\penalty0 13320--13323,
+  2008.
+\newblock \doi{10.1021/jp8051888}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp8051888}.
+
+\bibitem[Schmidt et~al.(2010{\natexlab{a}})Schmidt, Collins, Minnich, and
+  Chen]{Schmidt:2010}
+A.~J. Schmidt, K.~C. Collins, A.~J. Minnich, and G.~Chen.
+\newblock {Thermal conductance and phonon transmissivity of metal-graphite
+  interfaces}.
+\newblock \emph{Journal of Applied Physics}, 107\penalty0 (10),
+  2010{\natexlab{a}}.
+\newblock ISSN 00218979.
+\newblock \doi{10.1063/1.3428464}.
+
+\bibitem[Schmidt et~al.(2010{\natexlab{b}})Schmidt, Collins, Minnich, and
+  Chen]{Schmidt:2010nr}
+A.~J. Schmidt, K.~C. Collins, A.~J. Minnich, and G.~Chen.
+\newblock Thermal conductance and phonon transmissivity of metal--graphite
+  interfaces.
+\newblock \emph{J. Appl. Phys.}, 107\penalty0 (10):\penalty0 104907,
+  2010{\natexlab{b}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.3428464}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jap/107/10/10.1063/1.3428464}.
+
+\bibitem[Segal et~al.(2003)Segal, Nitzan, and H{\"{a}}nggi]{Segal:2003qy}
+D.~Segal, A.~Nitzan, and P.~H{\"{a}}nggi.
+\newblock {Thermal conductance through molecular wires}.
+\newblock \emph{J. Chem. Phys.}, 119\penalty0 (13):\penalty0 6840--6855, 2003.
+\newblock \doi{http://dx.doi.org/10.1063/1.1603211}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/119/13/10.1063/1.1603211}.
+
+\bibitem[Shenogina et~al.(2009)Shenogina, Godawat, Keblinski, and
+  Garde]{Shenogina:2009ix}
+N.~Shenogina, R.~Godawat, P.~Keblinski, and S.~Garde.
+\newblock How wetting and adhesion affect thermal conductance of a range of
+  hydrophobic to hydrophilic aqueous interfaces.
+\newblock \emph{Phys. Rev. Lett.}, 102\penalty0 (15):\penalty0 156101, Apr
+  2009.
+\newblock \doi{10.1103/PhysRevLett.102.156101}.
+
+\bibitem[Shin et~al.(2010)Shin, Kaviany, Desai, and Bonner]{Shin:2010sf}
+S.~Shin, M.~Kaviany, T.~Desai, and R.~Bonner.
+\newblock Roles of atomic restructuring in interfacial phonon transport.
+\newblock \emph{Phys. Rev. B}, 82:\penalty0 081302, Aug 2010.
+\newblock \doi{10.1103/PhysRevB.82.081302}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevB.82.081302}.
+
+\bibitem[Soussi et~al.(2015)Soussi, Volz, Palpant, and Chalopin]{Soussi:2015fj}
+J.~Soussi, S.~Volz, B.~Palpant, and Y.~Chalopin.
+\newblock {A detailed microscopic study of the heat transfer at a water gold
+  interface coated with a polymer}.
+\newblock \emph{Appl. Phys. Lett.}, 106\penalty0 (9), 2015.
+\newblock \doi{http://dx.doi.org/10.1063/1.4913905}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/apl/106/9/10.1063/1.4913905}.
+
+\bibitem[Steinhardt et~al.(1983)Steinhardt, Nelson, and
+  Ronchetti]{Steinhardt1983}
+P.~J. Steinhardt, D.~R. Nelson, and M.~Ronchetti.
+\newblock Bond-orientational order in liquids and glasses.
+\newblock \emph{Phys. Rev. B}, 28:\penalty0 784--804, 1983.
+
+\bibitem[Stevens et~al.(2005)Stevens, Smith, and Norris]{Stevens2005}
+R.~J. Stevens, A.~N. Smith, and P.~M. Norris.
+\newblock Measurement of thermal boundary conductance of a series of
+  metal-dielectric interfaces by the transient thermoreflectance technique
+  resistance of van der waals contacts.
+\newblock \emph{J. Heat Transfer}, 127\penalty0 (3):\penalty0 315--322, 2005.
+\newblock \doi{10.1115/1.1857944}.
+\newblock URL \url{http://dx.doi.org/10.1115/1.1857944}.
+
+\bibitem[Stocker and Gezelter(2013)]{Stocker:2013cl}
+K.~M. Stocker and J.~D. Gezelter.
+\newblock Simulations of heat conduction at thiolate-capped gold surfaces: The
+  role of chain length and solvent penetration.
+\newblock \emph{J. Phys. Chem. C}, 117\penalty0 (15):\penalty0 7605--7612,
+  2013.
+\newblock \doi{10.1021/jp312734f}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp312734f}.
+
+\bibitem[Stocker and Gezelter(2014)]{Stocker:2014qq}
+K.~M. Stocker and J.~D. Gezelter.
+\newblock A method for creating thermal and angular momentum fluxes in
+  nonperiodic simulations.
+\newblock \emph{J. Chem. Theory Comput.}, 10\penalty0 (5):\penalty0 1878--1886,
+  2014.
+\newblock \doi{10.1021/ct500221u}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/ct500221u}.
+
+\bibitem[Stocker et~al.(2016)Stocker, Neidhart, and Gezelter]{Stocker2016}
+K.~M. Stocker, S.~M. Neidhart, and J.~D. Gezelter.
+\newblock {Interfacial thermal conductance of thiolate-protected gold
+  nanospheres}.
+\newblock \emph{J. Appl. Phys.}, 119\penalty0 (2):\penalty0 025106, 2016.
+\newblock ISSN 10897550.
+\newblock \doi{10.1063/1.4939956}.
+\newblock URL \url{http://dx.doi.org/10.1063/1.4939956}.
+
+\bibitem[Stoner and Maris(1993)]{Stoner1993}
+R.~J. Stoner and H.~J. Maris.
+\newblock Kapitza conductance and heat flow between solids at temperatures from
+  50 to 300 k.
+\newblock \emph{Phys. Rev. B}, 48:\penalty0 16373--16387, Dec 1993.
+\newblock \doi{10.1103/PhysRevB.48.16373}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.48.16373}.
+
+\bibitem[Swartz and Pohl(1989)]{Swartz:1989uq}
+E.~T. Swartz and R.~O. Pohl.
+\newblock Thermal boundary resistance.
+\newblock \emph{Rev. Mod. Phys.}, 61:\penalty0 605--668, Jul 1989.
+\newblock \doi{10.1103/RevModPhys.61.605}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/RevModPhys.61.605}.
+
+\bibitem[Tascini et~al.(2017)Tascini, Armstrong, Chiavazzo, Fasano, Asinari,
+  and Bresme]{Tascini2016}
+A.~S. Tascini, J.~Armstrong, E.~Chiavazzo, M.~Fasano, P.~Asinari, and
+  F.~Bresme.
+\newblock {Thermal transport across nanoparticle-fluid interfaces: the
+  interplay of interfacial curvature and nanoparticle-fluid interactions}.
+\newblock \emph{Phys. Chem. Chem. Phys.}, 19:\penalty0 3244--3253, 2017.
+\newblock ISSN 1463-9076.
+\newblock \doi{10.1039/C6CP06403E}.
+\newblock URL
+  \url{http://pubs.rsc.org/en/Content/ArticleLanding/2016/CP/C6CP06403E}.
+
+\bibitem[Tenney and Maginn(2010)]{Tenney:2010rp}
+C.~M. Tenney and E.~J. Maginn.
+\newblock Limitations and recommendations for the calculation of shear
+  viscosity using reverse nonequilibrium molecular dynamics.
+\newblock \emph{J. Chem. Phys.}, 132\penalty0 (1):\penalty0 014103, JAN 7 2010.
+\newblock ISSN 0021-9606.
+\newblock \doi{10.1063/1.3276454}.
+
+\bibitem[Tian et~al.(2015)Tian, Marconnet, and Chen]{Tian:2015uq}
+Z.~Tian, A.~Marconnet, and G.~Chen.
+\newblock Enhancing solid-liquid interface thermal transport using
+  self-assembled monolayers.
+\newblock \emph{Appl. Phys. Lett.}, 106\penalty0 (21):\penalty0 211602, 2015.
+\newblock \doi{http://dx.doi.org/10.1063/1.4921758}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/apl/106/21/10.1063/1.4921758}.
+
+\bibitem[Vardeman and Gezelter(2008)]{Vardeman:2008fk}
+C.~F. Vardeman and J.~D. Gezelter.
+\newblock Simulations of laser-induced glass formation in ag-cu nanoparticles.
+\newblock \emph{J. Phys. Chem. C}, 112\penalty0 (9):\penalty0 3283--3293, 2008.
+\newblock \doi{10.1021/jp710063g}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp710063g}.
+
+\bibitem[Vardeman et~al.(2011)Vardeman, Stocker, and Gezelter]{Vardeman2011}
+C.~F. Vardeman, K.~M. Stocker, and J.~D. Gezelter.
+\newblock The langevin hull: Constant pressure and temperature dynamics for
+  nonperiodic systems.
+\newblock \emph{J. Chem. Theory Comput.}, 7:\penalty0 834--842, 2011.
+
+\bibitem[Vasquez et~al.(2004)Vasquez, Macedo, and Zabaloy]{Vasquez:2004ty}
+V.~R. Vasquez, E.~A. Macedo, and M.~S. Zabaloy.
+\newblock Lennard-jones viscosities in wide ranges of temperature and density:
+  Fast calculations using a steady--state periodic perturbation method.
+\newblock \emph{Int. J. Thermophys.}, 25\penalty0 (6):\penalty0 1799--1818, 11
+  2004.
+\newblock URL \url{http://dx.doi.org/10.1007/s10765-004-7736-3}.
+
+\bibitem[Viscardy et~al.(2007)Viscardy, Servantie, and
+  Gaspard]{Viscardy:2007rp}
+S.~Viscardy, J.~Servantie, and P.~Gaspard.
+\newblock Transport and helfand moments in the lennard-jones fluid. ii. thermal
+  conductivity.
+\newblock \emph{J. Chem. Phys.}, 126:\penalty0 184513, 2007.
+\newblock \doi{ARTN 184513}.
+
+\bibitem[Vogelsang et~al.(1988)Vogelsang, Hoheisel, and
+  Luckas]{Vogelsang:1988qv}
+R.~Vogelsang, G.~Hoheisel, and M.~Luckas.
+\newblock Shear viscosity and thermal conductivity of the lennard-jones liquid
+  computed using molecular dynamics and predicted by a memory function model
+  for a large number of states.
+\newblock \emph{Mol. Phys.}, 64\penalty0 (6):\penalty0 1203--1213, 1988.
+\newblock \doi{10.1080/00268978800100813}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/00268978800100813}.
+
+\bibitem[Wang et~al.(2004)Wang, Teitel, and Dellago]{Wang2004}
+Y.~Wang, S.~Teitel, and C.~Dellago.
+\newblock {Melting and equilibrium shape of icosahedral gold nanoparticles}.
+\newblock \emph{Chem. Phys. Lett}, 394\penalty0 (4-6):\penalty0 257--261, 2004.
+\newblock ISSN 00092614.
+\newblock \doi{10.1016/j.cplett.2004.06.139}.
+
+\bibitem[Wang et~al.(2007)Wang, Carter, Lagutchev, Koh, Seong, Cahill, and
+  Dlott]{Wang10082007}
+Z.~Wang, J.~A. Carter, A.~Lagutchev, Y.~K. Koh, N.-H. Seong, D.~G. Cahill, and
+  D.~D. Dlott.
+\newblock Ultrafast flash thermal conductance of molecular chains.
+\newblock \emph{Science}, 317\penalty0 (5839):\penalty0 787--790, 2007.
+\newblock \doi{10.1126/science.1145220}.
+\newblock URL \url{http://www.sciencemag.org/content/317/5839/787.abstract}.
+
+\bibitem[Wick et~al.(2000)Wick, Martin, and Siepmann]{TraPPE-UA.alkylbenzenes}
+C.~D. Wick, M.~G. Martin, and J.~I. Siepmann.
+\newblock Transferable potentials for phase equilibria. 4. united-atom
+  description of linear and branched alkenes and alkylbenzenes.
+\newblock \emph{J. Phys. Chem. B}, 104\penalty0 (33):\penalty0 8008--8016,
+  2000.
+\newblock \doi{10.1021/jp001044x}.
+\newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp001044x}.
+
+\bibitem[Wilhelmsen et~al.(2015)Wilhelmsen, Trinh, Kjelstrup, Erp, and
+  Bedeaux]{Wilhelmsen2015}
+{\O}.~Wilhelmsen, T.~T. Trinh, S.~Kjelstrup, T.~S.~V. Erp, and D.~Bedeaux.
+\newblock {Heat and Mass Transfer across Interfaces in Complex Nanogeometries}.
+\newblock \emph{Phys. Rev. Lett.}, 114\penalty0 (February):\penalty0 065901,
+  2015.
+\newblock \doi{10.1103/PhysRevLett.114.065901}.
+
+\bibitem[Wilson et~al.(2002)Wilson, Hu, Cahill, and Braun]{Wilson:2002uq}
+O.~Wilson, X.~Hu, D.~Cahill, and P.~Braun.
+\newblock Colloidal metal particles as probes of nanoscale thermal transport in
+  fluids.
+\newblock \emph{Phys. Rev. B}, 66:\penalty0 224301, 2002.
+\newblock \doi{ARTN 224301}.
+
+\bibitem[Yadav and Chakravarty(2017)]{Yadav:2017}
+H.~O.~S. Yadav and C.~Chakravarty.
+\newblock {Thiolated Gold Nanoparticle Solvation in Near-Critical Fluids: The
+  Role of Density, Temperature, and Topology}.
+\newblock \emph{J. Chem. Phys.}, 146\penalty0 (17):\penalty0 174902, 2017.
+\newblock ISSN 0021-9606.
+\newblock \doi{10.1063/1.4982755}.
+\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.4982755}.
+
+\bibitem[Young and Maris(1989)]{Young:1989xy}
+D.~A. Young and H.~J. Maris.
+\newblock Lattice-dynamical calculation of the kapitza resistance between fcc
+  lattices.
+\newblock \emph{Phys. Rev. B}, 40:\penalty0 3685--3693, Aug 1989.
+\newblock \doi{10.1103/PhysRevB.40.3685}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevB.40.3685}.
+
+\bibitem[Zanjani and Lukes(2014)]{Zanjani2014}
+M.~B. Zanjani and J.~R. Lukes.
+\newblock {Phonon dispersion and thermal conductivity of nanocrystal
+  superlattices using three-dimensional atomistic models}.
+\newblock \emph{Journal of Applied Physics}, 115\penalty0 (14), 2014.
+\newblock ISSN 10897550.
+\newblock \doi{10.1063/1.4870943}.
+
+\bibitem[Zhang et~al.(2005)Zhang, Lussetti, de~Souza, and
+  Müller-Plathe]{Muller-plathe:2005}
+M.~Zhang, E.~Lussetti, L.~E.~S. de~Souza, and F.~Müller-Plathe.
+\newblock Thermal conductivities of molecular liquids by reverse nonequilibrium
+  molecular dynamics.
+\newblock \emph{J. Phys. Chem. B}, 109:\penalty0 15060--15067, Aug 2005.
+\newblock \doi{10.1021/jp0512255}.
+
+\end{thebibliography}
