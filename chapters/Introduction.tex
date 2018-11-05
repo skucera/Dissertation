@@ -1,59 +1,62 @@
 \chapter{INTRODUCTION}\label{chap:intro}
-This introductory chapter explores the basics of heat transfer and molecular dynamics. The challenges existing in the current thermal transport methods and methods of finding transport quantities using molecular dynamics are included. Finally, systems of interest are presented for the application of thermal transport using molecular dynamics. The remaining chapters go on to use the methods described here to examine systems of interest in a chronological order.
+This chapter explores the basics of heat transfer and molecular dynamics. The challenges existing in the current methods of finding transport quantities using molecular dynamics are included. Finally, applications of molecular dynamics to finiding thermal tranport in systems of interest are presented. The remaining chapters use the methods described here to examine systems of interest.
 
-The first system, gold nanospheres of varying size and ligand, is presented in Chapter 2.  There are three different variables to characterize the systems: particle size, ligand length, and ligand rigidity. Through looking at the vibrational density of states and the density profiles for the systems, two important factors for heat transport can be determined: the vibrational overlap of the material at the interface and the physical proximity/overlap of the material at the interface. This information gives relevant particle design for the ligand aspect of the system, while no clear trend for particle radius could be established. 
+The first application, gold nanospheres of varying sizes and ligands, are presented in Chapter 2.  There are three different variables to characterize these systems: particle size, ligand length, and ligand rigidity. Through looking at the vibrational density of states and the density profiles for the systems, two important factors for heat transport can be determined: the vibrational overlap of the material at the interface and the physical proximity/overlap of the material at the interface. This information gives relevant principles for ligand and particle design, while no clear trend for particle radius was established. 
 
-Chapter 3 takes a closer look at the particle surface and size dependence. In this work the particles are left bare and range in size over three different geometries: sphere, icosahedron, and cuboctahedron. This was done in an attempt to detangle the size dependence and the ligand dependence of the previous study. The three different morphologies give  distinct vibrational freedoms at the particle surface, allowing for different thermal conductivity. In addition to the particle systems, planar systems displaying the prominent facets of the particles were studied. This work strengthens the need for a proximity factor of thermal transport suggested in the previous studies through the result that not only the vibrational freedom of the material at the interface matters, but the amount of the material that is transferring heat is essential to consider. This is most clearly seen through the coordination population of the surface atoms in the planar systems.
+In an attempt to detangle the size and the ligand dependence, Chapter 3 takes a closer look at the particle surface and size dependence. 
+The particles are left bare but have a range of sizes and three different geometries: spheres, icosahedra, and cuboctahedra.
+The three different morphologies give  distinct vibrational spectra at the particle surface, allowing for different thermal conductivity. In addition to the particles, planar systems displaying the prominent facets of the particles were studied. This work suggests the need for a proximity factor contributing to a model of thermal transport.
+The vibrational overlap of the material at the interface matters, but so does the amount of the material that is transferring heat. This is most clearly seen through the surface density of undercoordinated surface atoms in the planar systems.
 
-Chapter 4 presents a combination of the concepts in the previous chapters through the study of small nanoparticles both in isolation and in an array. The $Au_{144}PET_{60}$ are approximately 5 \AA\ in radius and have a crystal structure found at very low temperatures which is an appropriate starting structure for our simulations. A unique aspect of these particles, and similar small structures, is that the ligand layer has gold atoms pulled out of the surface. This leads to low coordination of the outer most gold atoms, which now exhibit a different vibrational spectrum and thermal conductivity. These particles were simulated in two different solvents to look at solvent effects of the thermal conductivity of these particles.
+Chapter 4 presents a combination of the concepts in the previous chapters through the study of small nanoparticles both in isolation and in a nanoarray. The $\ce{Au}_{144}\ce{PET}_{60}$ particle are approximately 9 \AA\ in radius and have a crystal structure found at very low temperatures which is an appropriate starting structure simulating heat transport in arrays. A unique aspect of these particles, and similar small structures, is that the ligand layer has gold atoms pulled away from the surface. This leads to lower coordination of the outer-most gold atoms, which now exhibit different vibrational spectra. These particles were simulated in two different solvents to observe solvent effects on the thermal conductivity of these particles.
 
 Finally, Chapter 5 looks forward to potential applications of a new fluctuating charge embedded method to be applied to metal surfaces and particles in polarizable solvents. This new method would allow for the examination of charge effects on thermal transport and arrangement of solvent at the surface of the metal.
 
 \section{Heat Transport}
 The classical definition of temperature is a quantity that describes a thermal equilibration phenomena. At the macroscopic level, heat can be transferred in three ways: conduction, convection, and radiation.~~\cite{Chen2005} 
-In equipartition theorem, where the average kinetic energy of a particle is \(\frac{3k_{B}T}{2}\), the temperature is a portion of the kinetic energy of the system.~\cite{Goldstein2001}
-When the kinetic energy is distributed evenly among all independent parts of the system, the heavy atoms in a system would have an average velocity slower than the lighter atoms in the system at the same temperature.
+Under the equipartition theorem, where the average kinetic energy of a particle is \(\frac{3k_{B}T}{2}\), the temperature is a reporter of the kinetic energy of the system.~\cite{Goldstein2001}
+When the kinetic energy is distributed evenly among all independent parts of the system, the heavy atoms in a system would have a small average speed than the lighter atoms in the system. 
 
 On the microscopic level, heat moves through different paths depending on the composition of the system.~\cite{Chen2005}
-In a gas, heat is transferred primarily through collisions, while in semi-conductors thermal energy moves through the propagation of vibrations in the solid, a phonon. 
+In a gas, heat is transferred primarily through collisions, while in semiconductors thermal energy moves through the propagation of vibrations in the solid, ie. phonons. 
 A phonon is a quantized lattice wave that traverses the material with a longitudinal or transverse polarization.~\cite{Kittel} 
-In systems, like metals, where the material has a solid lattice and a sea of electrons, both phonon and electron heat transfer contributions should be considered.~\cite{Kittel} 
+In metals, where the material has a solid lattice embedded in a sea of electrons, both phonon and electron heat transfer contribute.~\cite{Kittel} 
 Electrons in a metal system are typically treated as an electron gas.
 Electrons travel at velocities that are approximately three orders of magnitude larger than phonons, therefore the electron contribution dominates heat transfer in metals and is important when considering bulk thermal conductance of metals.
-At a metal/non-metal interface the thermal conductance through the non-metal is dominated by phonons, rather than electronic contributions.~\cite{Chen2005, Cahill2011, Stoner1993}
+At a metal/non-metal interface the thermal conductance through the non-metal is dominated by phonon scattering, rather than electronic contributions.~\cite{Chen2005, Cahill2011, Stoner1993}
 %(All prior material is from Gang Chen Book)
 
 \subsection{Heat Transfer at Interfaces}
 Further examination of phonons as the only heat carriers can be done at the interface of two materials. If the phonon is traveling through material A and approaches material B with frequency $\omega$, with angles $\phi$ and $\theta$ normal to the interface; there is a transmission probability, $\tau_{a\rightarrow b}(\omega)$, that the wave will continue into material B (see Figure \ref{fig:interface-graphic}).~\cite{Monachon2016} 
 The transmission probability must satisfy detailed balance.
 %, meaning $\tau_{a\rightarrow b} = 1 - \tau_{b\rightarrow a}$
-There are two major models that have predictions for behavior of heat transfer at the interface: acoustic mismatch model (AMM) and diffuse mismatch model (DMM).~\cite{Monachon2016}
+There are two major models that make predictions for heat transfer at the interface: the acoustic mismatch model (AMM) and the diffuse mismatch model (DMM).~\cite{Monachon2016}
 \begin{figure}
     \centering
     \includegraphics[scale=0.75]{figures/interface-graphic.png}
-    \caption{Here an incoming phonon in material A is approaching the interface of materials A and B. The wave has a polarization ($p$) and frequency ($\omega$) and approaches the interface at an angle ($\theta$) relative to the normal of the interface. The phonon, under the DMM, has two options at the interface: scatter through to material B or scatter back through material A. The probability of transmission is given by $\tau_{ab}$. Due to the fact the DMM must obey detailed balance, the scatter back to material A is $1 - \tau_{ab}$.}
+    \caption{Here an incoming phonon in material A is approaching the interface of materials A and B. The wave has a polarization ($p$) and frequency ($\omega$) and approaches the interface at an angle ($\theta$) relative to the normal of the interface. The phonon, under the DMM, has two options at the interface: scatter through to material B or scatter back through material A. The probability of transmission is given by $\tau_{ab}$. Due to detailed balance, the scattering back to material A is $1 - \tau_{ab}$.}
     \label{fig:interface-graphic}
 \end{figure}
 
 \subsection{Acoustic Mismatch Model}
-In the acoustic mismatch model the transmission probability- the total fraction of energy transmitted across the interface- is dependent on the acoustic impedance of the material, $Z_i$. The AMM evaluates the transmission coefficient through a continuum approach.~\cite{Little1959} This model uses the acoustic transmission and reflection between the two materials and ignores the granularity of the materials. Therefore the AMM would be most appropriate for low temperatures where the thermal spectrum is dominated by long wavelength phonons.~\cite{Graff1975} 
+In the acoustic mismatch model, the transmission probability- the total fraction of energy transmitted across the interface- is dependent on the acoustic impedance of the material, $Z_i$. The AMM evaluates the transmission coefficient through a continuum approach.~\cite{Little1959} This model uses the acoustic transmission and reflection between the two materials and ignores the granularity of the materials. Therefore the AMM would be most appropriate for low temperatures where the thermal spectrum is dominated by long wavelength phonons.~\cite{Graff1975} 
 
-Each phonon can be transmitted in three ways: one longitudinal and two transverse. Likewise, the phonon can be reflected in the same fashion, giving six different paths for a sound wave to interact with the interface. This problem is usually simplified by using the acoustic analog of Snell’s law:
+Each transmitted phonon has three possible polarizations: one longitudinal and two transverse. Likewise, reflected phonons can be reflected in the same fashion, giving six different paths for a wave to interact with the interface. This problem is usually simplified sing the acoustic analog of Snell’s law:
 \begin{equation}
 \tau_{ab}(\theta, p) = \frac{4\frac{p_2 \nu_{p, 2}}{p_1 \nu_{p,1}} \frac{\cos{\theta_{p,2}}}{\cos{\theta_{p,1}}}}{\big( \frac{p_2 \nu_{p, 2}}{p_1 \nu_{p,1}}+ \frac{\cos{\theta_{p,2}}}{\cos{\theta_{p,1}}}\big)^2}
 \end{equation}
 where $\theta$ are related to the analog of Snell's law through the frequency: \(\frac{\sin{\theta_1}}{\nu_1} = \frac{\sin{\theta_2}}{\nu_2}\).
 
-Transmission can be simplified through using acoustic impendances:
+Transmission can be simplified using acoustic impendances:
 \begin{equation}
 \tau_{ab}(\theta, p) = \frac{4Z_a Z_b}{(Z_a +Z_b)^2}
 \end{equation}
-where $Z$ is the acoustic impedance of each material, $Z_a = \rho_a v_a$. Within the acoustic impedance, $\rho$ is density of states and $v$ is the speed of sound in the material. 
+where $Z$ is the acoustic impedance of each material, $Z_a = \rho_a v_a$, which depends on, $\rho$, the density and $v$, the speed of sound in the material. 
 
 More complex treatments of the sound waves~\cite{Prasher2000} and treatments accounting for the interfacial bonding~\cite{Prasher2009} through the AMM have been studied. These modifications result in values that are lower than traditional AMM, therefore much below the experimental measurements of the systems.~\cite{Cahill2006, Stoner1993}
 
 \subsection{Diffuse Mismatch Model}
-The diffuse mismatch model assumes that the phonon has two options when the wave meets the interface: the phonon can transfer into material B or is reflected back into material A (see Figure \ref{fig:interface-graphic}). It operates under the assumption that all phonons at the interface are scattered randomly, meaning that all memory of the direction and polarization are lost. The phonon only keeps the frequency constant during the interaction of the two materials, hence all probability of the phonon to propagate into a material is dependent of the material's density of states. 
+The diffuse mismatch model assumes that the phonon has two options when the wave meets the interface: the phonon can transfer into material B or be reflected back into material A (see Figure \ref{fig:interface-graphic}). It operates under the assumption that all phonons at the interface are scattered randomly, meaning that all memory of the direction and polarization are lost. The phonon only keeps the frequency constant during the interaction of the two materials, hence all probability of the phonon to propagate into a material is dependent of the material's density of states. 
 
 Under the DMM, the thermal conductance at an interface between $a$ and $b$ can be approximated,  
 \begin{equation}
@@ -72,8 +75,8 @@ The interaction of the materials at the interface has been found to be of signif
 Despite the DMM's pitfalls, it has been the most commonly used model for the past 30 years. ~\cite{Cahill2006, Stoner1993, Stevens2005, Cahill2011}
 
 \section{Molecular Dynamics}
-Molecular dynamics are computer simulations used to study structure and dynamics of atoms and molecules using classical mechanics. 
-A simple algorithm of a molecular dynamics simulation can be described given atoms with initial positions and velocities, forces (using interactions described later) can be calculated that are used to move the atoms, then the time is moved forward and the cycle repeats from calculating the forces (see Figure \ref{fig:MDschematic}). The forces calculated follow from Newton's equations of motion. The positions and velocities at each time step create a trajectory of the system that is time reversible. 
+Molecular dynamics is a computer simulation technique used to study structure and dynamics for atoms and molecules using classical mechanics. 
+A simple algorithm of a molecular dynamics simulation can be described given atoms with initial positions and velocities, and forces (derived from potential energy surfaces described later) that are used to move the atoms. The time is incremented and the cycle repeats by calculating the forces (see Figure \ref{fig:MDschematic}). The atomic motion follows from Newton's equations of motion. The positions and velocities at each time step create a trajectory of the system that is time reversible. 
 
 \begin{figure}
     \includegraphics[scale=0.45]{figures/MDschematic.pdf}
@@ -81,15 +84,15 @@ A simple algorithm of a molecular dynamics simulation can be described given ato
     \label{fig:MDschematic}
 \end{figure}
 
-Forces between each pair of atomic sites are computed by an interaction potential, where the forces are the gradient of the scalar potential:
+Forces between each pair of atomic sites are computed from an interaction potential, where the forces are the gradient of the scalar potential:
 \begin{equation}
 \vec{F}(\vec{R},t) = -\vec{\nabla} \cdot V(\vec{R})
 \end{equation}
 These potentials are approximated using intra and inter molecular forces in the system to make an approximate potential energy surface with respect to the nuclear coordinates of the system.~\cite{Leach2001} 
 \begin{equation}
-   V(\vec{R}) = V_{bonded} + V_{electrostatic} + V_{vdW} + V_{constraints} + V_{hb}     
+   V(\vec{R}) = V_{bonded} + V_{electrostatic} + V_{vdW} + V_{metallic} +V_{constraints} + V_{hb}     
 \end{equation}
-The simplest of these to start with is the intra-molecular forces $V_{bonded}$, composed of bonds, bends, torsions. Typical bonding potentials take the form of either harmonic bonds,
+The simplest of these to start with is the intra-molecular forces $V_{bonded}$, composed of bonds, bends, and torsions. Typical bonding potentials take the form of either harmonic bonds,
 \begin{equation}
     V_{bond}(r) = \frac{k_{ij}}{2} (r - r_{ij}^0)^2
 \end{equation}
@@ -97,9 +100,9 @@ or Morse bonds,
 \begin{equation}
     V_{bond}(r) = D_{ij} [1 - \exp^{-\beta (r - r_{ij}^0)}]^2 .
 \end{equation}
-While other potential forms such as cubic and quartic can be used, the main form used in the following work will follow the harmonic form. In the harmonic form there are two variables that need to be provided: $k_{ij}$ and $r_{ij}^0$. The former is the spring constant associated with how the bond behaves when stretched and contracted. The latter is the equilibrium bond distance between the two beads.
+While other potential forms such as cubic and quartic can be used, the main form used in the following work will follow the harmonic form. In the harmonic form there are two variables that need to be provided: $k_{ij}$ and $r_{ij}^0$. The former is the spring constant associated with how the bond behaves when stretched and contracted. The latter is the equilibrium bond distance between the two atoms.
 
-Similar to the bonding potentials, the bending potentials may take many forms. In this work the harmonic potential,
+Similar to the bonding potentials, the bending potentials may take many forms. In this work, the harmonic potential,
 \begin{equation}
     V_{bend} (\theta) = \frac{k_{ijk}}{2} (\theta - \theta_{ijk}^0)^2,
 \end{equation}
@@ -112,7 +115,7 @@ The potential due to torsions within a bonded system is from the rotation of the
 where the angle $\phi_{ijkl}$ is $(\hat{r}_{ij} \times \hat{r}_{jk}) \cdot (\hat{r}_{jk} \times \hat{r}_{kl})$ and $\hat{r}_{ab}$ is the unit vector between $a$ and $b$.
 
 
-Inter-molecular,  or non-bonded interactions, are interactions between molecules which include the electrostatic interactions and van der Waals interactions.
+Inter-molecular,  or non-bonded interactions, are interactions between molecules which include the electrostatic interactions and van der Waals interactions, as well as metalic interactions.
 The potential for electrostatic interactions
 \begin{equation}
     V_{electrostatic} = \frac{q_i q_j}{4 \pi \epsilon_0 \mid r_{ij}\mid},
@@ -120,26 +123,26 @@ The potential for electrostatic interactions
 describes the potential between two charged sites interacting via Coulomb's law.
 Van der Waals interactions in this work are described via the Lennard Jones potential,
 \begin{equation}
-    V_{vdW} = 4\epsilon\bigg[\bigg(\frac{\sigma}{\mid r_{ij}\mid}\bigg)^{12} + \bigg(\frac{\sigma}{\mid r_{ij}\mid}\bigg)^6\big]
+    V_{vdW} = 4\epsilon\bigg[\bigg(\frac{\sigma}{\mid r\mid}\bigg)^{12} + \bigg(\frac{\sigma}{\mid r\mid}\bigg)^6\big]
 \end{equation}
 where $\epsilon$ is the well depth when the distance between the two bodies is at the minimum and $\sigma$ is the distance the well starts from zero. 
-The $\frac{1}{r^6}$ term is similar to dispersion and the $\frac{1}{r^{12}}$ term is empirically added to have a repulsion term.
+The $\frac{1}{r^6}$ term is similar to dispersion and the $\frac{1}{r^{12}}$ term is empirically added to approximate repulsion due to electron exchange correltation.
 
-The last two terms in the full potential equation, $V_{constraints}$ and $V_{hb}$, hydrogen bonding, are not relevant and thus will not be discussed in this work.
+The last two terms in the full potential equation, $V_{constraints}$ and $V_{hb}$, hydrogen bonding, are not relevant to the simulations presented in this work.
 
 \subsection{Representations of Atoms}
-Within molecular dyanamics, which is a lower accuracy method than first principals methods, there are different levels of simplification of the treatment of molecules.~\cite{Leach2001} 
+Molecular dyanamics is a lower accuracy method than first principals methods. There are different levels of simplification of the treatment of molecules.~\cite{Leach2001} 
 Chiefly, there are three ways of treating the molecules in a given system that will be discussed here. 
-The first, all-atom, is representing each atom within the system as a bead. Within a molecule these beads share bonds with atoms they are covalently bonded with and experiences bends and torsions within the larger molecule.
+The first, all-atom, is representing each atom within the system as a bead. In a molecule, these beads share bonds with atoms they are covalently bonded with and experiences bends and torsions within the larger molecule.
 
-The next is a simplified version of the all-atom representation, united-atom, which compresses the hydrogen atoms onto the larger atom to which they were bonded. The mass and atomic radius of this bead is increased according to the amount of hydrogens added.
+The next is a simplified version of the all-atom representation, united-atom, which compresses the hydrogen atoms onto the larger atom to which they were bonded. The mass and atomic radius of this bead is increased according to the number for hydrogens added.
 
-United-atom calculations are faster due to the decrease in N, the number of atoms. They also are a better representation of heat transport. The vibrations of the molecules are of paramount importance in thermal transport and bonds to hydrogen have a very quick vibration. In molecular dynamics the vibrational modes are occupied equally due to equipartition of the energy, thus the vibrational spectrum of the molecule will have high frequency hydrogen peaks. These high frequencies are irrelevant in thermal transport and thus all-atom simulations add expenses and information that detracts from the low frequency picture of the system.
+United-atom calculations are faster due to the decrease in N, the number of atoms. They also are a better representation of heat transport. The vibrations of the molecules are of paramount importance in thermal transport and bonds to hydrogen have a high vibrational frequency. In molecular dynamics, the vibrational modes are occupied equally due to equipartition of the energy, thus the vibrational spectrum of the molecule will have high frequency \ce{C-H}, \ce{N-H}, or \ce{O-H} peaks. These high frequencies are irrelevant in most thermal transport calculations and thus all-atom simulations add expense and information that detracts from the low frequency picture of the system.
 
-The last treatment discussed here is coarse-grain systems. These systems are further simplifications of the system. In coarse-grain systems, beads from the united atom model would be grouped into a single bead that represents a small molecule. The granularity of the beads can be adjusted from system to system and depends on the property desired and the timescale of the simulation. In general, coarse-graining is used more widely for biologically relevant systems (i.e. proteins, lipids, etc.).
+The last treatment discussed here is coarse-grained systems. These systems are further simplifications of the atoms present in the molecules. In coarse-grain systems, beads from the united atom model would be grouped into a single bead that represents a small molecule. The granularity of the beads can be adjusted from system to system and depends on the property desired and the timescale of the simulation. In general, coarse-graining is used widely for biologically relevant systems (i.e. proteins, lipids, etc.).
     
 \subsection{Boundary Conditions}
-In many simulations the desired quantity is a bulk property. To simulate a full bulk system would require too many atoms and too much time than tangibly possible within the lifetime of a person. Further, the large box would have effects from the edges of the box. So how can the surface effects be avoided and simulate a bulk-like simulation?
+In many simulations the desired quantity is a bulk property. To simulate a full bulk system would require too many atoms and too much time than possible within the lifetime of a graduate student. Further, the large box would have effects from the edges of the box. So how can the surface effects be avoided and simulate a bulk-like simulation?
 
 \begin{figure}
     \includegraphics[scale=0.5]{figures/pbc-center.pdf}
@@ -147,7 +150,7 @@ In many simulations the desired quantity is a bulk property. To simulate a full 
     \label{fig:pbc}
 \end{figure}
 
-The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to orthorobic simulation boxes, though any space filling geometry works. An 'image' copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an orthorobic box.
+The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to ortho robic simulation boxes, though any space filling geometry works. An \'image\' copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an ortho robic box.
     
 Within the simulation, only the particles in the central box are necessary to track. The particles' images in neighboring cells are increments of the box dimension along each principal axis. 
 So if the particle exits the right boundary of the cell, it will return in the box on the left boundary (from the neighboring simulation cell), which preserves the number density of the cell. 
