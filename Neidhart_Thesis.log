@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  2 NOV 2018 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  6 NOV 2018 08:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1317,47 +1317,46 @@ CHAPTER 1.
 
 
 
-] [2]
+]
+Overfull \hbox (0.66087pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/n/12 the study of small nanopar-ti-cles both in iso-la-tion and in a
+ nanoar-ray. The $[][][][][][]$
+ []
+
+[2]
 <figures/interface-graphic.png, id=422, 255.1131pt x 546.3612pt>
 File: figures/interface-graphic.png Graphic file (type png)
 <use figures/interface-graphic.png>
-Package pdftex.def Info: figures/interface-graphic.png  used on input line 33.
+Package pdftex.def Info: figures/interface-graphic.png  used on input line 36.
 (pdftex.def)             Requested size: 191.33435pt x 409.7699pt.
  [3] [4 <./figures/interface-graphic.png>] [5] [6]
-<figures/MDschematic.pdf, id=480, 800.7516pt x 549.97469pt>
+<figures/MDschematic.pdf, id=483, 800.7516pt x 549.97469pt>
 File: figures/MDschematic.pdf Graphic file (type pdf)
 <use figures/MDschematic.pdf>
-Package pdftex.def Info: figures/MDschematic.pdf  used on input line 79.
+Package pdftex.def Info: figures/MDschematic.pdf  used on input line 82.
 (pdftex.def)             Requested size: 360.33488pt x 247.48631pt.
- [7] [8 <./figures/MDschematic.pdf>] [9]
-Overfull \hbox (15.40924pt too wide) in paragraph at lines 131--134
-\OT1/cmr/m/n/12 pals meth-ods, there are dif-fer-ent lev-els of sim-pli-fi-ca-t
-ion of the treat-ment of molecules. [[]]
- []
-
-[10]
+ [7] [8 <./figures/MDschematic.pdf>] [9] [10]
 <figures/pbc-center.pdf, id=521, 822.43259pt x 681.50612pt>
 File: figures/pbc-center.pdf Graphic file (type pdf)
 <use figures/pbc-center.pdf>
-Package pdftex.def Info: figures/pbc-center.pdf  used on input line 145.
+Package pdftex.def Info: figures/pbc-center.pdf  used on input line 148.
 (pdftex.def)             Requested size: 411.21529pt x 340.75223pt.
  [11] [12 <./figures/pbc-center.pdf>]
 <figures/hull.pdf, id=541, 313.29124pt x 310.00175pt>
 File: figures/hull.pdf Graphic file (type pdf)
 <use figures/hull.pdf>
-Package pdftex.def Info: figures/hull.pdf  used on input line 162.
+Package pdftex.def Info: figures/hull.pdf  used on input line 166.
 (pdftex.def)             Requested size: 313.29047pt x 310.00099pt.
  [13] [14 <./figures/hull.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 191.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 195.
 
-
-(/opt/local/share/texmf-texlive/tex/latex/base/omscmr.fd
+ (/opt/local/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
- [15] [16] [17]
-[18] [19]) [20]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 195.
+ [15]
+[16] [17] [18] [19]) [20]
 \openout2 = `chapters/NPthiols.aux'.
 
  (./chapters/NPthiols.tex
@@ -1583,7 +1582,7 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  31770 strings out of 494590
  628053 string characters out of 6177729
- 745322 words of memory out of 5000000
+ 745317 words of memory out of 5000000
  34464 multiletter control sequences out of 15000+600000
  539120 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1604,7 +1603,7 @@ cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Neidhart_Thesis.pdf (107 pages, 10726553 bytes).
+Output written on Neidhart_Thesis.pdf (107 pages, 10726961 bytes).
 PDF statistics:
  2598 PDF objects out of 2984 (max. 8388607)
  2027 compressed objects within 21 object streams

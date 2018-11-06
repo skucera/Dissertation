@@ -146,11 +146,11 @@ In many simulations the desired quantity is a bulk property. To simulate a full 
 
 \begin{figure}
     \includegraphics[scale=0.5]{figures/pbc-center.pdf}
-    \caption{This figure is an example of periodic boundaries in two dimensions. Here the middle cell (colored square) is the system and each surrounding cell is an "image" of the original. As can be seen in the relation between particle A and C, sometimes the image particle provides the closest interaction or minimum image and would be within the cutoff radius when calculating interactions.}
+    \caption{This figure is an example of periodic boundaries in two dimensions. Here the middle cell (colored square) is the system and each surrounding cell is an `image' of the original. As can be seen in the relation between particle A and C, sometimes the image particle provides the closest interaction or minimum image and would be within the cutoff radius when calculating interactions.}
     \label{fig:pbc}
 \end{figure}
 
-The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to orthorhombic simulation boxes, though any space filling geometry works. An "image" copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an orthorhombic box.
+The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to orthorhombic simulation boxes, though any space filling geometry works. An `image' copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an orthorhombic box.
     
 In a simulation, it is only necessary to track the particles in the central box.
 The particles' images in neighboring cells are located at integer increments of the box dimension along each principal axis. 
