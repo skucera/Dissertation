@@ -146,19 +146,20 @@ In many simulations the desired quantity is a bulk property. To simulate a full 
 
 \begin{figure}
     \includegraphics[scale=0.5]{figures/pbc-center.pdf}
-    \caption{This figure is an example of periodic boundaries in two dimensions. Here the middle most cell (colored square) is the system created and each surrounding cell is an 'image' of the original. As can be seen in the relation between particle A and C, sometimes the image particle is the closer interaction and would be within the cutoff when calculating interactions.}
+    \caption{This figure is an example of periodic boundaries in two dimensions. Here the middle cell (colored square) is the system and each surrounding cell is an "image" of the original. As can be seen in the relation between particle A and C, sometimes the image particle provides the closest interaction or minimum image and would be within the cutoff radius when calculating interactions.}
     \label{fig:pbc}
 \end{figure}
 
-The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to ortho robic simulation boxes, though any space filling geometry works. An \'image\' copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an ortho robic box.
+The above issues can be addressed with periodic boundary conditions. A simulation cell that has bulk-like density can reproduce bulk properties. Periodic boundary conditions are typically applied to orthorhombic simulation boxes, though any space filling geometry works. An "image" copy of the the simulation box is replicated in every direction. For example, in two dimensions periodic boundaries are represented in Figure \ref{fig:pbc}, where the simulation box has eight copies. In three dimensions, twenty-six images of the original box surround the simulation cell, for an orthorhombic box.
     
-Within the simulation, only the particles in the central box are necessary to track. The particles' images in neighboring cells are increments of the box dimension along each principal axis. 
+In a simulation, it is only necessary to track the particles in the central box.
+The particles' images in neighboring cells are located at integer increments of the box dimension along each principal axis. 
 So if the particle exits the right boundary of the cell, it will return in the box on the left boundary (from the neighboring simulation cell), which preserves the number density of the cell. 
-In addition to periodic boundaries, the minimum image convention is used to make the simulation computationally possible. The minimum image convention is that a given particle only interacts with the closest periodic image of the particle in the system. 
-Along with this idea is a spherical cutoff, where a particle's non-bonded interactions with other particles end at a finite distance, $r$, from the particle which is less than half the length of the periodic box. This ensures that the particle sees one image of each particle and is not interacting with an image of itself. 
+In addition to periodic boundaries, the minimum image convention is used to make the simulation computationally tractable. A particle only interacts with the closest periodic image of another particle in the system. 
+This convention requires a spherical cutoff, where a particle's non-bonded interactions with other particles end at a finite distance, $r$, from the particle which is less than half the length of the periodic box. This ensures that the particle sees one image of each particle and does not interacting with an image of itself. 
 
 Though periodic boundaries allows for bulk properties to be found, it creates artificial periodicity in the system and might require an unreasonable system size due to the box structure. Later in this work, simulations of isolated particles are utilized to get single particle properties. 
-These isolated systems implement the Langevin Hull method. While there are several non-periodic methods that allow for a constant pressure, Langevin Hull can handle heterogeneous mixtures of materials with different compressibilites.~\cite{Vardeman2011} This method is a modified version of Kohanoff, Caro, and Finnis' method for constant pressure and temperature non-periodic simulations based on Langevin dynamics.~\cite{Kohanoff:2005qm, Baltazar:2006ru} 
+These isolated systems use the Langevin Hull method. While there are several non-periodic methods that allow for a constant pressure, the Langevin Hull can handle heterogeneous mixtures of materials with different compressibilites.~\cite{Vardeman2011} This method is a modified version of Kohanoff, Caro, and Finnis' method for constant pressure and temperature non-periodic simulations based on Langevin dynamics.~\cite{Kohanoff:2005qm, Baltazar:2006ru} 
 
 \begin{figure}
     \centering
@@ -199,12 +200,12 @@ The diffusivity, $D$, or the diffusion coefficient is the proportionality betwee
 \item Thermal Conductivity (Fourier’s Law):
 $\vec{q} = -\lambda \cdot \vec{\nabla}T(\vec{r},t)$
 
-The local heat flux density, $q$, is equal to the conductivity of the material, $\lambda$, and the temperature gradient through the material. Therefore, $\lambda$ indicates the material's ability to conduct heat due to a temperature gradient. 
+The local heat flux density, $q$, is the produc of the conductivity of the material, $\lambda$, and the temperature gradient through the material. Therefore, $\lambda$ indicates the material's ability to conduct heat due to a temperature gradient. 
 
 \item Viscosity (Newton’s Law of Viscosity): 
 $\sigma_{x,z} = -\eta \cdot \vec{\nabla_{z}}(\rho v_x)$
 
-The shear stress in the fluid, $\sigma$, is equal to the shear viscosity, $\eta$, and the velocity gradient, $\vec{\nabla_{z}}(\rho v_x)$.
+The shear stress in the fluid, $\sigma$, is the product of the shear viscosity, $\eta$, and the perpendicular velocity gradient, $\vec{\nabla_{z}}(\rho v_x)$.
 
 %\item Electrical Conductivity (Ohm's Law):
 %$J = \sigma E$
@@ -214,20 +215,20 @@ The shear stress in the fluid, $\sigma$, is equal to the shear viscosity, $\eta$
 
 All the transport coefficients ($D$, $\lambda$, $\eta$) describe how an instantaneous flux in a system relates to a corresponding gradient. Table \ref{tab:coeff} lists how the transport coefficients are involved in constitutive equations, where $\rho$ is the density and $C$ is the heat capacity of a material.
 
-Transport phenomena are utilized in many fields, such as chemistry, physics, chemical engineering, electrical engineering, and mechanical engineering; to obtain the transport coefficients to optimize a system. Atomistic simulations can provide insight for tuning experimental design. The three main ways to calculate transport coefficients, with a focus on thermal conductivity, will be discussed in detail in the following sections.
+Transport phenomena are utilized in many fields, such as chemistry, physics, chemical engineering, electrical engineering, and mechanical engineering; to obtain the transport coefficients that describe a mechanical or chemical system. Atomistic simulations can provide insight for tuning experimental design. The three main ways to calculate transport coefficients, with a focus on thermal conductivity, will be discussed in detail in the following sections.
 
 \subsection{Equilibruim Molecular Dynamics}
-Transport properties from classical molecular dynamics simulations can be found through many methods. Equilibrium Molecular Dynamics (EMD) simulations use the most straight forward method. Under linear response theory, the transport coefficient can often be found using a relevant time correlation function to the transport coefficient of interest.~\cite{Heyes:1988ee,MASSOBRIO:1984bl,Helfand:1960os,Viscardy:2007rp,che:6888,kinaci:014106} In most cases either the Einstein relation or the Green-Kubo formulation are utilized in EMD.
+Transport properties from classical molecular dynamics simulations can be found using many methods. Equilibrium Molecular Dynamics (EMD) simulations use the most straightforward method. Under linear response theory, the transport coefficient can often be found using a relevant time correlation function to the transport coefficient of interest.~\cite{Heyes:1988ee,MASSOBRIO:1984bl,Helfand:1960os,Viscardy:2007rp,che:6888,kinaci:014106} In most cases either the Einstein relation or the Green-Kubo formulation are utilized to compute transport properties from the time correlation function in EMD.
 
-The Einstein relation for thermal conductivity uses the Helfand moment, $G^\lambda (t)$, which is a centroid of the energies:
+The Einstein relation for thermal conductivity uses the Helfand moment, $G^\lambda (t)$, which is a centroid of the particle energies:
 \begin{equation}
     G^\lambda (t) = \sum^{N}_{a=1} r_a (E_a - <E_a>)
 \end{equation}
-where $E$ is the energies of the particles. Energy is given by the following: 
+where $E_a$ is the energy of the particle $a$. Energy is given by the following: 
 \begin{equation}
     E_a = \frac{p_a^2}{2m} + \frac{1}{2}\sum_{b\neq a} U(r_{ab})
 \end{equation}
-where $p$ is the momentum, $m$ is the mass, and $U(r_{ab})$ is the potential energy.
+where $p_a$ is the momentum of $a$, $m$ is the mass, and $U(r_{ab})$ is the potential energy due to the presence of $a$.
 
 The Einstein relation can  find the thermal conductivity using the fluctuations in the Helfand moment:
 \begin{equation}
@@ -245,23 +246,23 @@ The heat current can be found through
     q(t) = \sum^N_{i=1} E_i \vec{v_i} + \frac{1}{2}\sum_{j \neq i} \vec{r_{ij}} (f_{ij} \cdot \vec{v_j}).
 \end{equation}
 The first term is a summation of the energy times the velocity of all particles. The second term contains the force on atom $i$ due to atom $j$, $f_{ij}$.
-In contrast to the Einstein relation where the mass, velocity, and potential are easily obtained from an equilibrium simulation, the heat current requires a little more effort.
+In contrast to the Einstein relation where the mass, velocity, and potential are easily obtained from an equilibrium simulation, the heat current requires significantly more effort.
 
-Both the Einstein and Green-Kubo relations for thermal conductiviy rely on correlation functions, where the long-time tails are able to significantly contribute to the integrate area and need long simulation times to achieve convergence.
+Both the Einstein and Green-Kubo relations for thermal conductiviy rely on correlation functions, where the long-time tails are able to significantly contribute to the integrated area and need long simulation times to achieve convergence.
 The noise and poor convergence in the long-time tails give a poor estimation for the thermal conductivity and thus EMD simulations are not the best method for calculating this transport coefficient.
-Moreover, these calculations would have further complications when the systems would contain an interface or are non-homogeneous.
+Moreover, these calculations have further complications when the systems contain an interface or are non-homogeneous.
 
 \subsection{Non-Equilibruim Molecular Dynamics}
 Since EMD has limitations due to the noise in the correlation function, methods in non-equilibrium molecular dynamics, NEMD, were developed that introduce a gradient into the simulations.~\cite{Backer:2005sf,Hess:2002nr,Picalek:2009rz, Vasquez:2004ty}
 Typically these methods are used to impose a temperature or velocity gradient on a system to measure the corresponding transport coefficient. ~\cite{Evans:1982oq, Erpenbeck:1984qe, Evans:1986nx, Vogelsang:1988qv, Maginn:1993kl, Hess:2002nr, Schelling:2002dp, Berthier:2002ai, Evans:2002tg, Vasquez:2004ty, Backer:2005sf, Jiang:2008hc, Picalek:2009rz}
-With linear response of a flux due to the applied gradient, the transport coefficient can be calculated using the constitutive equation: $J_z = -\lambda \frac{\partial T}{\partial z}$, where $\frac{\partial T}{\partial z}$ is the imposed piece and $J_z$ is the measured flux.
+With linear response of a flux due to the applied gradient, the transport coefficient can be calculated using the constitutive equation: $J_z = -\lambda \frac{\partial T}{\partial z}$, where $\frac{\partial T}{\partial z}$ is imposed and $J_z$ is the resulting flux.
 In NEMD, the temperature gradient is imposed by choosing sections of the simulation box to have particular temperatures. For example, a center portion of the system will be set to high temperature and the edges set to a lower temperature to impose the gradient. 
 The imposed thermal gradient must be relatively small to maintain a linear relationship between the flux and the gradient. 
-The corresponding transport coefficient, thermal conductivity, can be found if the linear response holds.
+The corresponding transport coefficient, thermal conductivity, can be found if linear response holds.
 
 Accurately measuring the thermal flux from the imposed gradient is difficult.
 This method requires thermostats to maintain the thermal gradient which means that it does not ensure momentum or energy conservation and that simulations are restricted to the canonical ensemble.
-Additionally, in heterogeneous systems, particularly with interfaces, it can be difficult to know what the shape of the imposed gradient should be at the boundary of materials.
+Additionally, in heterogeneous systems, particularly with interfaces, it can be difficult to know what the shape of the imposed gradient should be at the boundaries of materials.
 
 \subsection{Reverse Non-Equilibruim Molecular Dynamics}
 Reverse non-equilibrium molecular dynamics (RNEMD) methods impose an unphysical flux and measure the gradient that develops.~\cite{Muller-Plathe:1997wq,Muller-Plathe:1999ao,Kuang:2012fe}
@@ -280,13 +281,13 @@ Recent advances in RNEMD methodology have involved scaling particle velocities i
 In addition, this RNEMD method has been extended to handle non-periodic heterogeneous systems.~\cite{Stocker:2014qq}
 
 \section{Systems of Interest}
-The systems that are explored in this work contain a gold substrate or particle in solvent with heat transport from the gold to the solvent. 
-Thermal properties of gold particles have been of great experimental interest, particularly detangling the important factors for transport: particle size,~\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016} composition,~\cite{Wilson:2002uq, Ong:2013rt} surface modification,~\cite{kuang:AuThl,Ong:2013rt,Ong:2014yq,Liu2015,Stocker2016,Hannah2015,Park2016,Leitner2017} surface supports,~\cite{Park2012} exposed surface facets,~\cite{Hannah2015} and the chemical details of the environment.~\cite{Ge2006,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Park2016} 
+The systems that are explored in this work contain a solvated gold substrate or particle with heat transport from the gold to the solvent. 
+Thermal properties of gold particles have been of great experimental interest, with a particular interest in detangling the important factors for transport: particle size,~\cite{Zanjani2014,Liu2015,Wilhelmsen2015,Stocker2016,Tascini2016} composition,~\cite{Wilson:2002uq, Ong:2013rt} surface modification,~\cite{kuang:AuThl,Ong:2013rt,Ong:2014yq,Liu2015,Stocker2016,Hannah2015,Park2016,Leitner2017} surface supports,~\cite{Park2012} exposed surface facets,~\cite{Hannah2015} and the chemical details of the environment.~\cite{Ge2006,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Park2016} 
 
 Three distinct studies examining interfacial thermal conductivity and heat transport will be explored with three different systems in this work.
 The first system contains nanospheres with a range of particle radii and ligands with different length and rigidity.~\cite{Stocker2016}
-The second system strips away the ligand layer and looks at bare particles with the intention of finding the difference in particle morphology.~\cite{Neidhart}
+The second system strips away the ligand layer and looks at bare particles with the intention of finding the role of in particle morphology.~\cite{Neidhart}
 How exactly does the surface of the particle affect heat transport?
 The third system looks at a more complex problem: how does the particle size and the system solvent change thermal conductivity of a nanoarray?
 To simplify the atomistic models, we use a united-atom model for the ligand layer and solvent.
-All the particle systems use Langevin Hull~\cite{Vardeman2011} and RNEMD methods for non-periodic systems.~\cite{Stocker:2014qq}
+All the non-periodic systems use the Langevin Hull~\cite{Vardeman2011} and RNEMD methods for calculating transport properties.~\cite{Stocker:2014qq}
