@@ -139,7 +139,7 @@ ligand chains that can be filled via interdigitation of ligands on
 neighboring particles.\cite{Badia1996} The molecular dynamics
 simulations of Henz, \textit{et al.} indicate that at low coverages,
 the thiolate alkane chains will lie flat on the nanoparticle
-surface\cite{Henz:2008qf} Above 90\% coverage, the ligands
+surface.\cite{Henz:2008qf} Above 90\% coverage, the ligands
 stand upright and recover the rigidity and tilt angle displayed on
 planar facets. Their simulations also indicate a high degree of mixing
 between the thiolate sulfur atoms and surface gold atoms at high
@@ -162,7 +162,8 @@ force field are given below.
     utilized in the simulations. The chemically-distinct sites (S,
     \ce{CH2}, \ce{CH3}, CHe, CHa and \ce{CH2a}) are treated as united
     atoms. Most parameters are taken from references
-    \bibpunct{}{}{,}{n}{}{,} \protect\cite{TraPPE-UA.alkanes},
+    %\bibpunct{}{}{,}{n}{}{,} 
+\protect\cite{TraPPE-UA.alkanes},
     \protect\cite{TraPPE-UA.alkylbenzenes}
     \protect\cite{TraPPE-UA.thiols}. Cross-interactions with the Au
     atoms were adapted from references
@@ -269,7 +270,7 @@ intra-molecular sites closer than 3 bonds. Effective Lennard-Jones
 potentials were used for non-bonded interactions.
 
 \begin{table}[h]
-\bibpunct{}{}{,}{n}{}{,}
+%\bibpunct{}{}{,}{n}{}{,}
 \centering
 \caption{Non-bonded interaction parameters (including cross interactions with Au atoms). \label{tab:atypes}}
 \begin{tabular}{ c|cccccl }
@@ -285,7 +286,7 @@ Site & mass & $\sigma_{ii}$ & $\epsilon_{ii}$ & $\sigma_{\ce{Au}-i}$ & $\epsilon
  \ce{CH2ar}  & 14.03    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
  \bottomrule
 \end{tabular}
-\bibpunct{[}{]}{,}{n}{,}{,}
+%\bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
 
 
@@ -300,9 +301,9 @@ implemented using bond stretching spring constants adapted from the
 OPLS-AA force field.\cite{Jorgensen:1996sf}
 
 \begin{table}[h]
-\bibpunct{}{}{,}{n}{}{,}
+%\bibpunct{}{}{,}{n}{}{,}
 \centering
-\caption{Bond parameters. \label{tab:bond}}
+\caption{Bond parameters for the ligand molecules. \label{tab:bond}}
 \begin{tabular}{ cc|ccl }
  \toprule
  $i$&$j$ & $r_0$ & $k_\mathrm{bond}$ & source \\
@@ -322,7 +323,7 @@ CHar       & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkylbenz
 S          & CHar     & 1.80384 & 527.951 & This Work \\
  \bottomrule
 \end{tabular}
-\bibpunct{[}{]}{,}{n}{,}{,}
+%\bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
 
 Parameters not found in the TraPPE-UA force field for the
@@ -382,7 +383,7 @@ source molecular dynamics package,
 OpenMD.\cite{openmd,OOPSE}
 
 \begin{table}[h]
-\bibpunct{}{}{,}{n}{,}{,}
+%\bibpunct{}{}{,}{n}{,}{,}
 \centering
 \caption{Bend angle parameters. The central atom in the bend is atom $j$.\label{tab:bend}}
 \begin{tabular}{ ccc|ccl }
@@ -405,11 +406,11 @@ S        & \ce{CH2} & CHar      & 109.97  &  127.37 & This work  \\
 S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
  \bottomrule
 \end{tabular}
-\bibpunct{[}{]}{,}{n}{,}{,}
+%\bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
 
 \begin{table}[h]
-\bibpunct{}{}{,}{n}{,}{,}
+%\bibpunct{}{}{,}{n}{,}{,}
 \centering
 \caption{Torsion parameters. The central atoms for each torsion are atoms $j$ and $k$,
   and wildcard atom types are denoted by ``X''.  All $c_n$ parameters
@@ -431,7 +432,7 @@ CHene    & CHene    & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.
 CHar     & CHar     & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
  \bottomrule
 \end{tabular}
-\bibpunct{[}{]}{,}{n}{,}{,}
+%\bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL

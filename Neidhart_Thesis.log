@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  6 NOV 2018 08:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  8 NOV 2018 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1372,7 +1372,7 @@ File: figures/structures.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/structures.pdf  used on input line 160.
 (pdftex.def)             Requested size: 432.0pt x 474.12285pt.
  [25] [26 <./figures/structures.pdf>] [27]
-Overfull \hbox (11.74977pt too wide) in paragraph at lines 275--289
+Overfull \hbox (24.80519pt too wide) in paragraph at lines 276--290
  [][] 
  []
 
@@ -1380,7 +1380,7 @@ Overfull \hbox (11.74977pt too wide) in paragraph at lines 275--289
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Command \r invalid in math mode on input line 309.
+LaTeX Warning: Command \r invalid in math mode on input line 310.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1390,7 +1390,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (44.61147pt too wide) in paragraph at lines 419--435
+Overfull \hbox (44.61147pt too wide) in paragraph at lines 420--436
  [][] 
  []
 
@@ -1401,65 +1401,65 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/NP25_C12h1.pdf, id=1317, 1762.585pt x 1632.0975pt>
 File: figures/NP25_C12h1.pdf Graphic file (type pdf)
 <use figures/NP25_C12h1.pdf>
-Package pdftex.def Info: figures/NP25_C12h1.pdf  used on input line 472.
+Package pdftex.def Info: figures/NP25_C12h1.pdf  used on input line 473.
 (pdftex.def)             Requested size: 432.0pt x 400.00436pt.
  [33] [34 <./figures/NP25_C12h1.pdf>]
 <figures/temp_profile.pdf, id=1340, 789.44962pt x 571.52364pt>
 File: figures/temp_profile.pdf Graphic file (type pdf)
 <use figures/temp_profile.pdf>
-Package pdftex.def Info: figures/temp_profile.pdf  used on input line 492.
+Package pdftex.def Info: figures/temp_profile.pdf  used on input line 493.
 (pdftex.def)             Requested size: 432.0pt x 312.74307pt.
  [35 <./figures/temp_profile.pdf>]
 <figures/G3.pdf, id=1369, 794.97pt x 614.295pt>
 File: figures/G3.pdf Graphic file (type pdf)
 <use figures/G3.pdf>
-Package pdftex.def Info: figures/G3.pdf  used on input line 538.
+Package pdftex.def Info: figures/G3.pdf  used on input line 539.
 (pdftex.def)             Requested size: 432.0pt x 333.82336pt.
  [36] [37 <./figures/G3.pdf>] [38] [39]
 <figures/fcc.pdf, id=1416, 667.40143pt x 477.82115pt>
 File: figures/fcc.pdf Graphic file (type pdf)
 <use figures/fcc.pdf>
-Package pdftex.def Info: figures/fcc.pdf  used on input line 654.
+Package pdftex.def Info: figures/fcc.pdf  used on input line 655.
 (pdftex.def)             Requested size: 432.0pt x 309.29686pt.
  [40 <./figures/fcc.pdf>]
 <figures/C3.pdf, id=1449, 662.76607pt x 507.04933pt>
 File: figures/C3.pdf Graphic file (type pdf)
 <use figures/C3.pdf>
-Package pdftex.def Info: figures/C3.pdf  used on input line 687.
+Package pdftex.def Info: figures/C3.pdf  used on input line 688.
 (pdftex.def)             Requested size: 432.0pt x 330.50658pt.
  [41] [42 <./figures/C3.pdf>]
 <figures/NP_pAngle.pdf, id=1483, 361.15588pt x 470.97244pt>
 File: figures/NP_pAngle.pdf Graphic file (type pdf)
 <use figures/NP_pAngle.pdf>
-Package pdftex.def Info: figures/NP_pAngle.pdf  used on input line 780.
+Package pdftex.def Info: figures/NP_pAngle.pdf  used on input line 781.
 (pdftex.def)             Requested size: 432.0pt x 563.40341pt.
 
 
-LaTeX Warning: Float too large for page by 4.23672pt on input line 786.
+LaTeX Warning: Float too large for page by 4.23672pt on input line 787.
 
 [43] [44 <./figures/NP_pAngle.pdf>]
 <figures/P2_3.pdf, id=1552, 726.59958pt x 568.49088pt>
 File: figures/P2_3.pdf Graphic file (type pdf)
 <use figures/P2_3.pdf>
-Package pdftex.def Info: figures/P2_3.pdf  used on input line 839.
+Package pdftex.def Info: figures/P2_3.pdf  used on input line 840.
 (pdftex.def)             Requested size: 432.0pt x 337.9917pt.
  [45] [46 <./figures/P2_3.pdf>]
 <figures/density.pdf, id=1583, 698.79568pt x 528.82971pt>
 File: figures/density.pdf Graphic file (type pdf)
 <use figures/density.pdf>
-Package pdftex.def Info: figures/density.pdf  used on input line 872.
+Package pdftex.def Info: figures/density.pdf  used on input line 873.
 (pdftex.def)             Requested size: 432.0pt x 326.92693pt.
 <figures/rho3.pdf, id=1584, 679.46144pt x 507.05736pt>
 File: figures/rho3.pdf Graphic file (type pdf)
 <use figures/rho3.pdf>
-Package pdftex.def Info: figures/rho3.pdf  used on input line 908.
+Package pdftex.def Info: figures/rho3.pdf  used on input line 909.
 (pdftex.def)             Requested size: 432.0pt x 322.39563pt.
  [47]
 [48 <./figures/density.pdf>] [49 <./figures/rho3.pdf>] [50]
 <figures/rho_omega_12.pdf, id=1679, 679.52974pt x 480.64769pt>
 File: figures/rho_omega_12.pdf Graphic file (type pdf)
 <use figures/rho_omega_12.pdf>
-Package pdftex.def Info: figures/rho_omega_12.pdf  used on input line 990.
+Package pdftex.def Info: figures/rho_omega_12.pdf  used on input line 991.
 (pdftex.def)             Requested size: 432.0pt x 305.5746pt.
 ) [51] [52 <./figures/rho_omega_12.pdf>] [53]
 \openout2 = `chapters/Morph.aux'.
@@ -1574,15 +1574,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `Neidhart_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: FF983ADFDABD5152736A28413857D21F;3926.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  31770 strings out of 494590
  628053 string characters out of 6177729
- 745317 words of memory out of 5000000
+ 745300 words of memory out of 5000000
  34464 multiletter control sequences out of 15000+600000
  539120 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1603,7 +1599,7 @@ cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Neidhart_Thesis.pdf (107 pages, 10726961 bytes).
+Output written on Neidhart_Thesis.pdf (107 pages, 10727020 bytes).
 PDF statistics:
  2598 PDF objects out of 2984 (max. 8388607)
  2027 compressed objects within 21 object streams
