@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  8 NOV 2018 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/MacPorts 2018.47642_7) (preloaded format=pdflatex 2018.6.18)  8 NOV 2018 13:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1415,20 +1415,26 @@ File: figures/G3.pdf Graphic file (type pdf)
 <use figures/G3.pdf>
 Package pdftex.def Info: figures/G3.pdf  used on input line 539.
 (pdftex.def)             Requested size: 432.0pt x 333.82336pt.
- [36] [37 <./figures/G3.pdf>] [38] [39]
-<figures/fcc.pdf, id=1416, 667.40143pt x 477.82115pt>
+ [36] [37 <./figures/G3.pdf>]
+Overfull \hbox (16.3884pt too wide) in paragraph at lines 582--587
+\OT1/cmr/m/n/12 in-ter-pen-e-tra-tion, and or-der-ing of the sol-vent and lig-a
+nd at the sur-faces of the nanospheres
+ []
+
+[38] [39]
+<figures/fcc.pdf, id=1417, 667.40143pt x 477.82115pt>
 File: figures/fcc.pdf Graphic file (type pdf)
 <use figures/fcc.pdf>
 Package pdftex.def Info: figures/fcc.pdf  used on input line 655.
 (pdftex.def)             Requested size: 432.0pt x 309.29686pt.
  [40 <./figures/fcc.pdf>]
-<figures/C3.pdf, id=1449, 662.76607pt x 507.04933pt>
+<figures/C3.pdf, id=1450, 662.76607pt x 507.04933pt>
 File: figures/C3.pdf Graphic file (type pdf)
 <use figures/C3.pdf>
 Package pdftex.def Info: figures/C3.pdf  used on input line 688.
 (pdftex.def)             Requested size: 432.0pt x 330.50658pt.
  [41] [42 <./figures/C3.pdf>]
-<figures/NP_pAngle.pdf, id=1483, 361.15588pt x 470.97244pt>
+<figures/NP_pAngle.pdf, id=1484, 361.15588pt x 470.97244pt>
 File: figures/NP_pAngle.pdf Graphic file (type pdf)
 <use figures/NP_pAngle.pdf>
 Package pdftex.def Info: figures/NP_pAngle.pdf  used on input line 781.
@@ -1438,25 +1444,25 @@ Package pdftex.def Info: figures/NP_pAngle.pdf  used on input line 781.
 LaTeX Warning: Float too large for page by 4.23672pt on input line 787.
 
 [43] [44 <./figures/NP_pAngle.pdf>]
-<figures/P2_3.pdf, id=1552, 726.59958pt x 568.49088pt>
+<figures/P2_3.pdf, id=1553, 726.59958pt x 568.49088pt>
 File: figures/P2_3.pdf Graphic file (type pdf)
 <use figures/P2_3.pdf>
 Package pdftex.def Info: figures/P2_3.pdf  used on input line 840.
 (pdftex.def)             Requested size: 432.0pt x 337.9917pt.
  [45] [46 <./figures/P2_3.pdf>]
-<figures/density.pdf, id=1583, 698.79568pt x 528.82971pt>
+<figures/density.pdf, id=1584, 698.79568pt x 528.82971pt>
 File: figures/density.pdf Graphic file (type pdf)
 <use figures/density.pdf>
 Package pdftex.def Info: figures/density.pdf  used on input line 873.
 (pdftex.def)             Requested size: 432.0pt x 326.92693pt.
-<figures/rho3.pdf, id=1584, 679.46144pt x 507.05736pt>
+<figures/rho3.pdf, id=1585, 679.46144pt x 507.05736pt>
 File: figures/rho3.pdf Graphic file (type pdf)
 <use figures/rho3.pdf>
 Package pdftex.def Info: figures/rho3.pdf  used on input line 909.
 (pdftex.def)             Requested size: 432.0pt x 322.39563pt.
  [47]
 [48 <./figures/density.pdf>] [49 <./figures/rho3.pdf>] [50]
-<figures/rho_omega_12.pdf, id=1679, 679.52974pt x 480.64769pt>
+<figures/rho_omega_12.pdf, id=1680, 679.52974pt x 480.64769pt>
 File: figures/rho_omega_12.pdf Graphic file (type pdf)
 <use figures/rho_omega_12.pdf>
 Package pdftex.def Info: figures/rho_omega_12.pdf  used on input line 991.
@@ -1477,13 +1483,13 @@ rectly, re-verse non-equilibrium
  []
 
 [58] [59] [60] [61] [62] [63] [64]
-<figures/g-ico-spher-cub.pdf, id=1875, 873.3438pt x 544.84253pt>
+<figures/g-ico-spher-cub.pdf, id=1876, 873.3438pt x 544.84253pt>
 File: figures/g-ico-spher-cub.pdf Graphic file (type pdf)
 <use figures/g-ico-spher-cub.pdf>
 Package pdftex.def Info: figures/g-ico-spher-cub.pdf  used on input line 428.
 (pdftex.def)             Requested size: 432.0pt x 269.51082pt.
  [65] [66 <./figures/g-ico-spher-cub.pdf>]
-<figures/stacked-hex-facets.pdf, id=1923, 749.4148pt x 532.64597pt>
+<figures/stacked-hex-facets.pdf, id=1924, 749.4148pt x 532.64597pt>
 File: figures/stacked-hex-facets.pdf Graphic file (type pdf)
 <use figures/stacked-hex-facets.pdf>
 Package pdftex.def Info: figures/stacked-hex-facets.pdf  used on input line 465
@@ -1491,13 +1497,13 @@ Package pdftex.def Info: figures/stacked-hex-facets.pdf  used on input line 465
 (pdftex.def)             Requested size: 432.0pt x 307.04115pt.
 
 [67] [68 <./figures/stacked-hex-facets.pdf>] [69]
-<figures/facets-cn.pdf, id=2034, 565.11125pt x 606.265pt>
+<figures/facets-cn.pdf, id=2035, 565.11125pt x 606.265pt>
 File: figures/facets-cn.pdf Graphic file (type pdf)
 <use figures/facets-cn.pdf>
 Package pdftex.def Info: figures/facets-cn.pdf  used on input line 531.
 (pdftex.def)             Requested size: 361.34999pt x 387.67525pt.
  [70] [71 <./figures/facets-cn.pdf>]
-<figures/surface-cn.pdf, id=2079, 713.66624pt x 521.95pt>
+<figures/surface-cn.pdf, id=2080, 713.66624pt x 521.95pt>
 File: figures/surface-cn.pdf Graphic file (type pdf)
 <use figures/surface-cn.pdf>
 Package pdftex.def Info: figures/surface-cn.pdf  used on input line 609.
@@ -1507,38 +1513,38 @@ Package pdftex.def Info: figures/surface-cn.pdf  used on input line 609.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [72]
-<figures/new-cn.pdf, id=2087, 722.7pt x 516.93124pt>
+<figures/new-cn.pdf, id=2088, 722.7pt x 516.93124pt>
 File: figures/new-cn.pdf Graphic file (type pdf)
 <use figures/new-cn.pdf>
 Package pdftex.def Info: figures/new-cn.pdf  used on input line 666.
 (pdftex.def)             Requested size: 432.0pt x 309.00163pt.
  [73 <./figures/surface-cn.pdf>] [74 <./figures/new-cn.pdf>] [75] [76]
-<figures/struct-bowr.pdf, id=2191, 794.97pt x 614.295pt>
+<figures/struct-bowr.pdf, id=2192, 794.97pt x 614.295pt>
 File: figures/struct-bowr.pdf Graphic file (type pdf)
 <use figures/struct-bowr.pdf>
 Package pdftex.def Info: figures/struct-bowr.pdf  used on input line 773.
 (pdftex.def)             Requested size: 361.34999pt x 279.23282pt.
-<figures/col-layer40.pdf, id=2192, 720.6925pt x 548.0475pt>
+<figures/col-layer40.pdf, id=2193, 720.6925pt x 548.0475pt>
 File: figures/col-layer40.pdf Graphic file (type pdf)
 <use figures/col-layer40.pdf>
 Package pdftex.def Info: figures/col-layer40.pdf  used on input line 790.
 (pdftex.def)             Requested size: 432.0pt x 328.51326pt.
 
 [77]
-<figures/all-v-surface.pdf, id=2200, 712.6625pt x 488.82625pt>
+<figures/all-v-surface.pdf, id=2201, 712.6625pt x 488.82625pt>
 File: figures/all-v-surface.pdf Graphic file (type pdf)
 <use figures/all-v-surface.pdf>
 Package pdftex.def Info: figures/all-v-surface.pdf  used on input line 820.
 (pdftex.def)             Requested size: 432.0pt x 296.31139pt.
  [78 <./figures/struct-bowr.pdf, page is rotated 90 degrees>] [79 <./figures/co
 l-layer40.pdf>] [80 <./figures/all-v-surface.pdf>]
-<figures/all-spect.pdf, id=2243, 718.685pt x 515.9275pt>
+<figures/all-spect.pdf, id=2244, 718.685pt x 515.9275pt>
 File: figures/all-spect.pdf Graphic file (type pdf)
 <use figures/all-spect.pdf>
 Package pdftex.def Info: figures/all-spect.pdf  used on input line 881.
 (pdftex.def)             Requested size: 361.34999pt x 259.41164pt.
  [81] [82 <./figures/all-spect.pdf>]
-<figures/models.pdf, id=2267, 685.56125pt x 496.85625pt>
+<figures/models.pdf, id=2268, 685.56125pt x 496.85625pt>
 File: figures/models.pdf Graphic file (type pdf)
 <use figures/models.pdf>
 Package pdftex.def Info: figures/models.pdf  used on input line 951.
@@ -1578,7 +1584,7 @@ Package rerunfilecheck Info: File `Neidhart_Thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  31770 strings out of 494590
  628053 string characters out of 6177729
- 745300 words of memory out of 5000000
+ 745305 words of memory out of 5000000
  34464 multiletter control sequences out of 15000+600000
  539120 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1599,10 +1605,10 @@ cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.p
 fb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></
 opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Neidhart_Thesis.pdf (107 pages, 10727020 bytes).
+Output written on Neidhart_Thesis.pdf (107 pages, 10727115 bytes).
 PDF statistics:
- 2598 PDF objects out of 2984 (max. 8388607)
- 2027 compressed objects within 21 object streams
+ 2599 PDF objects out of 2984 (max. 8388607)
+ 2028 compressed objects within 21 object streams
  359 named destinations out of 1000 (max. 500000)
  538 words of extra memory for PDF output out of 10000 (max. 10000000)
 

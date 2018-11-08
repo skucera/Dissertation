@@ -4,11 +4,11 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Non-bonded interaction parameters (including cross interactions with Au atoms). }}{29}{table.2.1}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {2.2}{\ignorespaces Bond parameters. }}{30}{table.2.2}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Bond parameters for the ligand molecules. }}{30}{table.2.2}
  {\vskip 0.4em} 
 \contentsline {table}{\numberline {2.3}{\ignorespaces Bend angle parameters. The central atom in the bend is atom $j$.}}{32}{table.2.3}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {2.4}{\ignorespaces Torsion parameters. The central atoms for each torsion are atoms $j$ and $k$, and wildcard atom types are denoted by ``X''. All $c_n$ parameters have units of kcal/mol. The torsions around carbon-carbon double bonds are harmonic and assume a trans (180$\ensuremath {^\circ }$) geometry. The force constant for this torsion is given in $\mathrm {kcal\nobreakspace {}mol\nobreakspace {}}^{-1}\mathrm {degrees}^{-2}$. }}{33}{table.2.4}
+\contentsline {table}{\numberline {2.4}{\ignorespaces The central atoms for each torsion are atoms $j$ and $k$, and wildcard atom types are denoted by ``X''. All $c_n$ parameters have units of kcal/mol. The torsions around carbon-carbon double bonds are harmonic and assume a trans (180$\ensuremath {^\circ }$) geometry. The force constant for this torsion is given in $\mathrm {kcal\nobreakspace {}mol\nobreakspace {}}^{-1}\mathrm {degrees}^{-2}$. }}{33}{table.2.4}
  {\vskip 0.4em} 
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Composition of the solvated planar facet systems and the physical extent of the gold slabs ($L_x$, $L_y$, and $L_z$). The hexane molecules occupy the remainder of a 100 \r A\ box (length measured along the $z$-axis). }}{60}{table.3.1}
