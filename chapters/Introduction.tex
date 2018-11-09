@@ -130,13 +130,13 @@ The $\frac{1}{r^6}$ term is similar to dispersion and the $\frac{1}{r^{12}}$ ter
 
 The last, and one of the most important terms for the work is $V_{metallic}$. Quantum Sutton-Chen(qSC) potential is the metallic potential used in all the following projects.\cite{Qi:1999ph} The potential is broken into two parts: a pair potential and the local density accounting for cohension.
 \begin{equation}
-    V_{metallic} = \sum_i \epsilon \Bigg[ \sum_{j\neqi} V_{ij}^{pair} (r_ij) - c\sqrt{\rho_i}\Bigg]
+    V_{metallic} = \sum_i \epsilon \Bigg[ \sum_{j \neq i} V_{ij}^{pair} (r_ij) - c\sqrt{\rho_i}\Bigg]
 \end{equation}
 \begin{equation}    
     V_{ij}^{pair} (r) = \bigg(\frac{a_{ij}}{r_{ij}}\bigg)^{n_{ij}}
 \end{equation}
 \begin{equation}
-    \rho_i = \sum_{i\neq j}\bigg( \frac{a_{ij}}{r_{ij}}\bigg)^{m_{ij}}
+    \rho_i = \sum_{i \neq j}\bigg( \frac{a_{ij}}{r_{ij}}\bigg)^{m_{ij}}
 \end{equation}
 For gold, which is the only metal present in this work the following values are used: $n=11$, $m=8$, $\epsilon=7.8052 x 10^-3$ eV, $c=53.582$, and $a=4.0651$ \AA.
 The $epsilon$ value is the well depth of the metallic interact and $a$ is the lattice parameter of the metal. 
