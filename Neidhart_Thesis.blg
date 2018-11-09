@@ -1,52 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2018/MacPorts 2018.47642_7)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Neidhart_Thesis.aux
 A level-1 auxiliary file: chapters/Introduction.aux
 A level-1 auxiliary file: chapters/NPthiols.aux
 A level-1 auxiliary file: chapters/Morph.aux
 The style file: abbrvnat.bst
 Database file #1: Neidhart_Thesis.bib
-Warning--I didn't find a database entry for ""
 Warning--empty year in openmd
-You've used 114 entries,
+You've used 115 entries,
             2773 wiz_defined-function locations,
-            1528 strings with 31684 characters,
-and the built_in function-call counts, 60631 in all, are:
-= -- 5613
-> -- 3669
+            1535 strings with 31884 characters,
+and the built_in function-call counts, 61161 in all, are:
+= -- 5661
+> -- 3699
 < -- 45
-+ -- 1240
-- -- 1120
-* -- 5644
-:= -- 9542
-add.period$ -- 533
-call.type$ -- 114
-change.case$ -- 712
-chr.to.int$ -- 108
-cite$ -- 229
-duplicate$ -- 2358
-empty$ -- 4595
-format.name$ -- 1286
-if$ -- 12573
++ -- 1250
+- -- 1129
+* -- 5697
+:= -- 9623
+add.period$ -- 537
+call.type$ -- 115
+change.case$ -- 718
+chr.to.int$ -- 109
+cite$ -- 231
+duplicate$ -- 2379
+empty$ -- 4638
+format.name$ -- 1296
+if$ -- 12684
 int.to.chr$ -- 7
 int.to.str$ -- 1
-missing$ -- 118
-newline$ -- 768
-num.names$ -- 458
-pop$ -- 1058
+missing$ -- 119
+newline$ -- 774
+num.names$ -- 462
+pop$ -- 1067
 preamble$ -- 1
-purify$ -- 601
+purify$ -- 606
 quote$ -- 0
-skip$ -- 1759
+skip$ -- 1773
 stack$ -- 0
-substring$ -- 2735
-swap$ -- 166
+substring$ -- 2764
+swap$ -- 168
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1229
+type$ -- 1240
 warning$ -- 1
-while$ -- 474
+while$ -- 478
 width$ -- 0
-write$ -- 1872
-(There were 2 warnings)
+write$ -- 1887
+(There was 1 warning)

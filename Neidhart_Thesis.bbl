@@ -1,4 +1,4 @@
-\begin{thebibliography}{114}
+\begin{thebibliography}{115}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -160,6 +160,13 @@ D.~J. Evans and D.~J. Searles.
 \newblock \emph{Adv. Phys.}, 51\penalty0 (7):\penalty0 1529--1585, Nov 2002.
 \newblock ISSN 0001-8732.
 \newblock \doi{10.1080/00018730210155133}.
+
+\bibitem[Foiles et~al.(1986)Foiles, Baskes, and Daw]{EAM:1986}
+S.~M. Foiles, M.~I. Baskes, and M.~S. Daw.
+\newblock Embedded-atom-method functions for the fcc metals {C}u, {A}g, {A}u,
+  {N}i, {P}d, {P}t, and their alloys.
+\newblock \emph{Phys. Rev. B}, 33\penalty0 (12):\penalty0 7983--7991, Jun 1986.
+\newblock \doi{10.1103/PhysRevB.33.7983}.
 
 \bibitem[Ge et~al.(2004)Ge, Cahill, and Braun]{Ge:2004yg}
 Z.~Ge, D.~G. Cahill, and P.~V. Braun.
