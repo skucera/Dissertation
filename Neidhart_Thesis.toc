@@ -14,21 +14,20 @@
 \contentsline {subsection}{\numberline {1.3.3}Reverse Non-Equilibruim Molecular Dynamics}{19}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}Systems of Interest}{20}{section.1.4}
 \contentsline {chapter}{{CHAPTER\ 2: INTERFACIAL THERMAL CONDUCTANCE OF THIOLATE-PROTECTED GOLD NANOSPHERES}}{21}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{21}{section.2.1}
-\contentsline {section}{\numberline {2.2}Interfacial Thermal Conductance of Metallic Nanoparticles}{23}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Structures of Self-Assembled Monolayers on Nanoparticles}{24}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Computational Details}{25}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Creating a thermal flux between particles and solvent}{25}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Interfacial Thermal Conductance}{27}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Force Fields}{28}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Simulation Protocol}{31}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Results}{36}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Corrugation of the Particle Surface}{38}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Orientation of Ligand Chains}{41}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Orientation of Interfacial Solvent}{43}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Solvent Penetration of Ligand Layer}{45}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Ligand-mediated Vibrational Overlap}{50}{subsection.2.4.5}
-\contentsline {section}{\numberline {2.5}Discussion}{51}{section.2.5}
+\contentsline {section}{\numberline {2.1}Interfacial Thermal Conductance of Metallic Nanoparticles}{23}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Structures of Self-Assembled Monolayers on Nanoparticles}{23}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Computational Details}{24}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Creating a thermal flux between particles and solvent}{24}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Interfacial Thermal Conductance}{27}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Force Fields}{27}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Simulation Protocol}{34}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Results}{37}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Corrugation of the Particle Surface}{39}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Orientation of Ligand Chains}{43}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Orientation of Interfacial Solvent}{45}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Solvent Penetration of Ligand Layer}{47}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Ligand-mediated Vibrational Overlap}{50}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Discussion}{51}{section.2.4}
 \contentsline {chapter}{{CHAPTER\ 3: THERMAL TRANSPORT IS INFLUENCE By NANOPARTICLE SHAPE}}{54}{chapter.3}
 \contentsline {section}{\numberline {3.1}Abstract}{54}{section.3.1}
 \contentsline {section}{\numberline {3.2}Introduction}{54}{section.3.2}

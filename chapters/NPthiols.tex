@@ -1,15 +1,15 @@
 
 \chapter{INTERFACIAL THERMAL CONDUCTANCE OF THIOLATE-PROTECTED GOLD NANOSPHERES}\label{chap:npthiols}
-\section{Introduction}
-  Molecular dynamics simulations of thiolate-protected and solvated gold nanoparticles were carried out in the presence of a non-equilibrium heat flux between the solvent and the core of the particle. The interfacial thermal conductance ($G$) was computed for these interfaces, and the behavior of the thermal conductance was studied as a function of particle size, ligand flexibility, and ligand chain length. In all cases, thermal conductance of the ligand-protected particles was higher than the bare metal--solvent interface.  A number of mechanisms for the enhanced conductance were investigated, including thiolate-driven corrugation of the metal surface, solvent ordering at the interface, solvent-ligand interpenetration, and ligand ordering relative to the particle
-  surface. Only the smallest particles exhibited significant
-  corrugation.  All ligands permitted substantial solvent-ligand
-  interpenetration, and ligand chain length has a significant
-  influence on the orientational ordering of interfacial solvent.
-  Solvent -- ligand vibrational overlap, particularly in the low
-  frequency range ($< 80 \mathrm{cm}^{-1}$) was significantly altered
-  by ligand rigidity, and had direct influence on the interfacial
-  thermal conductance.
+%\section{Introduction}
+%  Molecular dynamics simulations of thiolate-protected and solvated gold nanoparticles were carried out in the presence of a non-equilibrium heat flux between the solvent and the core of the particle. The interfacial thermal conductance ($G$) was computed for these interfaces, and the behavior of the thermal conductance was studied as a function of particle size, ligand flexibility, and ligand chain length. In all cases, thermal conductance of the ligand-protected particles was higher than the bare metal--solvent interface.  A number of mechanisms for the enhanced conductance were investigated, including thiolate-driven corrugation of the metal surface, solvent ordering at the interface, solvent-ligand interpenetration, and ligand ordering relative to the particle
+%  surface. Only the smallest particles exhibited significant
+%  corrugation.  All ligands permitted substantial solvent-ligand
+%  interpenetration, and ligand chain length has a significant
+%  influence on the orientational ordering of interfacial solvent.
+%  Solvent -- ligand vibrational overlap, particularly in the low
+%  frequency range ($< 80 \mathrm{cm}^{-1}$) was significantly altered
+%  by ligand rigidity, and had direct influence on the interfacial
+%  thermal conductance.
 %\end{abstract}
 
 
@@ -96,14 +96,14 @@ and the effect of those gaps on the thermal conductance is unknown.
 For a solvated nanoparticle, it is possible to define a critical value
 for the interfacial thermal conductance,
 \begin{equation}
-G_c = \frac{3 C_s \Lambda_s}{R C_p}
+G_c = \frac{3 C_s \lambda_s}{R C_p}
 \end{equation}
 which depends on the solvent heat capacity, $C_s$, solvent thermal
-conductivity, $\Lambda_s$, particle radius, $R$, and nanoparticle heat
+conductivity, $\lambda_s$, particle radius, $R$, and nanoparticle heat
 capacity, $C_p$.\cite{Wilson:2002uq} In the limit of infinite
 interfacial thermal conductance, $G \gg G_c$, cooling of the
 nanoparticle is limited by the solvent properties, $C_s$ and
-$\Lambda_s$.  In the opposite limit, $G \ll G_c$, the heat dissipation
+$\lambda_s$.  In the opposite limit, $G \ll G_c$, the heat dissipation
 is controlled by the thermal conductance of the particle / fluid
 interface. It is this regime with which this study is concerned, where
 properties of ligands and the particle surface may be tuned to
@@ -277,13 +277,19 @@ potentials were used for non-bonded interactions.
  \toprule
 Site & mass & $\sigma_{ii}$ & $\epsilon_{ii}$ & $\sigma_{\ce{Au}-i}$ & $\epsilon_{\ce{Au}-i}$  & source \\
      & (amu)& (\AA)        & (kcal/mol)     & (\AA)             &  (kcal/mol)          &  \\
- %\columnrule
- \ce{CH3}    & 15.04    & 3.75  & 0.1947 & 3.54   & 0.2146 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
- \ce{CH2}    & 14.03    & 3.95  & 0.09141& 3.54   & 0.1749 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
- CHene       & 13.02    & 3.73  & 0.09340& 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes}, \protect\cite{vlugt:cpc2007154} and \protect\cite{landman:1998}\\
- S           & 32.0655  & 4.45  & 0.2504 & 2.40   & 8.465  & Refs. \protect\cite{landman:1998} ($\sigma$) and \protect\cite{vlugt:cpc2007154} ($\epsilon$) \\
- CHar        & 13.02    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
- \ce{CH2ar}  & 14.03    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} and \protect\cite{vlugt:cpc2007154}\\
+ \midrule
+ \ce{CH3}    & 15.04    & 3.75  & 0.1947 & 3.54   & 0.2146 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154}\\
+&&&&&&and \protect\cite{landman:1998}\\
+ \ce{CH2}    & 14.03    & 3.95  & 0.09141& 3.54   & 0.1749 & Refs. \protect\cite{TraPPE-UA.alkanes}, \protect\cite{vlugt:cpc2007154} \\
+&&&&&&and \protect\cite{landman:1998}\\
+ CHene       & 13.02    & 3.73  & 0.09340& 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes}, \protect\cite{vlugt:cpc2007154} \\
+&&&&&&and \protect\cite{landman:1998}\\
+ S           & 32.0655  & 4.45  & 0.2504 & 2.40   & 8.465  & Refs. \protect\cite{landman:1998} ($\sigma$)\\
+&&&&&&and \protect\cite{vlugt:cpc2007154} ($\epsilon$) \\
+ CHar        & 13.02    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes}\\
+&&&&&&and \protect\cite{vlugt:cpc2007154}\\
+ \ce{CH2ar}  & 14.03    & 3.695 & 0.1004 & 3.4625 & 0.1680 & Refs. \protect\cite{TraPPE-UA.alkylbenzenes} \\
+&&&&&&and \protect\cite{vlugt:cpc2007154}\\
  \bottomrule
 \end{tabular}
 %\bibpunct{[}{]}{,}{n}{,}{,}
@@ -308,7 +314,7 @@ OPLS-AA force field.\cite{Jorgensen:1996sf}
  \toprule
  $i$&$j$ & $r_0$ & $k_\mathrm{bond}$ & source \\
     &    & (\AA) & $(\mathrm{~kcal/mole/\AA}^2)$ & \\
- %\columnrule
+ \midrule
 \ce{CH3}   & \ce{CH3} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf}\\
 \ce{CH3}   & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
 \ce{CH2}   & \ce{CH2} & 1.540   & 536  & Refs. \protect\cite{TraPPE-UA.alkanes} and \protect\cite{Jorgensen:1996sf} \\
@@ -382,15 +388,14 @@ All simulations were carried out with the open
 source molecular dynamics package,
 OpenMD.\cite{openmd,OOPSE}
 
-\begin{table}[h]
-%\bibpunct{}{}{,}{n}{,}{,}
+\begin{table}
 \centering
 \caption{Bend angle parameters. The central atom in the bend is atom $j$.\label{tab:bend}}
 \begin{tabular}{ ccc|ccl }
 \toprule
  $i$&$j$&$k$ & $\theta_0$ & $k_\mathrm{bend}$ & source\\
     &   &    & ($\degree$) & (kcal/mol/rad\textsuperscript{2}) & \\
- %\columnrule
+ \midrule
 \ce{CH2} & \ce{CH2} & S         & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
 \ce{CH3} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
 \ce{CH2} & \ce{CH2} & \ce{CH2}  & 114.0   &   124.20& Ref. \protect\cite{TraPPE-UA.thiols}\\
@@ -406,10 +411,10 @@ S        & \ce{CH2} & CHar      & 109.97  &  127.37 & This work  \\
 S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
  \bottomrule
 \end{tabular}
-%\bibpunct{[}{]}{,}{n}{,}{,}
 \end{table}
 
-\begin{table}[h]
+\begin{landscape}
+\begin{table}
 %\bibpunct{}{}{,}{n}{,}{,}
 \centering
 \caption{The central atoms for each torsion are atoms $j$ and $k$,
@@ -417,10 +422,11 @@ S        & CHar     & CHar      & 123.911 & 138.093 & This work  \\
   have units of kcal/mol. The torsions around carbon-carbon double bonds
   are harmonic and assume a trans (180$\degree$) geometry.  The force
   constant for this torsion is given in $\mathrm{kcal~mol~}^{-1}\mathrm{degrees}^{-2}$.  \label{tab:torsion}}
+%\begin{adjustbox}{angle=90}
 \begin{tabular}{ cccc|ccccl }
 \toprule
  $i$&$j$&$k$&$l$& $c_0$&$c_1$& $c_2$ & $c_3$ & source\\
- %\columnrule
+ \midrule
 \ce{CH3} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
 \ce{CH2} & \ce{CH2} & \ce{CH2} & \ce{CH2} & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.alkanes}\\
 \ce{CH2} & \ce{CH2} & \ce{CH2} & S        & 0.0     & 0.7055   & -0.13551 &  1.5725    & Ref. \protect\cite{TraPPE-UA.thiols}\\ %\columnrule
@@ -432,8 +438,11 @@ CHene    & CHene    & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.
 CHar     & CHar     & \ce{CH2} & S        & 3.20753 & 0.207417 & -0.912929&  -0.958538 & This work \\
  \bottomrule
 \end{tabular}
+\label{tab:torsion}
 %\bibpunct{[}{]}{,}{n}{,}{,}
+%\end{adjustbox}
 \end{table}
+\end{landscape}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		SIMULATION PROTOCOL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -579,10 +588,10 @@ between the metal and the solvent. This could be a partial explanation
 for the observed differences between the fully conjugated and more
 flexible ligands.
 
-The following sections details how I
-measure surface corrugation, solvent-ligand interpenetration, and
+The following sections provide details on how
+surface corrugation, solvent-ligand interpenetration, and
 ordering of the solvent and ligand at the surfaces of the
-nanospheres are provided. Followed by an investigation of 
+nanospheres are measured. This is followed by an investigation of 
 the overlap between vibrational densities of states for the various ligands.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -814,7 +823,7 @@ $\hat{u}_i$ is the vector between the two \ce{CH3} pseudo-atoms on
 molecule $i$. Since only the orientation of
 solvent molecules near the ligand layer is of interest, 
 I select only the hexane
-molecules within a specific $r$-range, between the edge of the
+molecules that reside between the edge of the
 particle and the end of the ligand chains. A large population of
 hexane molecules with $\cos{(\theta)} \sim \pm 1$ would indicate
 interdigitation of the solvent molecules between the upright ligand
