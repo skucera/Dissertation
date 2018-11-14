@@ -1,6 +1,6 @@
 
 \chapter{INTERFACIAL THERMAL CONDUCTANCE OF THIOLATE-PROTECTED GOLD NANOSPHERES}\label{chap:npthiols}
-%\section{Introduction}
+\section{Introduction}
 %  Molecular dynamics simulations of thiolate-protected and solvated gold nanoparticles were carried out in the presence of a non-equilibrium heat flux between the solvent and the core of the particle. The interfacial thermal conductance ($G$) was computed for these interfaces, and the behavior of the thermal conductance was studied as a function of particle size, ligand flexibility, and ligand chain length. In all cases, thermal conductance of the ligand-protected particles was higher than the bare metal--solvent interface.  A number of mechanisms for the enhanced conductance were investigated, including thiolate-driven corrugation of the metal surface, solvent ordering at the interface, solvent-ligand interpenetration, and ligand ordering relative to the particle
 %  surface. Only the smallest particles exhibited significant
 %  corrugation.  All ligands permitted substantial solvent-ligand
@@ -299,7 +299,7 @@ Site & mass & $\sigma_{ii}$ & $\epsilon_{ii}$ & $\sigma_{\ce{Au}-i}$ & $\epsilon
 The TraPPE-UA force field includes parameters for thiol
 molecules\cite{TraPPE-UA.thiols} as well as unsaturated and aromatic
 carbon sites.\cite{TraPPE-UA.alkylbenzenes} These were used for the
-thiolate molecules in our simulations, and missing parameters for the
+thiolate molecules in the following simulations, and missing parameters for the
 ligands were supplemented using fits described below.
 Bonds are rigid in TraPPE-UA, so although equilibrium
 bond distances were taken from this force field, flexible bonds were
@@ -373,8 +373,8 @@ bond, bend, and torsional parameters were in relatively good agreement
 with similar parameters already present in TraPPE.
 
 To derive suitable parameters for the thiolates adsorbed on Au(111)
-surfaces, we adopted the S parameters from Luedtke and
-Landman\cite{landman:1998} and modified the parameters for the CTS
+surfaces, the S parameters from Luedtke and
+Landman\cite{landman:1998} were adopted and modified the parameters for the CTS
 atom to maintain charge neutrality in the molecule.
 
 Other interactions between metal (Au) and non-metal atoms were adapted
@@ -534,8 +534,8 @@ multiple surface-ligand configurations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
-We modeled four sizes of nanoparticles ($R =$ 10, 15, 20, and 25
-\AA). The smallest particle size produces the lowest interfacial
+Four sizes of nanoparticles ($R =$ 10, 15, 20, and 25
+\AA) were modelled. The smallest particle size produces the lowest interfacial
 thermal conductance values for most of the of protecting groups
 (Figure \ref{fig:NPthiols_G}).  Between the other three sizes of
 nanoparticles, there is no systematic dependence of the interfacial
@@ -575,8 +575,9 @@ ligand / solvent layer. This effect would be particularly important at
 small particle sizes.
 
 In previous studies of mixed-length ligand layers with full coverage,
-we observed that ligand-solvent alignment was an important factor for
-heat transfer into the solvent.  With high surface curvature and lower
+Stocker \textit{et al.} observed that ligand-solvent alignment was an important factor for
+heat transfer into the solvent.\cite{Stocker:2013cl}
+With high surface curvature and lower
 effective coverages, ligand behavior also becomes more complex. Some
 chains may be lying down on the surface, and solvent may not be
 penetrating the ligand layer to the same degree as in the planar
@@ -814,17 +815,17 @@ ligand chain length -- and ligand flexibility -- increases.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Orientation of Interfacial Solvent}
 
-Similarly, I examined the distribution of \emph{hexane} molecule
+Similarly, the distribution of \emph{hexane} molecule
 orientations relative to the particle surface using the same angular
-analysis utilized for the ligand chain orientations. In this case,
+analysis utilized for the ligand chain orientations was examined. In this case,
 $\vec{r}_i$ is the vector between the particle center of mass and one
 of the \ce{CH2} pseudo-atoms in the middle of hexane molecule $i$ and
 $\hat{u}_i$ is the vector between the two \ce{CH3} pseudo-atoms on
 molecule $i$. Since only the orientation of
 solvent molecules near the ligand layer is of interest, 
-I select only the hexane
+only the hexane
 molecules that reside between the edge of the
-particle and the end of the ligand chains. A large population of
+particle and the end of the ligand chains are selected. A large population of
 hexane molecules with $\cos{(\theta)} \sim \pm 1$ would indicate
 interdigitation of the solvent molecules between the upright ligand
 chains. A more random distribution of $\cos{(\theta)}$ values
@@ -958,8 +959,8 @@ interfaces (particle $\rightarrow$ ligand, and ligand $\rightarrow$
 solvent), and the vibrational overlap between the ligand and the other
 two components is relevant to heat transfer.
  
-To estimate the relevant densities of states, I have projected the
-velocity of each atom $i$ in the region of the interface onto a
+To estimate the relevant densities of states, the
+velocity of each atom $i$ in the region of the interface is projected onto a
 direction normal to the interface. For the nanosphere geometries
 studied here, the normal direction depends on the instantaneous
 positon of the atom relative to the center of mass of the particle.
