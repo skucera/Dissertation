@@ -41,11 +41,11 @@ There are two major models that make predictions for heat transfer at the interf
 \subsection{Acoustic Mismatch Model}
 In the acoustic mismatch model, the transmission probability- the total fraction of energy transmitted across the interface- is dependent on the acoustic impedance of the material, $Z_i$. The AMM evaluates the transmission coefficient through a continuum approach.~\cite{Little1959} This model uses the acoustic transmission and reflection between the two materials and ignores the granularity of the materials. Therefore the AMM would be most appropriate for low temperatures where the thermal spectrum is dominated by long wavelength phonons.~\cite{Graff1975} 
 
-Each transmitted phonon has three possible polarizations: one longitudinal and two transverse. Likewise, reflected phonons can be reflected in the same fashion, giving six different paths for a wave to interact with the interface. This problem is usually simplified sing the acoustic analog of Snell’s law:
+Each transmitted phonon has three possible polarizations: one longitudinal and two transverse. Likewise, reflected phonons can be reflected in the same fashion, giving six different paths for a wave to interact with the interface. This problem is usually simplified using the acoustic analog of Snell’s law where $\theta$ is the angle relative to the normal of the interface and $p$ is the polarization of the phonon:
 \begin{equation}
 \tau_{ab}(\theta, p) = \frac{4\frac{p_2 \nu_{p, 2}}{p_1 \nu_{p,1}} \frac{\cos{\theta_{p,2}}}{\cos{\theta_{p,1}}}}{\big( \frac{p_2 \nu_{p, 2}}{p_1 \nu_{p,1}}+ \frac{\cos{\theta_{p,2}}}{\cos{\theta_{p,1}}}\big)^2}
 \end{equation}
-where $\theta$ are related to the analog of Snell's law through the frequency: \(\frac{\sin{\theta_1}}{\nu_1} = \frac{\sin{\theta_2}}{\nu_2}\).
+where $\theta$ are related to the analog of Snell's law through the frequency: \(\frac{\sin{\theta_1}}{\nu_1} = \frac{\sin{\theta_2}}{\nu_2}\). Here $\nu$is the frequency of the phonon in each material.
 
 Transmission can be simplified using acoustic impendances:
 \begin{equation}
