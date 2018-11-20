@@ -38,7 +38,7 @@ facets,\cite{Norris:2013,Hannah2015,Han:2017} and the chemical details
 of the
 environment.\cite{Ge2006,Schmidt:2010,Park2012,Ong:2013rt,Ong:2014yq,Wilhelmsen2015,Giri:2016,Park2016,Bhanushali:2017,Yadav:2017}
 Particle morphology may also play a role in heat transfer out of
-nanostructures.  This is the central question of this work -- all
+nanostructures.  This is the central question of this chapter -- all
 other things being equal, will different particle morphologies yield
 different heat transfer properties to the solvent?
 
@@ -76,10 +76,10 @@ One possible explanation for an empirical relationship like
 Eq. (\ref{Tascini}) is that there is a significant contribution to
 interfacial thermal conductance that depends on the surface area to
 volume ratio, suggesting a large role for the surface atoms. In 
-previous work, the thermal conductance out of chemically-modified gold
+Chapter 2, the thermal conductance out of chemically-modified gold
 surfaces was examined via reverse nonequilibrium molecular dynamics
 (RNEMD). \cite{kuang:AuThl,Stocker:2014qq,Stocker2016} %add citation
-In these studies, surfactants attached to the gold surfaces contained
+In that chapter, surfactants attached to the gold surfaces contained
 a strong gold -- sulfur interaction that acted as a bridge for
 vibrational energy to travel to the ligand.  Although the presence and
 density of the ligand layer has a large effect on the interfacial
@@ -340,7 +340,7 @@ bonds.\cite{Jorgensen98a} The interactions between Au atoms and atoms
 on the hexane molecules were fit to a pairwise Lennard-Jones
 potentials based on a study by Hautman and Klein for Au(111)
 surfaces.\cite{hautman:4994} Details of the interaction potentials are
-identical to previous work and previous chapter on heat 
+identical to previous work and the previous chapter on heat 
 transport for thiolate-protected gold nanospheres.\cite{Stocker2016}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -391,9 +391,9 @@ were carried out with the open source molecular dynamics package,
 OpenMD.\cite{openmd,OOPSE}
 
 Five separate configurations for each system size were simulated to
-provide statistical independence of the hexane packing.  Thermal
+provide statistical independence of the hexane packing.  For the non-periodic systems, thermal
 conductance was calculated using the same methods found in Stocker
-\textit{et al.}\cite{Stocker2016} and in the previous chapter for the non-periodic systems.
+\textit{et al.}\cite{Stocker2016} and in the previous chapter.
 Planar systems follow Eq. \ref{planarG}, where the temperature difference across the interface is taken from the outermost gold layer and the first layer of solvent. 
 
 \section{Results and Discussion}
@@ -485,7 +485,7 @@ Au(111) surface presents gold atoms with nine surrounding metallic
 atoms ($\text{CN} = 9$) to the solvent, while the Au(100) facet
 surface exposes atoms with $\text{CN}=8$.  Au(110) displays a
 corrugated surface where the two outer layers of atoms have
-$\text{CN}=7$ and $\text{CN}=11$, respectively (displayed in \ref{fig:facets-cn}).
+$\text{CN}=7$ and $\text{CN}=11$, respectively (displayed in Fig. \ref{fig:facets-cn}).
 Both of the (110) surface atoms coordination environments
 approach the surface close enough to interact with the solvent atoms.
 
@@ -519,7 +519,7 @@ Cuboctahedra & 0 & $\frac{1}{r\ell} \left(\frac{3\sqrt{2} + 2\sqrt{6}}{3+\sqrt{3
 In Table \ref{tab:undercoord}, the surface density of
 undercoordinated atoms for a set of ideal geometries are provided.
 The population
-density for the sphere systems in the large radius limit are taken by
+density for the spherical systems in the large radius limit are taken by
 averaging the surface densities for ideal gold nanospheres with radii
 of 95--100 \AA.  For other FCC-based nanoparticles, it is relatively
 simple to convert these surface densities using the lattice constant
@@ -528,6 +528,15 @@ of gold, $\ell = 4.08 \text{~\AA}$.
 Planar facets have a fixed population density based on the number of
 exposed undercoordinated atoms and the physical dimensions of the
 exposed facet area in terms of the lattice constant.
+In an ideal icosahedral nanoparticle with $n$ shells, the surface
+population density is computed using the number of vertex, edge, and
+face atoms,
+\begin{align}
+n_\text{vertex} & = 12, \\
+n_\text{edge} & = 30 (n -1), \\
+n_\text{face} & = 10 n^2 - 30 n + 20.
+\end{align}
+
 \begin{figure}[!htb]
         \includegraphics[width=5in]{figures/facets-cn.pdf}
         \caption{Locations of undercoordinated atoms on common gold
@@ -541,14 +550,6 @@ exposed facet area in terms of the lattice constant.
           CN=7 and buried atoms with CN=11. }
         \label{fig:facets-cn}
 \end{figure}
-In an ideal icosahedral nanoparticle with $n$ shells, the surface
-population density is computed using the number of vertex, edge, and
-face atoms,
-\begin{align}
-n_\text{vertex} & = 12, \\
-n_\text{edge} & = 30 (n -1), \\
-n_\text{face} & = 10 n^2 - 30 n + 20.
-\end{align}
 The number of shells, $n$, is also directly related to the particle
 edge length ($a$), radius ($r$), and surface area ($A$) of the
 icosahedral particle,
@@ -720,7 +721,7 @@ states. In the spheres, the higher frequency contribution
 states for undercoordinated atoms with CN=8 or 7 (see 
 Fig. \ref{fig:cn-spect}).
 
-\subsection{A Brief Aside}
+\subsection{A Brief Aside on Local Orientational Ordering}
 The icosahedra still have perturbed spectra even four layers into the
 particles. Icosahedral particles grow around a core with
 $\mathrm{I}_h$ symmetry, and the local environment around the atoms
