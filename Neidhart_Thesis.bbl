@@ -1,4 +1,4 @@
-\begin{thebibliography}{115}
+\begin{thebibliography}{147}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,12 @@ J.~Alper and K.~Hamad-Schifferli.
 \newblock \emph{Langmuir}, 26\penalty0 (6):\penalty0 3786--3789, 2010.
 \newblock \doi{10.1021/la904855s}.
 \newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/la904855s}.
+
+\bibitem[andf M.~Y.~Shelley et~al.(2001)andf M.~Y.~Shelley, Reeder,
+  Bandyopadhyay, and Klein]{Klein01}
+J.~C.~S. andf M.~Y.~Shelley, R.~C. Reeder, S.~Bandyopadhyay, and M.~L. Klein.
+\newblock A coarse grain model for phospholipid simulations.
+\newblock \emph{J. Phys. Chem. B}, 105:\penalty0 4464--4470, 2001.
 
 \bibitem[Backer et~al.(2005)Backer, Lowe, Hoefsloot, and Iedema]{Backer:2005sf}
 J.~A. Backer, C.~P. Lowe, H.~C.~J. Hoefsloot, and P.~D. Iedema.
@@ -65,6 +71,16 @@ S.~E. Baltazar, A.~H. Romero, J.~L. Rodriguez-Lopez, H.~Terrones, and
   systems.
 \newblock \emph{Comp. Mat. Sci.}, 37:\penalty0 526--536, 2006.
 \newblock \doi{DOI 10.1016/j.commatsci.2005.12.028}.
+
+\bibitem[Banerjee et~al.(2012)Banerjee, Montgomery, and
+  Gasc{\'{o}}n]{Banerjee2012}
+S.~Banerjee, J.~A. Montgomery, and J.~A. Gasc{\'{o}}n.
+\newblock {A QM/MM approach for the study of monolayer-protected gold
+  clusters}.
+\newblock \emph{Journal of Materials Science}, 47\penalty0 (21):\penalty0
+  7686--7692, 2012.
+\newblock ISSN 00222461.
+\newblock \doi{10.1007/s10853-012-6356-8}.
 
 \bibitem[Becke(1993)]{Becke:1993kq}
 A.~D. Becke.
@@ -124,6 +140,44 @@ J.~Che, T.~Cagin, W.~Deng, and W.~A.~G. III.
 G.~Chen.
 \newblock \emph{Nanoscale Energy Transport and Conversion}.
 \newblock Oxford University Press, New York, 2005.
+
+\bibitem[Chen and H{\"{a}}kkinen(2013)]{Chen2013}
+X.~Chen and H.~H{\"{a}}kkinen.
+\newblock {Protected but accessible: Oxygen activation by a
+  calixarene-stabilized undecagold cluster}.
+\newblock \emph{Journal of the American Chemical Society}, 135\penalty0
+  (35):\penalty0 12944--12947, 2013.
+\newblock ISSN 00027863.
+\newblock \doi{10.1021/ja4059074}.
+
+\bibitem[Cui et~al.(2014)Cui, Zhao, and Song]{Cui2014}
+M.~Cui, Y.~Zhao, and Q.~Song.
+\newblock {Synthesis, optical properties and applications of ultra-small
+  luminescent gold nanoclusters}.
+\newblock \emph{TrAC - Trends in Analytical Chemistry}, 57:\penalty0 73--82,
+  2014.
+\newblock ISSN 18793142.
+\newblock \doi{10.1016/j.trac.2014.02.005}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.trac.2014.02.005}.
+
+\bibitem[Dong et~al.(2011)Dong, Chen, Ye, Kikkawa, and Murray]{Dong2011}
+A.~Dong, J.~Chen, X.~Ye, J.~M. Kikkawa, and C.~B. Murray.
+\newblock {Enhanced thermal stability and magnetic properties in NaCl-Type
+  FePt-MnO binary nanocrystal superlattices}.
+\newblock \emph{Journal of the American Chemical Society}, 133\penalty0
+  (34):\penalty0 13296--13299, 2011.
+\newblock ISSN 00027863.
+\newblock \doi{10.1021/ja2057314}.
+
+\bibitem[Ehrler et~al.(2012)Ehrler, Walker, B{\"{o}}hm, Wilson, Vaynzof,
+  Friend, and Greenham]{Ehrler2012}
+B.~Ehrler, B.~J. Walker, M.~L. B{\"{o}}hm, M.~W. Wilson, Y.~Vaynzof, R.~H.
+  Friend, and N.~C. Greenham.
+\newblock {In situ measurement of exciton energy in hybrid singlet-fission
+  solar cells}.
+\newblock \emph{Nature Communications}, 3\penalty0 (May), 2012.
+\newblock ISSN 20411723.
+\newblock \doi{10.1038/ncomms2012}.
 
 \bibitem[Ercolessi et~al.(1991)Ercolessi, Andreoni, and Tosatti]{Ercolessi1991}
 F.~Ercolessi, W.~Andreoni, and E.~Tosatti.
@@ -225,6 +279,21 @@ K.~F. Graff.
 \newblock \emph{Wave Motion in Elastic Solids}.
 \newblock Dover, New York, 1975.
 
+\bibitem[Gur et~al.(2005)Gur, Fromer, Geier, and Alivisatos]{Gur2005}
+I.~Gur, N.~a. Fromer, M.~L. Geier, and A.~P. Alivisatos.
+\newblock {Air-Stable All-Inorganic Nanocrystal Solar Cells Processed from
+  Solution}.
+\newblock \emph{Science}, 310\penalty0 (October):\penalty0 462--466, 2005.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.1117908}.
+
+\bibitem[H{\"{a}}kkinen(2012)]{Hakkinen2012}
+H.~H{\"{a}}kkinen.
+\newblock The gold–sulfur interface at the nanoscale.
+\newblock \emph{Nature Chemistry}, 4:\penalty0 443, 2012.
+\newblock \doi{10.1038/nchem.1352}.
+\newblock URL \url{https://doi.org/10.1038/nchem.1352}.
+
 \bibitem[Han et~al.(2017)Han, Schlawitschek, Katyal, Stephan,
   Gambaryan-Roisman, Leroy, and M{\"{u}}ller-Plathe]{Han:2017}
 H.~Han, C.~Schlawitschek, N.~Katyal, P.~Stephan, T.~Gambaryan-Roisman,
@@ -256,6 +325,16 @@ H.~Harikrishna, W.~A. Ducker, and S.~T. Huxtable.
 \newblock \doi{http://dx.doi.org/10.1063/1.4812749}.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/apl/102/25/10.1063/1.4812749}.
+
+\bibitem[Hasselman and Johnson(1987)]{Hasselman}
+D.~Hasselman and L.~F. Johnson.
+\newblock {Effective Thermal Conductivity of Composites with Interfacial
+  Thermal Barrier Resistance}.
+\newblock \emph{Journal of Composite Materials}, 21\penalty0 (6):\penalty0
+  508--515, 1987.
+\newblock ISSN 0021-9983.
+\newblock \doi{10.1177/002199838702100602}.
+\newblock URL \url{http://jcm.sagepub.com/cgi/doi/10.1177/002199838702100602}.
 
 \bibitem[Hautman and Klein(1989)]{hautman:4994}
 J.~Hautman and M.~L. Klein.
@@ -328,6 +407,25 @@ H.~Jiang, E.~M. Myshakin, K.~D. Jordan, and R.~P. Warzinski.
 \newblock ISSN 1520-6106.
 \newblock \doi{10.1021/jp802942v}.
 
+\bibitem[Jin(2010)]{Jin2010}
+R.~Jin.
+\newblock Quantum sized, thiolate-protected gold nanoclusters.
+\newblock \emph{Nanoscale}, 2:\penalty0 343--362, 2010.
+\newblock \doi{10.1039/B9NR00160C}.
+\newblock URL \url{http://dx.doi.org/10.1039/B9NR00160C}.
+
+\bibitem[Johnson(1989)]{Johnson89}
+R.~A. Johnson.
+\newblock Alloy models with the embedded-atom method.
+\newblock \emph{Phys. Rev. B}, 39\penalty0 (17):\penalty0 12554, 1989.
+
+\bibitem[Jorgensen and Jenson(1998)]{Jorgensen1998}
+W.~Jorgensen and C.~Jenson.
+\newblock Temperature dependence of tip3p, spc, and tip4p water from npt monte
+  carlo simulations: Seeking temperatures of maximum density.
+\newblock \emph{Journal of Computational Chemistry}, 19\penalty0 (10):\penalty0
+  1179--1186, 1998.
+
 \bibitem[Jorgensen(1998)]{Jorgensen98a}
 W.~L. Jorgensen.
 \newblock Opls force fields.
@@ -377,12 +475,32 @@ C.~Kittel.
 \newblock \emph{Introduction to Solid State Physics}.
 \newblock JohnWiley and Sons, New York, 2005.
 
+\bibitem[Ko and Murray(2011)]{Ko2011}
+D.~K. Ko and C.~B. Murray.
+\newblock {Probing the fermi energy level and the density of states
+  distribution in PbTe nanocrystal (Quantum Dot) solids by
+  temperature-dependent thermopower measurements}.
+\newblock \emph{ACS Nano}, 5\penalty0 (6):\penalty0 4810--4817, 2011.
+\newblock ISSN 19360851.
+\newblock \doi{10.1021/nn2007817}.
+
 \bibitem[Kohanoff et~al.(2005)Kohanoff, Caro, and Finnis]{Kohanoff:2005qm}
 J.~Kohanoff, A.~Caro, and M.~Finnis.
 \newblock An isothermal-isobaric langevin thermostat for simulating
   nanoparticles under pressure: Application to au clusters.
 \newblock \emph{ChemPhysChem}, 6:\penalty0 1848--1852, 2005.
 \newblock \doi{DOI 10.1002/cphc.200400607}.
+
+\bibitem[Kovalenko et~al.(2010)Kovalenko, Spokoyny, Lee, Scheele, Weber,
+  Perera, Landry, and Talapin]{Kovalenko2010}
+M.~V. Kovalenko, B.~Spokoyny, J.~S. Lee, M.~Scheele, A.~Weber, S.~Perera,
+  D.~Landry, and D.~V. Talapin.
+\newblock {Semiconductor nanocrystals functionalized with antimony telluride
+  zintl ions for nanostructured thermoelectrics}.
+\newblock \emph{Journal of the American Chemical Society}, 132\penalty0
+  (19):\penalty0 6686--6695, 2010.
+\newblock ISSN 00027863.
+\newblock \doi{10.1021/ja909591x}.
 
 \bibitem[Kuang and Gezelter(2011{\natexlab{a}})]{Kuang:2011ef}
 S.~Kuang and J.~D. Gezelter.
@@ -437,6 +555,25 @@ M.~Liu, Y.~Ma, and R.~Y. Wang.
 \newblock ISSN 1936086X.
 \newblock \doi{10.1021/acsnano.5b05085}.
 
+\bibitem[Lopez-Acevedo et~al.(2010)Lopez-Acevedo, Kacprzak, Akola, and
+  H{\"{a}}kkinen]{Lopez-Acevedo2010}
+O.~Lopez-Acevedo, K.~A. Kacprzak, J.~Akola, and H.~H{\"{a}}kkinen.
+\newblock {Quantum size effects in ambient CO oxidation catalysed by
+  ligand-protected gold clusters}.
+\newblock \emph{Nature Chemistry}, 2\penalty0 (4):\penalty0 329--334, 2010.
+\newblock ISSN 17554330.
+\newblock \doi{10.1038/nchem.589}.
+
+\bibitem[Lopez-Acevedo et~al.(2011)Lopez-Acevedo, Clayborne, and
+  H{\"{a}}kkinen]{Lopez-Acevedo2011}
+O.~Lopez-Acevedo, P.~A. Clayborne, and H.~H{\"{a}}kkinen.
+\newblock {Electronic structure of gold, aluminum, and gallium superatom
+  complexes}.
+\newblock \emph{Physical Review B - Condensed Matter and Materials Physics},
+  84\penalty0 (3):\penalty0 1--6, 2011.
+\newblock ISSN 10980121.
+\newblock \doi{10.1103/PhysRevB.84.035434}.
+
 \bibitem[Losego et~al.(2012)Losego, Grady, Sottos, Cahill, and
   Braun]{Losego:2012fr}
 M.~D. Losego, M.~E. Grady, N.~R. Sottos, D.~G. Cahill, and P.~V. Braun.
@@ -453,6 +590,15 @@ N.~Lubna, G.~Kamath, J.~J. Potoff, N.~Rai, and J.~I. Siepmann.
   2005.
 \newblock \doi{10.1021/jp0549125}.
 \newblock URL \url{http://pubs.acs.org/doi/abs/10.1021/jp0549125}.
+
+\bibitem[Luedtke and Landman(1996)]{Luedtke1996}
+W.~D. Luedtke and U.~Landman.
+\newblock {Structure, dynamics, and thermodynamics of passivated gold
+  nanocrystallites and their assemblies}.
+\newblock \emph{Journal of Physical Chemistry{\textregistered}}, 100\penalty0
+  (32):\penalty0 13323--13329, 1996.
+\newblock ISSN 00223654.
+\newblock \doi{10.1021/jp961721g}.
 
 \bibitem[Luedtke and Landman(1998)]{landman:1998}
 W.~D. Luedtke and U.~Landman.
@@ -519,6 +665,30 @@ F.~Meng, M.~Elsahati, J.~Liu, and R.~F. Richards.
 \newblock \doi{10.1063/1.4983753}.
 \newblock URL \url{http://aip.scitation.org/doi/10.1063/1.4983753}.
 
+\bibitem[Meyer and Allinger(1978)]{Meyer1978}
+A.~Meyer and N.~Allinger.
+\newblock {Conformational analysis---CX: Applications of the molecular
+  mechanics method to organic halides}.
+\newblock \emph{Tetrahedron}, 31\penalty0 (17):\penalty0 {1971 -- 1978{\}},
+  1978.
+\newblock \doi{10.1016/0040-4020(75)80182-7}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0040402075801827{\%}7D}.
+
+\bibitem[Meyer(1996)]{Meyer96}
+H.~W. Meyer.
+\newblock Pretansition-ripples in bilayers of dipalmitoylphosphatidylcholine:
+  Undulation or periodic segments? a freeze-fracture study.
+\newblock \emph{Biochim. Biophys. Acta.}, 1302:\penalty0 221--245, 1996.
+
+\bibitem[Minnich and Chen(2007)]{Minnich2007}
+A.~Minnich and G.~Chen.
+\newblock {Modified effective medium formulation for the thermal conductivity
+  of nanocomposites}.
+\newblock \emph{Applied Physics Letters}, 91\penalty0 (7):\penalty0 1--4, 2007.
+\newblock ISSN 00036951.
+\newblock \doi{10.1063/1.2771040}.
+
 \bibitem[Monachon et~al.(2016)Monachon, Weber, and Dames]{Monachon2016}
 C.~Monachon, L.~Weber, and C.~Dames.
 \newblock {Thermal Boundary Conductance :A Materials Science Perspective}.
@@ -551,11 +721,22 @@ A.~V. Myshlyavtsev and P.~V. Stishenko.
 \newblock ISSN 09295607.
 \newblock \doi{10.1007/s10450-013-9519-2}.
 
-\bibitem[Neidhart and Gezelter(2017)]{Neidhart}
+\bibitem[Neidhart and Gezelter(2017{\natexlab{a}})]{Neidhart}
 S.~M. Neidhart and J.~D. Gezelter.
 \newblock {Thermal Transport is Influenced by Nanoparticle Morphology: A
   Molecular Dynamics Study}.
-\newblock \emph{J. Phys. Chem. C}, 122:\penalty0 1430--1436, 2017.
+\newblock \emph{J. Phys. Chem. C}, 122:\penalty0 1430--1436,
+  2017{\natexlab{a}}.
+\newblock ISSN 1932-7447.
+\newblock \doi{10.1021/acs.jpcc.7b12362}.
+\newblock URL \url{http://pubs.acs.org/doi/10.1021/acs.jpcc.7b12362}.
+
+\bibitem[Neidhart and Gezelter(2017{\natexlab{b}})]{Neidhart2017}
+S.~M. Neidhart and J.~D. Gezelter.
+\newblock {Thermal Transport is Influenced by Nanoparticle Morphology: A
+  Molecular Dynamics Study}.
+\newblock \emph{The Journal of Physical Chemistry C}, page acs.jpcc.7b12362,
+  2017{\natexlab{b}}.
 \newblock ISSN 1932-7447.
 \newblock \doi{10.1021/acs.jpcc.7b12362}.
 \newblock URL \url{http://pubs.acs.org/doi/10.1021/acs.jpcc.7b12362}.
@@ -621,6 +802,27 @@ J.~Picalek and J.~Kolafa.
 \newblock ISSN 0892-7022.
 \newblock \doi{10.1080/08927020802680703}.
 
+\bibitem[Podsiadlo et~al.(2010)Podsiadlo, Krylova, Lee, Critchley, Gosztola,
+  Talapin, Ashby, and Shevchenko]{Podsiadlo2010}
+P.~Podsiadlo, G.~Krylova, B.~Lee, K.~Critchley, D.~J. Gosztola, D.~V. Talapin,
+  P.~D. Ashby, and E.~V. Shevchenko.
+\newblock {The role of order, nanocrystal size, and capping ligands in the
+  collective mechanical response of three-dimensional nanocrystal solids}.
+\newblock \emph{Journal of the American Chemical Society}, 132\penalty0
+  (26):\penalty0 8953--8960, 2010.
+\newblock ISSN 00027863.
+\newblock \doi{10.1021/ja100464a}.
+
+\bibitem[Pohjolainen et~al.(2016)Pohjolainen, Chen, Malola, Groenhof, and
+  H{\"{a}}kkinen]{Pohjolainen2016}
+E.~Pohjolainen, X.~Chen, S.~Malola, G.~Groenhof, and H.~H{\"{a}}kkinen.
+\newblock {A Unified AMBER-Compatible Molecular Mechanics Force Field for
+  Thiolate-Protected Gold Nanoclusters}.
+\newblock \emph{Journal of Chemical Theory and Computation}, 12\penalty0
+  (3):\penalty0 1342--1350, 2016.
+\newblock ISSN 15499626.
+\newblock \doi{10.1021/acs.jctc.5b01053}.
+
 \bibitem[Prasher(2000)]{Prasher2000}
 P.~E. Prasher, Ravi S.~Phelan.
 \newblock {Prediction of thermal boundary resistance}.
@@ -653,6 +855,12 @@ P.~Reddy, K.~Castelino, and A.~Majumdar.
 \newblock \doi{http://dx.doi.org/10.1063/1.2133890}.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/apl/87/21/10.1063/1.2133890}.
+
+\bibitem[Sardar et~al.(2009)Sardar, Funston, Mulvaney, and Murray]{Sardar2009}
+R.~Sardar, A.~M. Funston, P.~Mulvaney, and R.~W. Murray.
+\newblock Gold nanoparticles: Past, present, and future.
+\newblock \emph{Langmuir}, 25:\penalty0 13840 -- 13851, 2009.
+\newblock \doi{10.1021/la9019475}.
 
 \bibitem[Sauceda and Garz{\'{o}}n(2015)]{Sauceda2015}
 H.~E. Sauceda and I.~L. Garz{\'{o}}n.
@@ -733,6 +941,14 @@ N.~Shenogina, R.~Godawat, P.~Keblinski, and S.~Garde.
   2009.
 \newblock \doi{10.1103/PhysRevLett.102.156101}.
 
+\bibitem[Shevchenko et~al.(2006)Shevchenko, Talapin, Kotov, O'Brien, and
+  Murray]{Shevchenko2006}
+E.~V. Shevchenko, D.~V. Talapin, N.~A. Kotov, S.~O'Brien, and C.~B. Murray.
+\newblock {Structural diversity in binary nanoparticle superlattices}.
+\newblock \emph{Nature}, 439\penalty0 (7072):\penalty0 55--59, 2006.
+\newblock ISSN 14764687.
+\newblock \doi{10.1038/nature04414}.
+
 \bibitem[Shin et~al.(2010)Shin, Kaviany, Desai, and Bonner]{Shin:2010sf}
 S.~Shin, M.~Kaviany, T.~Desai, and R.~Bonner.
 \newblock Roles of atomic restructuring in interfacial phonon transport.
@@ -799,12 +1015,53 @@ R.~J. Stoner and H.~J. Maris.
 \newblock \doi{10.1103/PhysRevB.48.16373}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.48.16373}.
 
+\bibitem[Sun and Murray(1999)]{Sun1999}
+S.~Sun and C.~B. Murray.
+\newblock {Synthesis of monodisperse cobalt nanocrystals and their assembly
+  into magnetic superlattices (invited)}.
+\newblock \emph{Journal of Applied Physics}, 85\penalty0 (8):\penalty0
+  4325--4330, 1999.
+\newblock ISSN 0021-8979.
+\newblock \doi{10.1063/1.370357}.
+\newblock URL \url{http://aip.scitation.org/doi/10.1063/1.370357}.
+
 \bibitem[Swartz and Pohl(1989)]{Swartz:1989uq}
 E.~T. Swartz and R.~O. Pohl.
 \newblock Thermal boundary resistance.
 \newblock \emph{Rev. Mod. Phys.}, 61:\penalty0 605--668, Jul 1989.
 \newblock \doi{10.1103/RevModPhys.61.605}.
 \newblock URL \url{http://link.aps.org/doi/10.1103/RevModPhys.61.605}.
+
+\bibitem[Talapin and Murray(2005)]{Talapin2005}
+D.~V. Talapin and C.~B. Murray.
+\newblock {PbSe nanocrystal solids for n- and p-channel thin film field-effect
+  transistors}.
+\newblock \emph{Science (New York, N.Y.)}, 310\penalty0 (5745):\penalty0 86--9,
+  2005.
+\newblock ISSN 1095-9203.
+\newblock \doi{10.1126/science.1116703}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/16210533}.
+
+\bibitem[Talapin et~al.(2010)Talapin, Lee, Kovalenko, and
+  Shevchenko]{Talapin2010}
+D.~V. Talapin, J.-S. Lee, M.~V. Kovalenko, and E.~V. Shevchenko.
+\newblock {Prospects of {\{}Colloidal{\}} {\{}Nanocrystals{\}} for
+  {\{}Electronic{\}} and {\{}Optoelectronic{\}} {\{}Applications{\}}}.
+\newblock \emph{Chemical Reviews}, 110\penalty0 (1):\penalty0 389--458, 2010.
+\newblock \doi{10.1021/cr900137k}.
+\newblock URL \url{http://dx.doi.org/10.1021/cr900137k}.
+
+\bibitem[Tang et~al.(2011)Tang, Kemp, Hoogland, Jeong, Liu, Levina, Furukawa,
+  Wang, Debnath, Cha, Chou, Fischer, Amassian, Asbury, and Sargent]{Tang2011}
+J.~Tang, K.~W. Kemp, S.~Hoogland, K.~S. Jeong, H.~Liu, L.~Levina, M.~Furukawa,
+  X.~Wang, R.~Debnath, D.~Cha, K.~W. Chou, A.~Fischer, A.~Amassian, J.~B.
+  Asbury, and E.~H. Sargent.
+\newblock {Colloidal-quantum-dot photovoltaics using atomic-ligand
+  passivation}.
+\newblock \emph{Nature Materials}, 10\penalty0 (10):\penalty0 765--771, 2011.
+\newblock ISSN 14764660.
+\newblock \doi{10.1038/nmat3118}.
+\newblock URL \url{http://dx.doi.org/10.1038/nmat3118}.
 
 \bibitem[Tascini et~al.(2017)Tascini, Armstrong, Chiavazzo, Fasano, Asinari,
   and Bresme]{Tascini2016}
@@ -834,6 +1091,15 @@ Z.~Tian, A.~Marconnet, and G.~Chen.
 \newblock \doi{http://dx.doi.org/10.1063/1.4921758}.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/apl/106/21/10.1063/1.4921758}.
+
+\bibitem[Tsukuda(2012)]{Tsukuda2012}
+T.~Tsukuda.
+\newblock Toward an atomic-level understanding of size-specific properties of
+  protected and stabilized gold clusters.
+\newblock \emph{Bulletin of the Chemical Society of Japan}, 85\penalty0
+  (2):\penalty0 151--168, 2012.
+\newblock \doi{10.1246/bcsj.20110227}.
+\newblock URL \url{https://doi.org/10.1246/bcsj.20110227}.
 
 \bibitem[Vardeman and Gezelter(2008)]{Vardeman:2008fk}
 C.~F. Vardeman and J.~D. Gezelter.
@@ -874,6 +1140,27 @@ R.~Vogelsang, G.~Hoheisel, and M.~Luckas.
 \newblock \doi{10.1080/00268978800100813}.
 \newblock URL
   \url{http://www.tandfonline.com/doi/abs/10.1080/00268978800100813}.
+
+\bibitem[Walter et~al.(2008)Walter, Akola, Lopez-Acevedo, Jadzinsky, Calero,
+  Ackerson, Whetten, Gronbeck, and Hakkinen]{Walter2008}
+M.~Walter, J.~Akola, O.~Lopez-Acevedo, P.~D. Jadzinsky, G.~Calero, C.~J.
+  Ackerson, R.~L. Whetten, H.~Gronbeck, and H.~Hakkinen.
+\newblock {A unified view of ligand-protected gold clusters as superatom
+  complexes}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 105\penalty0
+  (27):\penalty0 9157--9162, 2008.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.0801001105}.
+\newblock URL \url{http://www.pnas.org/cgi/doi/10.1073/pnas.0801001105}.
+
+\bibitem[Wang et~al.(2008)Wang, Feser, Lee, Talapin, Segalman, and
+  Majumdar]{Wang2008}
+R.~Y. Wang, J.~P. Feser, J.~S. Lee, D.~V. Talapin, R.~Segalman, and
+  A.~Majumdar.
+\newblock {Enhanced thermopower in PbSe nanocrystal quantum dot superlattices}.
+\newblock \emph{Nano Letters}, 8\penalty0 (8):\penalty0 2283--2288, 2008.
+\newblock ISSN 15306984.
+\newblock \doi{10.1021/nl8009704}.
 
 \bibitem[Wang et~al.(2004)Wang, Teitel, and Dellago]{Wang2004}
 Y.~Wang, S.~Teitel, and C.~Dellago.

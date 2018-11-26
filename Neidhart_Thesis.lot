@@ -2,16 +2,16 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Constitutive and balance equations related to the transport coefficients of diffusivity, $D$, thermal conductivity, $\lambda $, and shear viscosity, $\eta $. }}{16}{table.1.1}
  {\vskip 0.4em} 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Non-bonded interaction parameters (including cross interactions with Au atoms). }}{28}{table.2.1}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Non-bonded interaction parameters (including cross interactions with Au atoms). }}{29}{table.2.1}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {2.2}{\ignorespaces Bond parameters for the ligand molecules. }}{29}{table.2.2}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Bond parameters for the ligand molecules. }}{31}{table.2.2}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {2.3}{\ignorespaces Bend angle parameters. The central atom in the bend is atom $j$.}}{32}{table.2.3}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Bend angle parameters. The central atom in the bend is atom $j$.}}{33}{table.2.3}
  {\vskip 0.4em} 
-\contentsline {table}{\numberline {2.4}{\ignorespaces The central atoms for each torsion are atoms $j$ and $k$, and wildcard atom types are denoted by ``X''. All $c_n$ parameters have units of kcal/mol. The torsions around carbon-carbon double bonds are harmonic and assume a trans (180$\ensuremath {^\circ }$) geometry. The force constant for this torsion is given in $\mathrm {kcal\nobreakspace {}mol\nobreakspace {}}^{-1}\mathrm {degrees}^{-2}$. }}{33}{table.2.4}
+\contentsline {table}{\numberline {2.4}{\ignorespaces The central atoms for each torsion are atoms $j$ and $k$, and wildcard atom types are denoted by ``X''. All $c_n$ parameters have units of kcal/mol. The torsions around carbon-carbon double bonds are harmonic and assume a trans (180$\ensuremath {^\circ }$) geometry. The force constant for this torsion is given in $\mathrm {kcal\nobreakspace {}mol\nobreakspace {}}^{-1}\mathrm {degrees}^{-2}$. }}{34}{table.2.4}
  {\vskip 0.4em} 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Composition of the solvated planar facet systems and the physical extent of the gold slabs ($L_x$, $L_y$, and $L_z$). The hexane molecules occupy the remainder of a 100 \r A\ box (length measured along the $z$-axis). }}{60}{table.3.1}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Composition of the solvated planar facet systems and the physical extent of the gold slabs ($L_x$, $L_y$, and $L_z$). The hexane molecules occupy the remainder of a 100 \r A\ box (length measured along the $z$-axis). }}{61}{table.3.1}
  {\vskip 0.4em} 
 \contentsline {table}{\numberline {3.2}{\ignorespaces Composition of the solvated nanosphere simulations. }}{61}{table.3.2}
  {\vskip 0.4em} 
@@ -25,3 +25,19 @@
  {\vskip 0.4em} 
 \contentsline {table}{\numberline {3.7}{\ignorespaces Parameters of the Model in Eq. (\ref {eq:lin-fit}). }}{83}{table.3.7}
  {\vskip 0.4em} 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Composition of a single nanoparticle and non-bonded interactions parameters for the interaction with gold. }}{92}{table.4.1}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Harmonic bond parameters for different components in the simulated systems. The first part of the table are the atoms in the staple motif within the nanoparticle. The latter sections are the solvents: toluene and dichloromethane, respectively. }}{94}{table.4.2}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Bend angle parameters for a harmonic potential. The central atom in the bend is atom $j$. The table is structured with the particle staple motif in the first section, followed by the solvents: toluene and dichloromethane.}}{95}{table.4.3}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Composition of the pure liquid simulations with box dimensions and average lambda values with standard error from 5 simulations.}}{98}{table.4.4}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Composition of solvated nanoparticles for interfacial thermal conductivity simulations.}}{99}{table.4.5}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.6}{\ignorespaces Composition of nanoarray systems.}}{100}{table.4.6}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.7}{\ignorespaces The Hasselman and Johnson prediction for thermal conductivity of the \ce {Au144PET60} array using the gold thermal conductivity at 1500 K and 300 K. The array prediction for dichloromethane and toluene using the bulk thermal conductivity of each solvent.}}{106}{table.4.7}
+ {\vskip 0.4em} 
+\addvspace {10\p@ }

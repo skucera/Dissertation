@@ -4,48 +4,69 @@ The top-level auxiliary file: Neidhart_Thesis.aux
 A level-1 auxiliary file: chapters/Introduction.aux
 A level-1 auxiliary file: chapters/NPthiols.aux
 A level-1 auxiliary file: chapters/Morph.aux
+A level-1 auxiliary file: chapters/Arrays.aux
 The style file: abbrvnat.bst
 Database file #1: Neidhart_Thesis.bib
+Repeated entry---line 12713 of file Neidhart_Thesis.bib
+ : @article{Klein01
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 14122 of file Neidhart_Thesis.bib
+ : @article{Jorgensen1998
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 14874 of file Neidhart_Thesis.bib
+ : @article{Meyer96
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 16324 of file Neidhart_Thesis.bib
+ : @article{Johnson89
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 18035 of file Neidhart_Thesis.bib
+ : @article{Muller-plathe:2005
+ :                            ,
+I'm skipping whatever remains of this entry
 Warning--empty year in openmd
-You've used 115 entries,
+You've used 147 entries,
             2773 wiz_defined-function locations,
-            1535 strings with 31884 characters,
-and the built_in function-call counts, 61161 in all, are:
-= -- 5661
-> -- 3699
-< -- 45
-+ -- 1250
-- -- 1129
-* -- 5697
-:= -- 9623
-add.period$ -- 537
-call.type$ -- 115
-change.case$ -- 718
-chr.to.int$ -- 109
-cite$ -- 231
-duplicate$ -- 2379
-empty$ -- 4638
-format.name$ -- 1296
-if$ -- 12684
-int.to.chr$ -- 7
+            1799 strings with 39891 characters,
+and the built_in function-call counts, 79714 in all, are:
+= -- 7423
+> -- 4883
+< -- 61
++ -- 1649
+- -- 1495
+* -- 7389
+:= -- 12525
+add.period$ -- 695
+call.type$ -- 147
+change.case$ -- 936
+chr.to.int$ -- 140
+cite$ -- 295
+duplicate$ -- 3068
+empty$ -- 5955
+format.name$ -- 1714
+if$ -- 16530
+int.to.chr$ -- 8
 int.to.str$ -- 1
-missing$ -- 119
-newline$ -- 774
-num.names$ -- 462
-pop$ -- 1067
+missing$ -- 151
+newline$ -- 996
+num.names$ -- 590
+pop$ -- 1385
 preamble$ -- 1
-purify$ -- 606
+purify$ -- 792
 quote$ -- 0
-skip$ -- 1773
+skip$ -- 2344
 stack$ -- 0
-substring$ -- 2764
-swap$ -- 168
-text.length$ -- 2
+substring$ -- 3656
+swap$ -- 235
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1240
+type$ -- 1592
 warning$ -- 1
-while$ -- 478
+while$ -- 627
 width$ -- 0
-write$ -- 1887
-(There was 1 warning)
+write$ -- 2427
+(There were 5 error messages)
