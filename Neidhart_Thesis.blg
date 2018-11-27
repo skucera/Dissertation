@@ -1,11 +1,13 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2018/MacPorts 2018.47642_7)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Neidhart_Thesis.aux
 A level-1 auxiliary file: chapters/Introduction.aux
 A level-1 auxiliary file: chapters/NPthiols.aux
 A level-1 auxiliary file: chapters/Morph.aux
 A level-1 auxiliary file: chapters/Arrays.aux
-The style file: abbrvnat.bst
+A level-1 auxiliary file: chapters/Conclusion.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Neidhart_Thesis.bib
 Repeated entry---line 12713 of file Neidhart_Thesis.bib
  : @article{Klein01
@@ -27,46 +29,50 @@ Repeated entry---line 18035 of file Neidhart_Thesis.bib
  : @article{Muller-plathe:2005
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--empty year in openmd
-You've used 147 entries,
-            2773 wiz_defined-function locations,
-            1799 strings with 39891 characters,
-and the built_in function-call counts, 79714 in all, are:
-= -- 7423
-> -- 4883
-< -- 61
-+ -- 1649
-- -- 1495
-* -- 7389
-:= -- 12525
-add.period$ -- 695
-call.type$ -- 147
-change.case$ -- 936
-chr.to.int$ -- 140
-cite$ -- 295
-duplicate$ -- 3068
-empty$ -- 5955
-format.name$ -- 1714
-if$ -- 16530
-int.to.chr$ -- 8
+Repeated entry---line 18438 of file Neidhart_Thesis.bib
+ : @article{Buffat1976
+ :                    ,
+I'm skipping whatever remains of this entry
+achemso 2018/02/05 v3.11a
+You've used 148 entries,
+            2536 wiz_defined-function locations,
+            1878 strings with 41178 characters,
+and the built_in function-call counts, 53810 in all, are:
+= -- 4522
+> -- 2922
+< -- 65
++ -- 1133
+- -- 989
+* -- 5951
+:= -- 7178
+add.period$ -- 290
+call.type$ -- 148
+change.case$ -- 2
+chr.to.int$ -- 4
+cite$ -- 148
+duplicate$ -- 2880
+empty$ -- 3797
+format.name$ -- 1207
+if$ -- 10529
+int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 151
-newline$ -- 996
-num.names$ -- 590
-pop$ -- 1385
+missing$ -- 0
+newline$ -- 916
+num.names$ -- 446
+pop$ -- 271
 preamble$ -- 1
-purify$ -- 792
+purify$ -- 0
 quote$ -- 0
-skip$ -- 2344
+skip$ -- 148
 stack$ -- 0
-substring$ -- 3656
-swap$ -- 235
-text.length$ -- 3
+substring$ -- 3479
+swap$ -- 2971
+text.length$ -- 298
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 1592
-warning$ -- 1
-while$ -- 627
+top$ -- 1
+type$ -- 1021
+warning$ -- 0
+while$ -- 555
 width$ -- 0
-write$ -- 2427
-(There were 5 error messages)
+write$ -- 1937
+(There were 6 error messages)
