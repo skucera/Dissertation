@@ -292,23 +292,23 @@ In addition to finding the thermal conductivity of a material at different box l
 where $C$ is a constant and $L$ is the length of the simulation box in the z-direction.\cite{Hannah2015} 
 
 \section{Results and Discussion}
-A prediction of the Hasselman and Johnson equation for a simple array of \ce{Au144PET60} particles was found through simulating each components of the equation.
+A prediction using Eq. \ref{eq:composite} for a simple array of \ce{Au144PET60} particles can be made using separate simulations of each of the components of the system.
 The bulk gold conductivity is compared to a previous study looking at gold particles in an array. 
-Ultimately, as found in previous work by Zanjani \textit{et al.}\cite{Zanjani2014} and Ong \textit{et al.}\cite{Ong:2014yq}, the volume fraction of the array is the essential piece to the predictive equation.
-While the interface is of a smaller importance to the prediction of the thermal conductivity of the material, the comparison of how the two solvents affect heat transport out of the nanoclusters confirms previous finding about solvent penetration being of paramount importance to thermal transport.
-In the following sections each of the individual components of the Hasselman and Johnson equation, as well as a prediction will be presented.
+Ultimately, as found in previous work by Zanjani \textit{et al.}\cite{Zanjani2014} and Ong \textit{et al.}\cite{Ong:2014yq}, the volume fraction of the array occupied by the particles is the essential piece of the predictive equation.
+While the interfacial details is of lesser importance to the prediction of the thermal conductivity of the material, the two solvents do alter heat transport out of the nanoclusters.
+This confirms previous findings regarding solvent penetration being paramount to thermal transport.
+In the following sections, each of the individual components of the Hasselman and Johnson equation, as well as the overall prediction will be presented.
 Additionally, thermal conductivity of the arrays will be discussed in comparison to the predicted results.
 
 \subsection{Bulk Solvent and Bulk Gold Conductivity}
-For the bulk dichloromethane and toluene solvent simulations, both where projected to a infinite thermal conductivity using Eq \ref{eq:lambda_inf}. 
-As seen in Fig. \ref{fig:inverselambda}, the box length dependent thermal conductivity is necessary for dichloromethane solvent.
-While the projection to an infinite box size using Eq. \ref{eq:lambda_inf} is not supported by the data for toluene and liquid gold.
+For the bulk dichloromethane and toluene solvent simulations, both were projected to infinite system size thermal conductivity using Eq \ref{eq:lambda_inf}. 
+As seen in Fig. \ref{fig:inverselambda}, the box length projections of thermal conductivity is necessary for the dichloromethane solvent.
+While projection to an infinite box size using Eq. \ref{eq:lambda_inf} is not required by the data for toluene and liquid gold.
 
 The thermal conductivity of the dichloromethane from the projection to an infinite box and the thermal conductivity average of the toluene boxes are shown in Fig. \ref{fig:lambda-bulk}.
-The thermal conductivity of dichloromethane is extrapolated to be 0.1084 $\pm$ 0.0021 W/mK and the conductivity of toluene is averaged to be 0.1082 $\pm$ 0.0054 W/mK.
-If composition of the array is primarily solvent, the Hasselman and Johnson equation will give nearly the same conductivity for the array due to the solvents having matching $
-\lambda$'s.
-It is important to note that the applied flux was small enough to not change the density of the solvent across the simulation box due to the `hot' and `cold' bins.
+The infite box thermal conductivity of dichloromethane is 0.1084 $\pm$ 0.0021 W/mK and the conductivity of toluene is averaged to be 0.1082 $\pm$ 0.0054 W/mK.
+If composition of the array is primarily solvent, the Hasselman and Johnson equation will therefor give nearly the same conductivity for the arrays.
+It is important to note that the applied flux was small enough so that the density of the solvent across the simulation box was uniform.
 
 \begin{figure}[h]
     \includegraphics[scale=0.5]{figures/inverselambda-solvent.pdf}
@@ -316,23 +316,24 @@ It is important to note that the applied flux was small enough to not change the
     \label{fig:inverselambda}
 \end{figure}
 
-\begin{figure}[h]
-    \includegraphics[scale=0.5]{figures/lambda-bulk.pdf}
-    \caption{ Bulk solvent $\lambda$ as a function of simulation box length in z displays the trend in dichloromethane with increasing box size. The dashed lines and open symbols are the projected $\lambda_{\infty}$ for dichloromethane and the average value for toluene.}
-    \label{fig:lambda-bulk}
-\end{figure}
+%\begin{figure}[h]
+%    \includegraphics[scale=0.5]{figures/lambda-bulk.pdf}
+%    \caption{ Bulk solvent $\lambda$ as a function of simulation box length in z displays the trend in dichloromethane with increasing box size. The dashed lines and open symbols are the projected $\lambda_{\infty}$ for dichloromethane and the average value for toluene.}
+%    \label{fig:lambda-bulk}
+%\end{figure}
 
-The bulk gold simulations are essential to finding $\lambda_p$ from Eq. \ref{eq:composite}. Previous work from Ong \textit{et al.}\cite{Ong:2014yq} used bulk gold thermal conductivity of 1.8 $\pm$ 0.3 W/mK from simulations of a bulk `fcc' gold at 300 K for simulations of a gold nanocrystal array.
+The bulk gold simulations are essential to finding $\lambda_p$. Previous work from Ong \textit{et al.}\cite{Ong:2014yq} used bulk gold thermal conductivity of 1.8 $\pm$ 0.3 W/mK from simulations of a bulk `fcc' gold at 300 K for simulations of a gold nanocrystal array.
 Their value will be compared to the conductivity of a bulk gold simulation at 1500 K, pass the melting point of the gold in QSC.
 QSC has a size dependent melting temperature and previous particles of slightly larger radius have been shown to display liquid like structures.\cite{Stocker2016}
 Experimentally, particles with $N<219$ have been seen with an approximate melting temperature of 500 K.\cite{Ercolessi1991}
 Additionally, it was proposed through extrapolating melting temperatures vs. diameter, that the \ce{Au144PET60} cluster (with a diameter of $\approx$ 18 \AA) would melt at approximately 600 K.\cite{Buffat1976}
-Hence the high temperature simulations of 100 \AA, 200 \AA, and 300 \AA\ box length in z were computed and displayed a $\lambda_p$ = 0.3787 $\pm$ 0.02 W/mK.
-The lower conductivity makes intuitive sense; when the gold melts the ballistic phonons traveling through the gold lattice are disrupted and the transmission of the phonons decreases.
+Hence the high temperature simulations of 100 \AA, 200 \AA, and 300 \AA\ box length in z were computed and displayed $\lambda_p$ = 0.3787 $\pm$ 0.02 W/mK.
+The lower conductivity makes some sense; when the gold melts, the ballistic phonons traveling through the gold lattice are disrupted, and the transmission of the phonons decreases.
 
 \subsection{Interfacial Thermal Conductivity}
-Experimentally difficult and computational complicated, the interfacial thermal conductance, $G$, for the particles was found in the two solvents.
-In an attempt to force the interfacial density of toluene in these single particle to more closely match the experimental bulk density, the solvent outside of the interfacial is about twice the density of bulk toluene.
+The interfacial thermal conductance, $G$, for the particles was found in both solvents.
+%In an attempt to force the interfacial density of toluene in these single particle to more closely match the experimental bulk density, 
+The solvent outside of the interfacial region is about twice the density of bulk toluene.
 This was not an issue with the dichloromethane systems. 
 Across the staple motif the thermal conductivity in the toluene was 11.37 $\pm$ 0.66 MW/m$^2$K, while in dichloromethane $G$ = 74.73 $\pm$ 4.28 MW/m$^2$K.
 
