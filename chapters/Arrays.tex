@@ -333,18 +333,18 @@ The lower conductivity makes some sense; when the gold melts, the ballistic phon
 \subsection{Interfacial Thermal Conductivity}
 The interfacial thermal conductance, $G$, for the particles was found in both solvents.
 %In an attempt to force the interfacial density of toluene in these single particle to more closely match the experimental bulk density, 
-The solvent outside of the interfacial region is about twice the density of bulk toluene.
+The solvent outside of the interfacial region of the system is about twice the density of bulk toluene to maintain the solvent near the interface at a normal density.
 This was not an issue with the dichloromethane systems. 
-Across the staple motif the thermal conductivity in the toluene was 11.37 $\pm$ 0.66 MW/m$^2$K, while in dichloromethane $G$ = 74.73 $\pm$ 4.28 MW/m$^2$K.
+Across the staple motif the thermal conductivity to the toluene was 11.37 $\pm$ 0.66 MW/m$^2$K, while to dichloromethane $G$ = 74.73 $\pm$ 4.28 MW/m$^2$K.
 
 %POSSIBLY SOMETHING ABOUT THE INTERPENETRATION OF SOLVENT
 \subsection{Prediction of Array Thermal Conductivity}
-Along with the components of the equation for bulk thermal conductivity, there is a geometric feature, $v_p$, the partial volume of the \ce{Au144PET60} particles in the array.
-The partial volume is approximated through the effective radius of the particles, which is taken from the average of the radius for only the gold atoms and the radius of the total particle.
+Along with the components of the equation for bulk thermal conductivity, $v_p$, the partial volume of the \ce{Au144PET60} particles in the array is required to predict array conductivity.
+The partial volume is approximated through the effective radius of the particles, which is taken from the average of the radius for only the outermost gold atoms and the radius of the total particle including the staple motif.
 This approximations gives a partial volume of 22.5\%.
 A total particle volume which includes all the ligand layer, allows for solvent to penetrate into the particle and would overestimate the volume fraction of the particles for a $v_p = 47.7\%$.
 
-Using the parameters found, $\lambda_s$, $\lambda_p$, $G$, and $v_p$, the Hasselman and Johnson equation can be used to predict the thermal conductivity of the array.
+Using the parameters calculated in this study, $\lambda_s$, $\lambda_p$, $G$, and $v_p$, Eq.\ref{eq:composite} used to predict the thermal conductivity of the array.
 Using the bulk gold thermal conductivity reported by Ong \textit{et al.} for gold at 300 K and the value calculated here for 1500 K, the array thermal conductivity can be found in Table \ref{tab:predition}.
 As seen in previous work,\cite{Ong:2014yq, Liu2015, Zanjani2014} the volume fraction of the particles is the main determining factor of the thermal conductivity. 
 With the small $v_p$, $\lambda_s$ dominates $\lambda_e$, thus there is a similar conductivity for the array across solvent (since $\lambda_s$ is nearly the same for the bulk thermal conductivity) and $\lambda_p$.
@@ -363,19 +363,19 @@ With the small $v_p$, $\lambda_s$ dominates $\lambda_e$, thus there is a similar
     \label{tab:predition}
 \end{table}
 
-\subsection{Simulations of Array}
-Preliminary results of the smallest constructed array display behavior that indicate that Eq. \ref{eq:composite} might be missing a more complex component of the system.
+\subsection{Simulations of Arrays}
+Preliminary results of the smallest arrays displays behavior that indicate that Eq. \ref{eq:composite} might be missing a more complex component of the system.
 The smallest system (2x2x2) in dichloromethane was simulated to find $\lambda = 0.0307 \pm 0.009$ W/mK. 
-This is far below the predicted value of 0.1184 W/mK, but the dichloromethane bulk solvent displayed box length dependent thermal conductivity.
-Therefore, it is possible that with larger arrays in dichloromethane, a box length dependent thermal conductivity will be seen. 
+This is far below the predicted value of 0.1184 W/mK, but the dichloromethane bulk solvent displayed length-dependent thermal conductivity.
+Therefore, it is possible that with larger arrays in dichloromethane, a length-dependent thermal conductivity will be extrapolated. 
 Additionally, it is possible that the dichloromethane in the arrays behaves differently than the bulk fluid and might have thermal properties more similar to a confined liquid.
 
 \section{Conclusions}
-While there is still more that needs to be explained in the nanoarrays of the \ce{Au144PET60} particles, interesting results have been found in the predictive Hasselman and Johnson model. 
-To use the model, each component of the nanoarray was simulated to find the relevant thermal quantity. 
+While there is still more that needs to be explained in the nanoarrays of the \ce{Au144PET60} particles, interesting results have been found using the Hasselman and Johnson model. 
+To use the model, each component of the nanoarray was simulated to find the relevant thermal transport property. 
 As found in previous works, the main component of the Eq. \ref{eq:composite} is $v_p$. 
 The geometric arrangement of the array is the most important aspect contributing to the thermal conductance of the material.
 
 In finding the component pieces of Eq. \ref{eq:composite}, interest results were found for the pure liquid simulations and the interfacial thermal conductivity of the particle.
-The two solvents not having agreeing box length dependent behavior brings interesting questions about the density dependent thermal conductivity of liquids.
-Similarly, the immense difference for $G$ between the two solvent interfaces with the particle, brings about questions of what most important ligand--solvent design.
+The two solvents do not have the same length-dependent behavior thermal transport properties. This suggests interesting differences for the density dependent thermal conductivity in liquids.
+Similarly, the large difference in $G$ between the two solvent interfaces with the particle, brings about questions of what is most important in ligand--solvent design.
