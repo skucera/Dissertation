@@ -206,18 +206,18 @@ Additionally, thermal coupling to the external temperature bath for the single n
     \caption{Composition of the pure liquid simulations with box dimensions and average $\lambda$ values with standard error from 5 simulations.}
     \begin{tabular}{c|c|ccc|c|c|c}
     \toprule
-         System& molecules & L$_x$ (\AA\ )&L$_y$ (\AA\ )&L$_z$ (\AA\ )& applied flux& run time&$\lambda$ \\
-	& \multicolumn{3}{box dimensions} & units & (ns) & W/mK\\
+         System& molecules & \multicolumn{3}{c}{box dimensions}& applied flux& run time&$\lambda$ \\
+	& &L$_x$ (\AA\ )&L$_y$ (\AA\ )&L$_z$ (\AA\ ) & kcal mol$^{-1}$ \AA$^{-2}$ fs$^{-1}$ & (ns) & W/mK\\
          \hline
-         Dichloromethane&2816&60.16&60.16&82.73&1E-7&10&0.0263 $\pm$ 7.0x10-4\\
-         &5632&60.16&60.16&169.1&5E-8&10&0.0390 $\pm$ 2.0E-3\\
-         &8448&60.16&60.16&253.35&5E-8&10&0.0595 $\pm$ 4.6E-3\\
-         Toluene& 1764&62.3&62.3&80.1&1E-7&10&0.1036 $\pm$ 4.0E-3\\
-          &3528&62.3&62.3&160.2&5E-8&10&0.1147 $\pm$ 1.0E-2\\
-          &5292&62.3&62.3&240.5&5E-8&10&0.1062 $\pm$ 6.3E-3\\
-         Gold& 5040&32.03&30.82&106.4&6.5E-6&3&0.3407 $\pm$1.0E-2\\
-          & 10080&32.03&30.82&212.8&6.5E-6&3&0.3800 $\pm$ 1.9E-2\\
-           & 15120&32.03&30.82&319.26&6.5E-6&3&0.3645 $\pm$ 2.0E-2\\
+         Dichloromethane&2816&60.16&60.16&82.73&1x10-7&10&0.0263 $\pm$ 7.0x10-4\\
+         &5632&60.16&60.16&169.1&5x10-8&10&0.0390 $\pm$ 2.0x10-3\\
+         &8448&60.16&60.16&253.35&5x10-8&10&0.0595 $\pm$ 4.6x10-3\\
+         Toluene& 1764&62.3&62.3&80.1&1x10-7&10&0.1036 $\pm$ 4.0x10-3\\
+          &3528&62.3&62.3&160.2&5x10-8&10&0.1147 $\pm$ 1.0x10-2\\
+          &5292&62.3&62.3&240.5&5x10-8&10&0.1062 $\pm$ 6.3x10-3\\
+         Gold& 5040&32.03&30.82&106.4&6.5x10-6&3&0.3407 $\pm$1.0x10-2\\
+          & 10080&32.03&30.82&212.8&6.5x10-6&3&0.3800 $\pm$ 1.9x10-2\\
+           & 15120&32.03&30.82&319.26&6.5x10-6&3&0.3645 $\pm$ 2.0x10-2\\
          \bottomrule
     \end{tabular}
     \label{tab:bulk-comp}
@@ -232,8 +232,8 @@ Additionally, thermal coupling to the external temperature bath for the single n
          &Dichloromethane  & Toluene\\
          \hline
          atoms& 4807 &12075\\
-         packing radius (\AA )& 52 &85\\
-         average $\rho_{sim}^{r>20\AA}$  ($g/cm^3$)& 1.33 &1.74\\
+         solvent cloud radius (\AA )& 52 &85\\
+         average $\rho_{sim}^{r>20 \mathrm{\AA}}$  ($g/cm^3$)& 1.33 &1.74\\
          $\rho_{solv}^{bulk}$  ($g/cm^3$)& 1.33&0.87\\
     \bottomrule     
     \end{tabular}
@@ -271,7 +271,7 @@ Thermal conductivity and interfacial thermal conductivity were calculated using 
 Under a linear response, the thermal conductivity is related to the applied flux,
 % through the following:
 \begin{equation}
-    J_z = \lambda \Big\frac{\partial T}{\partial z}(\Big)	
+    J_z = \lambda \Big(\frac{\partial T}{\partial z}(\Big)	
     %\lambda = \frac{J_z}{\frac{\partial T}{\partial z}} = \frac{J_z}{m}
 \end{equation}
 where $J_z$ is the applied thermal flux and $\frac{\partial T}{\partial z}$ is the temperature gradient that develops in the simulation.
@@ -280,7 +280,7 @@ The thermal gradient created from the applied flux in a box of solvent is shown 
 
 \begin{figure}
     \includegraphics[scale=0.6]{figures/bulk-gradient.pdf}
-    \caption{This figure is an example of the thermal gradient that develops in a bulk solvent system with a moderate flux. The red region is the ``hot'' bin and the two blue regions are the ``cold'' bins. The slope, $m$, that measures the temperature gradient is related to the thermal conductivity of the material, $\lambda$.}
+    \caption{This figure is an example of the thermal gradient that develops in a bulk system with a moderate flux. The red region is the ``hot'' RNEMD exchange region and the two blue regions are ``cold'' RNEMD exchange regions. The temperature gradient that develops in response to the applied flux is related to the thermal conductivity of the material, $\lambda$.}
     \label{fig:lambda-grad}
 \end{figure}
 
