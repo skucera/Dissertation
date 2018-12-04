@@ -271,7 +271,7 @@ Thermal conductivity and interfacial thermal conductivity were calculated using 
 Under a linear response, the thermal conductivity is related to the applied flux,
 % through the following:
 \begin{equation}
-    J_z = \lambda \Big(\frac{\partial T}{\partial z}(\Big)	
+    J_z = \lambda \Big(\frac{\partial T}{\partial z}\Big)	
     %\lambda = \frac{J_z}{\frac{\partial T}{\partial z}} = \frac{J_z}{m}
 \end{equation}
 where $J_z$ is the applied thermal flux and $\frac{\partial T}{\partial z}$ is the temperature gradient that develops in the simulation.
@@ -279,7 +279,7 @@ The thermal gradient created from the applied flux in a box of solvent is shown 
 %The slope of the temperature gradient, $m$, is $\frac{\partial T}{\partial z}$.
 
 \begin{figure}
-    \includegraphics[scale=0.6]{figures/bulk-gradient.pdf}
+    \includegraphics[scale=0.6]{figures/bulk-gradient2.pdf}
     \caption{This figure is an example of the thermal gradient that develops in a bulk system with a moderate flux. The red region is the ``hot'' RNEMD exchange region and the two blue regions are ``cold'' RNEMD exchange regions. The temperature gradient that develops in response to the applied flux is related to the thermal conductivity of the material, $\lambda$.}
     \label{fig:lambda-grad}
 \end{figure}
@@ -306,13 +306,13 @@ As seen in Fig. \ref{fig:inverselambda}, the box length projections of thermal c
 While projection to an infinite box size using Eq. \ref{eq:lambda_inf} is not required by the data for toluene and liquid gold.
 
 The thermal conductivity of the dichloromethane from the projection to an infinite box and the thermal conductivity average of the toluene boxes are shown in Fig. \ref{fig:lambda-bulk}.
-The infite box thermal conductivity of dichloromethane is 0.1084 $\pm$ 0.0021 W/mK and the conductivity of toluene is averaged to be 0.1082 $\pm$ 0.0054 W/mK.
+The infinite box thermal conductivity of dichloromethane is 0.1135 $\pm$ 0.0906 W/mK and the conductivity of toluene is extrapolated to be 0.1132 $\pm$ 0.0001 W/mK.
 If composition of the array is primarily solvent, the Hasselman and Johnson equation will therefor give nearly the same conductivity for the arrays.
 It is important to note that the applied flux was small enough so that the density of the solvent across the simulation box was uniform.
 
 \begin{figure}[h]
     \includegraphics[scale=0.5]{figures/inverselambda-solvent.pdf}
-    \caption{ Parameters to Eq. \ref{eq:lambda_inf} for bulk simulations of dichloromethane (green circles), toluene (black squares), and liquid gold (yellow diamonds). The y-axis, $\lambda$ is in units of W/mK. The x-axis, $L$ is in \AA.}
+    \caption{ Bulk simulations of dichloromethane (green circles), toluene (black squares), and liquid gold (yellow diamonds) show that infinte-box projections are important in dichloromethane. The y-axis, $\lambda$ is in units of W/mK. The x-axis, $L$ is in \AA.}
     \label{fig:inverselambda}
 \end{figure}
 
@@ -327,7 +327,7 @@ Their value will be compared to the conductivity of a bulk gold simulation at 15
 QSC has a size dependent melting temperature and previous particles of slightly larger radius have been shown to display liquid like structures.\cite{Stocker2016}
 Experimentally, particles with $N<219$ have been seen with an approximate melting temperature of 500 K.\cite{Ercolessi1991}
 Additionally, it was proposed through extrapolating melting temperatures vs. diameter, that the \ce{Au144PET60} cluster (with a diameter of $\approx$ 18 \AA) would melt at approximately 600 K.\cite{Buffat1976}
-Hence the high temperature simulations of 100 \AA, 200 \AA, and 300 \AA\ box length in z were computed and displayed $\lambda_p$ = 0.3787 $\pm$ 0.02 W/mK.
+Hence the high temperature simulations of 100 \AA, 200 \AA, and 300 \AA\ box length in z were computed and displayed $\lambda_p$ = 0.3923 $\pm$ 0.02 W/mK.
 The lower conductivity makes some sense; when the gold melts, the ballistic phonons traveling through the gold lattice are disrupted, and the transmission of the phonons decreases.
 
 \subsection{Interfacial Thermal Conductivity}
@@ -340,7 +340,7 @@ Across the staple motif the thermal conductivity to the toluene was 11.37 $\pm$ 
 %POSSIBLY SOMETHING ABOUT THE INTERPENETRATION OF SOLVENT
 \subsection{Prediction of Array Thermal Conductivity}
 Along with the components of the equation for bulk thermal conductivity, $v_p$, the partial volume of the \ce{Au144PET60} particles in the array is required to predict array conductivity.
-The partial volume is approximated through the effective radius of the particles, which is taken from the average of the radius for only the outermost gold atoms and the radius of the total particle including the staple motif.
+The partial volume is approximated through the effective radius of the particles, which is taken from the average of the radius for only the outermost gold atoms (8.2) and the radius of the total particle including the staple motif(47.7).
 This approximations gives a partial volume of 22.5\%.
 A total particle volume which includes all the ligand layer, allows for solvent to penetrate into the particle and would overestimate the volume fraction of the particles for a $v_p = 47.7\%$.
 
@@ -349,14 +349,16 @@ Using the bulk gold thermal conductivity reported by Ong \textit{et al.} for gol
 As seen in previous work,\cite{Ong:2014yq, Liu2015, Zanjani2014} the volume fraction of the particles is the main determining factor of the thermal conductivity. 
 With the small $v_p$, $\lambda_s$ dominates $\lambda_e$, thus there is a similar conductivity for the array across solvent (since $\lambda_s$ is nearly the same for the bulk thermal conductivity) and $\lambda_p$.
 
-\begin{table}[]
+\begin{table}
     \centering
-    \begin{tabular}{c|c|c}
+    \begin{tabular}{c|cc|cc|cc}
     \toprule
-         &$\lambda_p^{1500 K}$ & $\lambda_p^{300 K}$  \\
+        &\multicolumn{2}{c}{$v_p=$8.2} & \multicolumn{2}{c}{$v_p=$ 22.5} & \multicolumn{2}{c}{$v_p=$47.7}\\
+        \vspace{5pt}
+         &$\lambda_p^{1500 K}$ & $\lambda_p^{300 K}$ &$\lambda_p^{1500 K}$ & $\lambda_p^{300 K}$ &$\lambda_p^{1500 K}$ & $\lambda_p^{300 K}$  \\
          \hline
-         $\lambda_e^{DCM}$& 0.1184& 0.1256\\
-         $\lambda_e^{Toluene}$ & 0.1182 & 0.1254 \\
+         $\lambda_e^{DCM}$& 0.1175& 0.1207& 0.1239& 0.1314& 0.1336& 0.1457\\
+         $\lambda_e^{Toluene}$ & 0.1172 & 0.1204& 0.1236& 0.1311& 0.1332& 0.1454\\
          \bottomrule
     \end{tabular}
     \caption{The Hasselman and Johnson prediction for thermal conductivity of the \ce{Au144PET60} array using the gold thermal conductivity at 1500 K and 300 K. The array prediction for dichloromethane and toluene using the bulk thermal conductivity of each solvent.}
